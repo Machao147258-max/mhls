@@ -1,0 +1,130 @@
+# A. h18 专属 (猫和老鼠)
+## h18.update.netease.com
+https://h18.update.netease.com/pl/banner_version6620daf8269fcffbcf91088533704410
+https://h18.update.netease.com/pl/game_param_publish
+
+# B. 网易通用依赖 (运行时使用)
+## applog.matrix.easebar.com
+https://applog.matrix.easebar.com/client/sdk/clientlog
+
+## applog.matrix.netease.com
+https://applog.matrix.netease.com/client/sdk/clientlog
+https://applog.matrix.netease.com/client/sdk/open_log
+https://applog.matrix.netease.com/client/sdk/pay_log
+
+## aq.reg.163.com
+https://aq.reg.163.com/yd/agreement
+
+## crash.163.com
+https://crash.163.com/client/api/uploadStartUpInfo.do
+https://crash.163.com/uploadCrashLogInfo.do
+
+## data-detect.nie.netease.com
+https://data-detect.nie.netease.com/client/mobile_upload
+
+## dns.update.easebar.com
+https://dns.update.easebar.com/hdserver2
+
+## dns.update.netease.com
+https://dns.update.netease.com/hdserver
+https://dns.update.netease.com/hdserver2
+
+## g.fp.ps.netease.com
+https://g.fp.ps.netease.com/mpay-admin/file/5a6550135e6027f8cc36e7e0q7GZU5DC
+https://g.fp.ps.netease.com/mpay-admin/file/63bd4b952b1fce3c88a7b16dsA6UZ2KX04
+
+## g0.gsf.netease.com
+https://g0.gsf.netease.com/feature2/
+
+## gm.163.com
+https://gm.163.com/user_help.html?paper_id=4517
+
+## httpdns.nie.netease.com
+https://httpdns.nie.netease.com/v2/
+
+## impression.update.netease.com
+https://impression.update.netease.com/lighten/
+https://impression.update.netease.com/lighten/%s/%s.txt
+https://impression.update.netease.com/lighten/h18/cn-cmccv6.txt
+https://impression.update.netease.com/lighten/h18/cn-cmccv6.txt_hash
+https://impression.update.netease.com/lighten/h18/cn-cmccv6.txt_tag
+https://impression.update.netease.com/orbitv3/android/%s.cfg
+https://impression.update.netease.com/pharos/explore/
+https://impression.update.netease.com/pharos/explore/%x_
+https://impression.update.netease.com/pharos/explore/%x_%s.txt
+https://impression.update.netease.com/pharos/explore/%x_cn.txt
+https://impression.update.netease.com/pharos/explore/beacon_cn.txt
+https://impression.update.netease.com/pharos/explore/beacon_cn.txt_hash
+https://impression.update.netease.com/pharos/explore/beacon_cn.txt_tag
+https://impression.update.netease.com/pharos/v
+https://impression.update.netease.com/pharos/v%s/%s.txt
+https://impression.update.netease.com/pharos/v2/all.txt
+https://impression.update.netease.com/pharos/v2/h18.txt
+https://impression.update.netease.com/pharos/v2/h18.txt_hash
+https://impression.update.netease.com/pharos/v2/h18.txt_tag
+
+## mgbsdk.matrix.netease.com
+https://mgbsdk.matrix.netease.com/h18/sdk/
+
+## mima.163.com
+https://mima.163.com/main.html
+
+## mpay-translation.g.mkey.163.com
+https://mpay-translation.g.mkey.163.com/api/config?project=netease&cv=5.11.3&cp=a&app_id=h18&app_mode=2
+
+## mpsdk-cn-all-ipv6.g.mkey.163.com
+https://mpsdk-cn-all-ipv6.g.mkey.163.com/mpay
+
+## nos.gameyw.netease.com
+https://nos.gameyw.netease.com/gameyw-gbox/regular_encode_h18_1786962495_c4f29d360e12add617fc7387ff45b56c.json
+
+## nt-protocol.g.mkey.163.com
+https://nt-protocol.g.mkey.163.com/api/config
+
+## protocol.unisdk.netease.com
+https://protocol.unisdk.netease.com/api/template/v106/latest.json
+https://protocol.unisdk.netease.com/api/template/v106/r5827.b64
+https://protocol.unisdk.netease.com/api/template/v5/latest.json
+https://protocol.unisdk.netease.com/api/template/v5/r3436.b64
+https://protocol.unisdk.netease.com/api/template/v84/latest.html
+https://protocol.unisdk.netease.com/api/template/v84/latest.htmlh
+https://protocol.unisdk.netease.com/api/template/v89/latest.json
+https://protocol.unisdk.netease.com/api/template/v89/r3433.b64
+https://protocol.unisdk.netease.com/api/template/v90/latest.html
+https://protocol.unisdk.netease.com/api/template/v90/latest.json
+https://protocol.unisdk.netease.com/api/template/v90/r5896.b64
+https://protocol.unisdk.netease.com/api/template/v90/r6826_c6972.b64
+https://protocol.unisdk.netease.com/release/latest_v609.html
+https://protocol.unisdk.netease.com/tpsl/android_class
+
+## reg.163.com
+https://reg.163.com/naq/findPassword/#/verifyAccount
+
+## service.mkey.163.com
+https://service.mkey.163.com/mpay
+https://service.mkey.163.com/mpay/api/other/advertise?game_id=aecfkvc43yaaaaf7-g-h18&index=1&cv=a5.11.3&devic
+https://service.mkey.163.com/mpay/api/other/advertise?index=1&user_id=aibgrhedhsizfjra&token=1-eyJzaSI6ICI0ZD
+https://service.mkey.163.com/mpay/games/aecfkvc43yaaaaf7-g-h18/age_tips_intro
+
+## sigma-orbitv3-impression.proxima.nie.netease.com
+https://sigma-orbitv3-impression.proxima.nie.netease.com/live
+
+## tpsl.nie.netease.com
+https://tpsl.nie.netease.com/api/v1/class/upload
+
+## unisec-gcp.nie.easebar.com
+https://unisec-gcp.nie.easebar.com/unisec/flashback/upload
+https://unisec-gcp.nie.easebar.com/unisec/pack_sign/check
+https://unisec-gcp.nie.easebar.com/unisec/v2/risk_device/upload
+
+## wap.cmpassport.com
+https://wap.cmpassport.com/resources/html/contract.html
+
+## whoami-ipv4.nie.netease.com
+https://whoami-ipv4.nie.netease.com/v7
+
+## whoami.nie.easebar.com
+https://whoami.nie.easebar.com/v2
+
+## whoami.nie.netease.com
+https://whoami.nie.netease.com/v2

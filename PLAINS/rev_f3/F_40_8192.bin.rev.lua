@@ -1,0 +1,53 @@
+
+===== fn#0 '@src/catchGame/data/ladder_qualifier.lua' (51 instr, depth 0) =====
+local t1 = {}
+local t2 = {}
+t2['id'] = 1.0
+t2['grade_qualifiers'] = 27.0
+t2['role'] = 0.0
+t2['startTime'] = 0.0
+t2['winRatiomin'] = 40.0
+t2['winRatiomax'] = 55.0
+t1[1.0] = t2
+t2 = {}
+t2['id'] = 2.0
+t2['grade_qualifiers'] = 27.0
+t2['role'] = 0.0
+t2['startTime'] = 20160.0
+t2['winRatiomin'] = 35.0
+t2['winRatiomax'] = 60.0
+t1[2.0] = t2
+t2 = {}
+t2['id'] = 3.0
+t2['grade_qualifiers'] = 27.0
+t2['role'] = 0.0
+t2['startTime'] = 40320.0
+t2['winRatiomin'] = 30.0
+t2['winRatiomax'] = 60.0
+t1[3.0] = t2
+t2 = {}
+t2['id'] = 4.0
+t2['grade_qualifiers'] = 27.0
+t2['role'] = 0.0
+t2['startTime'] = 70560.0
+t2['winRatiomin'] = 25.0
+t2['winRatiomax'] = 60.0
+t1[4.0] = t2
+t2 = {}
+t2['id'] = 5.0
+t2['grade_qualifiers'] = 27.0
+t2['role'] = 0.0
+t2['startTime'] = 100800.0
+t2['winRatiomin'] = 0.0
+t2['winRatiomax'] = 60.0
+t1[5.0] = t2
+t2 = {}
+t2['id'] = 6.0
+t2['grade_qualifiers'] = 27.0
+t2['role'] = 1.0
+t2['startTime'] = 0.0
+t2['winRatiomin'] = 0.0
+t2['winRatiomax'] = 75.0
+t1[6.0] = t2
+return t1
+return t1

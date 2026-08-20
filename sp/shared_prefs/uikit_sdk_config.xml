@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="HAS_BEEN_SET_NEVER_ASK_AGAIN_android.permission.RECORD_AUDIO" value="false" />
+</map>

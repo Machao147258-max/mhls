@@ -1,0 +1,54 @@
+
+===== fn#0 '@src/catchGame/data/department_store.lua' (52 instr, depth 0) =====
+local t1 = {}
+local t2 = {}
+t2['id'] = 1.0
+t2['name'] = '御门百货'
+t2['mallConfig'] = 'department_store_mall'
+t2['fashionID'] = 363.0
+t2['giftPackID'] = 472.0
+t2['gachaCostItemType'] = 1.0
+t2['gachaCostItemID'] = 80.0
+t2['gachaCostItemNum'] = 1.0
+t2['desc'] = '购买超值百货商品，赠送轮盘抽奖机会，轮盘中的奖励不会重复获得！'
+t2['accountStartTime'] = '2019-01-26 10:00:00'
+t2['accountStartTimeStamp'] = 1548468000.0
+t2['accountEndTime'] = '2029-08-29 23:59:59'
+t2['accountEndTimeStamp'] = 1882713599.0
+t2['accountDurationDays'] = 30.0
+t1[1.0] = t2
+t2 = {}
+t2['id'] = 2.0
+t2['name'] = '雪夜百货'
+t2['mallConfig'] = 'department_store_mall_1'
+t2['startTime'] = '2023-12-21 10:00:00'
+t2['startTimeStamp'] = 1703124000.0
+t2['endTime'] = '2024-01-10 23:59:59'
+t2['endTimeStamp'] = 1704902399.0
+t2['fashionID'] = 186.0
+t2['giftPackID'] = 492.0
+t2['gachaCostItemType'] = 1.0
+t2['gachaCostItemID'] = 10132.0
+t2['gachaCostItemNum'] = 1.0
+t2['desc'] = '购买超值百货商品，赠送轮盘抽奖机会，轮盘中的奖励不会重复获得！'
+t1[2.0] = t2
+t2 = {}
+t2['id'] = 3.0
+t2['name'] = '梦想祈愿'
+t2['mallConfig'] = 'crowdfund_store_mall'
+t2['startTime'] = '2026-05-28 10:00:00'
+t2['startTimeStamp'] = 1779933600.0
+t2['endTime'] = '2026-11-26 09:30:00'
+t2['endTimeStamp'] = 1795656600.0
+t1[3.0] = t2
+t2 = {}
+t2['id'] = 4.0
+t2['name'] = '占卜妙妙棋'
+t2['mallConfig'] = 'bingo_chess_mall'
+t2['startTime'] = '2026-07-23 10:00:01'
+t2['startTimeStamp'] = 1784772001.0
+t2['endTime'] = '2026-08-31 23:59:59'
+t2['endTimeStamp'] = 1788191999.0
+t1[4.0] = t2
+return t1
+return t1

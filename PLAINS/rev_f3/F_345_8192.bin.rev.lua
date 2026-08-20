@@ -1,0 +1,49 @@
+
+===== fn#0 '@src/catchGame/data/map_decoration_type_collection.lua' (47 instr, depth 0) =====
+local t1 = {}
+local t2 = {}
+t2['id'] = 1.0
+t2['name'] = '地图角色'
+t2['rankId'] = 1.0
+t2['isShow'] = True
+t2['unlockNeedItemType'] = 47.0
+t2['unlockNeedItemNum'] = 20.0
+t2['rewardItemType'] = 21.0
+t2['rewardItemID'] = 219.0
+t2['rewardItemNum'] = 1.0
+t1[1.0] = t2
+t2 = {}
+t2['id'] = 2.0
+t2['name'] = '地图装饰'
+t2['rankId'] = 2.0
+t2['isShow'] = True
+t2['unlockNeedItemType'] = 45.0
+t2['unlockNeedItemNum'] = 40.0
+t2['rewardItemType'] = 21.0
+t2['rewardItemID'] = 220.0
+t2['rewardItemNum'] = 1.0
+t1[2.0] = t2
+t2 = {}
+t2['id'] = 3.0
+t2['name'] = '欢迎特效'
+t2['rankId'] = 3.0
+t2['isShow'] = True
+t2['unlockNeedItemType'] = 48.0
+t2['unlockNeedItemNum'] = 30.0
+t2['rewardItemType'] = 21.0
+t2['rewardItemID'] = 221.0
+t2['rewardItemNum'] = 1.0
+t1[3.0] = t2
+t2 = {}
+t2['id'] = 4.0
+t2['name'] = '信息底板'
+t2['rankId'] = 4.0
+t2['isShow'] = True
+t2['unlockNeedItemType'] = 46.0
+t2['unlockNeedItemNum'] = 30.0
+t2['rewardItemType'] = 21.0
+t2['rewardItemID'] = 222.0
+t2['rewardItemNum'] = 1.0
+t1[4.0] = t2
+return t1
+return t1

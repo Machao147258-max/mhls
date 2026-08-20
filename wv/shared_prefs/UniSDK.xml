@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="switcher_sdk_request_result_cache">{}</string>
+    <string name="etag">&quot;2-6546e818e8240&quot;</string>
+    <string name="last_modified">Wed, 17 Jun 2026 08:04:17 GMT</string>
+    <boolean name="UniSDK_FirstOpen" value="false" />
+</map>

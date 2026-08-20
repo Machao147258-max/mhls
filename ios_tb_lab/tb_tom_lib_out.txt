@@ -1,0 +1,7 @@
+[*] tb_tom_lib
+TypeError: not a function
+    at <anonymous> (C:\Users\20751\Desktop\ios_tb_lab\tb_tom_lib.js:8)
+    at forEach (native)
+    at <anonymous> (C:\Users\20751\Desktop\ios_tb_lab\tb_tom_lib.js:24)
+    at apply (native)
+    at <anonymous> (/frida/runtime/core.js:55)

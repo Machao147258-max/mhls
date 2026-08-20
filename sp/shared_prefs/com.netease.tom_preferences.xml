@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="hasSetProductId">false</string>
+    <string name="notificationsPromptTimes">1</string>
+    <string name="oppo.appid"></string>
+    <string name="miui.appid">2882303761517755788</string>
+    <boolean name="sound" value="true" />
+    <boolean name="vibrate" value="false" />
+    <string name="type">niepush</string>
+    <string name="uuid">30c5ebfe-b052-49f3-80bf-0ad57c6f821a</string>
+    <string name="oppo.appkey"></string>
+    <string name="huawei.appkey"></string>
+    <string name="client_key">pzITuL6FSoSae587PU4siQ==</string>
+    <string name="gcm.senderid"></string>
+    <string name="huawei.appid">100244405</string>
+    <string name="flyme.appkey">b5dedd5353e04d72bcb66c393958c553</string>
+    <string name="product_id">h18_1</string>
+    <string name="honor.senderid"></string>
+    <string name="sdkgate">https://sdkgate.pushv3.netease.com:25004</string>
+    <string name="flyme.appid">153540</string>
+    <string name="token">h18_1_a81feb64</string>
+    <string name="servicetype">niepush</string>
+    <string name="access_key">IqqtWoP+ibvBFRmA6G7c0w==</string>
+    <string name="miui.appkey">5591775572788</string>
+    <int name="vercode" value="338" />
+    <string name="account">248850489</string>
+    <int name="com.netease.push.niepushmode" value="1" />
+</map>

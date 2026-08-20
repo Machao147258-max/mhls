@@ -1,0 +1,50 @@
+
+===== fn#0 '@src/catchGame/data/partner_fashion.lua' (48 instr, depth 0) =====
+local t1 = {}
+local t2 = {}
+t2['id'] = 101.0
+t2['name'] = '初始装扮'
+t2['type'] = 0.0
+t2['desc'] = '金丝雀初始装扮'
+t2['quality'] = 'C'
+t2['fashionValue'] = 0.0
+t2['icon'] = 'ic_partner_skin_default_cuckoo'
+t2['icon1'] = 'ic_partner_skin_default_cuckoo_li'
+t2['partnerId'] = 1.0
+t2['skin'] = 'companion_xiaoniao'
+t2['loadingSpineName'] = 'companion_xiaoniao_loading'
+t2['loadingSound'] = 30506.0
+t2['touchSound'] = 30507.0
+t1[101.0] = t2
+t2 = {}
+t2['id'] = 201.0
+t2['name'] = '初始装扮'
+t2['type'] = 0.0
+t2['desc'] = '啄木鸟初始装扮'
+t2['quality'] = 'C'
+t2['fashionValue'] = 0.0
+t2['icon'] = 'ic_partner_skin_default_woodpecke'
+t2['icon1'] = 'ic_partner_skin_default_woodpecke_li'
+t2['partnerId'] = 2.0
+t2['skin'] = 'companion_zhuomuniao'
+t2['loadingSpineName'] = 'companion_zhuomuniao_loading'
+t2['loadingSound'] = 30509.0
+t2['touchSound'] = 30510.0
+t1[201.0] = t2
+t2 = {}
+t2['id'] = 301.0
+t2['name'] = '初始装扮'
+t2['type'] = 0.0
+t2['desc'] = '小金鱼初始装扮'
+t2['quality'] = 'C'
+t2['fashionValue'] = 0.0
+t2['icon'] = 'ic_partner_skin_default_goldfish'
+t2['icon1'] = 'ic_partner_skin_default_goldfish_li'
+t2['partnerId'] = 3.0
+t2['skin'] = 'companion_jinyu'
+t2['loadingSpineName'] = 'companion_jinyu_loading'
+t2['loadingSound'] = 30504.0
+t2['touchSound'] = 30512.0
+t1[301.0] = t2
+return t1
+return t1

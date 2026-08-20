@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="gameId">h18new</string>
+    <string name="server">21001007</string>
+    <float name="density" value="4.0" />
+    <string name="orderId">1391950029</string>
+    <string name="onWidgetClickClass">org.cocos2dx.utils.MyWidget</string>
+    <string name="apiDomain">https://h18new-udataresys-widget.nie.netease.com:8443/recommender/widget</string>
+    <string name="roleId">248850489</string>
+    <string name="extra">{}</string>
+    <string name="udid">0a6ccb0d90e79fe5</string>
+    <float name="widthPixels" value="1440.0" />
+    <string name="token">e0add437fe644f5fbdaab6dd135b0ced</string>
+</map>

@@ -1,0 +1,53 @@
+
+===== fn#0 '@src/catchGame/data/funtravelpassport_config.lua' (51 instr, depth 0) =====
+local t1 = {}
+local t2 = {}
+t2['id'] = 1.0
+t2['start_time'] = '2026-07-09 10:00:00'
+t2['start_timeStamp'] = 1783562400.0
+t2['end_time'] = '2026-09-02 23:59:59'
+t2['end_timeStamp'] = 1788364799.0
+t2['refresh_weekday'] = 1.0
+t2['refresh_hour'] = 0.0
+t2['every_round_task_count'] = 5.0
+t2['activity_per_level'] = 1000.0
+t2['max_level'] = 100.0
+t2['task_pool'] = '66735,66736,66737,66738,66739,66740,66741,66742,66743,66744,66745,66746,66747,66748,66749,66750,66751,66752,66753,66754,66755,66756,66757,66758,66759,66760,66761,66762,66763,66764,66765,66766,66767,66768,66769,66770,66771,66772,66773,66774,66775,66776,66777,66778,66779'
+t2['gold_shelf_advanced_update_level'] = 30.0
+t2['gold_shelf_buy_item1Type'] = 12.0
+t2['gold_shelf_buy_item1ID'] = 20011569.0
+t2['gold_shelf_buy_item1Num'] = 1.0
+t2['gold_shelf_advanced_buy_item1Type'] = 2.0
+t2['gold_shelf_advanced_buy_item1ID'] = 811.0
+t2['gold_shelf_advanced_buy_item1Num'] = 1.0
+t2['gold_shelf_advanced_buy_item2Type'] = 4.0
+t2['gold_shelf_advanced_buy_item2ID'] = 4002575.0
+t2['gold_shelf_advanced_buy_item2Num'] = 600.0
+t2['gold_shelf_advanced_buy_item3Type'] = 16.0
+t2['gold_shelf_advanced_buy_item3ID'] = 69.0
+t2['gold_shelf_advanced_buy_item3Num'] = 1.0
+t2['gold_shelf_goods_id'] = 20063.0
+t2['gold_shelf_advanced_goods_id'] = 20064.0
+t2['coin_id_ticket'] = 10205.0
+t2['coin_id_activity'] = 10204.0
+t2['gold_shelf_item_base_id'] = 10203.0
+t2['gold_shelf_advanced_item_base_id'] = 4001118.0
+t2['daily_activity_id'] = 204.0
+t2['name'] = '趣游通行证'
+t2['desc'] = '1.时光趣游赛结束时间内为2026年9月2日23:59:59，请及时领取趣游普通货架和黄金货架奖励，使用趣游扫货币、趣游彩券。（活动结束后未领取的奖励和未使用的活动代币将自动失效，不可领取和使用）\n2.完成每日任务和每周任务可获得时光趣游彩券和趣游活跃度奖励，趣游活跃度用于提升趣游通行证等级，趣游彩券可在猫鼠夏令营活动中兑换精彩好礼。\n3.每周任务于周一0点刷新，周任务需按照顺序完成。\n4.购买“黄金货架”，可解锁黄金货架奖励，获得S级染色皮肤、时光趣游A级皮肤随机礼盒、彩饰随机礼盒、精选限定魔镜星星、MVP罗宾汉杰瑞礼物礼盒、钻石会员等奖励。\n5.趣游扫货币可以在【兑换商店】中兑换好礼，快去看看吧！'
+t2['fashionID'] = 6102.0
+t2['goldShelfValue'] = 6102.0
+t2['plusShelfValue'] = 8888.0
+local t3 = {}
+t3['itemType'] = 12.0
+t3['itemID'] = 20011569.0
+t3['itemNum'] = 1.0
+t2['goldUnlockItem'] = t3
+t2['entranceImage'] = 'vx_season_role_og1_1'
+t2['entranceRole100Image'] = 'vx_season_role_og1_2'
+t2['coin_id_travel_voucher'] = 10203.0
+t2['entranceImageOpen'] = 'vx_season_role_open_og1_1'
+t2['entranceRole100ImageOpen'] = 'vx_season_role_open_og1_2'
+t1[1.0] = t2
+return t1
+return t1

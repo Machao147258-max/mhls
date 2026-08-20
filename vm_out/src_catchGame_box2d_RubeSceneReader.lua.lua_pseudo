@@ -1,0 +1,370 @@
+function @src/catchGame/box2d/RubeSceneReader.lua()
+  [  0] GETGLOBAL R0 <- K0  ; "require"
+  [  1] LOADK R1 <- K1  ; "cjson"
+  [  2] CALL R2(R2)
+  [  3] GETGLOBAL R1 <- K0  ; "require"
+  [  4] LOADK R2 <- K2  ; "catchGame/box2d/PhysicsHelper"
+  [  5] CALL R2(R2)
+  [  6] GETGLOBAL R2 <- K0  ; "require"
+  [  7] LOADK R3 <- K3  ; "catchGame/utils/EffectHelper"
+  [  8] CALL R2(R2)
+  [  9] GETGLOBAL R3 <- K0  ; "require"
+  [ 10] LOADK R4 <- K4  ; "catchGame/utils/SpinePreloadHelper"
+  [ 11] CALL R2(R2)
+  [ 12] GETGLOBAL R4 <- K0  ; "require"
+  [ 13] LOADK R5 <- K5  ; "catchGame/data/game_animation_include"
+  [ 14] CALL R2(R2)
+  [ 15] GETGLOBAL R5 <- K0  ; "require"
+  [ 16] LOADK R6 <- K6  ; "catchGame/ugc/utils"
+  [ 17] CALL R2(R2)
+  [ 18] GETGLOBAL R6 <- K7  ; "cg"
+  [ 19] GETTABLE R6 <- R6[K264("math")]
+  [ 20] GETTABLE R6 <- R6[K265("add")]
+  [ 21] GETGLOBAL R7 <- K7  ; "cg"
+  [ 22] GETTABLE R7 <- R7[K264("math")]
+  [ 23] GETTABLE R7 <- R7[K266("sub")]
+  [ 24] GETGLOBAL R8 <- K7  ; "cg"
+  [ 25] GETTABLE R8 <- R8[K264("math")]
+  [ 26] GETTABLE R8 <- R8[K267("mul")]
+  [ 27] GETGLOBAL R9 <- K7  ; "cg"
+  [ 28] GETTABLE R9 <- R9[K264("math")]
+  [ 29] GETTABLE R9 <- R9[K268("div")]
+  [ 30] GETGLOBAL R10 <- K7  ; "cg"
+  [ 31] GETTABLE R10 <- R10[K264("math")]
+  [ 32] GETTABLE R10 <- R10[K269("sqrtD")]
+  [ 33] GETGLOBAL R11 <- K7  ; "cg"
+  [ 34] GETTABLE R11 <- R11[K264("math")]
+  [ 35] GETTABLE R11 <- R11[K270("eq")]
+  [ 36] GETGLOBAL R12 <- K7  ; "cg"
+  [ 37] GETTABLE R12 <- R12[K264("math")]
+  [ 38] GETTABLE R12 <- R12[K271("neq")]
+  [ 39] GETGLOBAL R13 <- K7  ; "cg"
+  [ 40] GETTABLE R13 <- R13[K264("math")]
+  [ 41] GETTABLE R13 <- R13[K272("mt")]
+  [ 42] GETGLOBAL R14 <- K7  ; "cg"
+  [ 43] GETTABLE R14 <- R14[K264("math")]
+  [ 44] GETTABLE R14 <- R14[K273("me")]
+  [ 45] GETGLOBAL R15 <- K7  ; "cg"
+  [ 46] GETTABLE R15 <- R15[K264("math")]
+  [ 47] GETTABLE R15 <- R15[K274("lt")]
+  [ 48] GETGLOBAL R16 <- K7  ; "cg"
+  [ 49] GETTABLE R16 <- R16[K264("math")]
+  [ 50] GETTABLE R16 <- R16[K275("le")]
+  [ 51] GETGLOBAL R17 <- K7  ; "cg"
+  [ 52] GETTABLE R17 <- R17[K264("math")]
+  [ 53] GETTABLE R17 <- R17[K276("random")]
+  [ 54] GETGLOBAL R18 <- K7  ; "cg"
+  [ 55] GETTABLE R18 <- R18[K264("math")]
+  [ 56] GETTABLE R18 <- R18[K277("isInDiff")]
+  [ 57] NEWTABLE R19 <- {}(size 0)
+  [ 58] NEWTABLE R20 <- {}(size 0)
+  [ 59] NEWTABLE R21 <- {}(size 0)
+  [ 60] NEWTABLE R22 <- {}(size 0)
+  [ 61] NEWTABLE R23 <- {}(size 0)
+  [ 62] LOOPEND R24, R0, R0
+  [ 63] OP31 R25, R0, R25
+  [ 64] NEWTABLE R26 <- {}(size 0)
+  [ 65] NEWTABLE R27 <- {}(size 3)
+  [ 66] SETTABLEK R27[K278("suffix")] <- K279("_template")
+  [ 67] SETTABLEK R27[K280("func")] <- K281("_dealBodyTemplate")
+  [ 68] SETTABLEK R27[K282("dictKey")] <- K283("templateBodys")
+  [ 69] NEWTABLE R28 <- {}(size 3)
+  [ 70] SETTABLEK R28[K278("suffix")] <- K284("_object")
+  [ 71] SETTABLEK R28[K280("func")] <- K285("_dealObject")
+  [ 72] SETTABLEK R28[K282("dictKey")] <- K286("objects")
+  [ 73] NEWTABLE R29 <- {}(size 3)
+  [ 74] SETTABLEK R29[K278("suffix")] <- K287("_npc")
+  [ 75] SETTABLEK R29[K280("func")] <- K288("_dealBodyOther")
+  [ 76] SETTABLEK R29[K282("dictKey")] <- K289("npcs")
+  [ 77] NEWTABLE R30 <- {}(size 4)
+  [ 78] SETTABLEK R30[K278("suffix")] <- K290("_map")
+  [ 79] SETTABLEK R30[K280("func")] <- K291("_dealBodyRoom")
+  [ 80] SETTABLEK R30[K282("dictKey")] <- K292("rooms")
+  [ 81] SETTABLEK R30[K293("listKey")] <- K294("mapInfos")
+  [ 82] NEWTABLE R31 <- {}(size 4)
+  [ 83] SETTABLEK R31[K278("suffix")] <- K295("_room")
+  [ 84] SETTABLEK R31[K280("func")] <- K291("_dealBodyRoom")
+  [ 85] SETTABLEK R31[K282("dictKey")] <- K292("rooms")
+  [ 86] SETTABLEK R31[K293("listKey")] <- K296("roomInfos")
+  [ 87] NEWTABLE R32 <- {}(size 3)
+  [ 88] SETTABLEK R32[K278("suffix")] <- K297("_event")
+  [ 89] SETTABLEK R32[K280("func")] <- K298("_dealBodyEvent")
+  [ 90] SETTABLEK R32[K282("dictKey")] <- K299("events")
+  [ 91] NEWTABLE R33 <- {}(size 3)
+  [ 92] SETTABLEK R33[K278("suffix")] <- K300("_other")
+  [ 93] SETTABLEK R33[K280("func")] <- K288("_dealBodyOther")
+  [ 94] SETTABLEK R33[K282("dictKey")] <- K301("others")
+  [ 95] NEWTABLE R34 <- {}(size 3)
+  [ 96] SETTABLEK R34[K278("suffix")] <- K302("_rect")
+  [ 97] SETTABLEK R34[K280("func")] <- K303("_dealBodyOtherRect")
+  [ 98] SETTABLEK R34[K282("dictKey")] <- K304("otherRects")
+  [ 99] NEWTABLE R35 <- {}(size 2)
+  [100] SETTABLEK R35[K278("suffix")] <- K305("_door")
+  [101] SETTABLEK R35[K293("listKey")] <- K306("doorInfos")
+  [102] NEWTABLE R36 <- {}(size 2)
+  [103] SETTABLEK R36[K278("suffix")] <- K307("_etGameFacility")
+  [104] SETTABLEK R36[K293("listKey")] <- K308("etGameFacilityInfos")
+  [105] NEWTABLE R37 <- {}(size 2)
+  [106] SETTABLEK R37[K278("suffix")] <- K309("_light")
+  [107] SETTABLEK R37[K293("listKey")] <- K310("lightInfos")
+  [108] NEWTABLE R38 <- {}(size 2)
+  [109] SETTABLEK R38[K278("suffix")] <- K311("_aiPlatform")
+  [110] SETTABLEK R38[K293("listKey")] <- K312("aiPlatformInfos")
+  [111] NEWTABLE R39 <- {}(size 2)
+  [112] SETTABLEK R39[K278("suffix")] <- K313("_aiRoomLink")
+  [113] SETTABLEK R39[K293("listKey")] <- K314("aiRoomLinkInfos")
+  [114] NEWTABLE R40 <- {}(size 2)
+  [115] SETTABLEK R40[K278("suffix")] <- K315("")
+  [116] SETTABLEK R40[K293("listKey")] <- K316("bodyInfos")
+  [117] CONCAT R26, R1, R14
+  [118] NEWTABLE R27 <- {}(size 0)
+  [119] NEWTABLE R28 <- {}(size 3)
+  [120] SETTABLEK R28[K278("suffix")] <- K317("_shadow")
+  [121] SETTABLEK R28[K280("func")] <- K318("_dealImageShadow")
+  [122] SETTABLEK R28[K293("listKey")] <- K319("shadowInfos")
+  [123] NEWTABLE R29 <- {}(size 3)
+  [124] SETTABLEK R29[K278("suffix")] <- K320("_particle")
+  [125] SETTABLEK R29[K280("func")] <- K321("_dealImageParticle")
+  [126] SETTABLEK R29[K293("listKey")] <- K322("particleInfos")
+  [127] NEWTABLE R30 <- {}(size 3)
+  [128] SETTABLEK R30[K278("suffix")] <- K323("_clipper")
+  [129] SETTABLEK R30[K280("func")] <- K324("_dealClipper")
+  [130] SETTABLEK R30[K293("listKey")] <- K325("clipperInfos")
+  [131] NEWTABLE R31 <- {}(size 3)
+  [132] SETTABLEK R31[K278("suffix")] <- K326("_effect")
+  [133] SETTABLEK R31[K280("func")] <- K327("_dealEffect")
+  [134] SETTABLEK R31[K293("listKey")] <- K328("effectInfos")
+  [135] NEWTABLE R32 <- {}(size 2)
+  [136] SETTABLEK R32[K278("suffix")] <- K315("")
+  [137] SETTABLEK R32[K293("listKey")] <- K329("imageInfos")
+  [138] CONCAT R27, R1, R5
+  [139] NEWTABLE R28 <- {}(size 0)
+  [140] LOADIMM R29 <- K0  ; "require"
+  [141] MOVE R0 <- R19
+  [142] MOVE R0 <- R20
+  [143] MOVE R0 <- R21
+  [144] MOVE R0 <- R22
+  [145] MOVE R0 <- R23
+  [146] MOVE R0 <- R24
+  [147] SETTABLEK R28[K330("clearCache")] <- R29
+  [148] LOADIMM R29 <- K1  ; "cjson"
+  [149] MOVE R0 <- R19
+  [150] SETTABLEK R28[K331("isMapCached")] <- R29
+  [151] LOADIMM R29 <- K2  ; "catchGame/box2d/PhysicsHelper"
+  [152] MOVE R0 <- R21
+  [153] MOVE R0 <- R5
+  [154] MOVE R0 <- R0
+  [155] SETTABLEK R28[K332("getUGCContent")] <- R29
+  [156] LOADIMM R29 <- K3  ; "catchGame/utils/EffectHelper"
+  [157] MOVE R0 <- R22
+  [158] MOVE R0 <- R0
+  [159] MOVE R0 <- R28
+  [160] MOVE R0 <- R26
+  [161] MOVE R0 <- R27
+  [162] SETTABLEK R28[K333("getCacheInfo")] <- R29
+  [163] LOADIMM R29 <- K4  ; "catchGame/utils/SpinePreloadHelper"
+  [164] MOVE R0 <- R28
+  [165] SETTABLEK R28[K334("getAllBodys")] <- R29
+  [166] LOADIMM R29 <- K5  ; "catchGame/data/game_animation_include"
+  [167] MOVE R0 <- R28
+  [168] SETTABLEK R28[K335("getAllImages")] <- R29
+  [169] LOADIMM R29 <- K6  ; "catchGame/ugc/utils"
+  [170] MOVE R0 <- R28
+  [171] SETTABLEK R28[K336("getResourceFile")] <- R29
+  [172] LOADIMM R29 <- K7  ; "cg"
+  [173] MOVE R0 <- R24
+  [174] SETTABLEK R28[K337("setUGCTest")] <- R29
+  [175] LOADIMM R29 <- K8  ; "math"
+  [176] MOVE R0 <- R24
+  [177] MOVE R0 <- R28
+  [178] SETTABLEK R28[K338("isUGCMap")] <- R29
+  [179] LOADIMM R29 <- K9  ; "add"
+  [180] MOVE R0 <- R28
+  [181] SETTABLEK R28[K339("getBody")] <- R29
+  [182] LOADIMM R29 <- K10  ; "sub"
+  [183] MOVE R0 <- R28
+  [184] SETTABLEK R28[K340("getImage")] <- R29
+  [185] LOADIMM R29 <- K11  ; "mul"
+  [186] MOVE R0 <- R19
+  [187] MOVE R0 <- R0
+  [188] MOVE R0 <- R28
+  [189] MOVE R0 <- R18
+  [190] SETTABLEK R28[K341("_createRubeJsonData")] <- R29
+  [191] LOADIMM R29 <- K12  ; "div"
+  [192] MOVE R0 <- R20
+  [193] MOVE R0 <- R28
+  [194] SETTABLEK R28[K342("_createRubeData")] <- R29
+  [195] LOADIMM R29 <- K13  ; "sqrtD"
+  [196] MOVE R0 <- R27
+  [197] MOVE R0 <- R28
+  [198] SETTABLEK R28[K343("_dealImage")] <- R29
+  [199] LOADIMM R29 <- K14  ; "eq"
+  [200] SETTABLEK R28[K327("_dealEffect")] <- R29
+  [201] LOADIMM R29 <- K15  ; "neq"
+  [202] SETTABLEK R28[K324("_dealClipper")] <- R29
+  [203] LOADIMM R29 <- K16  ; "mt"
+  [204] SETTABLEK R28[K321("_dealImageParticle")] <- R29
+  [205] LOADIMM R29 <- K17  ; "me"
+  [206] SETTABLEK R28[K318("_dealImageShadow")] <- R29
+  [207] LOADIMM R29 <- K18  ; "lt"
+  [208] MOVE R0 <- R26
+  [209] MOVE R0 <- R28
+  [210] SETTABLEK R28[K344("_dealBody")] <- R29
+  [211] LOADIMM R29 <- K19  ; "le"
+  [212] SETTABLEK R28[K281("_dealBodyTemplate")] <- R29
+  [213] LOADIMM R29 <- K20  ; "random"
+  [214] MOVE R0 <- R28
+  [215] MOVE R0 <- R7
+  [216] SETTABLEK R28[K291("_dealBodyRoom")] <- R29
+  [217] LOADIMM R29 <- K21  ; "isInDiff"
+  [218] MOVE R0 <- R28
+  [219] SETTABLEK R28[K298("_dealBodyEvent")] <- R29
+  [220] LOADIMM R29 <- K22  ; "suffix"
+  [221] MOVE R0 <- R28
+  [222] SETTABLEK R28[K345("_dealBodyETGameTask")] <- R29
+  [223] LOADIMM R29 <- K23  ; "_template"
+  [224] MOVE R0 <- R28
+  [225] SETTABLEK R28[K288("_dealBodyOther")] <- R29
+  [226] LOADIMM R29 <- K24  ; "func"
+  [227] MOVE R0 <- R28
+  [228] SETTABLEK R28[K303("_dealBodyOtherRect")] <- R29
+  [229] LOADIMM R29 <- K25  ; "_dealBodyTemplate"
+  [230] MOVE R0 <- R28
+  [231] SETTABLEK R28[K285("_dealObject")] <- R29
+  [232] LOADIMM R29 <- K26  ; "dictKey"
+  [233] MOVE R0 <- R1
+  [234] SETTABLEK R28[K346("_mergeCustomProperties")] <- R29
+  [235] LOADIMM R29 <- K27  ; "templateBodys"
+  [236] MOVE R0 <- R28
+  [237] MOVE R0 <- R6
+  [238] SETTABLEK R28[K347("_getPositionsByBody")] <- R29
+  [239] LOADIMM R29 <- K28  ; "_object"
+  [240] MOVE R0 <- R28
+  [241] MOVE R0 <- R6
+  [242] SETTABLEK R28[K348("_getAreasByBody")] <- R29
+  [243] LOADIMM R29 <- K29  ; "_dealObject"
+  [244] MOVE R0 <- R1
+  [245] SETTABLEK R28[K349("_extendCustomProperties")] <- R29
+  [246] LOADIMM R29 <- K30  ; "objects"
+  [247] SETTABLEK R28[K350("_dealFixtureCircle")] <- R29
+  [248] LOADIMM R29 <- K31  ; "_npc"
+  [249] MOVE R0 <- R18
+  [250] SETTABLEK R28[K351("_checkPolygonIsAABB")] <- R29
+  [251] LOADIMM R29 <- K32  ; "_dealBodyOther"
+  [252] MOVE R0 <- R15
+  [253] MOVE R0 <- R13
+  [254] SETTABLEK R28[K352("_dealFixturePolygon")] <- R29
+  [255] LOADIMM R29 <- K33  ; "npcs"
+  [256] MOVE R0 <- R23
+  [257] MOVE R0 <- R28
+  [258] MOVE R0 <- R6
+  [259] SETTABLEK R28[K353("readRubeJson")] <- R29
+  [260] LOADIMM R29 <- K34  ; "_map"
+  [261] MOVE R0 <- R28
+  [262] SETTABLEK R28[K354("_combine")] <- R29
+  [263] LOADIMM R29 <- K35  ; "_dealBodyRoom"
+  [264] SETTABLEK R28[K355("_combineEvents")] <- R29
+  [265] LOADIMM R29 <- K36  ; "rooms"
+  [266] SETTABLEK R28[K356("_combineOthers")] <- R29
+  [267] LOADIMM R29 <- K37  ; "listKey"
+  [268] SETTABLEK R28[K357("_combineOtherRects")] <- R29
+  [269] LOADIMM R29 <- K38  ; "mapInfos"
+  [270] MOVE R0 <- R6
+  [271] SETTABLEK R28[K358("_changeCenterXYRoom")] <- R29
+  [272] LOADIMM R29 <- K39  ; "_room"
+  [273] MOVE R0 <- R6
+  [274] SETTABLEK R28[K359("_changeCenterXY")] <- R29
+  [275] LOADIMM R29 <- K40  ; "roomInfos"
+  [276] MOVE R0 <- R6
+  [277] SETTABLEK R28[K360("_changeXY")] <- R29
+  [278] LOADIMM R29 <- K41  ; "_event"
+  [279] MOVE R0 <- R6
+  [280] SETTABLEK R28[K361("_changePositionXY")] <- R29
+  [281] LOADIMM R29 <- K42  ; "_dealBodyEvent"
+  [282] MOVE R0 <- R6
+  [283] SETTABLEK R28[K362("_changePositionXYRoom")] <- R29
+  [284] LOADIMM R29 <- K43  ; "events"
+  [285] MOVE R0 <- R6
+  [286] SETTABLEK R28[K363("_changePositionXYPositionRoom")] <- R29
+  [287] LOADIMM R29 <- K44  ; "_other"
+  [288] MOVE R0 <- R6
+  [289] SETTABLEK R28[K364("_changeLRBTRoomList")] <- R29
+  [290] LOADIMM R29 <- K45  ; "others"
+  [291] MOVE R0 <- R6
+  [292] SETTABLEK R28[K365("_changeXYRoomList")] <- R29
+  [293] LOADIMM R29 <- K46  ; "_rect"
+  [294] SETTABLEK R28[K366("_dealRoomPath")] <- R29
+  [295] LOADIMM R29 <- K47  ; "_dealBodyOtherRect"
+  [296] MOVE R0 <- R28
+  [297] SETTABLEK R28[K367("_dealRoomPathList")] <- R29
+  [298] LOADIMM R29 <- K48  ; "otherRects"
+  [299] MOVE R0 <- R28
+  [300] MOVE R0 <- R17
+  [301] SETTABLEK R28[K368("getRandomRoomDict")] <- R29
+  [302] LOADIMM R29 <- K49  ; "_door"
+  [303] SETTABLEK R28[K369("combineMap")] <- R29
+  [304] LOADIMM R29 <- K50  ; "doorInfos"
+  [305] MOVE R0 <- R25
+  [306] SETTABLEK R28[K370("setCurrentRoomDict")] <- R29
+  [307] LOADIMM R29 <- K51  ; "_etGameFacility"
+  [308] MOVE R0 <- R25
+  [309] SETTABLEK R28[K371("getCurren`K �}}  `")] <- R29
+  [310] LOADIMM R29 <- K52  ; "etGameFacilityInfos"
+  [311] MOVE R0 <- R28
+  [312] SETTABLEK R28[R372] <- R29
+  [313] LOADIMM R29 <- K53  ; "_light"
+  [314] SETTABLEK R28[R373] <- R29
+  [315] LOADIMM R29 <- K54  ; "lightInfos"
+  [316] SETTABLEK R28[R374] <- R29
+  [317] LOADIMM R29 <- K55  ; "_aiPlatform"
+  [318] MOVE R0 <- R28
+  [319] SETTABLEK R28[R375] <- R29
+  [320] LOADIMM R29 <- K56  ; "aiPlatformInfos"
+  [321] MOVE R0 <- R28
+  [322] SETTABLEK R28[R376] <- R29
+  [323] LOADIMM R29 <- K57  ; "_aiRoomLink"
+  [324] SETTABLEK R28[R377] <- R29
+  [325] LOADIMM R29 <- K58  ; "aiRoomLinkInfos"
+  [326] MOVE R0 <- R28
+  [327] SETTABLEK R28[R378] <- R29
+  [328] LOADIMM R29 <- K59  ; ""
+  [329] MOVE R0 <- R3
+  [330] LOADIMM R30 <- K60  ; "bodyInfos"
+  [331] LOADIMM R31 <- K61  ; "_shadow"
+  [332] MOVE R0 <- R30
+  [333] LOADIMM R32 <- K62  ; "_dealImageShadow"
+  [334] LOADIMM R33 <- K63  ; "shadowInfos"
+  [335] MOVE R0 <- R3
+  [336] LOADIMM R34 <- K64  ; "_particle"
+  [337] LOADIMM R35 <- K65  ; "_dealImageParticle"
+  [338] MOVE R0 <- R34
+  [339] LOADIMM R36 <- K66  ; "particleInfos"
+  [340] MOVE R0 <- R28
+  [341] MOVE R0 <- R29
+  [342] SETTABLEK R28[R379] <- R36
+  [343] LOADIMM R36 <- K67  ; "_clipper"
+  [344] MOVE R0 <- R2
+  [345] MOVE R0 <- R29
+  [346] LOADIMM R37 <- K68  ; "_dealClipper"
+  [347] MOVE R0 <- R29
+  [348] LOADIMM R38 <- K69  ; "clipperInfos"
+  [349] MOVE R0 <- R29
+  [350] MOVE R0 <- R31
+  [351] SETTABLEK R28[R380] <- R38
+  [352] LOADIMM R38 <- K70  ; "_effect"
+  [353] MOVE R0 <- R28
+  [354] SETTABLEK R28[R381] <- R38
+  [355] LOADIMM R38 <- K71  ; "_dealEffect"
+  [356] MOVE R0 <- R28
+  [357] MOVE R0 <- R33
+  [358] MOVE R0 <- R35
+  [359] MOVE R0 <- R36
+  [360] MOVE R0 <- R37
+  [361] MOVE R0 <- R29
+  [362] SETTABLEK R28[R382] <- R38
+  [363] LOADIMM R38 <- K72  ; "effectInfos"
+  [364] MOVE R0 <- R28
+  [365] SETTABLEK R28[R383] <- R38
+  [366] RETURN return R28(1)
+  [367] RETURN return R0(0)
+end

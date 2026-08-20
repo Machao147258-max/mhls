@@ -1,0 +1,2034 @@
+解析出 2 个函数
+
+===== fn#0 '@src/launcher/launcher.lua' (928 instr, depth 0) =====
+local g1 = <G 'require'>
+local c2 = 'cjson'
+g1 = g1(c2)
+c2 = 9.0
+local g3 = <G 'math'>
+g3 = g3['randomseed']
+local g4 = <G 'os'>
+g4 = g4['time']
+g4 = g4()
+g3 = g3(g4)
+g3 = <G 'math'>
+g3 = g3['random']
+g4 = 1.0
+local c5 = 1000.0
+g3 = g3(g4, c5)
+g3 = <G 'print'>
+g4 = 'LAUNCHER_VERSION: '
+c5 = c2
+g3 = g3(g4, c5)
+g3 = <G 'print'>
+g4 = '这是测试'
+g3 = g3(g4, c5)
+g3 = <imm0>
+g4 = g3
+g4 = g4(c5)
+<G 'IS_SUPPORT_ASTC'> = g4
+g4 = <G 'cc'>
+g4 = g4['Application']
+g4 = g4:'getInstance'
+c5 = g4
+g4 = g4(c5)
+g4 = g4:'getTargetPlatform'
+c5 = g4
+g4 = g4(c5)
+c5 = <G 'userext'>
+c5 = c5['USE_BASE']
+-- if not c5 goto L56
+-- goto L0
+c5 = <G 'cc'>
+c5 = c5['UserDefault']
+c5 = c5:'getInstance'
+local s6 = c5
+c5 = c5(s6)
+c5 = c5:'getBoolForKey'
+s6 = c5
+local c7 = 'HAS_EXTEND_RES'
+local n8 = nil
+c5 = c5(s6, c7, n8)
+-- if not c5 goto L54
+-- goto L1
+-- if 3.0 ~= g4 goto L55
+-- goto L2
+-- if 4.0 ~= g4 goto L55
+-- goto L2
+-- if 5.0 ~= g4 goto L55
+-- goto L2
+-- if 12.0 ~= g4 goto L55
+-- goto L2
+-- L1:
+c5 = nil
+-- L2:
+c5 = nil
+-- L0:
+<G 'USE_BASE'> = c5
+c5 = <G 'USE_BASE'>
+-- if not c5 goto L80
+-- goto L3
+c5 = <G 'userext'>
+c5 = c5['PACKAGE_FLAG']
+-- if 2.0 ~= c5 goto L80
+-- goto L3
+c5 = <G 'IS_SUPPORT_ASTC'>
+-- if not c5 goto L82
+-- goto L4
+c5 = <G 'userext'>
+c5 = c5['NOT_INCLUDE_RES_HIGH']
+-- if not c5 goto L81
+-- goto L5
+c5 = <G 'cc'>
+c5 = c5['UserDefault']
+c5 = c5:'getInstance'
+s6 = c5
+c5 = c5(s6, c7, n8)
+c5 = c5:'getBoolForKey'
+s6 = c5
+c7 = 'RES_HIGH_READY'
+n8 = nil
+c5 = c5(s6, c7, n8)
+-- goto L4
+-- L3:
+c5 = nil
+-- L5:
+c5 = nil
+-- L4:
+<G 'CAN_USE_ASTC'> = c5
+c5 = nil
+<G 'USE_NORMAL_RES'> = c5
+c5 = 'https://h18.gph.netease.com/'
+s6 = 'https://h18.gsf.netease.com/'
+c7 = 'https://h18.update.netease.com/pl/'
+n8 = 'a_white_list'
+local c9 = 'game_param_publish'
+local c10 = 'a_server_list'
+local c11 = 'notice'
+local c12 = 'server_info'
+local c13 = 'version.json'
+local c14 = 'launcher_version.json'
+local g15 = <G 'USE_BASE'>
+-- if not g15 goto L101
+-- goto L6
+g15 = 'filelist_base.json'
+-- if not g15 goto L108
+-- goto L7
+-- L6:
+g15 = <G 'CAN_USE_ASTC'>
+-- if not g15 goto L107
+-- goto L8
+g15 = 'filelist_high.json'
+-- if not g15 goto L108
+-- goto L7
+-- L8:
+g15 = 'filelist.json'
+-- L7:
+local n16 = nil
+local n17 = nil
+local c18 = 'patch_package_list'
+local c19 = 'patch_package.zip'
+local c20 = 'diff_unpacked.json'
+local c21 = 'module.json'
+local n22 = nil
+local g23 = <G 'userext'>
+g23 = g23['SUPPORT_NEW_ORBIT']
+-- if not g23 goto L123
+-- goto L9
+g23 = <G 'userext'>
+g23 = g23['SUPPORT_NEW_ORBIT']
+-- if 1.0 == g23 goto L126
+-- goto L10
+-- L9:
+-- if 3.0 == g4 goto L126
+-- goto L10
+n22 = 'https://mbdl.update.netease.com/h18v6.mbdl'
+-- L10:
+g23 = {}
+local g24 = <G 'os'>
+g24 = g24['time']
+g24 = g24()
+g23['prev_time'] = g24
+<G 'ConversionInfo_'> = g23
+g23 = <G '_AppParam'>
+g23 = g23['getAppVersion']
+g23 = g23(g24)
+g24 = nil
+-- if 4.0 ~= g4 goto L140
+-- goto L11
+-- if 5.0 == g4 goto L174
+-- goto L12
+-- L11:
+g24 = 'ios'
+local c25 = 'ios'
+local c26 = 'app_store'
+local g27 = <G 'LuaObjcBridge'>
+local t28 = g27['callStaticMethod']
+g27 = t28
+local c29 = 'SdkLua'
+local c30 = 'getDeviceUDID'
+local n31 = nil
+g27 = g27(c29, c30, n31)
+local v32 = c29
+local v33 = g27
+g27 = t28
+c29 = 'SdkLua'
+c30 = 'getMobileIMEI'
+n31 = nil
+g27 = g27(c29, c30, n31)
+local v34 = c29
+v33 = g27
+g27 = t28
+c29 = 'SdkLua'
+c30 = 'ntGetLocation'
+n31 = nil
+g27 = g27(c29, c30, n31)
+local v35 = c29
+v33 = g27
+g27 = t28
+c29 = 'SdkLua'
+c30 = 'getPhysicalMemory'
+n31 = nil
+g27 = g27(c29, c30, n31)
+local v36 = c29
+v33 = g27
+-- goto L13
+-- L12:
+-- if 3.0 == g4 goto L212
+-- goto L14
+g24 = 'android'
+c25 = 'android'
+g27 = <G '_PayPorts'>
+g27 = g27['getPayChannel']
+g27 = g27(c29, c30, n31)
+c26 = g27
+g27 = <G 'LuaJavaBridge'>
+t28 = g27['callStaticMethod']
+g27 = t28
+c29 = 'org.cocos2dx.utils.SdkLua'
+c30 = 'getDeviceUDID'
+n31 = {}
+local c37 = '()Ljava/lang/String;'
+g27 = g27(c29, c30, n31, c37)
+v32 = c29
+v33 = g27
+g27 = nil
+v34 = '0'
+v33 = g27
+g27 = t28
+c29 = 'org.cocos2dx.utils.SdkLua'
+c30 = 'ntGetLocation'
+n31 = {}
+c37 = '()Ljava/lang/String;'
+g27 = g27(c29, c30, n31, c37)
+v35 = c29
+v33 = g27
+g27 = t28
+c29 = 'org.cocos2dx.utils.SdkLua'
+c30 = 'getPhysicalMemory'
+n31 = {}
+c37 = '()F'
+g27 = g27(c29, c30, n31, c37)
+v36 = c29
+v33 = g27
+-- goto L13
+-- L14:
+-- if 12.0 == g4 goto L251
+-- goto L15
+g24 = 'ohos'
+c25 = 'android'
+g27 = <G '_PayPorts'>
+g27 = g27['getPayChannel']
+g27 = g27(c29, c30, n31)
+c26 = g27
+g27 = <G 'LuaTSBridge'>
+t28 = g27['callStaticMethod']
+g27 = t28
+c29 = 'SdkLua'
+c30 = 'getDeviceUDID'
+n31 = {}
+c37 = ''
+g27 = g27(c29, c30, n31, c37)
+v32 = c29
+v33 = g27
+g27 = nil
+v34 = '0'
+v33 = g27
+g27 = t28
+c29 = 'SdkLua'
+c30 = 'ntGetLocation'
+n31 = {}
+c37 = ''
+g27 = g27(c29, c30, n31, c37)
+v35 = c29
+v33 = g27
+g27 = t28
+c29 = 'SdkLua'
+c30 = 'getPhysicalMemory'
+n31 = {}
+c37 = ''
+g27 = g27(c29, c30, n31, c37)
+v36 = c29
+v33 = g27
+v36 = 3072.0
+-- goto L13
+-- L15:
+-- if 0.0 == g4 goto L261
+-- goto L16
+g24 = 'windows'
+c25 = 'windows'
+c26 = 'windows'
+v32 = '0'
+v34 = ''
+v35 = ''
+v36 = 3072.0
+-- goto L13
+-- L16:
+return g1
+-- L13:
+g27 = <G 'USE_BASE'>
+-- if not g27 goto L267
+-- goto L17
+local c38 = '_base'
+-- goto L18
+-- L17:
+g27 = <G 'userext'>
+g27 = g27['PACKAGE_FLAG']
+-- if 1.0 == g27 goto L289
+-- goto L19
+c38 = '_new'
+g27 = <G 'CAN_USE_ASTC'>
+-- if not g27 goto L279
+-- goto L20
+g27 = '_high'
+c29 = c38
+c38 = g27 .. c29
+-- goto L18
+-- L20:
+g27 = <G 'userext'>
+g27 = g27['NO_RES_LOW']
+-- if not g27 goto L300
+-- goto L18
+-- if v36 < 2560.0 goto L300
+-- goto L18
+c38 = '_normal'
+g27 = nil
+<G 'USE_NORMAL_RES'> = g27
+-- goto L18
+-- L19:
+g27 = <G 'userext'>
+g27 = g27['PACKAGE_FLAG']
+-- if 2.0 == g27 goto L295
+-- goto L21
+c38 = '_lite'
+-- goto L18
+-- L21:
+c38 = ''
+g27 = <G 'CAN_USE_ASTC'>
+-- if not g27 goto L300
+-- goto L18
+c38 = '_high'
+-- L18:
+g27 = <G 'userext'>
+g27 = g27['USE_UI_AUTO']
+-- if not g27 goto L307
+-- goto L22
+g27 = c38
+c29 = '_uiauto'
+c38 = g27 .. c29
+-- L22:
+g27 = <G 'userext'>
+g27 = g27['OPEN_MODULE']
+-- if 1.0 == g27 goto L314
+-- goto L23
+g27 = c38
+c29 = '_module'
+c38 = g27 .. c29
+-- L23:
+g27 = <G 'string'>
+g27 = g27['format']
+c29 = 'filelist_%s%s.zip'
+c30 = c25
+n31 = c38
+g27 = g27(c29, c30, n31)
+n16 = g27
+g27 = c25
+c29 = c38
+local s39 = g27 .. c29
+g27 = <imm1>
+g1 = v32
+c29 = g27
+c29 = c29(c30, n31, c37)
+local v40 = c29
+c29 = <imm2>
+g1 = g24
+g1 = v32
+c30 = c29
+c30 = c30(n31, c37)
+c30 = <G 'print'>
+n31 = 'PLATFORM_NAME: '
+c37 = g24
+c30 = c30(n31, c37)
+c30 = <G 'print'>
+n31 = 'CHANNEL_NAME: '
+c37 = c26
+c30 = c30(n31, c37)
+c30 = <G 'print'>
+n31 = 'UDID: '
+c37 = v32
+c30 = c30(n31, c37)
+c30 = <G 'print'>
+n31 = 'REMOTE_FILE_LIST_FILE_NAME: '
+c37 = n16
+c30 = c30(n31, c37)
+c30 = <G 'print'>
+n31 = 'PREFIX: '
+c37 = s39
+c30 = c30(n31, c37)
+c30 = <G 'print'>
+n31 = 'NO_RES_LOW:'
+c37 = <G 'userext'>
+c37 = c37['NO_RES_LOW']
+c30 = c30(n31, c37)
+c30 = <G 'print'>
+n31 = 'MEMORY:'
+c37 = v36
+c30 = c30(n31, c37)
+c30 = <G 'print'>
+n31 = 'USE_NORMAL_RES:'
+c37 = <G 'USE_NORMAL_RES'>
+c30 = c30(n31, c37)
+c30 = <G 'cc'>
+c30 = c30['FileUtils']
+c30 = c30:'getInstance'
+n31 = c30
+c30 = c30(n31, c37)
+c30 = c30:'getWritablePath'
+n31 = c30
+c30 = c30(n31, c37)
+n31 = c30
+c37 = 'download/'
+n31 = n31 .. c37
+c37 = c30
+local c41 = 'resource/'
+c37 = c37 .. c41
+c41 = n31
+local c42 = 'resource/'
+c41 = c41 .. c42
+c42 = 'prepatch/resource/'
+local c43 = 'prepatch/version.json'
+local t44 = {}
+local c45 = 'res/launcher/'
+local v46 = c25
+local c47 = '/launcher0.plist'
+c45 = c45 .. c47
+t44 = c2 .. c2
+c45 = {}
+v46 = 'res/launcher/'
+c47 = c25
+local c48 = '/launcher0.png'
+v46 = v46 .. c48
+c45 = c2 .. c2
+v46 = 'res/launcher/'
+c47 = c25
+c48 = '/patch_3.18_1.ExportJson'
+v46 = v46 .. c48
+c47 = 'src/launcher/launcher'
+c48 = 'src/main'
+local c49 = 'src/app'
+local c50 = 'src/launcher/notice'
+local c51 = 'src/launcher/showcase'
+local c52 = 'src/launcher/showcase_content'
+local g53 = <G 'require'>
+local v54 = c50
+g53 = g53(v54)
+v54 = <G 'require'>
+local v55 = c51
+v54 = v54(v55)
+v55 = <G 'require'>
+local v56 = c52
+v55 = v55(v56)
+v56 = 8.0
+local c57 = 1.0
+local c58 = 1.0
+local c59 = 2.0
+local c60 = 3.0
+local c61 = 4.0
+local c62 = '0'
+local c63 = '1'
+local c64 = '-1'
+local c65 = 1.0
+local c66 = 2.0
+local c67 = 3.0
+local c68 = 4.0
+local c69 = 5.0
+local c70 = 6.0
+local c71 = 7.0
+local c72 = 8.0
+local c73 = 9.0
+local c74 = 10.0
+local c75 = 2.0
+local g76 = <G 'require'>
+local c77 = 'catchGame/MulitilingualManager'
+g76 = g76(c77)
+c77 = g76['initMultilingualManager']
+local c78 = 'res/multilingual/'
+c77 = c77(c78)
+c77 = g76['setLocalLanaguage']
+c78 = 'ChineseSimple'
+c77 = c77(c78)
+c77 = {}
+c78 = '猫鼠学院欢迎你的加入'
+local c79 = '喜欢猫鼠学院的哪位导师？大表哥和女主人为你转身！'
+local c80 = '汤姆正在进行大扫除，请等待......'
+local c81 = '杰瑞正在为你准备食物，请等待......'
+local c82 = '泰菲宝宝饿了，可以准备一些食物吗？'
+local c83 = '图多盖洛正在梳妆打扮，请等待......'
+local c84 = '跑动时也是能捡道具的哟，你发现了吗？'
+local c85 = '狗狗斯派克很爱睡觉，记得千万不要吵醒他！'
+local c86 = '女主人很爱干净，如果将房间弄乱的话，她会拿扫帚打人的哟！'
+c77 = c10 .. c2
+c78 = 1.0
+c79 = 2.0
+c80 = 3.0
+c81 = 4.0
+c82 = 5.0
+c83 = <imm3>
+c84 = <imm4>
+c85 = <imm5>
+g1 = c84
+c86 = <imm6>
+g1 = c85
+local i87 = <imm7>
+local i88 = <imm8>
+local i89 = <imm9>
+local i90 = <imm10>
+g1 = i89
+local i91 = <imm11>
+g1 = i89
+local i92 = <imm12>
+g1 = i89
+local i93 = <imm13>
+g1 = i89
+local i94 = <imm14>
+g1 = i89
+local i95 = <imm15>
+g1 = i89
+local i96 = <imm16>
+local i97 = <imm17>
+g1 = g24
+g1 = t28
+local i98 = <imm18>
+g1 = c84
+local i99 = <imm19>
+local i100 = <imm20>
+local i101 = <imm21>
+g1 = g24
+g1 = t28
+local v102 = c83
+local c103 = 'LauncherScene'
+local i104 = <imm22>
+v102 = v102(c103, i104)
+c103 = <imm23>
+g1 = g1
+v102['readUseOrbitConfig'] = c103
+c103 = <imm24>
+g1 = i101
+g1 = c48
+g1 = g24
+g1 = c26
+v102['ctor'] = c103
+c103 = <imm25>
+g1 = n31
+g1 = g15
+g1 = i89
+g1 = i94
+g1 = i91
+g1 = c41
+g1 = c37
+v102['checkLauncher'] = c103
+c103 = <imm26>
+g1 = c78
+v102['onEnter'] = c103
+c103 = <imm27>
+v102['yield'] = c103
+c103 = <imm28>
+v102['resume'] = c103
+c103 = <imm29>
+v102['update'] = c103
+c103 = <imm30>
+g1 = c47
+g1 = c48
+g1 = c50
+g1 = c51
+g1 = c52
+v102['unloadModule'] = c103
+c103 = <imm31>
+v102['clean'] = c103
+c103 = <imm32>
+g1 = c25
+g1 = c26
+g1 = c9
+g1 = c10
+g1 = v32
+g1 = v40
+g1 = n16
+g1 = s6
+g1 = n22
+g1 = c49
+v102['leave'] = c103
+c103 = <imm33>
+g1 = c48
+v102['restart'] = c103
+c103 = <imm34>
+g1 = c65
+g1 = c59
+v102['copyFile'] = c103
+c103 = <imm35>
+g1 = c66
+g1 = c59
+g1 = c65
+v102['copyFileInAsset'] = c103
+c103 = <imm36>
+g1 = i89
+g1 = c67
+g1 = c59
+v102['removeFile'] = c103
+c103 = <imm37>
+g1 = c68
+g1 = c59
+v102['createDirectory'] = c103
+c103 = <imm38>
+v102['removeDirectory'] = c103
+c103 = <imm39>
+g1 = c69
+g1 = c59
+v102['writeFile'] = c103
+c103 = <imm40>
+g1 = g1
+g1 = c70
+g1 = c59
+v102['decode'] = c103
+c103 = <imm41>
+g1 = g1
+g1 = c71
+g1 = c59
+v102['encode'] = c103
+c103 = <imm42>
+g1 = v46
+g1 = c85
+g1 = c86
+g1 = v54
+g1 = v55
+v102['loadUI'] = c103
+c103 = <imm43>
+v102['unloadUI'] = c103
+c103 = <imm44>
+g1 = c58
+g1 = i88
+g1 = i87
+g1 = c75
+g1 = c80
+g1 = c59
+g1 = c64
+g1 = c60
+g1 = c61
+v102['resetPanPop'] = c103
+c103 = <imm45>
+v102['updateLabDes'] = c103
+c103 = <imm46>
+v102['updateLabUpdate'] = c103
+c103 = <imm47>
+v102['setLabUpdateVisible'] = c103
+c103 = <imm48>
+v102['updateProBar'] = c103
+c103 = <imm49>
+v102['setProBarVisible'] = c103
+c103 = <imm50>
+g1 = c77
+v102['updateTipFunc'] = c103
+c103 = <imm51>
+g1 = g24
+g1 = t28
+v102['setPropStr'] = c103
+c103 = <imm52>
+g1 = g24
+g1 = t28
+v102['drpf'] = c103
+c103 = <imm53>
+g1 = g24
+v102['initDrpf'] = c103
+c103 = <imm54>
+g1 = v32
+g1 = v40
+g1 = v34
+g1 = v35
+g1 = g23
+v102['uploadActivateLog'] = c103
+c103 = <imm55>
+g1 = c62
+g1 = i97
+g1 = v32
+g1 = v40
+g1 = v34
+g1 = v35
+g1 = c63
+g1 = c64
+v102['uploadUpdateLog'] = c103
+c103 = <imm56>
+g1 = v32
+g1 = v34
+g1 = v35
+g1 = g23
+g1 = v40
+v102['uploadDownloadLog'] = c103
+c103 = <imm57>
+v102['_onDownloadProgressOrbit'] = c103
+c103 = <imm58>
+v102['_onDownloadFinishOrbit'] = c103
+c103 = 4.0
+i104 = 5.0
+local i105 = <imm59>
+g1 = g24
+g1 = t28
+g1 = c103
+g1 = i104
+v102['initDownload'] = i105
+i105 = <imm60>
+g1 = i99
+v102['showDownloadProgress'] = i105
+i105 = <imm61>
+v102['onDownloadProgressOrbit'] = i105
+i105 = <imm62>
+g1 = i99
+v102['onDownloadProgress'] = i105
+i105 = <imm63>
+v102['onDownloadFinishOrbit'] = i105
+i105 = <imm64>
+g1 = c81
+g1 = c30
+g1 = i91
+v102['_onDownloadFinishOrbitNew'] = i105
+i105 = <imm65>
+g1 = c81
+g1 = i91
+g1 = c30
+v102['_onDownloadFinishOrbitOld'] = i105
+i105 = <imm66>
+g1 = c103
+g1 = c57
+g1 = c81
+g1 = i104
+v102['onDownloadFinish'] = i105
+i105 = <imm67>
+g1 = c30
+g1 = v56
+g1 = n22
+g1 = c5
+g1 = c7
+g1 = g24
+v102['_downloadStartOrbit'] = i105
+i105 = <imm68>
+g1 = c81
+g1 = c57
+v102['_downloadStart'] = i105
+i105 = <imm69>
+g1 = c81
+v102['_downloadStartNew'] = i105
+i105 = <imm70>
+g1 = c30
+g1 = c81
+v102['_downloadNewMessage'] = i105
+i105 = <imm71>
+g1 = g24
+g1 = n17
+v102['downloadStart'] = i105
+i105 = <imm72>
+v102['downloadStop'] = i105
+i105 = <imm73>
+g1 = g24
+g1 = t28
+v102['ntExtendOrbitFunc'] = i105
+i105 = <imm74>
+g1 = c81
+v102['download'] = i105
+i105 = <imm75>
+g1 = c82
+v102['waitFrames'] = i105
+i105 = <imm76>
+v102['runProgressAction'] = i105
+i105 = <imm77>
+v102['checkNewPlayer'] = i105
+i105 = <imm78>
+g1 = n31
+g1 = c41
+g1 = c37
+v102['initUpdate'] = i105
+i105 = <imm79>
+g1 = i101
+g1 = c72
+g1 = c59
+g1 = i93
+g1 = c13
+g1 = c30
+g1 = g15
+g1 = c7
+g1 = i89
+g1 = c21
+g1 = i94
+v102['initLocalInfo'] = i105
+i105 = <imm80>
+g1 = c9
+g1 = c30
+g1 = c58
+g1 = i94
+g1 = c26
+g1 = c25
+v102['initGameParamInfo'] = i105
+i105 = <imm81>
+g1 = i98
+v102['checkAppVersion'] = i105
+i105 = <imm82>
+g1 = g24
+g1 = c59
+g1 = c61
+g1 = t28
+g1 = c79
+g1 = c60
+g1 = i100
+v102['updateApp'] = i105
+i105 = <imm83>
+g1 = i89
+g1 = c37
+v102['checkPatchVersion'] = i105
+i105 = <imm84>
+g1 = g24
+g1 = i98
+g1 = c26
+g1 = t28
+v102['setHttpType'] = i105
+i105 = <imm85>
+g1 = i89
+g1 = c41
+g1 = i95
+g1 = c43
+v102['checkPrePatch'] = i105
+i105 = <imm86>
+g1 = n16
+g1 = n31
+g1 = g15
+g1 = c58
+g1 = c73
+g1 = c59
+g1 = i94
+v102['initFileListInfo'] = i105
+i105 = <imm87>
+g1 = c18
+g1 = c30
+g1 = c58
+g1 = i94
+g1 = s39
+v102['initPatchPackageList_old'] = i105
+i105 = <imm88>
+g1 = i97
+g1 = c58
+g1 = i99
+g1 = n31
+g1 = c19
+g1 = i91
+g1 = c41
+v102['downloadPatchPackage_old'] = i105
+i105 = <imm89>
+g1 = n31
+g1 = c20
+g1 = i89
+g1 = i94
+g1 = i91
+g1 = c41
+v102['initPatchPackageList'] = i105
+i105 = <imm90>
+g1 = c41
+g1 = i89
+g1 = c20
+g1 = n31
+v102['unpackPatchPackage'] = i105
+i105 = <imm91>
+g1 = i97
+g1 = c58
+g1 = i99
+v102['downloadPatchPackage'] = i105
+i105 = <imm92>
+g1 = i89
+g1 = c37
+g1 = i91
+g1 = i92
+g1 = c41
+g1 = c42
+v102['getUpdateFileList'] = i105
+i105 = <imm93>
+g1 = c84
+g1 = c37
+g1 = c41
+v102['createNecessaryDirectorys'] = i105
+i105 = <imm94>
+v102['removeFileList'] = i105
+i105 = <imm95>
+g1 = c41
+v102['downloadFileList'] = i105
+i105 = <imm96>
+g1 = c41
+g1 = c37
+g1 = i91
+g1 = c74
+g1 = c59
+v102['copyFileList'] = i105
+i105 = <imm97>
+g1 = c42
+g1 = c37
+g1 = i91
+g1 = c74
+g1 = c59
+v102['copyFileListInAsset'] = i105
+i105 = <imm98>
+g1 = i97
+g1 = c58
+g1 = i99
+g1 = c37
+v102['updateResource'] = i105
+i105 = <imm99>
+g1 = c14
+g1 = c30
+v102['updateLauncherVersion'] = i105
+i105 = <imm100>
+g1 = g15
+g1 = n31
+g1 = c30
+g1 = c13
+v102['updateVersionAndFileList'] = i105
+i105 = <imm101>
+g1 = c30
+g1 = c10
+g1 = c58
+g1 = i94
+v102['initServerListInfo'] = i105
+i105 = <imm102>
+g1 = c58
+g1 = i89
+g1 = c30
+g1 = c12
+g1 = i94
+g1 = c26
+g1 = c5
+g1 = s6
+v102['findRunningServer'] = i105
+i105 = <imm103>
+g1 = c30
+g1 = c11
+g1 = c58
+g1 = i94
+v102['initNotice'] = i105
+i105 = <imm104>
+g1 = g53
+v102['showNotice'] = i105
+i105 = <imm105>
+g1 = n31
+v102['finish'] = i105
+i105 = <imm106>
+v102['time'] = i105
+i105 = <imm107>
+g1 = g24
+g1 = v32
+g1 = v40
+g1 = v36
+g1 = g1
+v102['elk'] = i105
+i105 = <imm108>
+v102['getElkSender'] = i105
+i105 = <imm109>
+v102['setCrashHunterName'] = i105
+i105 = <imm110>
+g1 = g24
+g1 = v32
+g1 = v40
+g1 = i97
+g1 = v34
+g1 = v35
+g1 = g1
+v102['drpfEx'] = i105
+i105 = <imm111>
+g1 = c62
+g1 = c63
+v102['launcherProcess'] = i105
+return v102
+return g1
+
+===== fn#0 '' (152 instr, depth 1) =====
+local g1 = <G 'cc'>
+g1 = g1['Application']
+g1 = g1:'getInstance'
+local s2 = g1
+g1 = g1(s2)
+g1 = g1:'getTargetPlatform'
+s2 = g1
+g1 = g1(s2)
+s2 = <G 'cc'>
+s2 = s2['Director']
+s2 = s2:'getInstance'
+local s3 = s2
+s2 = s2(s3)
+s3 = s2['isSupportAstc']
+-- if not s3 goto L15
+-- goto L0
+s3 = s2:'isSupportAstc'
+local s4 = s2
+s3 = s3(s4)
+-- L0:
+s4 = s2['isSupportAstc']
+-- if not s4 goto L81
+-- goto L1
+-- if 4.0 ~= g1 goto L22
+-- goto L2
+-- if 5.0 == g1 goto L81
+-- goto L1
+-- L2:
+s4 = <G 'LuaObjcBridge'>
+s4 = s4['callStaticMethod']
+local c5 = 'SdkLua'
+local c6 = 'getPhysicalMemory'
+local n7 = nil
+s4 = s4(c5, c6, n7)
+c6 = <G 'tonumber'>
+n7 = c5
+c6 = c6(n7)
+c5 = s2
+-- goto L3
+c5 = 0.0
+-- L3:
+c6 = <G 'print'>
+n7 = 'physicalMemory='
+local v8 = c5
+c6 = c6(n7, v8)
+-- if c5 < 1228.8 goto L42
+-- goto L4
+s3 = nil
+-- goto L5
+-- L4:
+c6 = <G 'LuaObjcBridge'>
+c6 = c6['callStaticMethod']
+n7 = 'SdkLua'
+v8 = 'getMobileModel'
+local n9 = nil
+c6 = c6(n7, v8, n9)
+v8 = <G 'tostring'>
+n9 = n7
+v8 = v8(n9)
+n7 = s2
+-- goto L6
+n7 = ''
+-- L6:
+v8 = <G 'print'>
+n9 = 'model='
+local v10 = n7
+v8 = v8(n9, v10)
+v8 = <G 'string'>
+v8 = v8['find']
+n9 = n7
+v10 = 'iPhone7,'
+v8 = v8(n9, v10)
+-- if not v8 goto L72
+-- goto L7
+v8 = <G 'string'>
+v8 = v8['find']
+n9 = n7
+v10 = 'iPod7,'
+v8 = v8(n9, v10)
+-- if not v8 goto L74
+-- goto L8
+-- L7:
+s3 = nil
+-- goto L5
+-- L8:
+s3 = nil
+-- L5:
+c6 = s2['setSupportAstc']
+-- if not c6 goto L81
+-- goto L1
+c6 = s2:'setSupportAstc'
+n7 = s2
+v8 = s3
+c6 = c6(n7, v8)
+-- L1:
+s4 = <G 'cc'>
+s4 = s4['UserDefault']
+s4 = s4:'getInstance'
+c5 = s4
+s4 = s4(c5, c6, n7)
+s4 = s4:'getIntegerForKey'
+c5 = s4
+c6 = 'LAST_SUPPORT_ASTC'
+n7 = -1.0
+s4 = s4(c5, c6, n7)
+-- if 1.0 == s4 goto L110
+-- goto L9
+-- if not s3 goto L110
+-- goto L9
+c5 = <G 'cc'>
+c5 = c5['UserDefault']
+c5 = c5:'getInstance'
+c6 = c5
+c5 = c5(c6, n7, v8)
+c5 = c5:'setBoolForKey'
+c6 = c5
+n7 = 'verify_result'
+v8 = nil
+c5 = c5(c6, n7)
+c5 = <G 'cc'>
+c5 = c5['UserDefault']
+c5 = c5:'getInstance'
+c6 = c5
+c5 = c5(c6, n7, v8)
+c5 = c5:'setIntegerForKey'
+c6 = c5
+n7 = 'LAST_SUPPORT_ASTC'
+v8 = 2.0
+c5 = c5(c6, n7)
+-- goto L10
+-- L9:
+-- if 0.0 == s4 goto L114
+-- goto L11
+-- if not s3 goto L116
+-- goto L12
+-- L11:
+-- if 2.0 == s4 goto L132
+-- goto L13
+-- L12:
+s3 = nil
+c5 = s2['setSupportAstc']
+-- if not c5 goto L123
+-- goto L14
+c5 = s2:'setSupportAstc'
+c6 = s2
+n7 = nil
+c5 = c5(c6, n7)
+-- L14:
+c5 = <G 'cc'>
+c5 = c5['UserDefault']
+c5 = c5:'getInstance'
+c6 = c5
+c5 = c5(c6, n7, v8)
+c5 = c5:'setIntegerForKey'
+c6 = c5
+n7 = 'LAST_SUPPORT_ASTC'
+v8 = 2.0
+c5 = c5(c6, n7)
+-- goto L10
+-- L13:
+-- if -1.0 == s4 goto L150
+-- goto L10
+c5 = s2['isSupportAstc']
+-- if not c5 goto L150
+-- goto L10
+c5 = <G 'cc'>
+c5 = c5['UserDefault']
+c5 = c5:'getInstance'
+c6 = c5
+c5 = c5(c6, n7, v8)
+c5 = c5:'setIntegerForKey'
+c6 = c5
+n7 = 'LAST_SUPPORT_ASTC'
+-- if not s3 goto L148
+-- goto L15
+v8 = 1.0
+-- if not v8 goto L149
+-- goto L16
+-- L15:
+v8 = 0.0
+-- L16:
+c5 = c5(c6, n7)
+-- L10:
+return s3
+return g1
+名字表 226 项
+前 20: ['require', 'cjson', 9.0, 'math', 'randomseed', 'os', 'time', 'random', 1.0, 1000.0, 'print', 'LAUNCHER_VERSION: ', '这是测试', 'IS_SUPPORT_ASTC', 'cc', 'Application', 'getInstance', 'getTargetPlatform', 'USE_BASE', 'userext']
+解析 1 函数
+
+===== fn#0 '@src/common/utils.lua' (875 instr) =====
+local g1 = <G 'require'>
+local c2 = 'cjson'
+g1 = g1(c2)
+c2 = <G 'require'>
+local c3 = 9.0
+c2 = c2(c3)
+c3 = <G 'require'>
+local c4 = 'math'
+c3 = c3(c4)
+c4 = {}
+local g5 = <G 'require'>
+local c6 = 'randomseed'
+g5 = g5(c6)
+c6 = nil
+local c7 = 'os'
+local c8 = 'time'
+local c9 = 'random'
+local c10 = 1.0
+local c11 = 1000.0
+local c12 = 'print'
+local i13 = <imm0>
+g1 = c6
+local g14 = <G '这是测试'>
+g14 = g14['IS_SUPPORT_ASTC']
+g14 = g14:'cc'
+local s15 = g14
+local g16 = <G '这是测试'>
+g16 = g16['Application']
+g16 = g16:'cc'
+local s17 = g16
+local c18 = 'getInstance'
+local c19 = 'getTargetPlatform'
+g16 = g16(s17)
+g14 = g14(s15, g16, s17)
+c4['LAUNCHER_VERSION: '] = g14
+g14 = c4['LAUNCHER_VERSION: ']
+g14 = g14:'USE_BASE'
+s15 = g14
+g14 = g14(s15, g16)
+g14 = {}
+s15 = {}
+s15['UserDefault'] = 'getBoolForKey'
+s15['HAS_EXTEND_RES'] = 3.0
+s15[4.0] = 5.0
+s15[12.0] = 'CAN_USE_ASTC'
+g16 = {}
+g16['UserDefault'] = 'PACKAGE_FLAG'
+g16['HAS_EXTEND_RES'] = 2.0
+g16[4.0] = 'NOT_INCLUDE_RES_HIGH'
+g16[12.0] = 'RES_HIGH_READY'
+s17 = {}
+s17['UserDefault'] = 'USE_NORMAL_RES'
+s17['HAS_EXTEND_RES'] = 'https://h18.gph.netease.com/'
+s17[4.0] = 'https://h18.gsf.netease.com/'
+s17[12.0] = 'https://h18.update.netease.com/pl/'
+g14 = c4 .. c2
+c4['userext'] = g14
+c4['a_white_list'] = 'getBoolForKey'
+c4['game_param_publish'] = 'PACKAGE_FLAG'
+c4['a_server_list'] = 'USE_NORMAL_RES'
+c4['notice'] = 'getInstance'
+c4['server_info'] = 'version.json'
+c4['launcher_version.json'] = 'filelist_base.json'
+c4['filelist_high.json'] = 'filelist.json'
+c4['patch_package_list'] = 'patch_package.zip'
+c4['diff_unpacked.json'] = 'module.json'
+c4['SUPPORT_NEW_ORBIT'] = 'getBoolForKey'
+c4['https://mbdl.update.netease.com/h18v6.mbdl'] = 'PACKAGE_FLAG'
+c4['ConversionInfo_'] = 'USE_NORMAL_RES'
+c4['prev_time'] = 'getInstance'
+c4['_AppParam'] = 'getAppVersion'
+c4['ios'] = 'getBoolForKey'
+c4['app_store'] = 'PACKAGE_FLAG'
+c4['LuaObjcBridge'] = 'USE_NORMAL_RES'
+c4['callStaticMethod'] = 'getInstance'
+c4['SdkLua'] = 'version.json'
+c4['getDeviceUDID'] = 'filelist_base.json'
+c4['getMobileIMEI'] = 'filelist.json'
+c4['ntGetLocation'] = 'patch_package.zip'
+c4['getPhysicalMemory'] = 'module.json'
+c4['android'] = 'getAppVersion'
+c4['_PayPorts'] = 'getPayChannel'
+c4['LuaJavaBridge'] = 'org.cocos2dx.utils.SdkLua'
+c4['()Ljava/lang/String;'] = '0'
+c4['()F'] = 'ohos'
+c4['LuaTSBridge'] = ''
+c4[3072.0] = ''
+c4[0.0] = 'time'
+c4['windows'] = '_base'
+g14 = c4['windows']
+s15 = c4[0.0]
+-- op35 A=13 B=14 C=13
+c4['_new'] = g14
+g14 = <imm1>
+c4['_high'] = g14
+g14 = <imm2>
+c4['NO_RES_LOW'] = g14
+g14 = <imm3>
+c4[2560.0] = g14
+g14 = <imm4>
+c4['_normal'] = g14
+g14 = <imm5>
+g1 = c4
+g1 = c2
+c4['_lite'] = g14
+g14 = <imm6>
+c4['USE_UI_AUTO'] = g14
+g14 = <imm7>
+c4['_uiauto'] = g14
+g14 = <G 'OPEN_MODULE'>
+g14 = g14['_module']
+s15 = {}
+s15['string'] = 'format'
+s15['filelist_%s%s.zip'] = 'getAppVersion'
+s15['PLATFORM_NAME: '] = 'CHANNEL_NAME: '
+s15['UDID: '] = 'REMOTE_FILE_LIST_FILE_NAME: '
+s15['PREFIX: '] = 'REMOTE_FILE_LIST_FILE_NAME: '
+s15['NO_RES_LOW:'] = 'REMOTE_FILE_LIST_FILE_NAME: '
+g14 = g14(s15, g16, s17)
+s15 = <G 'OPEN_MODULE'>
+s15 = s15['_module']
+g16 = {}
+g16['string'] = 'format'
+g16['filelist_%s%s.zip'] = 'getPayChannel'
+g16['PLATFORM_NAME: '] = 'MEMORY:'
+g16['UDID: '] = 'REMOTE_FILE_LIST_FILE_NAME: '
+g16['PREFIX: '] = 'REMOTE_FILE_LIST_FILE_NAME: '
+g16['NO_RES_LOW:'] = 'REMOTE_FILE_LIST_FILE_NAME: '
+s15 = s15(g16, s17, c18)
+g16 = <G 'OPEN_MODULE'>
+g16 = g16['_module']
+s17 = {}
+s17['string'] = 'format'
+s17['filelist_%s%s.zip'] = 'getPayChannel'
+s17['PLATFORM_NAME: '] = 'patch_package.zip'
+s17['UDID: '] = 'REMOTE_FILE_LIST_FILE_NAME: '
+s17['PREFIX: '] = 'REMOTE_FILE_LIST_FILE_NAME: '
+s17['NO_RES_LOW:'] = 'REMOTE_FILE_LIST_FILE_NAME: '
+g16 = g16(s17, c18, c19)
+s17 = <G 'OPEN_MODULE'>
+s17 = s17['_module']
+c18 = {}
+-- op39 A=128 B=4 C=251
+-- if R192 < R48 
+-- if g5 < R251 
+-- if g1 < 'require' 
+-- op59 A=128 B=4 C=251
+-- if g1 < 'drpfEx' 
+g1 = g1
+-- if g1 < R224 
+-- op59 A=128 B=4 C=251
+-- if g1 < R32 
+g1 = false
+-- if g1 < 9.0 
+-- if g1 <= g1 
+local r20 = R133()
+c19['PREFIX: '] = 'REMOTE_FILE_LIST_FILE_NAME: '
+c19['initPatchPackageList_old'] = 'USE_NORMAL_RES'
+g1 = g1
+-- if '猫鼠学院欢迎你的加入' < R193 
+-- op52 A=129 B=0 C=128
+-- if 'checkNewPlayer' < 'PACKAGE_FLAG' 
+-- op25 A=162 B=4 C=251
+-- if 'checkNewPlayer' < 'copyFileListInAsset' 
+-- op50 A=163 B=503 C=250
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R32 < R195 
+-- op52 A=129 B=0 C=128
+-- if R88 < g1 
+local t21 = R19['_module']
+local t22 = {}
+-- op52 A=129 B=0 C=128
+-- if R160 < R200 
+-- op11 A=168 B=0 C=251
+-- if R160 < R200 
+-- op11 A=168 B=0 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if 4.0 < g1 
+-- if 4.0 < g1 
+-- if 'require' < R152 
+-- op52 A=129 B=0 C=128
+-- if g5 < 'filelist_%s%s.zip' 
+R21[c3] = R117
+-- if 'updateLabDes' < 'setLabUpdateVisible' 
+local i23 = <imm128510>
+-- if 'src/main' < 'uploadDownloadLog' 
+i23 = <imm128510>
+-- if 'updateLabDes' < 'setLabUpdateVisible' 
+i23 = <imm128510>
+-- if 'USE_NORMAL_RES' < 0.0 
+-- op26 A=40 B=511 C=250
+-- if g1 < 'filelist_%s%s.zip' 
+R22[g1] = c2
+-- if R128 < 8.0 goto L-2367
+-- goto L0
+-- if 'USE_NORMAL_RES' < 7.0 goto L-2365
+-- goto L1
+-- if g1 < g1 
+-- if g1 < g1 
+-- if k[252] < g1 
+-- if s17 < g1 
+-- if R32 < R215 
+-- op24 A=40 B=506 C=250
+-- if g1 < g1 
+-- if g1 < g1 
+-- if 'REMOTE_FILE_LIST_FILE_NAME: ' < R77 
+-- op45 A=232 B=1 C=251
+-- if 'drpfEx' < R48 
+-- if g5 < R251 
+-- if 'drpfEx' < R46 
+g1 = R356
+R24[8.0] = R96
+-- goto L2
+-- if '猫鼠学院欢迎你的加入' < c6 
+-- if 'REMOTE_FILE_LIST_FILE_NAME: ' < 'PREFIX: ' 
+R24[R179] = R224
+-- op11 A=232 B=505 C=250
+-- if R128 < R83 
+-- if 'OPEN_MODULE' < R24 
+local t24 = {}
+i23 = R251 .. c2
+-- if 'USE_NORMAL_RES' < c10 
+-- if 'resource/' < 'PLATFORM_NAME: ' 
+t24['CAN_USE_ASTC'] = R160
+-- op24 A=162 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if 'getPhysicalMemory' < R93 
+-- op45 A=173 B=1 C=251
+-- if 'getPhysicalMemory' < R93 
+-- op45 A=173 B=1 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if i13 < g1 
+-- if 'REMOTE_FILE_LIST_FILE_NAME: ' < 'PREFIX: ' 
+R26[R249] = R96
+local r25 = R233()
+-- if R224 < R179 
+-- op11 A=232 B=505 C=250
+-- if R64 < 'time' 
+-- op11 A=232 B=505 C=250
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < R49 
+-- if g5 < R251 
+-- if 'getPhysicalMemory' < R86 
+local v26 = g5
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g5 < g1 
+-- if 'USE_NORMAL_RES:' < 'string' 
+R28['getPhysicalMemory'] = R65
+local c27 = k[128506]
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R32 < 'getPhysicalMemory' 
+c27 = k[128506]
+-- if 'checkNewPlayer' < R186 
+-- op52 A=129 B=0 C=128
+-- if R160 < 'game_param_publish' 
+-- op59 A=128 B=4 C=251
+-- if 'checkNewPlayer' < 8.0 goto L-2237
+-- goto L3
+-- if g1 < g1 
+-- if g1 < g1 
+-- if 'USE_NORMAL_RES' < 'filelist_%s%s.zip' 
+R35['PLATFORM_NAME: '] = 'res/launcher/'
+R35[g1] = c4
+-- if 'resource/' < 'PREFIX: ' 
+R35['game_param_publish'] = 'getPhysicalMemory'
+-- op59 A=128 B=4 C=251
+-- if 'USE_NORMAL_RES' < c3 
+-- op57 A=237 B=506 C=250
+-- if R192 < 12.0 
+-- op59 A=128 B=4 C=251
+-- if R96 < 8.0 goto L-2223
+-- goto L4
+-- if R224 < 'a_white_list' 
+-- op59 A=128 B=4 C=251
+-- if 'finish' < R155 
+local m28 = g1:g1
+local s29 = g1
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < c2 
+-- if R32 < g1 
+-- op24 A=0 B=0 C=0
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < c3 
+-- if R32 < g1 
+g1 = g1
+-- if g1 < g1 
+-- if 'drpfEx' < c2 
+-- op57 A=237 B=506 C=250
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R64 < R78 
+-- if g1 < g1 
+-- if g1 < g1 
+-- op48 A=9 B=3 C=0
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R128 < c7 
+-- op40 A=15 B=32 C=364
+-- op50 A=232 B=508 C=250
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < R128 
+local n30 = nil
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < R30 
+local v31 = R31
+local s32 = c3 .. c2
+local i33 = <imm2>
+-- if g1 < g1 
+-- if g1 < g1 
+-- op52 A=14 B=1 C=0
+-- op52 A=14 B=1 C=0
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < '泰菲宝宝饿了，可以准备一些食物吗？' 
+i33 = <imm131075>
+-- op59 A=18 B=1 C=0
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g5 
+local i34 = <imm194467>
+-- op50 A=232 B=508 C=250
+-- if '猫鼠学院欢迎你的加入' < R151 
+-- op52 A=129 B=0 C=128
+-- if g1 < 'initMultilingualManager' 
+-- op50 A=232 B=508 C=250
+-- if g1 < 'initMultilingualManager' 
+-- op50 A=232 B=508 C=250
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g5 
+g1 = c4
+local i35 = <imm144579>
+-- op59 A=128 B=4 C=251
+-- if R72 < g1 
+-- if k[252] < k[255] 
+-- op63 A=255 B=3 C=0
+-- if g1 < c4 
+local i36 = <imm149729>
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if 'USE_NORMAL_RES' < 'RES_HIGH_READY' 
+-- op59 A=128 B=4 C=251
+-- if 'USE_NORMAL_RES' < 'RES_HIGH_READY' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R192 < 'https://h18.gph.netease.com/' 
+-- op59 A=128 B=4 C=251
+-- if g1 < 'https://h18.gsf.netease.com/' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R160 < 'https://h18.gph.netease.com/' 
+-- op59 A=128 B=4 C=251
+-- if 'USE_NORMAL_RES' < 'https://h18.gsf.netease.com/' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if R44 < 'onEnter' 
+local i37 = <imm88514>
+-- op52 A=129 B=0 C=128
+-- if i37 < 'yield' 
+i37 = <imm7>
+-- if R128 < R191 
+-- op11 A=232 B=505 C=250
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if c3 < g1 
+-- if c3 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if k[252] < k[255] 
+-- op63 A=255 B=139 C=0
+-- if 'getPhysicalMemory' < R172 
+-- op52 A=129 B=0 C=128
+-- if R192 < 'NOT_INCLUDE_RES_HIGH' 
+-- op59 A=128 B=4 C=251
+-- if R192 < 'NOT_INCLUDE_RES_HIGH' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if i35 < 'patch_package.zip' 
+R49['module.json'] = i37
+R49['NOT_INCLUDE_RES_HIGH'] = k[227]
+-- op59 A=128 B=4 C=251
+-- if 'getPhysicalMemory' < 2.0 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R192 < 12.0 
+-- op59 A=128 B=4 C=251
+-- if c9 < g1 
+-- if R48 < 'resume' 
+local i38 = <imm1>
+-- if g1 < g1 
+-- if g1 < 'update' 
+i38 = {}
+local i39 = <imm2>
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if c27 < c6 
+-- if g1 < g1 
+-- if k[252] < k[255] 
+-- op63 A=255 B=511 C=511
+c4[g1] = c4
+-- if g1 < g1 
+-- if k[252] < k[255] 
+-- if g1 < g1 
+-- if g1 < g1 
+i39 = <imm68>
+c4[g1] = c4
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < 'require' 
+-- op38 A=16 B=3 C=256
+-- op38 A=16 B=3 C=256
+-- op38 A=16 B=3 C=289
+-- op59 A=128 B=4 C=251
+-- if g1 < 'https://h18.gph.netease.com/' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if k[252] < k[255] 
+-- op63 A=255 B=3 C=0
+i39 = <imm2>
+-- if '猫鼠学院欢迎你的加入' < R150 
+-- op52 A=129 B=0 C=128
+-- if g1 < 'https://h18.gsf.netease.com/' 
+-- op59 A=128 B=4 C=251
+-- if 'USE_NORMAL_RES' < 'NOT_INCLUDE_RES_HIGH' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R80 < g1 
+c4['setProBarVisible'] = i39
+i39 = <imm148771>
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R224 < 'a_white_list' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+i39 = <imm87>
+g1 = R150
+-- op52 A=129 B=0 C=128
+-- if 'USE_NORMAL_RES' < 'NOT_INCLUDE_RES_HIGH' 
+-- op59 A=128 B=4 C=251
+-- if R192 < 'https://h18.gph.netease.com/' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R48 < 'uploadDownloadLog' 
+i39 = <imm90>
+g1 = R291
+-- op59 A=128 B=4 C=251
+-- if R160 < 'https://h18.gph.netease.com/' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R224 < 'a_white_list' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+c4['showDownloadProgress'] = i39
+i39 = <imm77314>
+-- op52 A=129 B=0 C=128
+-- if R92 < g1 
+c4[g1] = c4
+-- if g1 < g1 
+-- if s17 < g1 
+-- if R28 < g1 
+-- if g5 < g1 
+-- if 'updateLabDes' < R188 
+c27 = k[128506]
+-- if g1 < g1 
+-- if k[252] < k[255] 
+-- op63 A=255 B=3 C=0
+-- if g1 < g1 
+-- if 'drpfEx' < 'https://h18.update.netease.com/pl/' 
+-- op59 A=128 B=4 C=251
+-- if 'updateLabDes' < 'https://h18.update.netease.com/pl/' 
+-- op59 A=128 B=4 C=251
+-- if g5 < g1 
+c4[g1] = c8
+-- if g1 < R151 
+-- op52 A=129 B=0 C=128
+-- if c27 < g1 
+g1 = g1
+-- if g1 < g1 
+-- if s17 < g1 
+-- if R28 < g1 
+-- if g5 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g5 < g1 
+-- if g1 < g1 
+-- if 'USE_NORMAL_RES' < 'https://h18.gsf.netease.com/' 
+-- op59 A=128 B=4 C=251
+-- if 'drpfEx' < 'https://h18.update.netease.com/pl/' 
+-- op59 A=128 B=4 C=251
+-- if 'checkNewPlayer' < 'https://h18.update.netease.com/pl/' 
+-- op59 A=128 B=4 C=251
+-- if g5 < g1 
+local i40 = <imm3>
+-- if 'getPhysicalMemory' < R200 
+-- op11 A=168 B=0 C=251
+-- if 'updateLabDes' < R200 
+-- op11 A=168 B=0 C=251
+-- if g1 < R152 
+-- op52 A=129 B=0 C=128
+-- if i40 < 'initGameParamInfo' 
+i40 = <imm7>
+-- if 'createDirectory' < 'uploadDownloadLog' 
+i23 = <imm128510>
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if i13 < g1 
+-- if c9 < g1 
+-- if i40 < 'initFileListInfo' 
+i40 = <imm98625>
+-- op52 A=129 B=0 C=128
+-- if R96 < 'initMultilingualManager' 
+-- op50 A=232 B=508 C=250
+-- if R96 < 'initMultilingualManager' 
+-- op50 A=232 B=508 C=250
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R124 < g1 
+g1 = c4
+c4['https://h18.update.netease.com/pl/'] = 'drpfEx'
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if i40 < 'removeFileList' 
+local i41 = <imm101089>
+c27 = k[128506]
+-- if R192 < 12.0 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if 'checkNewPlayer' < R186 
+-- op52 A=129 B=0 C=128
+-- if 'drpfEx' < 'launcher_version.json' 
+-- op59 A=128 B=4 C=251
+-- if R224 < 12.0 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if i40 < 'updateResource' 
+i41 = <imm133>
+c4[g1] = c2
+-- if R132 < g1 
+c4['filelist_base.json'] = R129
+-- op59 A=128 B=4 C=251
+-- if '猫鼠学院欢迎你的加入' < 12.0 
+-- op59 A=128 B=4 C=251
+-- if R128 < 'game_param_publish' 
+-- op59 A=128 B=4 C=251
+-- if R96 < 8.0 goto L-1875
+-- goto L5
+-- if g1 < g1 
+-- if g1 < g1 
+-- if 'checkPrePatch' < R169 
+-- op13 A=252 B=0 C=0
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < c2 
+-- if s32 < g1 
+-- op24 A=0 B=0 C=0
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < c3 
+-- op8 A=0 B=64 C=0
+local t42 = {}
+-- if g1 < g1 
+-- if 'drpfEx' < c2 
+-- op57 A=237 B=506 C=250
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R64 < R78 
+-- if g1 < g1 
+-- if g1 < g1 
+-- op48 A=9 B=3 C=0
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R128 < c7 
+-- op32 A=12 B=352 C=369
+-- op50 A=232 B=508 C=250
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < R128 
+n30 = nil
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R152 < g1 
+c4[k[236]] = R55
+local i43 = <imm156>
+c4[g1] = c4
+-- if g1 < g1 
+-- if g1 < g1 
+-- op52 A=14 B=1 C=0
+-- op52 A=14 B=1 C=0
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < t42 
+g1 = R256
+-- op59 A=18 B=1 C=0
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < R59 
+c4[R94] = 'REMOTE_FILE_LIST_FILE_NAME: '
+-- op45 A=232 B=1 C=251
+-- if 'checkNewPlayer' < R172 
+-- op52 A=129 B=0 C=128
+-- if g1 < R56 
+g1 = g1
+-- if g1 < R180 
+-- op11 A=232 B=505 C=250
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if k[252] < k[255] 
+-- op63 A=255 B=139 C=0
+-- if 'getPhysicalMemory' < R172 
+-- op52 A=129 B=0 C=128
+-- if R64 < 'version.json' 
+-- op59 A=128 B=4 C=251
+-- if R64 < 'version.json' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R60 < k[245] 
+local i44 = <imm165>
+g1 = R296
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R128 < 'game_param_publish' 
+-- op59 A=128 B=4 C=251
+-- if s17 < g1 
+-- if i44 < k[250] 
+i44 = <imm2>
+-- if g1 < g1 
+-- if g1 < g1 
+g1 = c4
+c4[g1] = g1
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if c27 < c6 
+-- if g1 < g1 
+-- if k[252] < k[255] 
+-- op63 A=255 B=511 C=511
+c4[g1] = g1
+-- if g1 < g1 
+-- if k[252] < k[255] 
+-- if g1 < g1 
+-- if g1 < g1 
+local i45 = <imm176>
+c4[g1] = c2
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < 'require' 
+-- op38 A=16 B=3 C=256
+-- op38 A=16 B=3 C=256
+-- op38 A=16 B=291 C=298
+-- op59 A=128 B=4 C=251
+-- if 'USE_NORMAL_RES' < 'launcher_version.json' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < g1 
+-- if k[252] < k[255] 
+-- op63 A=255 B=3 C=0
+c4[g1] = c3
+-- if 'checkNewPlayer' < R186 
+-- op52 A=129 B=0 C=128
+-- if R96 < 'https://mbdl.update.netease.com/h18v6.mbdl' 
+-- op59 A=128 B=4 C=251
+-- if R160 < 'game_param_publish' 
+-- op59 A=128 B=4 C=251
+-- if g1 < g1 
+-- if g1 < g1 
+-- if R184 < g1 
+c4[i45] = R62
+i45 = 9.0
+-- if R184 < g1 
+c4['https://mbdl.update.netease.com/h18v6.mbdl'] = 9.0
+-- op59 A=128 B=4 C=251
+-- if 'getPhysicalMemory' < 'game_param_publish' 
+-- op59 A=128 B=4 C=251
+-- if 'checkNewPlayer' < 'launcher_version.json' 
+-- op59 A=128 B=4 C=251
+-- if R96 < 8.0 goto L-1695
+-- goto L6
+-- if R160 < 'SUPPORT_NEW_ORBIT' 
+-- op59 A=128 B=4 C=251
+-- if 'checkLauncher' < 'ConversionInfo_' 
+-- op59 A=252 B=0 C=0
+-- if g1 < g1 
+-- if g1 < g1 
+-- if g1 < c2 
+-- if s32 < g1 
+-- op24 A=0 B=0 C=0

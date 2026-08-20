@@ -1,0 +1,594 @@
+  function <anon>()
+    [  0] GETTABLE R2 <- R0[K256("collectionPoint")]
+    [  1] GETTABLE R3 <- R1[K256("collectionPoint")]
+    [  2] EQ if R3 == R2
+    [  3] JMP (pc+7)
+    [  4] GETTABLE R2 <- R0[K257("uid")]
+    [  5] GETTABLE R3 <- R1[K257("uid")]
+    [  6] SETTABLE R2[R3] <- ?
+    [  7] JMP (pc+1)
+    [  8] LOOPEND R2, R1, R0
+    -- L9
+    [  9] LOOPEND R2, R0, R1
+    [ 10] RETURN return R2(1)
+    -- L11
+    [ 11] GETTABLE R2 <- R0[K256("collectionPoint")]
+    [ 12] GETTABLE R3 <- R1[K256("collectionPoint")]
+    [ 13] SETTABLE R2[R3] <- ?
+    [ 14] JMP (pc+1)
+    [ 15] LOOPEND R2, R1, R0
+    -- L16
+    [ 16] LOOPEND R2, R0, R1
+    [ 17] RETURN return R2(1)
+    [ 18] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] CALLSETUP R1, R0, R0
+    [  1] GETTABLE R1 <- R1[K256("ctor")]
+    [  2] MOVE R2 <- R0
+    [  3] CALL R1(R2)
+    [  4] CALLSETUP R1, R0, R1
+    [  5] GETTABLE R1 <- R1[K258("new")]
+    [  6] NEWTABLE R2 <- {}(size 2)
+    [  7] CALLSETUP R3, R0, R2
+    [  8] SETTABLEK R2[K259("sortFunc")] <- R3
+    [  9] SETTABLEK R2[K260("maxSize")] <- K261(3)
+    [ 10] CALL R2(R2)
+    [ 11] SETTABLEK R0[K257("_collectionTopList")] <- R1
+    [ 12] NEWTABLE R1 <- {}(size 2)
+    [ 13] SETTABLEK R1[K263("dailyExpireTime")] <- K264(0)
+    [ 14] NEWTABLE R2 <- {}(size 0)
+    [ 15] SETTABLEK R1[K265("countItems")] <- R2
+    [ 16] SETTABLEK R0[K262("_squareFireworkInfo")] <- R1
+    [ 17] NEWTABLE R1 <- {}(size 0)
+    [ 18] SETTABLEK R0[K266("_squareMessageBoards")] <- R1
+    [ 19] SELF R1 <- R0:method(K267("clear"))
+    [ 20] CALL R1(R2)
+    [ 21] CALLSETUP R1, R0, R3
+    [ 22] GETTABLE R1 <- R1[K269("SQUARE_CLOSE_CONNECT_TIME")]
+    [ 23] GETTABLE2 R1 <- R1[K270(1000)]
+    [ 24] SETTABLEK R0[K268("closeConnectTime")] <- R1
+    [ 25] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] CALLSETUP R2, R0, R0
+    [  1] GETTABLE R2 <- R2[K256("init")]
+    [  2] MOVE R3 <- R0
+    [  3] CALL R1(R2)
+    [  4] SELF R2 <- R0:method(K257("reqGetSquareFireworkInfo"))
+    [  5] CALL R1(R2)
+    [  6] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] NEWTABLE R1 <- {}(size 1)
+    [  1] CALLSETUP R2, R0, R0
+    [  2] GETTABLE R2 <- R2[K258("SQUARE_GAME_RULE")]
+    [  3] SETTABLEK R1[K257("ruleID")] <- R2
+    [  4] SETTABLEK R0[K256("_squareInfo")] <- R1
+    [  5] SETTABLEK R0[K259("_clientFrameID")] <- K260(1)
+    [  6] GETTABLE R1 <- R0[K261("_collectionTopList")]
+    [  7] SELF R1 <- R1:method(K262("clear"))
+    [  8] CALL R1(R2)
+    [  9] SETTABLEK R0[K263("_tryOnCountData")] <- K264(nil)
+    [ 10] SETTABLEK R0[K265("_tryOnInfo")] <- K264(nil)
+    [ 11] SETTABLEK R0[K266("_tryOnLocalPlayerInfo")] <- K264(nil)
+    [ 12] NEWTABLE R1 <- {}(size 0)
+    [ 13] SETTABLEK R0[K267("_showInfoData")] <- R1
+    [ 14] NEWTABLE R1 <- {}(size 0)
+    [ 15] SETTABLEK R0[K268("_showInfoRequestTime")] <- R1
+    [ 16] NEWTABLE R1 <- {}(size 0)
+    [ 17] SETTABLEK R0[K269("_delayTag")] <- R1
+    [ 18] NEWTABLE R1 <- {}(size 0)
+    [ 19] SETTABLEK R0[K270("_reqMeetingWaitList")] <- R1
+    [ 20] GETTABLE R1 <- R0[K271("reqMeetTimerHandle")]
+    [ 21] TEST test R1
+    [ 22] JMP (pc+6)
+    [ 23] CALLSETUP R1, R0, R1
+    [ 24] GETTABLE R1 <- R1[K272("scheduler")]
+    [ 25] GETTABLE R1 <- R1[K273("unscheduleGlobal")]
+    [ 26] GETTABLE R2 <- R0[K271("reqMeetTimerHandle")]
+    [ 27] CALL R1(R2)
+    [ 28] SETTABLEK R0[K271("reqMeetTimerHandle")] <- K264(nil)
+    -- L29
+    [ 29] NEWTABLE R1 <- {}(size 0)
+    [ 30] SETTABLEK R0[K274("_squarePrefix")] <- R1
+    [ 31] SETTABLEK R0[K275("_squareMarquee")] <- K276(true)
+    [ 32] SELF R1 <- R0:method(K277("clearUIPool"))
+    [ 33] CALL R1(R2)
+    [ 34] SETTABLEK R0[K278("test111")] <- K279(false)
+    [ 35] CALLSETUP R1, R0, R2
+    [ 36] GETTABLE R1 <- R1[K262("clear")]
+    [ 37] CALL R1(R1)
+    [ 38] SELF R1 <- R0:method(K280("EndCheckHangUp"))
+    [ 39] CALL R1(R2)
+    [ 40] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] GETTABLE R1 <- R0[K256("_tryOnCountData")]
+    [  1] RETURN return R1(1)
+    [  2] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] NEWTABLE R5 <- {}(size 6)
+    [  1] SETTABLEK R5[K256("squareRoomInfo")] <- R2
+    [  2] SETTABLEK R5[K257("roomStartTime")] <- R3
+    [  3] NEWTABLE R6 <- {}(size 0)
+    [  4] SETTABLEK R5[K258("boardInfo")] <- R6
+    [  5] NEWTABLE R6 <- {}(size 7)
+    [  6] SETTABLEK R6[K260("uid")] <- K261(-2)
+    [  7] SETTABLEK R6[K262("side")] <- K261(-2)
+    [  8] NEWTABLE R7 <- {}(size 3)
+    [  9] GETGLOBAL R8 <- K9  ; "NetGameEnum"
+    [ 10] GETTABLE R8 <- R8[K266("E_PLAYER_ROLE_TYPE")]
+    [ 11] GETTABLE R8 <- R8[K267("E_PLAYER_ROLE_TYPE_MICE")]
+    [ 12] SETTABLEK R7[K264("role")] <- R8
+    [ 13] SETTABLEK R7[K268("characterBaseID")] <- K269(1)
+    [ 14] SETTABLEK R7[K270("characterLevel")] <- K269(1)
+    [ 15] SETTABLEK R6[K263("character")] <- R7
+    [ 16] SETTABLEK R6[K271("x")] <- K272(0)
+    [ 17] SETTABLEK R6[K273("y")] <- K272(0)
+    [ 18] NEWTABLE R7 <- {}(size 0)
+    [ 19] SETTABLEK R6[K274("buffInfo")] <- R7
+    [ 20] SETTABLEK R6[K275("campID")] <- K272(0)
+    [ 21] SETTABLEK R5[K259("selfInfo")] <- R6
+    [ 22] NEWTABLE R6 <- {}(size 0)
+    [ 23] SETTABLEK R5[K276("fishingPraiseInfo")] <- R6
+    [ 24] NEWTABLE R6 <- {}(size 0)
+    [ 25] SETTABLEK R5[K277("activityInfo")] <- R6
+    [ 26] SELF R6 <- R0:method(K278("_convertSquareData"))
+    [ 27] MOVE R8 <- R5
+    [ 28] CALL R1(R3)
+    [ 29] SELF R6 <- R0:method(K279("InitPlayersData"))
+    [ 30] MOVE R8 <- R5
+    [ 31] CALL R1(R3)
+    [ 32] GETTABLE R6 <- R0[K280("_squareInfo")]
+    [ 33] SETTABLEK R6[K281("isSingle")] <- K282(true)
+    [ 34] GETTABLE R6 <- R0[K280("_squareInfo")]
+    [ 35] SETTABLEK R6[K283("squareRecordPlayer")] <- R1
+    [ 36] GETTABLE R6 <- R0[K280("_squareInfo")]
+    [ 37] SETTABLEK R6[K284("fromScene")] <- R4
+    [ 38] SELF R6 <- R0:method(K285("setServerFrameID"))
+    [ 39] LOADK R8 <- K30  ; -1
+    [ 40] CALL R1(R3)
+    [ 41] GETGLOBAL R6 <- K31  ; "cg"
+    [ 42] GETTABLE R6 <- R6[K288("Game")]
+    [ 43] SELF R6 <- R6:method(K289("enterScene"))
+    [ 44] LOADK R8 <- K34  ; "layerUI/Square/SquareLoadingScene"
+    [ 45] GETTABLE R9 <- R0[K280("_squareInfo")]
+    [ 46] CALL R1(R4)
+    [ 47] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  1] TEST test R1
+    [  2] JMP (pc+2)
+    [  3] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  4] GETTABLE R1 <- R1[K257("fromScene")]
+    -- L5
+    [  5] TEST test R1
+    [  6] JMP (pc+7)
+    [  7] SELF R2 <- R0:method(K258("clear"))
+    [  8] CALL R1(R2)
+    [  9] GETGLOBAL R2 <- K3  ; "cg"
+    [ 10] GETTABLE R2 <- R2[K260("Game")]
+    [ 11] SELF R2 <- R2:method(K261("enterScene"))
+    [ 12] MOVE R4 <- R1
+    [ 13] CALL R1(R3)
+    -- L14
+    [ 14] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] GETTABLE R2 <- R0[K256("_squareInfo")]
+    [  1] GETTABLE R3 <- R0[K256("_squareInfo")]
+    [  2] GETTABLE R3 <- R3[K258("playerInfos")]
+    [  3] GETTABLE R3 <- R3[K259(-2)]
+    [  4] SETTABLEK R2[K257("localPlayer")] <- R3
+    [  5] GETGLOBAL R2 <- K4  ; "pairs"
+    [  6] GETTABLE R3 <- R0[K256("_squareInfo")]
+    [  7] GETTABLE R3 <- R3[K258("playerInfos")]
+    [  8] CALL R4(R2)
+    [  9] JMP (pc+8)
+    -- L10
+    [ 10] GETTABLE R7 <- R6[K261("side")]
+    [ 11] EQ if R1 == R7
+    [ 12] JMP (pc+4)
+    [ 13] SETTABLEK R6[K262("isLocalPlayer")] <- K263(true)
+    [ 14] GETTABLE R7 <- R0[K256("_squareInfo")]
+    [ 15] SETTABLEK R7[K257("localPlayer")] <- R6
+    [ 16] JMP (pc+1)
+    -- L17
+    [ 17] SETTABLEK R6[K262("isLocalPlayer")] <- K264(false)
+    -- L18
+    [ 18] OP23 R2, R2, R0
+    [ 19] JMP (pc+-10)
+    [ 20] GETGLOBAL R2 <- K9  ; "cg"
+    [ 21] GETTABLE R2 <- R2[K266("ActorManager")]
+    [ 22] SELF R2 <- R2:method(K267("setLocalActorId"))
+    [ 23] MOVE R4 <- R1
+    [ 24] CALL R1(R3)
+    [ 25] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  1] TEST test R1
+    [  2] JMP (pc+2)
+    [  3] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  4] GETTABLE R1 <- R1[K257("isSingle")]
+    -- L5
+    [  5] RETURN return R1(1)
+    [  6] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  1] TEST test R1
+    [  2] JMP (pc+2)
+    [  3] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  4] GETTABLE R1 <- R1[K257("squareRecordPlayer")]
+    -- L5
+    [  5] RETURN return R1(1)
+    [  6] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] SELF R1 <- R0:method(K256("registNetEvent"))
+    [  1] CALL R1(R2)
+    [  2] SELF R1 <- R0:method(K257("registClientEvent"))
+    [  3] CALL R1(R2)
+    [  4] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [  1] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [  2] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [  3] GETTABLE R3 <- R3[K259("CS_CMD_ASSIGN_SQUARE_ROOM")]
+    [  4] MOVE R4 <- R0
+    [  5] GETTABLE R5 <- R0[K260("_onEnterSquareRoom")]
+    [  6] CALL R1(R5)
+    [  7] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [  8] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [  9] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 10] GETTABLE R3 <- R3[K261("CS_CMD_SQUARE_LOAD_FINISH")]
+    [ 11] MOVE R4 <- R0
+    [ 12] GETTABLE R5 <- R0[K262("_onLoadFinish")]
+    [ 13] CALL R1(R5)
+    [ 14] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 15] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 16] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 17] GETTABLE R3 <- R3[K263("CS_CMD_SQUARE_RECONNECT")]
+    [ 18] MOVE R4 <- R0
+    [ 19] GETTABLE R5 <- R0[K264("_onReconnectSquare")]
+    [ 20] CALL R1(R5)
+    [ 21] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 22] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 23] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 24] GETTABLE R3 <- R3[K265("CS_CMD_SQUARE_LEAVE_ROOM_NTF")]
+    [ 25] MOVE R4 <- R0
+    [ 26] GETTABLE R5 <- R0[K266("_onLeaveSquare")]
+    [ 27] CALL R1(R5)
+    [ 28] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 29] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 30] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 31] GETTABLE R3 <- R3[K267("CS_CMD_GAMEPLAY_SETTING")]
+    [ 32] MOVE R4 <- R0
+    [ 33] GETTABLE R5 <- R0[K268("onNtfFollowSquareSwitch")]
+    [ 34] CALL R1(R5)
+    [ 35] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 36] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 37] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 38] GETTABLE R3 <- R3[K269("CS_CMD_NOTICE_LEADER_ENTER_SQUARE_RSP")]
+    [ 39] MOVE R4 <- R0
+    [ 40] GETTABLE R5 <- R0[K270("onNtfLeaderEnterNotice")]
+    [ 41] CALL R1(R5)
+    [ 42] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 43] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 44] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 45] GETTABLE R3 <- R3[K271("CS_NTF_SQUARE_PLAYER_SHOW_INFO")]
+    [ 46] MOVE R4 <- R0
+    [ 47] GETTABLE R5 <- R0[K272("onNtfPlayerShowInfo")]
+    [ 48] CALL R1(R5)
+    [ 49] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 50] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 51] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 52] GETTABLE R3 <- R3[K273("CS_CMD_SQUARE_CHECK_HOTFIXVERSION")]
+    [ 53] MOVE R4 <- R0
+    [ 54] GETTABLE R5 <- R0[K274("onNtfCheckHotFixVersionReq")]
+    [ 55] CALL R1(R5)
+    [ 56] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 57] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 58] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 59] GETTABLE R3 <- R3[K275("CS_CMD_SQUARE_ASSIGN_SPECIFY_ROOM")]
+    [ 60] MOVE R4 <- R0
+    [ 61] GETTABLE R5 <- R0[K276("_onEnterNewMap")]
+    [ 62] CALL R1(R5)
+    [ 63] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 64] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 65] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 66] GETTABLE R3 <- R3[K277("CS_CMD_SQUARE_FRAME_SYNC")]
+    [ 67] MOVE R4 <- R0
+    [ 68] GETTABLE R5 <- R0[K278("_onServerFramesSync")]
+    [ 69] CALL R1(R5)
+    [ 70] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 71] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 72] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 73] GETTABLE R3 <- R3[K279("CS_CMD_SQUARE_GET_FRAME_LIST")]
+    [ 74] MOVE R4 <- R0
+    [ 75] GETTABLE R5 <- R0[K280("_onServerFrameListSync")]
+    [ 76] CALL R1(R5)
+    [ 77] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 78] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 79] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 80] GETTABLE R3 <- R3[K281("CS_CMD_UDP_SQUARE_GET_SECTIONAL_FRAME_LIST")]
+    [ 81] MOVE R4 <- R0
+    [ 82] GETTABLE R5 <- R0[K282("_onServerSectionalFrameSync")]
+    [ 83] CALL R1(R5)
+    [ 84] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 85] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 86] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 87] GETTABLE R3 <- R3[K283("CS_CMD_TRY_ON_COUNT_GET")]
+    [ 88] MOVE R4 <- R0
+    [ 89] GETTABLE R5 <- R0[K284("_onNetGetTryOnCount")]
+    [ 90] CALL R1(R5)
+    [ 91] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 92] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [ 93] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [ 94] GETTABLE R3 <- R3[K285("CS_CMD_TRY_ON_REQ")]
+    [ 95] MOVE R4 <- R0
+    [ 96] GETTABLE R5 <- R0[K286("_onNetTryOnResult")]
+    [ 97] CALL R1(R5)
+    [ 98] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [ 99] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [100] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [101] GETTABLE R3 <- R3[K287("CS_CMD_GET_SQUARE_FIREWORK_INFO")]
+    [102] MOVE R4 <- R0
+    [103] GETTABLE R5 <- R0[K288("_onGetSquareFireworkInfo")]
+    [104] CALL R1(R5)
+    [105] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [106] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [107] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [108] GETTABLE R3 <- R3[K289("CS_CMD_SQUARE_PLAY_FIREWORK")]
+    [109] MOVE R4 <- R0
+    [110] GETTABLE R5 <- R0[K290("_onReleasePlayerFirework")]
+    [111] CALL R1(R5)
+    [112] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [113] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [114] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [115] GETTABLE R3 <- R3[K291("CS_NTF_SQUARE_ROOM_BOARD_MSG_UPDATE")]
+    [116] MOVE R4 <- R0
+    [117] GETTABLE R5 <- R0[K292("_onNtfSquareMessageBoardUpdate")]
+    [118] CALL R1(R5)
+    [119] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [120] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [121] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [122] GETTABLE R3 <- R3[K293("CS_CMD_SQUARE_CATCH_FISH")]
+    [123] MOVE R4 <- R0
+    [124] GETTABLE R5 <- R0[K294("_onCmdSquareCatchFish")]
+    [125] CALL R1(R5)
+    [126] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [127] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [128] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [129] GETTABLE R3 <- R3[K295("CS_NTF_SQUARE_FISH_TYPE_NUM_UPDATE")]
+    [130] MOVE R4 <- R0
+    [131] GETTABLE R5 <- R0[K296("_onNtfSquareFishTypeNumUpdate")]
+    [132] CALL R1(R5)
+    [133] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [134] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [135] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [136] GETTABLE R3 <- R3[K297("CS_NTF_SQUARE_FISHING_PRAISE")]
+    [137] MOVE R4 <- R0
+    [138] GETTABLE R5 <- R0[K298("_onNtfSquareFishingPraise")]
+    [139] CALL R1(R5)
+    [140] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [141] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [142] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [143] GETTABLE R3 <- R3[K299("CS_CMD_SQUARE_FINISH_CHUMP_GAME")]
+    [144] MOVE R4 <- R0
+    [145] GETTABLE R5 <- R0[K300("_onCmdSquareFinishChumpGame")]
+    [146] CALL R1(R5)
+    [147] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [148] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [149] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [150] GETTABLE R3 <- R3[K301("CS_CMD_SQUARE_CHUMP_GAME_EXCHANGE")]
+    [151] MOVE R4 <- R0
+    [152] GETTABLE R5 <- R0[K302("_onCmdSquareChumpGameExchange")]
+    [153] CALL R1(R5)
+    [154] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [155] SELF R1 <- R1:method(K303("regErrorMsgHandler"))
+    [156] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [157] GETTABLE R3 <- R3[K259("CS_CMD_ASSIGN_SQUARE_ROOM")]
+    [158] MOVE R4 <- R0
+    [159] GETTABLE R5 <- R0[K304("onAssignSquareRoomErr")]
+    [160] CALL R1(R5)
+    [161] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [162] SELF R1 <- R1:method(K303("regErrorMsgHandler"))
+    [163] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [164] GETTABLE R3 <- R3[K305("CS_CMD_SQUARE_UPDATE_ROLE")]
+    [165] MOVE R4 <- R0
+    [166] GETTABLE R5 <- R0[K306("onUpdateRoleErr")]
+    [167] CALL R1(R5)
+    [168] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [169] SELF R1 <- R1:method(K303("regErrorMsgHandler"))
+    [170] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [171] GETTABLE R3 <- R3[K263("CS_CMD_SQUARE_RECONNECT")]
+    [172] MOVE R4 <- R0
+    [173] GETTABLE R5 <- R0[K307("onSquareReconnectErr")]
+    [174] CALL R1(R5)
+    [175] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [176] SELF R1 <- R1:method(K303("regErrorMsgHandler"))
+    [177] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [178] GETTABLE R3 <- R3[K308("CS_NTF_SQUARE_CHECK_HOTFIXVERSION")]
+    [179] MOVE R4 <- R0
+    [180] GETTABLE R5 <- R0[K309("onCheckHotFixVersionErr")]
+    [181] CALL R1(R5)
+    [182] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [183] SELF R1 <- R1:method(K303("regErrorMsgHandler"))
+    [184] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [185] GETTABLE R3 <- R3[K289("CS_CMD_SQUARE_PLAY_FIREWORK")]
+    [186] MOVE R4 <- R0
+    [187] GETTABLE R5 <- R0[K310("onReleasePlayerFireworkErr")]
+    [188] CALL R1(R5)
+    [189] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [190] SELF R1 <- R1:method(K303("regErrorMsgHandler"))
+    [191] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [192] GETTABLE R3 <- R3[K311("CS_CMD_SQUARE_FISHING_PRAISE_REQ")]
+    [193] MOVE R4 <- R0
+    [194] GETTABLE R5 <- R0[K312("onSquareFishingPraiseErr")]
+    [195] CALL R1(R5)
+    [196] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [197] SELF R1 <- R1:method(K303("regErrorMsgHandler"))
+    [198] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [199] GETTABLE R3 <- R3[K275("CS_CMD_SQUARE_ASSIGN_SPECIFY_ROOM")]
+    [200] MOVE R4 <- R0
+    [201] GETTABLE R5 <- R0[K313("_onEnterNewMapFailed")]
+    [202] CALL R1(R5)
+    [203] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [204] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [205] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [206] GETTABLE R3 <- R3[K314("CS_CMD_SQUARE_INVITE_ENTER_REQ")]
+    [207] MOVE R4 <- R0
+    [208] GETTABLE R5 <- R0[K315("_onSquareMeetInvite")]
+    [209] CALL R1(R5)
+    [210] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [211] SELF R1 <- R1:method(K303("regErrorMsgHandler"))
+    [212] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [213] GETTABLE R3 <- R3[K314("CS_CMD_SQUARE_INVITE_ENTER_REQ")]
+    [214] MOVE R4 <- R0
+    [215] GETTABLE R5 <- R0[K316("_onSquareMeetInviteError")]
+    [216] CALL R1(R5)
+    [217] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [218] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [219] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [220] GETTABLE R3 <- R3[K317("CS_CMD_SQUARE_INVITE_ENTER_ROOM_NTF")]
+    [221] MOVE R4 <- R0
+    [222] GETTABLE R5 <- R0[K318("_onSquareMeetPos")]
+    [223] CALL R1(R5)
+    [224] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [225] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [226] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [227] GETTABLE R3 <- R3[K319("CS_NTF_SQUARE_SNOWBALL_FIGHT_SCORE_UPDATE")]
+    [228] MOVE R4 <- R0
+    [229] GETTABLE R5 <- R0[K320("_onSnowballScoreUpdate")]
+    [230] CALL R1(R5)
+    [231] GETGLOBAL R1 <- K0  ; "TJNetMgr"
+    [232] SELF R1 <- R1:method(K257("regMsgHandler"))
+    [233] GETGLOBAL R3 <- K2  ; "NetMsg"
+    [234] GETTABLE R3 <- R3[K321("CS_NTF_SQUARE_HEAD_NUMBER_UPDATE")]
+    [235] MOVE R4 <- R0
+    [236] GETTABLE R5 <- R0[K322("_onNtfHeadNumberUpdate")]
+    [237] CALL R1(R5)
+    [238] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] CALLSETUP R1, R0, R0
+    [  1] GETTABLE R1 <- R1[K256("register")]
+    [  2] CALLSETUP R2, R0, R0
+    [  3] GETTABLE R2 <- R2[K257("ON_RSP_GET_CLAN_IFNO")]
+    [  4] MOVE R3 <- R0
+    [  5] GETTABLE R4 <- R0[K258("onUpdateClanRelation")]
+    [  6] CALL R1(R4)
+    [  7] CALLSETUP R1, R0, R0
+    [  8] GETTABLE R1 <- R1[K256("register")]
+    [  9] CALLSETUP R2, R0, R0
+    [ 10] GETTABLE R2 <- R2[K259("ON_NTF_REFRESH_CLAN_MEMBERS")]
+    [ 11] MOVE R3 <- R0
+    [ 12] GETTABLE R4 <- R0[K258("onUpdateClanRelation")]
+    [ 13] CALL R1(R4)
+    [ 14] CALLSETUP R1, R0, R0
+    [ 15] GETTABLE R1 <- R1[K256("register")]
+    [ 16] CALLSETUP R2, R0, R0
+    [ 17] GETTABLE R2 <- R2[K260("ON_FRIEND_LIST")]
+    [ 18] MOVE R3 <- R0
+    [ 19] GETTABLE R4 <- R0[K261("onUpdateFriendRelation")]
+    [ 20] CALL R1(R4)
+    [ 21] CALLSETUP R1, R0, R0
+    [ 22] GETTABLE R1 <- R1[K256("register")]
+    [ 23] CALLSETUP R2, R0, R0
+    [ 24] GETTABLE R2 <- R2[K262("ON_SQUARE_LOADING_SCENE_FINISH")]
+    [ 25] MOVE R3 <- R0
+    [ 26] GETTABLE R4 <- R0[K263("onSquareLoadingSceneFinish")]
+    [ 27] CALL R1(R4)
+    [ 28] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] GETTABLE R3 <- R0[K256("_uiPool")]
+    [  1] TEST test R3
+    [  2] JMP (pc+1)
+    [  3] NEWTABLE R3 <- {}(size 0)
+    -- L4
+    [  4] SETTABLEK R0[K256("_uiPool")] <- R3
+    [  5] GETTABLE R3 <- R0[K256("_uiPool")]
+    [  6] GETTABLE R3 <- R3[R1]
+    [  7] TEST test R3
+    [  8] JMP (pc+10)
+    [  9] GETTABLE R3 <- R0[K256("_uiPool")]
+    [ 10] CALLSETUP R4, R0, R0
+    [ 11] SELF R4 <- R4:method(K257("new"))
+    [ 12] NEWTABLE R6 <- {}(size 1)
+    [ 13] OP2 R7, R1, R2
+    [ 14] JMP (pc+1)
+    [ 15] LOADK R7 <- K3  ; 20
+    -- L16
+    [ 16] SETTABLEK R6[K258("maxNum")] <- R7
+    [ 17] CALL R2(R3)
+    [ 18] SETTABLEK R3[R1] <- R4
+    -- L19
+    [ 19] GETTABLE R3 <- R0[K256("_uiPool")]
+    [ 20] GETTABLE R3 <- R3[R1]
+    [ 21] RETURN return R3(1)
+    [ 22] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] GETTABLE R1 <- R0[K256("_uiPool")]
+    [  1] TEST test R1
+    [  2] JMP (pc+1)
+    [  3] RETURN return R0(0)
+    -- L4
+    [  4] GETGLOBAL R1 <- K1  ; "pairs"
+    [  5] GETTABLE R2 <- R0[K256("_uiPool")]
+    [  6] CALL R4(R2)
+    [  7] JMP (pc+2)
+    -- L8
+    [  8] SELF R6 <- R5:method(K258("clear"))
+    [  9] CALL R1(R2)
+    -- L10
+    [ 10] OP23 R1, R2, R0
+    [ 11] JMP (pc+-4)
+    [ 12] SETTABLEK R0[K256("_uiPool")] <- K259(nil)
+    [ 13] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  1] TEST test R1
+    [  2] JMP (pc+7)
+    [  3] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  4] GETTABLE R1 <- R1[K257("roomInfo")]
+    [  5] TEST test R1
+    [  6] JMP (pc+3)
+    [  7] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  8] GETTABLE R1 <- R1[K257("roomInfo")]
+    [  9] GETTABLE R1 <- R1[K258("squareRoomInfo")]
+    -- L10
+    [ 10] TEST test R1
+    [ 11] JMP (pc+2)
+    [ 12] GETTABLE R2 <- R1[K259("daySeed")]
+    [ 13] RETURN return R2(1)
+    -- L14
+    [ 14] RETURN return R0(0)
+  end
+  function <anon>()
+    [  0] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  1] TEST test R1
+    [  2] JMP (pc+7)
+    [  3] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  4] GETTABLE R1 <- R1[K257("roomInfo")]
+    [  5] TEST test R1
+    [  6] JMP (pc+3)
+    [  7] GETTABLE R1 <- R0[K256("_squareInfo")]
+    [  8] GETTABLE R1 <- R1[K257("roomInfo")]
+    [  9] GETTABLE R1 <- R1[K258("squareRoomInfo")]
+    -- L10
+    [ 10] TEST test R1
+    [ 11] JMP (pc+2)
+    [ 12] GETTABLE R2 <- R1[K259("g`���} ")]
+    [ 13] RETURN return R2(1)
+    -- L14
+    [ 14] RETURN return R0(0)
+  end

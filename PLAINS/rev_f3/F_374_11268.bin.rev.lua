@@ -1,0 +1,81 @@
+
+===== fn#0 '@src/catchGame/configReader/CrowdFundDreamConfig.lua' (64 instr, depth 0) =====
+local g1 = <G 'require'>
+local c2 = 'catchGame/configReader/BaseReader'
+g1 = g1(c2)
+c2 = <G 'class'>
+local c3 = 'CrowdFundDreamConfig'
+local v4 = g1
+c2 = c2(c3, v4)
+c2['configID'] = 1.0
+c3 = 'OneYuanRaffleTimeStampClear'
+v4 = <G 'tostring'>
+local g5 = <G 'cg'>
+g5 = g5['Player']
+g5 = g5['uid']
+v4 = v4(g5)
+c3 = c3 .. v4
+v4 = 'OneYuanRaffleHasShopNewTime'
+g5 = <G 'tostring'>
+local g6 = <G 'cg'>
+g6 = g6['Player']
+g6 = g6['uid']
+g5 = g5(g6)
+v4 = v4 .. g5
+g5 = <imm0>
+c2['dealDatas'] = g5
+g5 = <imm1>
+c2['initPoolsFunc'] = g5
+g5 = <imm2>
+c2['initPools'] = g5
+g5 = <imm3>
+c2['initWishPools'] = g5
+g5 = <imm4>
+c2['initPrices'] = g5
+g5 = <imm5>
+c2['getConfig'] = g5
+g5 = <imm6>
+c2['getRankConfig'] = g5
+g5 = <imm7>
+c2['getShopConfig'] = g5
+g5 = <imm8>
+c2['initDreamShop'] = g5
+g5 = <imm9>
+c2['getDreamShopFashionConfig'] = g5
+g5 = <imm10>
+c2['getDreamShopOtherConfig'] = g5
+g5 = <imm11>
+c2['getDreamFashionShopInfo'] = g5
+g5 = <imm12>
+c2['getDreamOtherShopInfo'] = g5
+g5 = <imm13>
+g1 = c3
+c2['checkClearRedDot'] = g5
+g5 = <imm14>
+g1 = c3
+c2['setClearRedDot'] = g5
+g5 = <imm15>
+g1 = v4
+c2['checkShopHasNewItem'] = g5
+g5 = <imm16>
+g1 = v4
+c2['setShopHasNewItem'] = g5
+g5 = <imm17>
+c2['getShopTime'] = g5
+return c2
+return g1
+
+===== fn#0 '' (9 instr, depth 1) =====
+local m1 = R0:'initPools'
+local s2 = R0
+m1 = m1(s2)
+m1 = R0:'initWishPools'
+s2 = R0
+m1 = m1(s2)
+m1 = R0:'initPrices'
+s2 = R0
+m1 = m1(s2)
+m1 = R0:'initDreamShop'
+s2 = R0
+m1 = m1(s2)
+return R0

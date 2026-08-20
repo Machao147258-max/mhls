@@ -1,0 +1,49 @@
+
+===== fn#0 '@src/catchGame/data/partner_skill_unlock.lua' (47 instr, depth 0) =====
+local t1 = {}
+local t2 = {}
+t2['id'] = 40001.0
+t2['user'] = 2.0
+t2['name'] = '张望'
+t2['gradeType'] = 0.0
+t1[40001.0] = t2
+t2 = {}
+t2['id'] = 40002.0
+t2['user'] = 2.0
+t2['name'] = '陷阱'
+t2['gradeType'] = 0.0
+t2['costCoin1Id'] = 4.0
+t2['costCoin1Num'] = 20000.0
+t1[40002.0] = t2
+t2 = {}
+t2['id'] = 40003.0
+t2['user'] = 2.0
+t2['name'] = '强化'
+t2['gradeType'] = 0.0
+t2['costCoin1Id'] = 4.0
+t2['costCoin1Num'] = 20000.0
+t1[40003.0] = t2
+t2 = {}
+t2['id'] = 40004.0
+t2['user'] = 1.0
+t2['name'] = '专注'
+t2['gradeType'] = 0.0
+t1[40004.0] = t2
+t2 = {}
+t2['id'] = 40005.0
+t2['user'] = 1.0
+t2['name'] = '逃跑'
+t2['gradeType'] = 0.0
+t2['costCoin1Id'] = 4.0
+t2['costCoin1Num'] = 20000.0
+t1[40005.0] = t2
+t2 = {}
+t2['id'] = 40006.0
+t2['user'] = 1.0
+t2['name'] = '恢复'
+t2['gradeType'] = 0.0
+t2['costCoin1Id'] = 4.0
+t2['costCoin1Num'] = 20000.0
+t1[40006.0] = t2
+return t1
+return t1

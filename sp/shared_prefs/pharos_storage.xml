@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="https://impression.update.netease.com/pharos/v2/h18.txt_hash">52068e2750846aa5847ad51acdeef883</string>
+    <string name="https://impression.update.netease.com/pharos/explore/beacon_cn.txt_hash">0a1ec31e6940e60c1884cf13022e7f60</string>
+    <string name="https://impression.update.netease.com/lighten/h18/cn-cmccv6.txt_hash">1b88f0e3d4e17fef4c9ca8c948738466</string>
+    <string name="https://impression.update.netease.com/pharos/v2/h18.txt_tag">&quot;722-621bec787c5de&quot;</string>
+    <string name="https://impression.update.netease.com/pharos/explore/beacon_cn.txt_tag">&quot;464-6202bf5815c5e&quot;</string>
+    <string name="https://impression.update.netease.com/lighten/h18/cn-cmccv6.txt_tag">&quot;fb1-651be29894581&quot;</string>
+</map>

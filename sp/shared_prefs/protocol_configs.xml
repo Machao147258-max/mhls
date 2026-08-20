@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="protocol_app_install_time" value="1786800600876" />
+    <long name="protocol_update_time" value="20680" />
+    <string name="a80812b442c3dca9d5d72d2b68edbfdc">&quot;20240614:25e942f5fc5a2c7b17507691f1dd60fa&quot;</string>
+    <string name="758f54dc007cf99dfb505e6e7aba8f01">&quot;19C222B43B8-126e6fcc308bb69c42d26f9276a40fbc&quot;</string>
+    <boolean name="protocol_launch_accept" value="true" />
+    <int name="protocol_app_version" value="291" />
+</map>

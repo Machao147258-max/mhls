@@ -1,0 +1,10 @@
+[*] tb_tom_engine
+[MAPS] 400020e00000-400020e01000 r--p 00000000 08:23 1704226                    /data/app/~~5CZkBBLLwHbP9EHvftB3AQ==/com.netease.tom-TkEp
+[MAPS] 400020e01000-400020ee9000 r--p 00001000 08:23 1704226                    /data/app/~~5CZkBBLLwHbP9EHvftB3AQ==/com.netease.tom-TkEp
+[MAPS] 400020ee9000-400021050000 r--p 000e9000 08:23 1704226                    /data/app/~~5CZkBBLLwHbP9EHvftB3AQ==/com.netease.tom-TkEp
+[MAPS] 400021050000-400021e03000 r--p 00250000 08:23 1704226                    /data/app/~~5CZkBBLLwHbP9EHvftB3AQ==/com.netease.tom-TkEp
+[MAPS] 400021e12000-400022383000 rw-p 01002000 08:23 1704226                    /data/app/~~5CZkBBLLwHbP9EHvftB3AQ==/com.netease.tom-TkEp
+[MAPS] 4000223b1000-400022706000 r--p 01574000 08:23 1704226                    /data/app/~~5CZkBBLLwHbP9EHvftB3AQ==/com.netease.tom-TkEp
+[MAPS] 400024680000-4000246d1000 r--p 00000000 08:23 1704214                    /data/app/~~5CZkBBLLwHbP9EHvftB3AQ==/com.netease.tom-TkEp
+[MAPS] 4000246e0000-4000246e2000 r--p 00050000 08:23 1704214                    /data/app/~~5CZkBBLLwHbP9EHvftB3AQ==/com.netease.tom-TkEp
+[MAPS] 4000246e2000-4000246e5000 rw-p 00052000 08:23 1704214                    /data/app/~~5CZkBBLLwHbP9EHvftB3AQ==/com.netease.tom-TkEp

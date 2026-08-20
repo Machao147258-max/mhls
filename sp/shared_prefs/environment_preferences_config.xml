@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="regex_file_url_h18">https://nos.gameyw.netease.com/gameyw-gbox/regular_encode_h18_1786954689_12e755b082d405477ebc4e3a46c060c9.json.one_z6</string>
+    <boolean name="downlaoding" value="false" />
+    <boolean name="lu" value="false" />
+    <string name="rstr">***</string>
+    <string name="drpf">drpf-dep87.proxima.nie.netease.com</string>
+    <long name="update_data_time" value="1786956904107" />
+    <boolean name="sig" value="false" />
+    <boolean name="t2s" value="true" />
+    <boolean name="enable" value="true" />
+    <long name="update_interval" value="3600000" />
+    <boolean name="un" value="true" />
+    <long name="task_timeout" value="3000" />
+    <boolean name="f2h" value="true" />
+</map>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_LionDanceCat_248850489" value="0" />
+    <string name="ActivityBubbleClicked_1043248850489"></string>
+    <boolean name="showBucketBubbleMouse" value="true" />
+    <string name="app_version">7.45.0</string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_AnniversaryGala5th_248850489" value="0" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_Thanksgiving2023_248850489" value="0" />
+    <boolean name="RoleMatchLayerAutoShowBubble" value="true" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_OGLotteryRank_248850489" value="0" />
+    <int name="FLOWBACK_QUEST_TAB_INDEX_0" value="1" />
+    <boolean name="LOW_RES_READY" value="true" />
+    <string name="AVATAR_MD5:69bd5aa3759283bbaa1840e3dpb8pJ7W07.png">ad44c1b868f617abe26d7d6f29dc214f</string>
+    <string name="TogVoice"></string>
+    <boolean name="launcherUpdateStart" value="false" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_OperaPhantom_248850489" value="0" />
+    <string name="LAUNCH_UDID">debcbe7ca672d9d876</string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_SpringFestival2024_248850489" value="0" />
+    <boolean name="filesUpdateStart" value="false" />
+    <boolean name="FORCE_CHECK_PATCH" value="false" />
+    <string name="AVATAR_MD5:6a802a5b5b9282255ae1a03byes97E0307.png">b5b4e112848038a82905c0f4631efe70</string>
+    <string name="ActivityBubbleClicked_414248850489"></string>
+    <string name="taskRedDot">{}</string>
+    <string name="ActivityBubbleClicked_251248850489"></string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_AgentAction_248850489" value="0" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_MasteryPath_248850489" value="0" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_CatHighestLevel_248850489" value="0" />
+    <string name="firstOpenTime">1786801928</string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_CatPlay_248850489" value="1" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_PortraitCollectionCount_248850489" value="1" />
+    <string name="releaseNoteHideDay">08/17/26</string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_PersonalZoneMedal_47_248850489" value="0" />
+    <string name="pre_patch_version_2">0</string>
+    <string name="TogMusic"></string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_ToyKindom2024_248850489" value="0" />
+    <string name="last_app_verison">7.45.0</string>
+    <int name="SEND_RECONNECT" value="0" />
+    <int name="BattleCrashNum" value="0" />
+    <string name="ActivityBubbleClicked_507248850489"></string>
+    <string name="TogMicroVoice">0.5</string>
+    <int name="SHOW_ACTIVITY" value="0" />
+    <boolean name="verify_result" value="true" />
+    <string name="AVATAR_MD5:6a80addc3bcec3d9f5677195GUsfxxxY07.png">05b01844e9d546d09d9a2351bc17c03e</string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_SP2025_248850489" value="0" />
+    <int name="showNewbieLayerTimes" value="1" />
+    <int name="showNewbieLayerTime" value="1786956957" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_SpringFestival2025_248850489" value="0" />
+    <int name="FirstChargePosterHomeShow_248850489" value="1786803952" />
+    <int name="firstLoginDate" value="1786723200" />
+    <string name="last_copy_app_version"></string>
+    <boolean name="HasEnteredGame" value="true" />
+    <boolean name="isFirstUseAstc" value="false" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_SixAnniversary_248850489" value="0" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_CollectionLevel_248850489" value="0" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_LoginCount_248850489" value="0" />
+    <string name="ActivityBubbleClicked_419248850489"></string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_MagicalBrush_248850489" value="0" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_SweetAchievement_248850489" value="0" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_CanFactory_248850489" value="0" />
+    <string name="SetDefalutSetting">true</string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_Thanksgiving2024_248850489" value="0" />
+    <int name="releaseNoteVersion" value="12" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_FRIST_248850489" value="1" />
+    <string name="AVATAR_MD5:6a7ecef30e296cd6d56fcd4eWGzGPKtK07.png">b4fc17b568a046020c6569511192b596</string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_SevenAnniversary_248850489" value="0" />
+    <string name="AVATAR_MD5:6a7f1cda9fb38a230ee92842oG8Isjs807.png">9442d8a8053a70a627a8e564c43500d6</string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_LionDanceMice_248850489" value="0" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_CatLadderLevel_248850489" value="0" />
+    <string name="AVATAR_MD5:6a6a06c450f713198ae748d3vRLrqWJP07.png">3398a863bef3c1c72ea5900d5a4fb2bb</string>
+    <int name="lastStoragePermissionTime" value="1786803240" />
+    <int name="HIGH_FPS" value="1" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_VanguardGoodPlayerCount_248850489" value="0" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_TeacherInfo_248850489" value="0" />
+    <int name="LAST_SUPPORT_ASTC" value="1" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_FashionCollectionCount_248850489" value="1" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_MouseHighestLevel_248850489" value="0" />
+    <string name="lastRecordCopyPath">{}</string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_MouseLadderLevel_248850489" value="0" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_PortraitFrameCollectionCount_248850489" value="1" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_SEASON_248850489" value="30" />
+    <boolean name="RUN_PROFILE_PASSED" value="true" />
+    <int name="FLOWBACK_QUEST_TAB_INDEX_248850489" value="1" />
+    <string name="AVATAR_MD5:6a81056a6118bfa8b841bdbdWbGYjaD407.png">20ef30d021cf83724bb2389f49fed865</string>
+    <string name="AVATAR_MD5:6a688892025828b5d1a5d694aovbE1s307.png">178182fa6ec12a3d459d12e48402bb4b</string>
+    <string name="TogSound"></string>
+    <string name="pre_patch_server_id_2">21001</string>
+    <int name="RECORD_NEW_ZONE_INFO_DATA_Thanksgiving2025_248850489" value="0" />
+    <int name="RECORD_NEW_ZONE_INFO_DATA_MicePlay_248850489" value="1" />
+</map>

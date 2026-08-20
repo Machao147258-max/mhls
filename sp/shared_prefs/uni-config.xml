@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="libunisec_x86_64.so" value="2653650645" />
+    <long name="sdk_int" value="35" />
+    <string name="incremental">700</string>
+    <long name="_ntcfg_crc" value="2660438598" />
+</map>

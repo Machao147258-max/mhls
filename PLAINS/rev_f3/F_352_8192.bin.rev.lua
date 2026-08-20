@@ -1,0 +1,54 @@
+
+===== fn#0 '@src/catchGame/data/map_deco_total_collection.lua' (52 instr, depth 0) =====
+local t1 = {}
+local t2 = {}
+t2['id'] = 1.0
+t2['unlockNeedNum'] = 20.0
+t2['rewardItemType'] = 8.0
+t2['rewardItemID'] = 731.0
+t2['rewardItemNum'] = 1.0
+t1[1.0] = t2
+t2 = {}
+t2['id'] = 2.0
+t2['unlockNeedNum'] = 40.0
+t2['rewardItemType'] = 4.0
+t2['rewardItemID'] = 4000113.0
+t2['rewardItemNum'] = 8.0
+t1[2.0] = t2
+t2 = {}
+t2['id'] = 3.0
+t2['unlockNeedNum'] = 60.0
+t2['rewardItemType'] = 8.0
+t2['rewardItemID'] = 732.0
+t2['rewardItemNum'] = 1.0
+t1[3.0] = t2
+t2 = {}
+t2['id'] = 4.0
+t2['unlockNeedNum'] = 90.0
+t2['rewardItemType'] = 12.0
+t2['rewardItemID'] = 20011109.0
+t2['rewardItemNum'] = 1.0
+t1[4.0] = t2
+t2 = {}
+t2['id'] = 5.0
+t2['unlockNeedNum'] = 120.0
+t2['rewardItemType'] = 2.0
+t2['rewardItemID'] = 793.0
+t2['rewardItemNum'] = 1.0
+t1[5.0] = t2
+t2 = {}
+t2['id'] = 6.0
+t2['unlockNeedNum'] = 160.0
+t2['rewardItemType'] = 21.0
+t2['rewardItemID'] = 207.0
+t2['rewardItemNum'] = 1.0
+t1[6.0] = t2
+t2 = {}
+t2['id'] = 7.0
+t2['unlockNeedNum'] = 200.0
+t2['rewardItemType'] = 35.0
+t2['rewardItemID'] = 183.0
+t2['rewardItemNum'] = 1.0
+t1[7.0] = t2
+return t1
+return t1

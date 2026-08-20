@@ -1,0 +1,80 @@
+
+===== fn#0 '@src/catchGame/matchPlugins/BaseMatchPlugin.lua' (38 instr, depth 0) =====
+local g1 = <G 'class'>
+local c2 = 'BaseMatchPlugin'
+g1 = g1(c2)
+c2 = {}
+c2[1.0] = 'Prepare'
+c2[2.0] = 'WaitingConfirm'
+c2[3.0] = 'PickingRole'
+local i3 = <imm0>
+g1['ctor'] = i3
+i3 = <imm1>
+g1 = c2
+g1['onCreateStageLayer'] = i3
+i3 = <imm2>
+g1['onRegister'] = i3
+i3 = <imm3>
+g1['getRecruitOpenState'] = i3
+i3 = <imm4>
+g1['onPrepareStartParams'] = i3
+i3 = <imm5>
+g1['validateMatchStart'] = i3
+i3 = <imm6>
+g1['onCustomRoomCreated'] = i3
+i3 = <imm7>
+g1['onCustomRoomStartGame'] = i3
+i3 = <imm8>
+g1['validateCustomRoomParams'] = i3
+i3 = <imm9>
+g1['getCustomRoomPlayers'] = i3
+i3 = <imm10>
+g1['isRankVisible'] = i3
+i3 = <imm11>
+g1['getResultExtraRewards'] = i3
+i3 = <imm12>
+g1['onEntryCheck'] = i3
+i3 = <imm13>
+g1['triggerEntry'] = i3
+return g1
+return g1
+
+===== fn#0 '' (38 instr, depth 1) =====
+local t1 = {}
+local t2 = {}
+t2['matchType'] = None
+t2['gameType'] = None
+local g3 = <G 'NetGameEnum'>
+g3 = g3['E_TEAM_TYPE']
+g3 = g3['E_TEAM_TYPE_NORMAL']
+t2['defaultTeamType'] = g3
+t1['identity'] = t2
+t2 = {}
+t2['modeInfo'] = None
+t2['stageLayers'] = None
+t2['readyTime'] = 20.0
+t2['customRoomReadyTime'] = 5.0
+t2['sortAfter'] = None
+t2['loadingLayer'] = None
+t1['display'] = t2
+t2 = {}
+t2['isMultiCamp'] = False
+t2['needRoleSelect'] = False
+t2['isRecreation'] = False
+t2['canFivePlayerTeam'] = False
+t2['supportRecmdRole'] = False
+t2['autoEnterMatchScene'] = True
+t2['skipWeaponCheck'] = False
+t2['supportPickRoleBtmFeatureSwitch'] = True
+t2['supportMapBidding'] = False
+t1['capabilities'] = t2
+t2 = {}
+t2['playerNum'] = None
+t2['pickCharMode'] = None
+t1['room'] = t2
+t2 = {}
+t2['maxMemberNum'] = None
+t1['team'] = t2
+t1['rank'] = None
+R0['config'] = t1
+return R0
