@@ -1,0 +1,318 @@
+chunk=F_4841_72b3d7e2bc80.bin  size=4841
+===== proto#0  src=src/catchGame/matchPlugins/BaseMatchPlugin.lua  lines=0-0  nparams=0 nups=0 maxstack=3 =====
+  upvalues: []
+  constants: [('str', 'class'), ('str', 'BaseMatchPlugin'), ('num', 1.0), ('str', 'Prepare'), ('num', 2.0), ('str', 'WaitingConfirm'), ('num', 3.0), ('str', 'PickingRole'), ('str', 'ctor'), ('str', 'onCreateStageLayer'), ('str', 'onRegister'), ('str', 'getRecruitOpenState'), ('str', 'onPrepareStartParams'), ('str', 'validateMatchStart'), ('str', 'onCustomRoomCreated'), ('str', 'onCustomRoomStartGame'), ('str', 'validateCustomRoomParams'), ('str', 'getCustomRoomPlayers'), ('str', 'isRankVisible'), ('str', 'getResultExtraRewards'), ('str', 'onEntryCheck'), ('str', 'triggerEntry')]
+      0  SETLIST        A=0   B=0    C=0    Bx=0      sBx=-131071
+      1  LEN            A=1   B=0    C=1    Bx=1      sBx=-131070
+      2  GETUPVAL       A=0   B=2    C=2    Bx=1026   sBx=-130045
+      3  RETURN         A=1   B=0    C=3    Bx=3      sBx=-131068
+      4  CLOSURE        A=1   B=258  C=259  Bx=132355 sBx=1284  
+      5  CLOSURE        A=1   B=260  C=261  Bx=133381 sBx=2310  
+      6  CLOSURE        A=1   B=262  C=263  Bx=134407 sBx=3336  
+      7  NEWTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071
+      8  CLOSURE        A=0   B=264  C=2    Bx=135170 sBx=4099  
+      9  NEWTABLE       A=2   B=0    C=1    Bx=1      sBx=-131070
+     10  SETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     11  CLOSURE        A=0   B=265  C=2    Bx=135682 sBx=4611  
+     12  NEWTABLE       A=2   B=0    C=2    Bx=2      sBx=-131069
+     13  CLOSURE        A=0   B=266  C=2    Bx=136194 sBx=5123  
+     14  NEWTABLE       A=2   B=0    C=3    Bx=3      sBx=-131068
+     15  CLOSURE        A=0   B=267  C=2    Bx=136706 sBx=5635  
+     16  NEWTABLE       A=2   B=0    C=4    Bx=4      sBx=-131067
+     17  CLOSURE        A=0   B=268  C=2    Bx=137218 sBx=6147  
+     18  NEWTABLE       A=2   B=0    C=5    Bx=5      sBx=-131066
+     19  CLOSURE        A=0   B=269  C=2    Bx=137730 sBx=6659  
+     20  NEWTABLE       A=2   B=0    C=6    Bx=6      sBx=-131065
+     21  CLOSURE        A=0   B=270  C=2    Bx=138242 sBx=7171  
+     22  NEWTABLE       A=2   B=0    C=7    Bx=7      sBx=-131064
+     23  CLOSURE        A=0   B=271  C=2    Bx=138754 sBx=7683  
+     24  NEWTABLE       A=2   B=0    C=8    Bx=8      sBx=-131063
+     25  CLOSURE        A=0   B=272  C=2    Bx=139266 sBx=8195  
+     26  NEWTABLE       A=2   B=0    C=9    Bx=9      sBx=-131062
+     27  CLOSURE        A=0   B=273  C=2    Bx=139778 sBx=8707  
+     28  NEWTABLE       A=2   B=0    C=10   Bx=10     sBx=-131061
+     29  CLOSURE        A=0   B=274  C=2    Bx=140290 sBx=9219  
+     30  NEWTABLE       A=2   B=0    C=11   Bx=11     sBx=-131060
+     31  CLOSURE        A=0   B=275  C=2    Bx=140802 sBx=9731  
+     32  NEWTABLE       A=2   B=0    C=12   Bx=12     sBx=-131059
+     33  CLOSURE        A=0   B=276  C=2    Bx=141314 sBx=10243 
+     34  NEWTABLE       A=2   B=0    C=13   Bx=13     sBx=-131058
+     35  CLOSURE        A=0   B=277  C=2    Bx=141826 sBx=10755 
+     36  GETGLOBAL      A=0   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     37  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#0 : kid#0 ---
+===== proto#0  src=  lines=76-112  nparams=1 nups=0 maxstack=4 =====
+  upvalues: []
+  constants: [('str', 'config'), ('str', 'identity'), ('str', 'matchType'), ('nil', None), ('str', 'gameType'), ('str', 'defaultTeamType'), ('str', 'NetGameEnum'), ('str', 'E_TEAM_TYPE'), ('str', 'E_TEAM_TYPE_NORMAL'), ('str', 'display'), ('str', 'modeInfo'), ('str', 'stageLayers'), ('str', 'readyTime'), ('num', 20.0), ('str', 'customRoomReadyTime'), ('num', 5.0), ('str', 'sortAfter'), ('str', 'loadingLayer'), ('str', 'capabilities'), ('str', 'isMultiCamp'), ('bool', 0), ('str', 'needRoleSelect'), ('str', 'isRecreation'), ('str', 'canFivePlayerTeam'), ('str', 'supportRecmdRole'), ('str', 'autoEnterMatchScene'), ('bool', 1), ('str', 'skipWeaponCheck'), ('str', 'supportPickRoleBtmFeatureSwitch'), ('str', 'supportMapBidding'), ('str', 'room'), ('str', 'playerNum'), ('str', 'pickCharMode'), ('str', 'team'), ('str', 'maxMemberNum'), ('str', 'rank')]
+      0  RETURN         A=1   B=0    C=6    Bx=6      sBx=-131065
+      1  RETURN         A=2   B=0    C=3    Bx=3      sBx=-131068
+      2  CLOSURE        A=2   B=258  C=259  Bx=132355 sBx=1284  
+      3  CLOSURE        A=2   B=260  C=259  Bx=133379 sBx=2308  
+      4  SETLIST        A=3   B=0    C=6    Bx=6      sBx=-131065
+      5  POW            A=3   B=3    C=263  Bx=1799   sBx=-129272
+      6  POW            A=3   B=3    C=264  Bx=1800   sBx=-129271
+      7  CLOSURE        A=2   B=261  C=3    Bx=133635 sBx=2564  
+      8  CLOSURE        A=1   B=257  C=2    Bx=131586 sBx=515   
+      9  RETURN         A=2   B=0    C=6    Bx=6      sBx=-131065
+     10  CLOSURE        A=2   B=266  C=259  Bx=136451 sBx=5380  
+     11  CLOSURE        A=2   B=267  C=259  Bx=136963 sBx=5892  
+     12  CLOSURE        A=2   B=268  C=269  Bx=137485 sBx=6414  
+     13  CLOSURE        A=2   B=270  C=271  Bx=138511 sBx=7440  
+     14  CLOSURE        A=2   B=272  C=259  Bx=139523 sBx=8452  
+     15  CLOSURE        A=2   B=273  C=259  Bx=140035 sBx=8964  
+     16  CLOSURE        A=1   B=265  C=2    Bx=135682 sBx=4611  
+     17  RETURN         A=2   B=0    C=9    Bx=9      sBx=-131062
+     18  CLOSURE        A=2   B=275  C=276  Bx=141076 sBx=10005 
+     19  CLOSURE        A=2   B=277  C=276  Bx=142100 sBx=11029 
+     20  CLOSURE        A=2   B=278  C=276  Bx=142612 sBx=11541 
+     21  CLOSURE        A=2   B=279  C=276  Bx=143124 sBx=12053 
+     22  CLOSURE        A=2   B=280  C=276  Bx=143636 sBx=12565 
+     23  CLOSURE        A=2   B=281  C=282  Bx=144154 sBx=13083 
+     24  CLOSURE        A=2   B=283  C=276  Bx=145172 sBx=14101 
+     25  CLOSURE        A=2   B=284  C=282  Bx=145690 sBx=14619 
+     26  CLOSURE        A=2   B=285  C=276  Bx=146196 sBx=15125 
+     27  CLOSURE        A=1   B=274  C=2    Bx=140290 sBx=9219  
+     28  RETURN         A=2   B=0    C=2    Bx=2      sBx=-131069
+     29  CLOSURE        A=2   B=287  C=259  Bx=147203 sBx=16132 
+     30  CLOSURE        A=2   B=288  C=259  Bx=147715 sBx=16644 
+     31  CLOSURE        A=1   B=286  C=2    Bx=146434 sBx=15363 
+     32  RETURN         A=2   B=0    C=1    Bx=1      sBx=-131070
+     33  CLOSURE        A=2   B=290  C=259  Bx=148739 sBx=17668 
+     34  CLOSURE        A=1   B=289  C=2    Bx=147970 sBx=16899 
+     35  CLOSURE        A=1   B=291  C=259  Bx=149251 sBx=18180 
+     36  CLOSURE        A=0   B=256  C=1    Bx=131073 sBx=2     
+     37  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#1 : kid#1 ---
+===== proto#1  src=  lines=118-147  nparams=3 nups=1 maxstack=12 =====
+  upvalues: ['StageKeyMap']
+  constants: [('str', 'cg'), ('str', 'systems'), ('str', 'matchSystem'), ('str', 'MatchStage'), ('str', 'WaitingConfirm'), ('str', 'readyTime'), ('str', 'config'), ('str', 'display'), ('str', 'customRoomSystem'), ('str', 'isInRoom'), ('str', 'customRoomReadyTime'), ('str', 'stageLayers'), ('str', 'Game'), ('str', 'createLayer')]
+      0  SETLIST        A=3   B=0    C=0    Bx=0      sBx=-131071
+      1  POW            A=3   B=3    C=257  Bx=1793   sBx=-129278
+      2  POW            A=3   B=3    C=258  Bx=1794   sBx=-129277
+      3  POW            A=3   B=3    C=259  Bx=1795   sBx=-129276
+      4  POW            A=4   B=3    C=260  Bx=1796   sBx=-129275
+      5  JMP            A=0   B=1    C=4    Bx=516    sBx=-130555
+      6  CONCAT         A=0   B=256  C=29   Bx=131101 sBx=30    
+      7  POW            A=4   B=2    C=261  Bx=1285   sBx=-129786
+      8  MUL            A=4   B=0    C=1    Bx=1      sBx=-131070
+      9  CONCAT         A=0   B=256  C=26   Bx=131098 sBx=27    
+     10  POW            A=4   B=0    C=262  Bx=262    sBx=-130809
+     11  POW            A=4   B=4    C=263  Bx=2311   sBx=-128760
+     12  MUL            A=4   B=0    C=0    Bx=0      sBx=-131071
+     13  CONCAT         A=0   B=256  C=22   Bx=131094 sBx=23    
+     14  SETLIST        A=5   B=0    C=0    Bx=0      sBx=-131071
+     15  POW            A=5   B=5    C=257  Bx=2817   sBx=-128254
+     16  POW            A=5   B=5    C=264  Bx=2824   sBx=-128247
+     17  MUL            A=5   B=0    C=0    Bx=0      sBx=-131071
+     18  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+     19  SETLIST        A=5   B=0    C=0    Bx=0      sBx=-131071
+     20  POW            A=5   B=5    C=257  Bx=2817   sBx=-128254
+     21  POW            A=5   B=5    C=264  Bx=2824   sBx=-128247
+     22  TFORLOOP       A=5   B=5    C=265  Bx=2825   sBx=-128246
+     23  GETUPVAL       A=5   B=2    C=2    Bx=1026   sBx=-130045
+     24  MUL            A=5   B=0    C=0    Bx=0      sBx=-131071
+     25  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+     26  POW            A=6   B=4    C=266  Bx=2314   sBx=-128757
+     27  MUL            A=6   B=0    C=0    Bx=0      sBx=-131071
+     28  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+     29  POW            A=6   B=4    C=266  Bx=2314   sBx=-128757
+     30  CLOSURE        A=2   B=261  C=6    Bx=133638 sBx=2567  
+     31  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+     32  POW            A=6   B=4    C=261  Bx=2309   sBx=-128762
+     33  MUL            A=6   B=0    C=0    Bx=0      sBx=-131071
+     34  CONCAT         A=0   B=256  C=1    Bx=131073 sBx=2     
+     35  POW            A=6   B=4    C=261  Bx=2309   sBx=-128762
+     36  CLOSURE        A=2   B=261  C=6    Bx=133638 sBx=2567  
+     37  POW            A=4   B=0    C=262  Bx=262    sBx=-130809
+     38  POW            A=4   B=4    C=263  Bx=2311   sBx=-128760
+     39  MUL            A=4   B=0    C=1    Bx=1      sBx=-131070
+     40  CONCAT         A=0   B=256  C=1    Bx=131073 sBx=2     
+     41  FORLOOP        A=5   B=5    C=0    Bx=2560   sBx=-128511
+     42  GETGLOBAL      A=5   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     43  POW            A=5   B=4    C=267  Bx=2315   sBx=-128756
+     44  MUL            A=5   B=0    C=1    Bx=1      sBx=-131070
+     45  CONCAT         A=0   B=256  C=1    Bx=131073 sBx=2     
+     46  FORLOOP        A=6   B=6    C=0    Bx=3072   sBx=-127999
+     47  GETGLOBAL      A=6   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     48  SETTABLE       A=6   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     49  POW            A=6   B=6    C=1    Bx=3073   sBx=-127998
+     50  MUL            A=6   B=0    C=1    Bx=1      sBx=-131070
+     51  CONCAT         A=0   B=256  C=1    Bx=131073 sBx=2     
+     52  FORLOOP        A=7   B=7    C=0    Bx=3584   sBx=-127487
+     53  GETGLOBAL      A=7   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     54  POW            A=7   B=5    C=6    Bx=2566   sBx=-128505
+     55  MUL            A=7   B=0    C=0    Bx=0      sBx=-131071
+     56  CONCAT         A=0   B=256  C=6    Bx=131078 sBx=7     
+     57  SETLIST        A=8   B=0    C=0    Bx=0      sBx=-131071
+     58  POW            A=8   B=8    C=268  Bx=4364   sBx=-126707
+     59  TFORLOOP       A=8   B=8    C=269  Bx=4365   sBx=-126706
+     60  SETGLOBAL      A=10  B=7    C=0    Bx=3584   sBx=-127487 K3584=?
+     61  SETGLOBAL      A=11  B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     62  LOADNIL        A=8   B=4    C=0    Bx=2048   sBx=-129023
+     63  GETGLOBAL      A=8   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'cg')
+     64  FORLOOP        A=8   B=8    C=0    Bx=4096   sBx=-126975
+     65  GETGLOBAL      A=8   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     66  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#2 : kid#2 ---
+===== proto#2  src=  lines=150-152  nparams=1 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: []
+      0  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#3 : kid#3 ---
+===== proto#3  src=  lines=156-158  nparams=1 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: []
+      0  GETGLOBAL      A=1   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      1  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#4 : kid#4 ---
+===== proto#4  src=  lines=161-163  nparams=2 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: []
+      0  GETGLOBAL      A=1   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      1  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#5 : kid#5 ---
+===== proto#5  src=  lines=166-168  nparams=1 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: []
+      0  CALL           A=1   B=1    C=0    Bx=512    sBx=-130559
+      1  GETGLOBAL      A=1   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      2  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#6 : kid#6 ---
+===== proto#6  src=  lines=171-173  nparams=2 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: []
+      0  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#7 : kid#7 ---
+===== proto#7  src=  lines=176-178  nparams=1 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: []
+      0  CALL           A=1   B=0    C=0    Bx=0      sBx=-131071
+      1  GETGLOBAL      A=1   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      2  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#8 : kid#8 ---
+===== proto#8  src=  lines=181-183  nparams=1 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: []
+      0  CALL           A=1   B=1    C=0    Bx=512    sBx=-130559
+      1  GETGLOBAL      A=1   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      2  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#9 : kid#9 ---
+===== proto#9  src=  lines=187-190  nparams=2 nups=0 maxstack=3 =====
+  upvalues: []
+  constants: []
+      0  GETGLOBAL      A=2   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      1  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#10 : kid#10 ---
+===== proto#10  src=  lines=198-200  nparams=1 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: []
+      0  CALL           A=1   B=1    C=0    Bx=512    sBx=-130559
+      1  GETGLOBAL      A=1   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      2  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#11 : kid#11 ---
+===== proto#11  src=  lines=212-214  nparams=2 nups=0 maxstack=3 =====
+  upvalues: []
+  constants: []
+      0  GETGLOBAL      A=2   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      1  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#12 : kid#12 ---
+===== proto#12  src=  lines=222-224  nparams=1 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: []
+      0  CALL           A=1   B=1    C=0    Bx=512    sBx=-130559
+      1  GETGLOBAL      A=1   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      2  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#13 : kid#13 ---
+===== proto#13  src=  lines=230-246  nparams=2 nups=0 maxstack=11 =====
+  upvalues: []
+  constants: [('str', 'onEntryCheck'), ('str', 'cg'), ('str', 'systems'), ('str', 'matchSystem'), ('str', 'checkEntry'), ('str', 'Utils'), ('str', 'TeamToast'), ('str', 'config'), ('str', 'identity'), ('str', 'matchType'), ('str', 'gameType'), ('str', 'matchRoleType'), ('str', 'teamSystem'), ('str', 'judgeMemberNum'), ('str', 'isInTeam'), ('str', 'isLeader'), ('str', 'changeGameType'), ('str', 'setCurrTeamType'), ('str', 'enterMatchScene'), ('str', 'forceEnterScene')]
+      0  TFORLOOP       A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+      2  MUL            A=2   B=0    C=1    Bx=1      sBx=-131070
+      3  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+      4  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      5  SETLIST        A=2   B=0    C=1    Bx=1      sBx=-131070
+      6  POW            A=2   B=2    C=258  Bx=1282   sBx=-129789
+      7  POW            A=2   B=2    C=259  Bx=1283   sBx=-129788
+      8  TFORLOOP       A=2   B=2    C=260  Bx=1284   sBx=-129787
+      9  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+     10  MUL            A=2   B=0    C=1    Bx=1      sBx=-131070
+     11  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     12  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     13  SETLIST        A=2   B=0    C=1    Bx=1      sBx=-131070
+     14  POW            A=2   B=2    C=261  Bx=1285   sBx=-129786
+     15  POW            A=2   B=2    C=262  Bx=1286   sBx=-129785
+     16  GETUPVAL       A=2   B=1    C=2    Bx=514    sBx=-130557
+     17  MUL            A=2   B=0    C=1    Bx=1      sBx=-131070
+     18  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     19  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     20  POW            A=2   B=0    C=263  Bx=263    sBx=-130808
+     21  POW            A=2   B=2    C=264  Bx=1288   sBx=-129783
+     22  POW            A=2   B=2    C=265  Bx=1289   sBx=-129782
+     23  POW            A=3   B=0    C=263  Bx=263    sBx=-130808
+     24  POW            A=3   B=3    C=264  Bx=1800   sBx=-129271
+     25  POW            A=3   B=3    C=266  Bx=1802   sBx=-129269
+     26  POW            A=4   B=0    C=263  Bx=263    sBx=-130808
+     27  POW            A=4   B=4    C=264  Bx=2312   sBx=-128759
+     28  POW            A=4   B=4    C=267  Bx=2315   sBx=-128756
+     29  SETLIST        A=5   B=0    C=1    Bx=1      sBx=-131070
+     30  POW            A=5   B=5    C=258  Bx=2818   sBx=-128253
+     31  POW            A=5   B=5    C=268  Bx=2828   sBx=-128243
+     32  TFORLOOP       A=5   B=5    C=269  Bx=2829   sBx=-128242
+     33  SETGLOBAL      A=7   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     34  GETUPVAL       A=5   B=3    C=2    Bx=1538   sBx=-129533
+     35  MUL            A=5   B=0    C=0    Bx=0      sBx=-131071
+     36  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     37  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     38  SETLIST        A=5   B=0    C=1    Bx=1      sBx=-131070
+     39  POW            A=5   B=5    C=258  Bx=2818   sBx=-128253
+     40  POW            A=5   B=5    C=268  Bx=2828   sBx=-128243
+     41  TFORLOOP       A=5   B=5    C=270  Bx=2830   sBx=-128241
+     42  GETUPVAL       A=5   B=2    C=2    Bx=1026   sBx=-130045
+     43  MUL            A=5   B=0    C=0    Bx=0      sBx=-131071
+     44  CONCAT         A=0   B=256  C=14   Bx=131086 sBx=15    
+     45  SETLIST        A=6   B=0    C=1    Bx=1      sBx=-131070
+     46  POW            A=6   B=6    C=258  Bx=3330   sBx=-127741
+     47  POW            A=6   B=6    C=268  Bx=3340   sBx=-127731
+     48  TFORLOOP       A=6   B=6    C=271  Bx=3343   sBx=-127728
+     49  GETUPVAL       A=6   B=2    C=2    Bx=1026   sBx=-130045
+     50  MUL            A=6   B=0    C=0    Bx=0      sBx=-131071
+     51  CONCAT         A=0   B=256  C=7    Bx=131079 sBx=8     
+     52  SETLIST        A=6   B=0    C=1    Bx=1      sBx=-131070
+     53  POW            A=6   B=6    C=258  Bx=3330   sBx=-127741
+     54  POW            A=6   B=6    C=268  Bx=3340   sBx=-127731
+     55  TFORLOOP       A=6   B=6    C=272  Bx=3344   sBx=-127727
+     56  SETGLOBAL      A=8   B=3    C=0    Bx=1536   sBx=-129535 K1536=?
+     57  FORLOOP        A=9   B=9    C=0    Bx=4608   sBx=-126463
+     58  SETGLOBAL      A=10  B=4    C=0    Bx=2048   sBx=-129023 K2048=?
+     59  GETUPVAL       A=6   B=5    C=1    Bx=2561   sBx=-128510
+     60  MUL            A=5   B=0    C=1    Bx=1      sBx=-131070
+     61  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+     62  SETLIST        A=6   B=0    C=1    Bx=1      sBx=-131070
+     63  POW            A=6   B=6    C=258  Bx=3330   sBx=-127741
+     64  POW            A=6   B=6    C=268  Bx=3340   sBx=-127731
+     65  TFORLOOP       A=6   B=6    C=273  Bx=3345   sBx=-127726
+     66  SETGLOBAL      A=8   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     67  GETUPVAL       A=6   B=3    C=1    Bx=1537   sBx=-129534
+     68  SETLIST        A=6   B=0    C=1    Bx=1      sBx=-131070
+     69  POW            A=6   B=6    C=261  Bx=3333   sBx=-127738
+     70  POW            A=6   B=6    C=274  Bx=3346   sBx=-127725
+     71  RETURN         A=7   B=0    C=2    Bx=2      sBx=-131069
+     72  CLOSURE        A=7   B=265  C=2    Bx=135682 sBx=4611  
+     73  CLOSURE        A=7   B=275  C=1    Bx=140801 sBx=9730  
+     74  GETUPVAL       A=6   B=2    C=1    Bx=1025   sBx=-130046
+     75  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?

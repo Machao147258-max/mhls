@@ -1,0 +1,40 @@
+
+===== fn#0 (928 instr) 未知op 命中 17 ====
+  [ 23] MOVE      A=  3 B=  0 C=  2
+  [ 24] CALL      A=  3 B=  2 C=  1
+>>[ 25] SETGLOBAL A=  3 Bx=   13
+  [ 26] GETGLOBAL A=  3 Bx=   14 Bx=kb'cc'
+  [ 27] GETTABLE  A=  3 B=271 C=  3 B=kb'Application'
+---
+  [ 54] LOADNIL   A=  4 B=  1 C=  0
+  [ 55] LOADNIL   A=  4 B=  0 C=  1
+>>[ 56] SETGLOBAL A=  4 Bx=   18
+  [ 57] GETGLOBAL A=  4 Bx=   18 Bx=kb'USE_BASE'
+  [ 58] TEST      A=  4 B=  1 C=  0
+---
+  [275] LOADK     A= 35 Bx=   81
+  [276] MOVE      A= 36 B=  0 C= 32
+>>[277] LEN       A= 32 B= 36 C= 35
+  [278] JMP       A=  0 sBx=    21
+  [279] GETGLOBAL A= 35 Bx=   19 Bx=kb'userext'
+---
+  [281] TEST      A= 35 B=  0 C=  0
+  [282] JMP       A=  0 sBx=    17
+>>[283] LT        A=  0 B= 33 C=339 C=k2560.0
+  [284] JMP       A=  0 sBx=    15
+  [285] LOADK     A= 32 Bx=   84
+---
+  [304] MOVE      A= 35 B=  0 C= 32
+  [305] LOADK     A= 36 Bx=   87
+>>[306] LEN       A= 32 B= 36 C= 35
+  [307] GETGLOBAL A= 35 Bx=   19 Bx=kb'userext'
+  [308] GETTABLE  A= 35 B=344 C= 35 B=kb'OPEN_MODULE'
+---
+
+===== fn#0 (152 instr) 未知op 命中 1 ====
+  [ 36] MOVE      A=  7 B=  0 C=  4
+  [ 37] CALL      A=  5 B=  1 C=  3
+>>[ 38] LT        A=  0 B=  4 C=272 C=k1228.8
+  [ 39] JMP       A=  0 sBx=     2
+  [ 40] LOADNIL   A=  2 B=  0 C=  1
+---

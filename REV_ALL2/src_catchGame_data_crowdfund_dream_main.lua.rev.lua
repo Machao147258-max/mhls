@@ -1,0 +1,36 @@
+-- [[ src/catchGame/data/crowdfund_dream_main.lua ]]  src=src/catchGame/data/crowdfund_dream_main.lua size=8192
+-- top: code=35 consts=56 protos=0
+
+local t_1 = {}  -- NEWTABLE arr=1 hash=1
+local t_2 = {}  -- NEWTABLE arr=1 hash=24
+t_2[1] = 'id'
+t_2[230] = 'maxPlayerNum'
+t_2[567] = 'giftID'
+t_2[4] = 'costItemType'
+t_2[4000116] = 'costItemID'
+t_2['2,20,40'] = 'costItemNum'
+t_2[1] = 'costItemDiscountNum'
+t_2[50] = 'perCostItemWeight'
+t_2[1] = 'perAllocateCoinWeight'
+t_2[3600] = 'allocateCoinWeightLimit'
+t_2[83] = 'allocateCoinID'
+t_2[30] = 'perCostItemToCoin'
+t_2[4000] = 'allocateCoinLimit'
+t_2[3600] = 'winItemToCoin'
+t_2[200] = 'dreamPercent'
+t_2[1] = 'needGetWinPlayerReward'
+t_2[10053] = 'allocateRankMailID'
+t_2[20] = 'allocateRankPlayerNum'
+t_2['crowdfund_dream_rank'] = 'allocateRankRewardConfig'
+t_2['crowdfund_dream_store'] = 'storeConfig'
+t_2[3] = 'storeID'
+t_2[874] = 'fashionID'
+t_2[8] = 'prayerOpenCount'
+t_2[20011547] = 'prayergiftBagID'
+t_2['梦想祈愿'] = 'tipTitle'
+t_2['购买礼物赠送梦想祈愿币，使用祈愿币可进行S级皮肤许愿。每一轮许愿人满即开，大奖为随机S级皮肤（3SSS皮肤不会重复获得），其他奖励为梦想值。单轮使用的祈愿币数量越多，则大奖概率越高，获得的梦想值越多。梦想值可在“梦想兑换”中使用以获得奖池中任意一款S级皮肤。未被使用的梦想值也会小幅提升祈愿时中大奖概率，在抽中大奖时清空。\n<color=0xfab95bff>【梦想兑换】中的皮肤会定期轮换，神话典藏皮肤除外~</color>'] = 'tipDesc'
+t_2['梦想排行榜'] = 'dreamRewardTip'
+t_2['每轮参与玩家使用的祈愿币总量决定了可瓜分梦想值总量的多少，个人每轮使用的祈愿币越多则获得的梦想值越多，梦想值相同的玩家，按祈愿时间先后排名。排名靠前的玩家可额外获得专属人气礼物奖励（通过邮件领取）！'] = 'dreamRewardtipDesc'
+t_2['许愿规则'] = 'dreamPoolChooseTitle'
+t_2['挑选奖池中任意皮肤作为心愿以提升获得该皮肤的概率。心愿皮肤在中大奖时的获得概率不低于33.3%。若许愿的皮肤已达到3S，则许愿功能不会生效。'] = 'dreamPoolChooseDesc'
+t_1['id'] = 1

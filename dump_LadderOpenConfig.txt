@@ -1,0 +1,40 @@
+chunk=F_767_72b398105dd0.bin  size=767
+===== proto#0  src=src/catchGame/configReader/LadderOpenConfig.lua  lines=0-0  nparams=0 nups=0 maxstack=4 =====
+  upvalues: []
+  constants: [('str', 'require'), ('str', 'catchGame/configReader/BaseReader'), ('str', 'class'), ('str', 'LadderOpenConfig'), ('str', 'getDataByWeekDay')]
+      0  SETLIST        A=0   B=0    C=0    Bx=0      sBx=-131071
+      1  LEN            A=1   B=0    C=1    Bx=1      sBx=-131070
+      2  GETUPVAL       A=0   B=2    C=2    Bx=1026   sBx=-130045
+      3  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+      4  LEN            A=2   B=0    C=3    Bx=3      sBx=-131068
+      5  SETGLOBAL      A=3   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'require')
+      6  GETUPVAL       A=1   B=3    C=2    Bx=1538   sBx=-129533
+      7  NEWTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071
+      8  CLOSURE        A=1   B=260  C=2    Bx=133122 sBx=2051  
+      9  GETGLOBAL      A=1   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     10  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#0 : kid#0 ---
+===== proto#0  src=  lines=5-13  nparams=2 nups=0 maxstack=11 =====
+  upvalues: []
+  constants: [('str', 'pairs'), ('str', 'datas'), ('str', 'weekday'), ('str', 'tonumber'), ('str', 'table'), ('str', 'insert')]
+      0  RETURN         A=2   B=0    C=0    Bx=0      sBx=-131071
+      1  SETLIST        A=3   B=0    C=0    Bx=0      sBx=-131071
+      2  POW            A=4   B=0    C=257  Bx=257    sBx=-130814
+      3  GETUPVAL       A=3   B=2    C=4    Bx=1028   sBx=-130043
+      4  CONCAT         A=0   B=256  C=10   Bx=131082 sBx=11    
+      5  POW            A=8   B=7    C=258  Bx=3842   sBx=-127229
+      6  SETLIST        A=9   B=0    C=3    Bx=3      sBx=-131068
+      7  SETGLOBAL      A=10  B=1    C=0    Bx=512    sBx=-130559 K512=?
+      8  GETUPVAL       A=9   B=2    C=2    Bx=1026   sBx=-130045
+      9  JMP            A=0   B=8    C=9    Bx=4105   sBx=-126966
+     10  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+     11  SETLIST        A=8   B=0    C=4    Bx=4      sBx=-131067
+     12  POW            A=8   B=8    C=261  Bx=4357   sBx=-126714
+     13  SETGLOBAL      A=9   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     14  SETGLOBAL      A=10  B=7    C=0    Bx=3584   sBx=-127487 K3584=?
+     15  GETUPVAL       A=8   B=3    C=1    Bx=1537   sBx=-129534
+     16  EQ             A=3   B=0    C=2    Bx=2      sBx=-131069
+     17  CONCAT         A=0   B=255  C=498  Bx=131058 sBx=-13   
+     18  GETGLOBAL      A=2   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     19  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?

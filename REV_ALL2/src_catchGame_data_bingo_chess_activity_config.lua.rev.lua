@@ -1,0 +1,35 @@
+-- [[ src/catchGame/data/bingo_chess_activity_config.lua ]]  src=src/catchGame/data/bingo_chess_activity_config.lua size=8192
+-- top: code=34 consts=50 protos=0
+
+local t_1 = {}  -- NEWTABLE arr=1 hash=1
+local t_2 = {}  -- NEWTABLE arr=1 hash=24
+t_2[1] = 'id'
+t_2['2026-7-23 10:00:01'] = 'startTime'
+t_2['2026-8-31 23:59:59'] = 'endTime'
+t_2[5] = 'scale'
+t_2[4] = 'department_store_id'
+t_2[1] = 'gachaCostNum'
+t_2[50] = 'gachaPriceValue'
+t_2[4] = 'oneGachaFreeDays'
+t_2['50,70,90'] = 'tenGachaDiscounts'
+t_2[10] = 'xGachaCount'
+t_2[54] = 'xGachaGiveFirstRewrd'
+t_2[2] = 'valurableChessmanNum'
+t_2['1000:30;6000:60'] = 'bigRewardLockCond'
+t_2[10] = 'xGachaGiveExploreReward'
+t_2[10000] = 'exploreRewardItemType'
+t_2[18] = 'exploreRewardItemID'
+t_2[1] = 'exploreRewardItemNum'
+t_2[60] = 'guaranteedEstimate'
+t_2[35] = 'guaranteedAddNum'
+t_2[134] = 'chessResolveMailID'
+t_2[1] = 'chessResolveItem1Type'
+t_2[7] = 'chessResolveItem1ID'
+t_2[1] = 'chessResolveItem1Num'
+t_2[135] = 'couponResolveMailID'
+t_2[1] = 'couponResolveItem1Type'
+t_2[3] = 'couponResolveItem1ID'
+t_2[10] = 'couponResolveItem1Num'
+t_2['占卜妙妙棋'] = 'tipTitle'
+t_2['使用棋妙灵感进行占卜可获得不同刻印的卢恩棋子，放置棋子形成连线可获得对应连线奖励。奖励领取后对应连线的棋子会消除并刷新奖励。\n\n通过占卜和累计占卜奖励可获得占星棋，用于兑换特殊奖励！\n\n获得各卢恩棋子的初始概率相同。各奖励皆有保底，约700次占卜可获得所有奖励。\n\n活动相关道具在结束时会被清空，请及时使用！'] = 'tipDesc'
+t_1['id'] = 1

@@ -1,0 +1,951 @@
+### src/catchGame/config/action/common_toast.lua
+- top: code=227 consts=41 protos=0
+- consts: ['toast\x00', 'pan_1\x00', 'actionTag\x00', 'totalTime\x00', 'initData\x00', 'position\x00', 'cc\x00', 'p\x00', 'scale\x00', 'rotation\x00', 'opacity\x00', 'color\x00', 'c3b\x00', 'action\x00', 'return\n\t\t\tcc.Sequence:create(\n\t\t\tcc.MoveTo:create(0.300000, cc.p({x = 0.000000, y = 60.000000})),\n\t\t\tcc.DelayTime:create(1.700000),\n\t\t\tcc.MoveTo:create(0.200000, cc.p({x = 0.000000, y = 85.000000}))\n\t\t\t)\n\t\t\x00', 'toast_easeout\x00', 'lab_1\x00', 'return\n\t\t\tcc.Sequence:create(\n\t\t\tcc.FadeTo:create(0.100000, 0.000000),\n\t\t\tcc.DelayTime:create(0.100000)\n\t\t\t)\n\t\t\x00', 'img_bg\x00', 'return\n\t\t\tcc.Sequence:create(\n\t\t\tcc.Spawn:create(\n\t\t\tcc.MoveTo:create(0.100000, cc.p({x = 0.000000, y = 39.333332})),\n\t\t\tcc.FadeTo:create(0.100000, 255.000000),\n\t\t\tcc.TintTo:create(0.100000, 243, 235, 225)\n\t\t\t),\n\t\t\tcc.Spawn:create(\n\t\t\tcc.MoveTo:create(0.100000, cc.p({x = 0.000000, y = 60.000000})),\n\t\t\tcc.TintTo:create(0.100000, 255, 255, 255)\n\t\t\t)\n\t\t\t)\n\t\t\x00', 'toast_easein\x00', 'return\n\t\t\tcc.Sequence:create(\n\t\t\tcc.FadeTo:create(0.100000, 255.000000),\n\t\t\tcc.DelayTime:create(0.100000)\n\t\t\t)\n\t\t\x00', 'toast_fadinout\x00', 'return\n\t\t\tcc.Sequence:create(\n\t\t\tcc.Spawn:create(\n\t\t\tcc.MoveTo:create(0.100000, cc.p({x = 0.000000, y = 0.000000})),\n\t\t\tcc.ScaleTo:create(0.100000, 1.100000, 1.000000)\n\t\t\t),\n\t\t\tcc.EaseSineInOut:create(\n\t\t\tcc.ScaleTo:create(0.200000, 1.000000, 1.000000)\n\t\t\t),\n\t\t\tcc.MoveTo:create(1.700000, cc.p({x = 0.000000, y = 100.000000})),\n\t\t\tcc.EaseSineIn:create(\n\t\t\tcc.Spawn:create(\n\t\t\tcc.MoveTo:create(0.100000, cc.p({x = 0.000000, y = 180.000000})),\n\t\t\tcc.ScaleTo:create(0.100000, 0.000000, 0.000000)\n\t\t\t)\n\t\t\t)\n\t\t\t)\n\t\t\x00']
+
+### src/catchGame/config/frame_config_catchGame.lua
+- top: code=3558 consts=1014 protos=0
+- consts: ['match_choose_role_tips.ExportJson\x00', 'user_defined_operate_popup_plan_v6.ExportJson\x00', 'common_reward_info_pop_v6.ExportJson\x00', 'map_editor_external.ExportJson\x00', 'pop_spring_2026_map_drawing.ExportJson\x00', 'newbie_school_hall_my_profile_view_v6.ExportJson\x00', 'activity_2025_anniversary_signature_wall.ExportJson\x00', 'player_message_board_dec_s_16.ExportJson\x00', 'match_confirm_role_pop_change_buff_model.ExportJson\x00', 'friend_renew_friendship_v6.ExportJson\x00', 'activity_content_case18.ExportJson\x00', 'not_newplayer_v6.ExportJson\x00', 'team_competition_notice_award_detail_v6.ExportJson\x00', 'pop_personal_space_message_content.ExportJson\x00', 'pop_map_parameter_setting.ExportJson\x00', 'result_rank_prev_v4.ExportJson\x00', 'img_bg_all_frame_015\x00', 'path\x00', 'pan_bg/img_bg_all_frame_015\x00', 'unittime\x00', 'frameList\x00', 'ic_common_fake_panel.png\x00', 'img_btn_lock_start_frame_015\x00', 'pan_continue/btn_1/img_btn_lock_start_frame_015\x00', 'player_message_board_dec_s_9.ExportJson\x00']
+
+### src/catchGame/configReader/ADConfig.lua
+- top: code=17 consts=8 protos=4
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'ADConfig\x00', 'dealDatas\x00', 'getUpActivityTab\x00', 'getValidDataById\x00', 'dealShareQuest\x00']
+
+### src/catchGame/configReader/AchievementScoreConfig.lua
+- top: code=13 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'AchievementScoreConfig\x00', 'dealDatas\x00', 'getSortedDatas\x00']
+
+### src/catchGame/configReader/ActivityKingConfig.lua
+- top: code=13 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'ActivityKingConfig\x00', 'dealDatas\x00', 'getDataByType\x00']
+
+### src/catchGame/configReader/ActivityListConfig.lua
+- top: code=70 consts=32 protos=23
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'NetGameEnum\x00', 'E_ACTIVITY_TYPE\x00', 'E_ACTIVITY_GENERAL_QUEST\x00', 'E_ACTIVITY_GENERAL_MALL\x00', 'E_ACTIVITY_AD_FACE\x00', 'class\x00', 'ActivityListConfig\x00', 'getDataByType\x00', 'getLocalTypeActivity\x00', 'dealDatas\x00', 'isExistQuestTypeConfig\x00', 'getAllGeneralQuestActivity\x00', 'getAllGeneralMallActivity\x00', 'getDataByQuestType\x00', 'isLoginActivity\x00', 'isDailyBattle\x00', 'isGeneralTask\x00', 'getAllActivityByType\x00', 'getActivityBySubtype\x00', 'getAllActivityIDByType\x00', 'isAcccumRecharge\x00', 'isSpringRedPacket\x00', 'isSevenDayChallenge\x00']
+
+### src/catchGame/configReader/AdvancedFashionConfig.lua
+- top: code=18 consts=10 protos=4
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'AdvancedFashionConfig\x00', 'USE_BIN_DATA\x00', 'dealDatas\x00', 'getDataByFashionId\x00', 'getRoleIds\x00', 'getDatasByRoleId\x00']
+
+### src/catchGame/configReader/BalloonPopGameConfig.lua
+- top: code=13 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'BalloonPopGameConfig\x00', 'dealDatas\x00', 'getValidConfigs\x00']
+
+### src/catchGame/configReader/BattlePassAwardConfig.lua
+- top: code=44 consts=21 protos=16
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'lib/framework\x00', 'class\x00', 'BattlePassAwardConfig\x00', 'dealDatas\x00', '_getSeasonConfig\x00', '_findSeasonById\x00', '_getSeasonData\x00', '_loadSeasonData\x00', '_dealSeasonDatas\x00', 'getDatasBySeason\x00', 'getLevelDatasBySeason\x00', 'getNormalLevelDatasBySeason\x00', 'getAllLevelDatasBySeason\x00', 'getLevelToNextDatasBySeason\x00', 'getDefaultAwardBySeason\x00', 'getSpecialAwardBySeason\x00', 'getChallengeDatasBySeasion\x00', 'getDataById\x00', 'fixSeasonData\x00']
+
+### src/catchGame/configReader/BattlePassSeasonConfig.lua
+- top: code=20 consts=9 protos=4
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'lib/framework\x00', 'class\x00', 'BattlePassSeasonConfig\x00', 'dealDatas\x00', 'getBattlePassSeasonBySeason\x00', '_parseIntroduceFromString\x00', 'getValidSeasons\x00']
+
+### src/catchGame/configReader/BeginerCeremonyConfig.lua
+- top: code=15 consts=6 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'catchGame/configReader/ReaderFactory\x00', 'class\x00', 'BeginerCeremonyConfig\x00', 'dealDatas\x00']
+
+### src/catchGame/configReader/BeginerMallConfig.lua
+- top: code=15 consts=7 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'BeginerMallConfig\x00', 'dealDatas\x00']
+
+### src/catchGame/configReader/BingoChessActivityConfig.lua
+- top: code=16 consts=9 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'BingoChessActivityConfig\x00', 'configID\x00', 'getConfig\x00', 'dealDatas\x00', 'initDiscount\x00']
+
+### src/catchGame/configReader/BubbleCategoryConfig.lua
+- top: code=15 consts=7 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'BubbleCategoryConfig\x00', 'dealDatas\x00', 'getCategoryByType\x00', 'getCategoriesData\x00']
+
+### src/catchGame/configReader/BubbleConfig.lua
+- top: code=36 consts=19 protos=13
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'BubbleConfig\x00', 'USE_BIN_DATA\x00', 'dealDatas\x00', 'dealBinDatas\x00', 'dealEmojis\x00', 'dealWords\x00', 'getItemInfo\x00', 'getEmojis\x00', 'getWords\x00', 'getMyWords\x00', 'returnWordsDatas\x00', 'getDatasByEventId\x00', 'getDataByAutoId\x00', 'getMouseDefaultShowTeamWords\x00', 'getMouseDefaultTeamWords\x00']
+
+### src/catchGame/configReader/ChargeGuideConfig.lua
+- top: code=15 consts=7 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'ChargeGuideConfig\x00', 'dealDatas\x00', 'dealRewardDatas\x00', 'dealShowDatas\x00']
+
+### src/catchGame/configReader/ChipShopConfig.lua
+- top: code=13 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'ChipShopConfig\x00', 'dealDatas\x00', 'isFashionBannedByRank\x00']
+
+### src/catchGame/configReader/ChristmasMainConfig.lua
+- top: code=23 consts=11 protos=7
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'ChristmasMainConfig\x00', 'getLevelRanges\x00', 'getLevelBox\x00', 'getLevelLimit\x00', 'getEndTime\x00', 'getStartTime\x00', 'isOpen\x00', 'isValidOrnamentId\x00']
+
+### src/catchGame/configReader/CoinConfig.lua
+- top: code=21 consts=10 protos=6
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'CoinConfig\x00', 'isShowInBag\x00', 'getCoinIcon\x00', 'getDataById\x00', 'getShopChipPrice\x00', 'getDiamondPriceByChipPrice\x00', 'translateCoinData\x00']
+
+### src/catchGame/configReader/ContentCollectionConfig.lua
+- top: code=11 consts=5 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'ContentCollectionConfig\x00', 'getDataByType\x00']
+
+### src/catchGame/configReader/CreativecabinConfig.lua
+- top: code=39 consts=19 protos=15
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'CreativecabinConfig\x00', 'dealDatas\x00', 'getActiveConfigData\x00', 'getData\x00', 'getMaxPraiseNum\x00', 'getReceiveGiftLimitNum\x00', 'getMaxGiftSendNum\x00', 'getFurnitureMaxNum\x00', 'getRankType\x00', 'getShopTypeID\x00', 'getActivityID\x00', 'getMainBG\x00', 'getSocksScaleRange\x00', 'getRoleScaleRange\x00', 'isOpen\x00', 'getActivityLeftTime\x00']
+
+### src/catchGame/configReader/CrowdFundDreamConfig.lua
+- top: code=64 consts=30 protos=18
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'CrowdFundDreamConfig\x00', 'configID\x00', 'OneYuanRaffleTimeStampClear\x00', 'tostring\x00', 'cg\x00', 'Player\x00', 'uid\x00', 'OneYuanRaffleHasShopNewTime\x00', 'dealDatas\x00', 'initPoolsFunc\x00', 'initPools\x00', 'initWishPools\x00', 'initPrices\x00', 'getConfig\x00', 'getRankConfig\x00', 'getShopConfig\x00', 'initDreamShop\x00', 'getDreamShopFashionConfig\x00', 'getDreamShopOtherConfig\x00', 'getDreamFashionShopInfo\x00', 'getDreamOtherShopInfo\x00', 'checkClearRedDot\x00']
+
+### src/catchGame/configReader/CustomSwitchOptionConfig.lua
+- top: code=27 consts=17 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'CustomSwitchOptionConfig\x00', 'USE_BIN_DATA\x00', 'PUB\x00', 'FlagType\x00', 'userext\x00', 'CDict\x00', 'Create\x00', 'Switch\x00', 'VisibleRange\x00', 'dealDatas\x00', 'getDataByType\x00', 'getParentTypes\x00']
+
+### src/catchGame/configReader/DepartmentStoreConfig.lua
+- top: code=13 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'DepartmentStoreConfig\x00', 'dealDatas\x00', 'getDepartmentStoreMallConfig\x00']
+
+### src/catchGame/configReader/DiamondCostConfig.lua
+- top: code=15 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'DiamondCostConfig\x00', 'dealDatas\x00', 'getRewardDataByID\x00']
+
+### src/catchGame/configReader/EffectScreenConfig.lua
+- top: code=11 consts=5 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'EffectScreenConfig\x00', 'dealDatas\x00']
+
+### src/catchGame/configReader/EmojiConfig.lua
+- top: code=16 consts=9 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'BuffConfig\x00', 'USE_BIN_DATA\x00', 'dealDatas\x00', 'isFree\x00', 'getTypeDatas\x00']
+
+### src/catchGame/configReader/ErrorCodeConfig.lua
+- top: code=13 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'ErrorCodeConfig\x00', 'dealDatas\x00', 'showErrorCode\x00']
+
+### src/catchGame/configReader/FashionCollectionConfig.lua
+- top: code=20 consts=12 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'catchGame/GameConst\x00', 'class\x00', 'FashionCollectionConfig\x00', 'className\x00', 'FASHION_COLLECTION_CLASS_NAME\x00', 'strQuality\x00', 'FASHION_COLLECTION_STR_QUALITY\x00', 'subClassName\x00', 'FASHION_COLLECTION_SUB_CLASS_NAME\x00', 'dealDatas\x00']
+
+### src/catchGame/configReader/FunTravelPassportConfig.lua
+- top: code=75 consts=37 protos=33
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'FunTravelPassportConfig\x00', 'dealDatas\x00', '_calcWeekTaskTotalRounds\x00', 'getWeekTaskTotalRounds\x00', 'getConfig\x00', 'getActivityId\x00', 'getEndTime\x00', 'getStartTime\x00', 'getStartTimeStamp\x00', 'getEndTimeStamp\x00', 'isInActivityTime\x00', 'getMaxLevel\x00', 'getActivityPerLevel\x00', 'getGoldShelfGoodsId\x00', 'getGoldShelfAdvancedGoodsId\x00', 'getGoldShelfAdvancedUpdateLevel\x00', 'getCoinIdTicket\x00', 'getCoinIdActivity\x00', 'getDesc\x00', 'getDailyActivityId\x00', 'getRefreshWeekday\x00', 'getRefreshHour\x00']
+
+### src/catchGame/configReader/GeneralActivityConfig.lua
+- top: code=15 consts=7 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'GeneralActivityConfig\x00', 'dealDatas\x00', 'getStartAndEndTime\x00', 'getStartForHasEndTime\x00']
+
+### src/catchGame/configReader/GiftPopularityConfig.lua
+- top: code=26 consts=19 protos=5
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'GiftPopularityConfig\x00', 'S\x00', 'A\x00', 'B\x00', 'C\x00', 'D\x00', 'dealDatas\x00', 'getQualityById\x00', 'getAllSortedSADatas\x00', 'getAllQualitySortedDatas\x00', 'getDatasByQuality\x00']
+
+### src/catchGame/configReader/GradeSwitchConfig.lua
+- top: code=13 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'GradeSwitchConfig\x00', 'dealDatas\x00', 'getConfigName\x00']
+
+### src/catchGame/configReader/ItemConfig2.lua
+- top: code=39 consts=24 protos=10
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'lib/ds/ShallowDataClone\x00', 'class\x00', 'ItemConfig2\x00', 'BOOSTER\x00', 'low\x00', 'med\x00', 'high\x00', 'USE_BIN_DATA\x00', 'dealDatas\x00', 'getItems\x00', 'getGiftDataName\x00', 'getGiftDataNameById\x00', 'getItemByType\x00', 'getItemByByTypeAndId\x00', 'getItemByByTypeAndIdNoClone\x00', 'getComExprienceType\x00', 'isDye\x00', 'getItemsByItem1TypeAndItem1ID\x00']
+
+### src/catchGame/configReader/LadderOpenConfig.lua
+- top: code=11 consts=5 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'LadderOpenConfig\x00', 'getDataByWeekDay\x00']
+
+### src/catchGame/configReader/LadderPeriodOpenConfig.lua
+- top: code=13 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'LadderPeriodOpenConfig\x00', 'dealDatas\x00', 'getDataByWeekDay\x00']
+
+### src/catchGame/configReader/LadderQualifierConfig.lua
+- top: code=15 consts=7 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'LadderQualifierConfig\x00', 'dealDatas\x00', 'getQualifierConfigByRole\x00', 'getQualifierConfigByRoleAndElapsed\x00']
+
+### src/catchGame/configReader/LadderQualifierConfigConfig.lua
+- top: code=9 consts=4 protos=0
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'LadderQualifierConfigConfig\x00']
+
+### src/catchGame/configReader/LadderSeasonConfig.lua
+- top: code=16 consts=7 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'cjson\x00', 'class\x00', 'LadderSeasonConfig\x00', 'dealDatas\x00', 'getDataById\x00']
+
+### src/catchGame/configReader/LevelLimitConfig.lua
+- top: code=31 consts=18 protos=8
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'LevelLimitConfig\x00', 'LVLUP_TYPE\x00', 'LEVEL\x00', 'GRADE\x00', 'catchGame/data/\x00', 'switchConfig\x00', 'isLimit\x00', 'getDataByName\x00', 'isLimitWithGrade\x00', 'isShowLvlupTip\x00', 'getGradeLimit\x00', 'getUnlockDataByLevel\x00', 'getTipData\x00']
+
+### src/catchGame/configReader/LionDanceConfig.lua
+- top: code=36 consts=19 protos=10
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'LionDanceConfig\x00', 'configID\x00', 'cg\x00', 'systems\x00', 'LionDanceSystem\x00', 'getConfig\x00', 'dealDatas\x00', 'getQuestIDConfigByDataFile\x00', 'getRewardDatas\x00', 'getOpenDaysNow\x00', 'getNowLanternRewardCout\x00', 'getCampDatasByOpenDay\x00', 'gettCampDatas\x00', 'getQuestDataByID\x00', 'getQuestDataByIndex\x00']
+
+### src/catchGame/configReader/LuckyWheelShopConfig.lua
+- top: code=21 consts=10 protos=6
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'LuckyWheelShopConfig\x00', 'dealDatas\x00', 'getCostsByConfigAndGoodsId\x00', 'getDataByConfigAndGoodsId\x00', 'getTypeByConfigAndGoodsId\x00', 'getIdByConfigAndGoodsId\x00', '_extractSubConfig\x00']
+
+### src/catchGame/configReader/MapDecorationTypeCollectionConfig.lua
+- top: code=17 consts=8 protos=4
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'MapDecorationTypeCollectionConfig\x00', 'dealDatas\x00', 'getDataByUnlockNeedType\x00', 'getSortedDatas\x00', 'getOwnedAndTotalValidCount\x00']
+
+### src/catchGame/configReader/MedalCollectionConfig.lua
+- top: code=20 consts=11 protos=5
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'MedalCollectionConfig\x00', 'MASTER\x00', 'dealDatas\x00', 'getDataByMedalID\x00', 'isMasterMedal\x00', 'getDataByCount\x00', 'getDataNextByCount\x00']
+
+### src/catchGame/configReader/MemberShipShopConfig.lua
+- top: code=19 consts=9 protos=5
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'MemberShipShopConfig\x00', 'dealDatas\x00', 'initDatas\x00', 'getConfig\x00', 'getGachaData\x00', 'getGachaBonusNum\x00']
+
+### src/catchGame/configReader/MonthCheckinConfig.lua
+- top: code=11 consts=5 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'CheckinTimeConfig\x00', 'dealDatas\x00']
+
+### src/catchGame/configReader/OGSeasonRegYearRewardConfig.lua
+- top: code=11 consts=5 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'OGSeasonRegYearRewardConfig\x00', 'dealDatas\x00']
+
+### src/catchGame/configReader/PartnerConfig.lua
+- top: code=13 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PartnerConfig\x00', 'dealDatas\x00', 'getCloneCfg\x00']
+
+### src/catchGame/configReader/PartnerFashionConfig.lua
+- top: code=19 consts=10 protos=4
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PartnerFashionConfig\x00', 'DefaultFashion\x00', 'dealDatas\x00', 'getAllDatasByPartner\x00', 'getDefaultFashion\x00', 'getSeriesFashion\x00']
+
+### src/catchGame/configReader/PartnerSkillUnlockConfig.lua
+- top: code=15 consts=7 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PartnerPropertyConfig\x00', 'dealDatas\x00', 'getCostById\x00', 'getDefaultSkills\x00']
+
+### src/catchGame/configReader/PersonalCustomConfig.lua
+- top: code=15 consts=7 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PersonalCustomConfig\x00', 'dealDatas\x00', 'getUseCustom\x00', 'getDataByType\x00']
+
+### src/catchGame/configReader/PopupTypeConfig.lua
+- top: code=27 consts=19 protos=7
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PopupTypeConfig\x00', 'COUST_MAX\x00', 'QUEUE_MAX\x00', 'FORCE_WEIGHT\x00', 'QUEUE_WEIGHT\x00', 'getCountMax\x00', 'getQueueMax\x00', 'getRankWithForceByID\x00', 'getQueueWeightByID\x00', 'setQueueTimeByID\x00', 'getIdByRank\x00', 'getRankWithForceAndQueueByID\x00']
+
+### src/catchGame/configReader/PortraitCollectionConfig.lua
+- top: code=16 consts=9 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PortraitCollectionConfig\x00', 'cg\x00', 'Utils\x00', 'convertDateStrToTimestamp\x00', 'PortraitConfig\x00', 'dealDatas\x00']
+
+### src/catchGame/configReader/PortraitConfig.lua
+- top: code=36 consts=23 protos=8
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PortraitConfig\x00', 'Type\x00', 'Normal\x00', 'Share\x00', 'BetaTest\x00', 'Questionnaire\x00', 'USE_BIN_DATA\x00', 'getAllCongfig\x00', 'dealDatas\x00', 'getMyOrder\x00', 'getConfig\x00', 'getTip\x00', 'getDes\x00', 'getRandomPortrait\x00', 'getNormalPortraits\x00']
+
+### src/catchGame/configReader/PortraitFrameCollectionConfig.lua
+- top: code=17 consts=9 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PortraitFrameCollectionConfig\x00', 'cg\x00', 'Utils\x00', 'convertDateStrToTimestamp\x00', 'PortraitFrameComConfig\x00', 'dealDatas\x00']
+
+### src/catchGame/configReader/PortraitFrameComConfig.lua
+- top: code=15 consts=7 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PortraitFrameComConfig\x00', 'dealDatas\x00', 'isCollection\x00', 'getConfig\x00']
+
+### src/catchGame/configReader/PosterPopupConfiger.lua
+- top: code=35 consts=14 protos=7
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'svn_version\x00', 'common/utils\x00', 'catchGame/sdk/SdkPlatform\x00', 'class\x00', 'PosterPopupConfiger\x00', 'dealDatas\x00', 'isAlternatePoster\x00', 'getAllValidPoster\x00', 'getCurrentASTCType\x00', 'isPosterResourceValid\x00', 'isOutOfShowTime\x00', 'checkConditionNotShow\x00']
+
+### src/catchGame/configReader/PosterSignUpConfig.lua
+- top: code=38 consts=22 protos=6
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'svn_version\x00', 'class\x00', 'PosterSignUpConfig\x00', 'NetGameEnum\x00', 'E_ACTIVITY_TYPE\x00', 'E_ACTIVITY_AD_FACE\x00', 'E_ACTIVITY_GENERAL_QUEST\x00', 'LAYER_STATE\x00', 'FREE\x00', 'UNPAID\x00', 'PAID\x00', 'dealDatas\x00', 'checkShowPosterSignUp\x00', 'canPopup\x00', 'unpaidPop\x00', 'getState\x00', 'isValidGeneralActivtiy\x00']
+
+### src/catchGame/configReader/PresentConfig.lua
+- top: code=137 consts=61 protos=17
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PresentConfig\x00', 'Normal\x00', 'Letter\x00', 'Ring\x00', 'Letter2\x00', 'Type\x00', 'DragonPalaceDiceId\x00', 'FuCharacterMin\x00', 'FuCharacterMax\x00', 'default\x00', 'chooseFriendAndConfirm\x00', 'reqSendPresent\x00', 'chooseFriend\x00', 'writeMsg\x00', 'buildCP\x00', 'writeMsg2\x00', 'GiftCardLayer\x00', 'LetterDetailLayer\x00', 'LetterMsg2\x00', 'boxEffect\x00', 'loveLetter\x00', 'anonymityLetter\x00']
+
+### src/catchGame/configReader/PrivilegeConfig.lua
+- top: code=19 consts=9 protos=5
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PrivilegeConfig\x00', 'dealDatas\x00', 'checkPrivilegeSwitchOn\x00', 'isDiamondExclusivePrivilege\x00', 'getNameByIDandNum\x00', 'getNumStrByIDandNum\x00']
+
+### src/catchGame/configReader/PrivilegeServiceConfig.lua
+- top: code=17 consts=8 protos=4
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PrivilegeServiceConfig\x00', 'dealDatas\x00', 'getMembershipLevelByChatFrame\x00', 'getPrivilegeConfigByCheckInCardID\x00', 'getCheckinCardIDsByPrivilegeID\x00']
+
+### src/catchGame/configReader/RankListConfig.lua
+- top: code=11 consts=5 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'RankListConfig\x00', 'dealDatas\x00']
+
+### src/catchGame/configReader/RankTitleConfig.lua
+- top: code=25 consts=18 protos=5
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'RankTitleConfig\x00', 'RANK_LEVEL\x00', 'CONTROY\x00', 'PROVINCE\x00', 'CITY\x00', 'DISTRICT\x00', 'getRankTitleData\x00', 'getRankLevel\x00', 'getSpecialTitleData\x00', 'getBattlePassTitle\x00', 'getRankTitleDataByTitle\x00']
+
+### src/catchGame/configReader/RecreationGameConfig.lua
+- top: code=90 consts=39 protos=18
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'RecreationGameConfig\x00', 'cg\x00', 'StringConfig\x00', 'getString\x00', 'Monday\x00', 'Tuesday\x00', 'Wednesday\x00', 'Thursday\x00', 'Friday\x00', 'Saturday\x00', 'Sunday\x00', 'swapConfig\x00', 'dealDatas\x00', 'getValidRecrationGameData\x00', 'getAllTodayOpenRecreationGameData\x00', 'getTodayShowInCustomRoomData\x00', 'isOpenRecreationMode\x00', 'getDataByMatchType\x00', 'getDataByGameType\x00', 'getGameNameByMatchType\x00', 'getGameNameByGameType\x00', 'getMapName\x00']
+
+### src/catchGame/configReader/RecreationLobbyConfig.lua
+- top: code=15 consts=7 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'RecreationLobbyConfig\x00', 'dealDatas\x00', 'convertTimeFormat\x00', 'getOpenDayArrayByGameType\x00']
+
+### src/catchGame/configReader/RecreationOpenConfig.lua
+- top: code=13 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'RecreationOpenConfig\x00', 'dealDatas\x00', 'getGameplays\x00']
+
+### src/catchGame/configReader/ReputationLevelConfig.lua
+- top: code=15 consts=7 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'ReputationConfig\x00', 'dealDatas\x00', 'getLevelByExp\x00', 'getMaxLevel\x00']
+
+### src/catchGame/configReader/SPGachaConfig.lua
+- top: code=61 consts=28 protos=15
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'SPGachaConfig\x00', 'configID\x00', 'SPGachaTimeStampClear\x00', 'tostring\x00', 'cg\x00', 'Player\x00', 'uid\x00', 'SPGachaNewFashionCheck\x00', 'dealDatas\x00', 'getConfig\x00', 'initPools\x00', 'sortPools\x00', 'initLabels\x00', 'getLabels\x00', 'getLabelByCount\x00', 'getLabelDesc\x00', 'getNewFashions\x00', 'checkClearRedDot\x00', 'setClearRedDot\x00', 'checkNewFashionRedDot\x00', 'setNewFashionRedDot\x00', 'initSkinPoolsAndItemPools\x00']
+
+### src/catchGame/configReader/SkillTemporaryFreeConfig.lua
+- top: code=15 consts=7 protos=3
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'SkillTemporaryFreeConfig\x00', 'getInPeriodRow\x00', 'isInPeriod\x00', 'getEndTimeStamp\x00']
+
+### src/catchGame/configReader/Spring2026Config.lua
+- top: code=19 consts=9 protos=5
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'Spring2026Config\x00', 'getValidRoadMapConfigs\x00', 'checkValid\x00', 'checkHaveFreeGoodsStar\x00', 'getNeedShowBubbleGeneralMallID\x00', 'getValidEntries\x00']
+
+### src/catchGame/configReader/TutorialListConfig.lua
+- top: code=64 consts=31 protos=24
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'catchGame/sdk/SdkPlatform\x00', 'class\x00', 'TutorialMenuConfig\x00', 'CHECK_ENTER_LIMIT_TIME\x00', 'ctor\x00', 'checkReloadOnLogin\x00', 'dealDatas\x00', 'getTabDatas\x00', 'getTabMouseTitle\x00', 'getTabCatTitle\x00', 'getTabSubDataByTabId\x00', 'getAIData\x00', 'getAITutorialId\x00', 'isTabUnlock\x00', 'isTutorialCollectionComplete\x00', 'isExamTutorialUnlock\x00', 'getExamTutorialRelys\x00', 'isTabRedDot\x00', 'isHomeRedDot\x00', 'checkEnterTutorTime\x00', 'setEnterTutorTime\x00', 'getDataCurrAwardInfo\x00', 'getCompleteExamTutorialData\x00']
+
+### src/catchGame/configReader/TutorialMenuConfig.lua
+- top: code=65 consts=34 protos=24
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'TutorialMenuConfig\x00', 'USE_BIN_DATA\x00', 'dealDatas\x00', 'dealBinDatas\x00', 'getTabBoxAwardState\x00', 'getFirstGameID\x00', 'getMouseGameID\x00', 'getCatGameID\x00', 'getTabNum\x00', 'getTabList\x00', 'getTutorialsNumByTab\x00', 'getDebugTutorialsByTab\x00', 'getTabInfo\x00', 'getTutorialsByTab\x00', 'isCompletedTotalTutorials\x00', 'isCompletedBasicTutorials\x00', 'isCompletedTutorialsByTab\x00', 'completedTutorialsByTabNum\x00', 'grade_stan\x00', 'grade_adv\x00', 'canFisrtOpenTutorialById\x00', 'canFisrtOpenTutorialByTab\x00']
+
+### src/catchGame/configReader/UpdateGuideConfig.lua
+- top: code=13 consts=6 protos=2
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'PosterPopupConfiger\x00', 'dealDatas\x00', 'getUpdateVersion\x00']
+
+### src/catchGame/configReader/UpdateSoftGuideConfig.lua
+- top: code=9 consts=4 protos=0
+- consts: ['require\x00', 'catchGame/configReader/UpdateGuideConfig\x00', 'class\x00', 'UpdateSoftGuideConfig\x00']
+
+### src/catchGame/configReader/redEnvelopeConfig.lua
+- top: code=11 consts=5 protos=1
+- consts: ['require\x00', 'catchGame/configReader/BaseReader\x00', 'class\x00', 'RedEnvelopeConfig\x00', 'getNostalgicCfgData\x00']
+
+### src/catchGame/data/achievement_index.lua
+- top: code=451 consts=139 protos=0
+- consts: ['id\x00', 'totalScore\x00', 'grandPrize\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00']
+
+### src/catchGame/data/achievement_score.lua
+- top: code=14805 consts=1040 protos=0
+- consts: ['id\x00', 'subtype\x00', 'totalScore\x00', 'grandPrize\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', 'medalLevel\x00']
+
+### src/catchGame/data/activitylist.lua
+- top: code=2271 consts=739 protos=0
+- consts: ['id\x00', 'tab\x00', 'name\x00', '月度充值回馈\x00', 'subName\x00', '充1元送海量福利\x00', 'icon\x00', 'bg_act_new_03\x00', 'isNew\x00', 'desc\x00', '活动期间，充值任意金额钻石可领取丰富奖励\x00', 'type\x00', 'subType\x00', 'uiType\x00', 'showLevel\x00', 'TID_activity_activitylist_name\x00', 'TID_activity_activitylist_400_name\x00', '快乐周末\x00', '周末游戏特别礼遇\x00', 'bg_activity_short_deco_10_new\x00', 'TID_activity_activitylist_401_name\x00', '好友组队\x00', '亲密度限时翻倍\x00', 'bg_act_new_07\x00', 'jumpui\x00']
+
+### src/catchGame/data/ad.lua
+- top: code=931 consts=351 protos=0
+- consts: ['id\x00', 'startTime\x00', '2021-8-26 10:00:01\x00', 'endTime\x00', '2029-8-26 10:00:00\x00', 'durationDays\x00', 'tab\x00', 'showLevel\x00', 'name\x00', '商城皮肤礼遇\x00', 'subName\x00', '热门皮肤限时折扣\x00', 'image\x00', 'bg_activity_short_deco_200_new\x00', 'isHot\x00', 'jumpui\x00', 'param\x00', '2021-8-24 10:00:00\x00', '新手商店\x00', '新人专享低至1折\x00', 'bg_activity_short_deco_199_new\x00', '2025-11-20 10:00:00\x00', '2025-11-30 23:59:59\x00', '2026猫鼠奖\x00', '逆风启航\x00']
+
+### src/catchGame/data/advancedfashion.lua
+- top: code=12465 consts=3196 protos=0
+- consts: ['id\x00', 'rankid\x00', 'name\x00', '泰菲·圣诞甜心彩饰\x00', 'desc\x00', '泰菲·圣诞甜心彩饰，购买后可佩戴至皮肤上，为对应的皮肤增加彩饰特效哦。注：该商品为单独的彩饰商品，佩戴前需要拥有对应皮肤，否则将无法穿戴。\x00', 'fashionValue\x00', 'quality\x00', 'A\x00', 'icon\x00', 'ic_role_skin_caishi_2\x00', 'roleid\x00', 'fashionId\x00', 'particle\x00', '1001;1002\x00', 'particleScale\x00', 'aEffectSpineName\x00', 'tx_partice_shengdantianxin_01\x00', 'aEffectPosX\x00', 'aEffectPosY\x00', 'aEffectPosScale\x00', 'TID_advancedfashion_advancedfashion_name\x00', 'TID_advancedfashion_advancedfashion_1_name\x00', 'TID_advancedfashion_advancedfashion_desc\x00', 'TID_advancedfashion_advancedfashion_1_desc\x00']
+
+### src/catchGame/data/back_skin_list.lua
+- top: code=35 consts=21 protos=0
+- consts: ['id\x00', '_desc_\x00', '经典S皮魔镜、淘淘集市、梦想兑换皮肤池、循环魔镜S皮池\x00', 'poolID\x00', 'mirror_pool_s_skin_1\x00', 'TypeColumnName\x00', 'itemType\x00', 'IDColumnName\x00', 'itemID\x00', 'SwitchOffColumnName\x00', 'switch_off\x00', '循环魔镜S皮池\x00', 'mirror_pool_s_skin_2\x00', 'S级火箭机械鼠池\x00', 'rocket_mice_skin_pool_s1\x00', '钻石会员商城中使用的通行证S级皮肤池\x00', 'privilegemall_pool_s_skin_1\x00']
+
+### src/catchGame/data/balloon_pop_game.lua
+- top: code=20 consts=28 protos=0
+- consts: ['id\x00', 'startTime\x00', '2025-06-05 10:00:01\x00', 'startTimeStamp\x00', 'endTime\x00', '2025-07-30 23:59:59\x00', 'endTimeStamp\x00', 'giftID\x00', 'costItemType\x00', 'costItemID\x00', 'costItemNum\x00', 'maxBuyNum\x00', 'popSound\x00', 'title\x00', '猫鼠戳戳乐\x00', 'desc\x00', '快来参与猫鼠戳戳乐，赢取精美丰厚奖励吧！\x00', 'bigAwardType\x00', 'bigAwardSound\x00']
+
+### src/catchGame/data/battlepass_time.lua
+- top: code=6516 consts=825 protos=0
+- consts: ['ID\x00', 'season\x00', 'starttime\x00', '2019-05-13 05:00:00\x00', 'endtime\x00', '2019-05-28 05:00:00\x00', 'seasonName\x00', '扫货通行证·快乐季\x00', 'opengold\x00', 'goldcointype\x00', 'goldprice\x00', 'updatecointype\x00', 'updateprice\x00', 'updategrade\x00', 'upgradelimit\x00', 'maxweek\x00', 'TID_battlepass_battlepass_time_seasonName\x00', 'TID_battlepass_battlepass_time_1_seasonName\x00', 'TID_battlepass_battlepass_time_seasonContent\x00', 'TID_battlepass_battlepass_time_1_seasonContent\x00', 'TID_battlepass_battlepass_time_commonStorageIntroduce\x00', 'TID_battlepass_battlepass_time_1_commonStorageIntroduce\x00', 'TID_battlepass_battlepass_time_goldStorageIntroduce\x00', 'TID_battlepass_battlepass_time_1_goldStorageIntroduce\x00', 'TID_battlepass_battlepass_time_updateGoldStorageIntroduce\x00']
+
+### src/catchGame/data/battlepasslevel.lua
+- top: code=206 consts=121 protos=0
+- consts: ['id\x00', 'season\x00', 'data_name\x00', 'battlepasslevel_season3\x00', 'id_from\x00', 'id_to\x00', 'battlepasslevel_season4\x00', 'battlepasslevel_season5\x00', 'battlepasslevel_season6\x00', 'battlepasslevel_season7\x00', 'battlepasslevel_season8\x00', 'battlepasslevel_season9\x00', 'battlepasslevel_season10\x00', 'battlepasslevel_season11\x00', 'battlepasslevel_season12\x00', 'battlepasslevel_season13\x00', 'battlepasslevel_season14\x00', 'battlepasslevel_season15\x00', 'battlepasslevel_season16\x00', 'battlepasslevel_season17\x00', 'battlepasslevel_season18\x00', 'battlepasslevel_season19\x00', 'battlepasslevel_season20\x00', 'battlepasslevel_season21\x00', 'battlepasslevel_season22\x00']
+
+### src/catchGame/data/battlepasslevel_season31.lua
+- top: code=11311 consts=1575 protos=0
+- consts: ['id\x00', 'season\x00', 'level\x00', 'sublevel\x00', 'liveness\x00', 'showSpecial\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', 'golditem1Type\x00', 'golditem1ID\x00', 'golditem1Num\x00', 'golditem2Type\x00', 'golditem2ID\x00', 'golditem2Num\x00', 'shopTexture\x00', 'bg_scene_store_v6_1_racing\x00', 'zorder\x00', 'upgradeType\x00', 'upgradeCost\x00', 'upgradeGoldCost\x00', 'showGoldUnlock\x00', 'bg_scene_store_v6_2_racing\x00', 'bg_scene_store_v6_3_racing\x00', 'bg_scene_store_v6_4_racing\x00']
+
+### src/catchGame/data/beginerActivityConfig.lua
+- top: code=38 consts=26 protos=0
+- consts: ['id\x00', 'name\x00', 'ifPopup\x00', 'desc\x00', '是否自动弹出(每天弹1次）\x00', 'value\x00', 'rewardText\x00', '有奖励可领时文案\x00', '有奖励可以领取哟~\x00', 'bubbleTime\x00', '气泡持续存在最大时间，单位为秒。\x00', 'bubblePublicCD\x00', '气泡公共cd\x00', 'bubblePrivateCD\x00', '气泡私有cd\x00', 'saturdayPopup\x00', '累计弹出X次后改为每周弹出一次，重置弹出时间为周六0点\x00']
+
+### src/catchGame/data/beginerActivitylist.lua
+- top: code=73 consts=48 protos=0
+- consts: ['ID\x00', 'rankID\x00', 'name\x00', '入学特典\x00', 'Type\x00', 'accountStartTime\x00', '2021-1-18 00:00:00\x00', 'accountEndTime\x00', '2029-1-20 00:00:00\x00', 'bubbleWeight\x00', '迎新典礼\x00', '新生挑战\x00', '首充福利\x00', 'ifTop\x00', '2019-1-18 00:00:00\x00', 'tabIcon\x00', 'welcome_menu_icon2\x00', '特惠礼包\x00', '愿望契约\x00', 'desc\x00', '1.每日充值达指定金额钻石即可获得一次许愿机会，每次许愿的奖励不会重复\n2.愿望契约每轮共有13个魔瓶，完成一轮后次日会刷新下一轮\n3.每日最多可获得一次许愿机会，许愿机会可以积攒且不影响次日许愿机会的获得，但积攒的许愿次数无法超过本轮剩余的最大许愿次数。\x00', '投资计划\x00', '购买基础投资可立得400钻并根据通行证等级要求领取额外奖励。购买基础投资后可解锁进阶投资，立得700钻并额外获得大量扫货币，终生限参与一次。\x00', 'switchTime\x00', '2029-01-20 00:00:00\x00']
+
+### src/catchGame/data/beginerCeremony.lua
+- top: code=33 consts=24 protos=0
+- consts: ['ID\x00', 'name\x00', '见习入门\x00', 'generalactivityID\x00', 'chunjiechallenge1.json\x00', 'icon\x00', 'welcom_academy_rolec\x00', '高级培训\x00', 'chunjiechallenge2.json\x00', 'welcom_academy_rolea\x00', '探索知识\x00', 'chunjiechallenge3.json\x00', 'welcom_academy_roled\x00', '进阶研究\x00', 'chunjiechallenge4.json\x00', 'welcom_academy_roleb\x00', '荣誉毕业\x00', 'chunjiechallenge5.json\x00', 'welcom_academy_rolee\x00']
+
+### src/catchGame/data/beginerMall.lua
+- top: code=43 consts=33 protos=0
+- consts: ['id\x00', 'name\x00', '新手专享超值礼盒\x00', 'desc1\x00', '超低价格，10倍返利\x00', 'desc2\x00', '价值10倍的新人限定礼包！包含最适合新手使用的角色，以及可召唤出大量皮肤的星星，具体内容如下：泰菲体验卡3天×1、托普斯体验卡3天×1、星星×3、金币×400、西点小当家体验卡3天×1。\x00', 'icon\x00', 'ic_gift_bag_limited_newplayer_s1\x00', 'goodsID\x00', 'buttonText\x00', '去购买\x00', 'bubbleText\x00', '新手礼盒\n热销中\x00', '新手进阶限定礼盒\x00', '新人专属资源大礼包\x00', '价值10倍的新人专属礼包！能够快速帮助你提升实力并装饰自己，具体内容如下：星星×5、知识点×600、金币×1000。\x00', 'ic_gift_bag_limited_newplayer_s2\x00', '学员助力自选礼盒\x00', '永久限购1次\x00', '终生限购一次的超值礼盒，打开后可在7000知识点，7000金币中任选其一\x00', 'ic_gift_bag_limited_weekly_s1\x00', '学员尊享自选礼盒\x00', '前所未有的超值礼盒，打开后可在30000知识点，30000金币，30张邮票中任选其一\x00', 'welcom_menu_giftbag_fly\x00']
+
+### src/catchGame/data/beginnerInvest1.lua
+- top: code=25 consts=25 protos=0
+- consts: ['id\x00', 'androidID\x00', 'h18.bpinvest38\x00', 'appleID\x00', 'com.netease.TomJerry.bpinvest38\x00', 'awardConfig\x00', 'beginnerInvest1_award1\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', 'rebateTips\x00', 'benifit1Tips\x00', '立得400\x00', 'h18.bpinvest68\x00', 'com.netease.TomJerry.bpinvest68\x00', 'beginnerInvest1_award2\x00', '立得700\x00']
+
+### src/catchGame/data/bingo_chess_activity_config.lua
+- top: code=34 consts=50 protos=0
+- consts: ['id\x00', 'startTime\x00', '2026-7-23 10:00:01\x00', 'endTime\x00', '2026-8-31 23:59:59\x00', 'scale\x00', 'department_store_id\x00', 'gachaCostNum\x00', 'gachaPriceValue\x00', 'oneGachaFreeDays\x00', 'tenGachaDiscounts\x00', '50,70,90\x00', 'xGachaCount\x00', 'xGachaGiveFirstRewrd\x00', 'valurableChessmanNum\x00', 'bigRewardLockCond\x00', '1000:30;6000:60\x00', 'xGachaGiveExploreReward\x00', 'exploreRewardItemType\x00', 'exploreRewardItemID\x00', 'exploreRewardItemNum\x00', 'guaranteedEstimate\x00', 'guaranteedAddNum\x00', 'chessResolveMailID\x00', 'chessResolveItem1Type\x00']
+
+### src/catchGame/data/charge_guide.lua
+- top: code=31 consts=24 protos=0
+- consts: ['id\x00', 'reward\x00', '12,20000005,1;\x00', 'showId\x00', '50006;50010;\x00', 'time\x00', 'buyDiamond\x00', 'showTime\x00', 'bubbleText\x00', '首充1元送\n强力角色\x00', '4,4001103,1;2,51,1;4,3007102,1;4,3007101,1;\x00', '100005;100006;\x00', '充值6元送\n超值好礼\x00', '12,20000004,1;4,4001104,1;\x00', '99996;99998;\x00', 'buyGoods\x00', '充值30元送\n进阶好礼\x00']
+
+### src/catchGame/data/chat_redpacket.lua
+- top: code=45 consts=30 protos=0
+- consts: ['id\x00', 'coinID\x00', 'minCoinNum\x00', 'maxCoinNum\x00', 'minCount\x00', 'maxCount\x00', 'sendLimitLv\x00', 'sendLimitDay\x00', 'getLimitDay\x00', 'minStep\x00', 'tags\x00', '11211,11212,11214,1,2,30000,30001\x00', 'isNostalgia\x00']
+
+### src/catchGame/data/chipshop.lua
+- top: code=65 consts=45 protos=0
+- consts: ['id\x00', 'shopType\x00', 'startTime\x00', '2021-12-02 00:00:00\x00', 'endTime\x00', '2029-09-01 05:00:00\x00', 'exchangeCoinID\x00', 'exchangeRatio\x00', 'correctionNum\x00', 'recommendNum\x00', 'newgoodsTime\x00', 'gachaItemType1\x00', 'gachaItemID1\x00', 'gachaItemNum1\x00', 'gachaItemType2\x00', 'gachaItemID2\x00', 'gachaItemNum2\x00', 'gachaDiscount\x00', 'gachaDiscountCD\x00', 'gachaConfig\x00', 'chipshop_fashion\x00', 'exclude_skin_rank\x00', 'S,SP\x00', 'chipshop_role\x00', 'chipshop_fashion_dye\x00']
+
+### src/catchGame/data/christmas_main.lua
+- top: code=37 consts=57 protos=0
+- consts: ['id\x00', 'startTime\x00', '2024-04-04 10:00:00\x00', 'endTime\x00', '2024-04-21 23:59:59\x00', 'playerLevelLimit\x00', 'bell_limit\x00', 'level_1_range\x00', 'level_1_count\x00', 'level_1_box\x00', 'level_2_range\x00', 'level_2_count\x00', 'level_2_box\x00', 'level_3_range\x00', 'level_3_count\x00', 'level_3_box\x00', 'level_4_range\x00', 'level_4_count\x00', 'level_4_box\x00', 'level_5_range\x00', 'level_5_count\x00', 'level_5_box\x00', 'will_limit\x00', 'will_type_1\x00', 'will_id_1\x00']
+
+### src/catchGame/data/chunjiechallenge1.lua
+- top: code=27 consts=14 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/chunjiechallenge2.lua
+- top: code=27 consts=14 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/chunjiechallenge3.lua
+- top: code=27 consts=14 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/chunjiechallenge4.lua
+- top: code=27 consts=14 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/chunjiechallenge5.lua
+- top: code=27 consts=14 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/clan_competition_open.lua
+- top: code=10 consts=10 protos=0
+- consts: ['id\x00', 'startTime\x00', '2021-06-24 10:00:00\x00', 'matchStartTime\x00', '2021-06-25 10:00:00\x00', 'lockTime\x00', '2021-07-15 10:00:00\x00', 'endTime\x00', '2021-07-18 24:00:00\x00']
+
+### src/catchGame/data/coin.lua
+- top: code=5221 consts=1575 protos=0
+- consts: ['id\x00', 'name\x00', '钻石\x00', 'desc\x00', '<color=0xe8d4b7ff>散发璀璨光芒的宝石，可以在商城</color><color=0xfab95bff>购买时装、头像框、星星等。</color>\x00', 'icon\x00', 'ic_token_s_1\x00', 'icon1\x00', 'ic_token_l_1\x00', 'TID_coin_name\x00', 'TID_coin_1_name\x00', 'TID_coin_desc\x00', 'TID_coin_1_desc\x00', 'autoUse\x00', 'TID_coin_2_name\x00', 'TID_coin_2_desc\x00', '金币\x00', '<color=0xe8d4b7ff>通过扫货通行证、金币月卡，商城购买等获得，可以在【寻宝】</color><color=0xfab95bff>抽取黄金转盘，奇幻魔镜</color>，或在商城购买知识点等道具。\x00', 'ic_token_s_2\x00', 'ic_token_l_2\x00', 'TID_coin_3_name\x00', 'TID_coin_3_desc\x00', '银币\x00', '<color=0xe8d4b7ff>过去的旧货币，现在已无法使用，获得后会自动转化为</color><color=0xfab95bff>金币</color>。每40银币会转化为1个金币，单次获得银币超过40会触发转化，不足40银币的部分会直接回收！\x00', 'ic_token_s_3\x00']
+
+### src/catchGame/data/colorful_a_skin.lua
+- top: code=360 consts=158 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'desc\x00', '航海士杰瑞·皇家航海王·无畏\x00', '航海士杰瑞·皇家航海王·英勇\x00', '剑客杰瑞·剑术祖师·苍松\x00', '剑客杰瑞·剑术祖师·白凤\x00', '泰菲·圣诞甜心·贪睡\x00', '泰菲·圣诞甜心·调皮\x00', '国王杰瑞·王室骄傲·正义\x00', '杰瑞·超能黑客·夏日柠檬\x00', '杰瑞·超能黑客·霓虹幻想\x00', '剑客泰菲·白袍小将·西瓜\x00', '剑客泰菲·白袍小将·牛乳\x00', '汤姆·嘻哈男神·街头\x00', '汤姆·嘻哈男神·悠闲\x00', '托普斯·AI博士·星座\x00', '托普斯·AI博士·代码\x00', '天使杰瑞·丘比特·苍翠\x00', '天使杰瑞·丘比特·黑潮\x00', '天使杰瑞·小鸭鸭·炫紫\x00', '天使杰瑞·小鸭鸭·甜饼\x00', '布奇·战魂·特训\x00']
+
+### src/catchGame/data/content_collection.lua
+- top: code=57 consts=42 protos=0
+- consts: ['id\x00', 'type\x00', 'icon\x00', 'ic_collection_skin_enter\x00', 'title\x00', '皮肤收藏\x00', 'desc\x00', '完成皮肤收集，可解锁个人空间皮肤展示柜\x00', 'ownedTitle\x00', '已拥有皮肤\x00', 'subTypeName\x00', '收藏进度\x00', 'ic_collection_for_img\x00', '头像收藏\x00', '完成头像收集，可领取限定S级动态头像\x00', '已拥有头像\x00', 'ic_collection_for_img_card\x00', '头像框收藏\x00', '完成头像框收集，可领取限定S级动态头像框\x00', '已拥有头像框\x00', 'ic_collection_map\x00', '地图装扮收藏\x00', '完成头地图装扮收集，可领取丰厚好礼\x00', '已拥有地图装扮\x00', 'ic_collection_music\x00']
+
+### src/catchGame/data/creativecabin_config.lua
+- top: code=26 consts=41 protos=0
+- consts: ['id\x00', 'startTime\x00', '2023-12-21 10:00:00\x00', 'startTimeStamp\x00', 'endTime\x00', '2024-01-10 23:59:59\x00', 'endTimeStamp\x00', 'resolveMailID\x00', 'rewardMailID\x00', 'praiseLimitNum\x00', 'sendGiftLimitNum\x00', 'receiveGiftLimitNum\x00', 'rankTypeID\x00', 'shopTypeID\x00', 'activityID\x00', 'mainbg\x00', 'img_activity_christmas_2023_bg_p_d\x00', 'getCoinInGameLimitNum\x00', 'sendInviteMsg\x00', '我已发起一条礼物交换邀请，快来看看吧！\x00', 'refuseMsg\x00', '我已取消交换，换些别的礼物试试吧！\x00', 'cancelMsg\x00', '我已取消交换邀请。\x00', 'finishMsg\x00']
+
+### src/catchGame/data/crowdfund_dream_gacha.lua
+- top: code=29 consts=20 protos=0
+- consts: ['id\x00', 'desc\x00', '梦想典藏皮肤\x00', 'bagCheck\x00', 'poolType\x00', 'poolName\x00', 'crowdfund_dream_skin_s_pool\x00', 'ifInclude\x00', 'getNum\x00', 'poolGuardItem1Type\x00', 'poolGuardItem1ID\x00', 'poolGuardItem1Num\x00', 'weight1\x00', '经典S级皮肤\x00', 'mirror_pool_s_skin_1\x00']
+
+### src/catchGame/data/crowdfund_dream_main.lua
+- top: code=35 consts=56 protos=0
+- consts: ['id\x00', 'maxPlayerNum\x00', 'giftID\x00', 'costItemType\x00', 'costItemID\x00', 'costItemNum\x00', '2,20,40\x00', 'costItemDiscountNum\x00', 'perCostItemWeight\x00', 'perAllocateCoinWeight\x00', 'allocateCoinWeightLimit\x00', 'allocateCoinID\x00', 'perCostItemToCoin\x00', 'allocateCoinLimit\x00', 'winItemToCoin\x00', 'dreamPercent\x00', 'needGetWinPlayerReward\x00', 'allocateRankMailID\x00', 'allocateRankPlayerNum\x00', 'allocateRankRewardConfig\x00', 'crowdfund_dream_rank\x00', 'storeConfig\x00', 'crowdfund_dream_store\x00', 'storeID\x00', 'fashionID\x00']
+
+### src/catchGame/data/crowdfund_dream_skin_s_pool.lua
+- top: code=31 consts=15 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'desc\x00', '图多盖洛·爱神之吻\x00', '斯飞·神圣辉光\x00', '雪梨·丰饶金穗\x00', '航海士杰瑞·潮汐主宰\x00']
+
+### src/catchGame/data/crowdfund_dream_store.lua
+- top: code=24 consts=24 protos=0
+- consts: ['id\x00', 'type\x00', 'bagCheck\x00', 'costCoinID\x00', 'costCoinNum\x00', 'limitType\x00', 'limitNum\x00', 'itemPoolConfigs\x00', 'crowdfund_dream_skin_s_pool,mirror_pool_s_skin_1\x00', 'randomGiftPoolConfig\x00', 'crowdfund_dream_gift_s_pool\x00', 'startLoopTime\x00', '2024-7-1 00:00:00\x00', 'loopMonths\x00', 'sellNum\x00', 'popular_gift_pool_s1\x00']
+
+### src/catchGame/data/crowdfund_store_mall.lua
+- top: code=133 consts=52 protos=0
+- consts: ['id\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', 'isGift1\x00', 'item2Type\x00', 'item2ID\x00', 'item2Num\x00', 'needItemType\x00', 'needItemID\x00', 'needItemNum\x00', 'item3Type\x00', 'item3ID\x00', 'item3Num\x00', 'limitType\x00', 'limitNum\x00', 'andriodID\x00', 'h18.crowdfunding6\x00', 'appleID\x00', 'com.netease.TomJerry.crowdfunding6\x00', 'h18.crowdfunding28\x00', 'com.netease.TomJerry.crowdfunding28\x00', 'h18.crowdfunding58\x00', 'com.netease.TomJerry.crowdfunding58\x00', 'h18.crowdfunding78\x00']
+
+### src/catchGame/data/cumulative_time.lua
+- top: code=45 consts=22 protos=0
+- consts: ['id\x00', 'count\x00', 'itemType1\x00', 'itemId1\x00', 'itemNum1\x00']
+
+### src/catchGame/data/decoration.lua
+- top: code=672 consts=229 protos=0
+- consts: ['id\x00', 'type\x00', 'name\x00', '紫色砖砌老鼠洞\x00', 'desc\x00', '老鼠洞外墙被砖头包裹，猫咪就不能随意攻破了！\x00', 'title\x00', '%s之家\x00', 'offsetY\x00', 'colorName\x00', '紫\x00', 'quality\x00', 'A\x00', 'fashionValue\x00', 'isCollection\x00', 'class1\x00', 'class2\x00', 'colorIcon\x00', 'img_pop_change_map_color1\x00', 'spineName\x00', 'nailaodongkou_1_5\x00', 'skinName\x00', 'spineOffset\x00', '-1,-5\x00', 'spineScale\x00']
+
+### src/catchGame/data/department_store.lua
+- top: code=52 consts=54 protos=0
+- consts: ['id\x00', 'name\x00', '御门百货\x00', 'mallConfig\x00', 'department_store_mall\x00', 'fashionID\x00', 'giftPackID\x00', 'gachaCostItemType\x00', 'gachaCostItemID\x00', 'gachaCostItemNum\x00', 'desc\x00', '购买超值百货商品，赠送轮盘抽奖机会，轮盘中的奖励不会重复获得！\x00', 'accountStartTime\x00', '2019-01-26 10:00:00\x00', 'accountStartTimeStamp\x00', 'accountEndTime\x00', '2029-08-29 23:59:59\x00', 'accountEndTimeStamp\x00', 'accountDurationDays\x00', '雪夜百货\x00', 'department_store_mall_1\x00', 'startTime\x00', '2023-12-21 10:00:00\x00', 'startTimeStamp\x00', 'endTime\x00']
+
+### src/catchGame/data/diamondCost.lua
+- top: code=12 consts=12 protos=0
+- consts: ['id\x00', 'name\x00', '钻石赠礼\x00', 'desc\x00', '累计消费钻石赢取丰富好礼\x00', 'systemLock\x00', 'consumeStatisticsID\x00', 'rewardConfig\x00', 'diamondCost_rewardConfig_1\x00', 'ifLoop\x00']
+
+### src/catchGame/data/diamondCost_rewardConfig_1.lua
+- top: code=91 consts=41 protos=0
+- consts: ['id\x00', 'needNum\x00', 'systemUnlock\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00']
+
+### src/catchGame/data/directional_selection_rule.lua
+- top: code=9 consts=7 protos=0
+- consts: ['ID\x00', 'refreshMonthDay\x00', 'refreshDayTime\x00', '00:00:00\x00', 'maxSelectCount\x00']
+
+### src/catchGame/data/dreamland.lua
+- top: code=72 consts=56 protos=0
+- consts: ['ID\x00', 'name\x00', '梦想旅程\x00', 'type\x00', 'dreamStartTime\x00', '2025-7-21 00:00:00\x00', 'dreamEndTime\x00', '2034-7-10 10:00:00\x00', 'ifPopUp\x00', 'loopWeeks\x00', 'coinID\x00', 'basicCoinNum\x00', 'weeklyMinus\x00', 'WeekCount\x00', 'buyCoinDays\x00', 'buyCoinConfig\x00', 'dreamland_buyCoinConfig1\x00', 'returnType\x00', 'returnID\x00', 'returnNum\x00', 'returnRate\x00', 'giveUpDays\x00', 'rewardConfig\x00', 'dreamland_reward1\x00', 'generalactivityID\x00']
+
+### src/catchGame/data/effect_screen.lua
+- top: code=183 consts=97 protos=0
+- consts: ['id\x00', 'quality\x00', 'B\x00', 'name\x00', '紫色欢迎烟花\x00', 'desc\x00', '紫色欢迎烟花能够欢迎你的朋友来到你的地图做客！\x00', 'time\x00', 'titleTime\x00', 'colorName\x00', '紫\x00', 'particleIds\x00', '600009;600010\x00', 'type\x00', 'class1\x00', 'class2\x00', 'colorIcon\x00', 'img_pop_change_map_color1\x00', 'icon\x00', 'ic_token_l_126\x00', 'TID_effect_screen_name\x00', 'TID_effect_screen_1001_name\x00', 'fashionValue\x00', 'isCollection\x00', '蓝色欢迎烟花\x00']
+
+### src/catchGame/data/emoji.lua
+- top: code=4103 consts=1211 protos=0
+- consts: ['id\x00', 'name\x00', '杰瑞[弱小]贴纸\x00', 'role\x00', 'roletab\x00', 'ic_emoji_tab_role_1\x00', 'quality\x00', 'B\x00', 'isSpine\x00', 'figure\x00', 'chat_emotion_jerry_01\x00', 'desc\x00', '[弱小可怜的我]\x00', 'if_dreamland\x00', 'TID_emoji_emoji_name\x00', 'TID_emoji_emoji_1_name\x00', 'TID_emoji_emoji_desc\x00', 'TID_emoji_emoji_1_desc\x00', '杰瑞[开心]贴纸\x00', 'chat_emotion_jerry_02\x00', '[我好开心！]\x00', 'TID_emoji_emoji_2_name\x00', 'TID_emoji_emoji_2_desc\x00', '杰瑞[废鼠]贴纸\x00', 'chat_emotion_jerry_03\x00']
+
+### src/catchGame/data/error_code.lua
+- top: code=40 consts=20 protos=0
+- consts: ['code\x00', 'msgid\x00', 'toast\x00', '该商品已被购买\x00', '该商品已限购\x00', '参数错误\x00', '未拥有大奖\x00', '活动未开启\x00', '功能尚未开启\x00', '礼包已兑换完毕\x00']
+
+### src/catchGame/data/experience_card.lua
+- top: code=135 consts=53 protos=0
+- consts: ['id\x00', 'type\x00', 'name\x00', '黄金会员邀请函（1天）\x00', 'expireDay\x00', 'targetID\x00', 'quality\x00', 'A\x00', 'multiple\x00', 'icon\x00', 'img_popularity_gift_a_gold_invitation\x00', 'desc\x00', '珍贵的会员邀请函，使用后可享受黄金会员1天，若相关会员已激活则增加对应天数。会员天数自激活当日生效并统一在每日0点减一天，请合理安排使用时间\x00', '黄金会员邀请函（3天）\x00', '珍贵的会员邀请函，使用后可享受黄金会员3天，若相关会员已激活则增加对应天数。会员天数自激活当日生效并统一在每日0点减一天，请合理安排使用时间\x00', '黄金会员邀请函（7天）\x00', '珍贵的会员邀请函，使用后可享受黄金会员7天，若相关会员已激活则增加对应天数。会员天数自激活当日生效并统一在每日0点减一天，请合理安排使用时间\x00', '铂金会员邀请函（1天）\x00', 'img_popularity_gift_a_platinum_invitation\x00', '珍贵的会员邀请函，使用后可享受铂金会员1天，若相关会员已激活则增加对应天数。会员天数自激活当日生效并统一在每日0点减一天，请合理安排使用时间\x00', '铂金会员邀请函（3天）\x00', '珍贵的会员邀请函，使用后可享受铂金会员3天，若相关会员已激活则增加对应天数。会员天数自激活当日生效并统一在每日0点减一天，请合理安排使用时间\x00', '铂金会员邀请函（6天）\x00', '珍贵的会员邀请函，使用后可享受铂金会员6天，若相关会员已激活则增加对应天数。会员天数自激活当日生效并统一在每日0点减一天，请合理安排使用时间\x00', '钻石会员邀请函（1天）\x00']
+
+### src/catchGame/data/fashion_collection.lua
+- top: code=67 consts=43 protos=0
+- consts: ['id\x00', 'count\x00', 'unlockFashionShow\x00', 'des\x00', '解锁个人空间皮肤展柜\x00', 'unlockDes\x00', '解锁个人空间皮肤展柜系统，可在【个人空间】-【皮肤展柜】界面中查看、编辑。\x00', 'icon\x00', 'img_skin_collection_bg\x00', '皮肤展示位提升至3\x00', '个人空间皮肤展示位提升至3个，可在【个人空间】-【皮肤展柜】界面中查看、编辑。\x00', 'ic_token_l_147\x00', '皮肤展示位提升至4\x00', '个人空间皮肤展示位提升至4个，可在【个人空间】-【皮肤展柜】界面中查看、编辑。\x00', '皮肤展示位提升至5\x00', '个人空间皮肤展示位提升至5个，可在【个人空间】-【皮肤展柜】界面中查看、编辑。\x00', '皮肤展示位提升至6\x00', '个人空间皮肤展示位提升至6个，可在【个人空间】-【皮肤展柜】界面中查看、编辑。\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', '汤姆和杰瑞来到天空之境，置身于宁静、祥和之中，达到一定皮肤收藏后获取。\x00', '天空之境专属的云朵展示柜，达到一定皮肤收藏后获取。\x00', '特殊的皮肤展示形式，达到一定皮肤收藏后获取。\x00']
+
+### src/catchGame/data/fashion_npc.lua
+- top: code=346 consts=175 protos=0
+- consts: ['id\x00', 'name\x00', '水手斯派克\x00', 'colorName\x00', '蓝\x00', 'type\x00', 'class1\x00', 'class2\x00', 'spineName\x00', 'dog\x00', 'skinName\x00', 'dog_1\x00', 'animName\x00', 'sleepidle\x00', 'spineOffset\x00', '-1,-3\x00', 'spineScale\x00', 'colorIcon\x00', 'img_pop_change_map_color2\x00', 'showtime\x00', '2023-01-02 10:00:01\x00', 'desc\x00', '没人会在意一条在船上睡觉的狗狗。\x00', 'quality\x00', 'A\x00']
+
+### src/catchGame/data/funtravelpassport_config.lua
+- top: code=51 consts=80 protos=0
+- consts: ['id\x00', 'start_time\x00', '2026-07-09 10:00:00\x00', 'start_timeStamp\x00', 'end_time\x00', '2026-09-02 23:59:59\x00', 'end_timeStamp\x00', 'refresh_weekday\x00', 'refresh_hour\x00', 'every_round_task_count\x00', 'activity_per_level\x00', 'max_level\x00', 'task_pool\x00', '66735,66736,66737,66738,66739,66740,66741,66742,66743,66744,66745,66746,66747,66748,66749,66750,66751,66752,66753,66754,66755,66756,66757,66758,66759,66760,66761,66762,66763,66764,66765,66766,66767,66768,66769,66770,66771,66772,66773,66774,66775,66776,66777,66778,66779\x00', 'gold_shelf_advanced_update_level\x00', 'gold_shelf_buy_item1Type\x00', 'gold_shelf_buy_item1ID\x00', 'gold_shelf_buy_item1Num\x00', 'gold_shelf_advanced_buy_item1Type\x00', 'gold_shelf_advanced_buy_item1ID\x00', 'gold_shelf_advanced_buy_item1Num\x00', 'gold_shelf_advanced_buy_item2Type\x00', 'gold_shelf_advanced_buy_item2ID\x00', 'gold_shelf_advanced_buy_item2Num\x00', 'gold_shelf_advanced_buy_item3Type\x00']
+
+### src/catchGame/data/generalactivity.lua
+- top: code=2159 consts=634 protos=0
+- consts: ['id\x00', 'startTime\x00', '2019-11-25 6:00:00\x00', 'endTime\x00', '2029-11-25 5:00:00\x00', 'TrackPoint\x00', 'name\x00', '周一好礼\x00', 'description\x00', '每周一登录即可领取好礼！\x00', 'jsonFile\x00', 'mondayactivity.json\x00', 'loopDays\x00', 'loopStartTime\x00', '2019-11-19 0:00:00\x00', 'loopEndTime\x00', '2019-11-25 23:59:59\x00', 'activeStartTime\x00', 'activeEndTime\x00', 'startTimeStamp\x00', 'endTimeStamp\x00', 'activeStartTimeStamp\x00', 'activeEndTimeStamp\x00', 'loopStartTimeStamp\x00', 'loopEndTimeStamp\x00']
+
+### src/catchGame/data/generalactivity108.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity11.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity153.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity155.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity166.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity17.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity171.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity172.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity173.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity177.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity178.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity18.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity183.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity185.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity188.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity2.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity4.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity403.lua
+- top: code=31 consts=16 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity507.lua
+- top: code=31 consts=16 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity514.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity515.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity516.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity517.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/generalactivity7.lua
+- top: code=7 consts=4 protos=0
+- consts: ['id\x00', 'questID\x00']
+
+### src/catchGame/data/gift_popularity.lua
+- top: code=21915 consts=4626 protos=0
+- consts: ['id\x00', 'quality\x00', 'S\x00', 'name\x00', '香水车\x00', 'isadvanced\x00', 'desc\x00', '满载一车产于法国的名贵香水，是名媛望族的专属；可用于赠送主播与好友，他人增加3000人气值，300点礼物积分，自身增加300点赠礼经验。\x00', 'spine\x00', 'ui_rqlw_xiangshuiqiche\x00', 'Popularity\x00', 'unit\x00', '辆\x00', 'gift_score\x00', 'gift_experience\x00', 'hideRank\x00', 'TID_gift_popularity_gift_popularity_name\x00', 'TID_gift_popularity_gift_popularity_1_name\x00', 'TID_gift_popularity_gift_popularity_desc\x00', 'TID_gift_popularity_gift_popularity_1_desc\x00', 'AP\x00', '钻石\x00', '钻石代表着纯洁和永恒，是见证回忆和爱情的信物；可用于赠送主播与好友，他人增加800人气值，80点礼物积分，自身增加80点赠礼经验。\x00', 'icon\x00', 'img_audience_gift_07\x00']
+
+### src/catchGame/data/item.lua
+- top: code=45956 consts=7671 protos=0
+- consts: ['id\x00', 'rankid\x00', 'name\x00', '红钻\x00', 'type\x00', 'desc\x00', '<color=0xe8d4b7ff>闪耀着红色光芒的钻石，可以在商城</color><color=0xfab95bff>购买部分珍贵商品。</color>\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', 'icon\x00', 'ic_token_l_5\x00', 'icon1\x00', 'ic_token_s_30\x00', 'pileSize\x00', 'quality\x00', 'S\x00', 'showquality\x00', 'expireDay\x00', 'expireHour\x00', 'multiple\x00', 'TID_item_name\x00', 'TID_item_1000001_name\x00', 'TID_item_desc\x00', 'TID_item_1000001_desc\x00']
+
+### src/catchGame/data/itemgacha_10_BskinBox.lua
+- top: code=1157 consts=358 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'desc\x00', '猫假狗威\x00', '疯帽匠\x00', '田园小伙\x00', '好好学习\x00', '天天向上\x00', '苏格兰调查长\x00', '校园学神\x00', '哲学学者\x00', '飞行员教练\x00', '大西洋舵手\x00', '海上小霸王\x00', '初级水手\x00', '宫廷剑师\x00', '猫咪暖男\x00', '摇滚猫王\x00', '民间高手\x00', '居家奶爸\x00', '特调处专员\x00', '不挂科师兄\x00', '奶嘴就是真理\x00']
+
+### src/catchGame/data/itemgacha_288_AskinBox.lua
+- top: code=1180 consts=367 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'desc\x00', '精英特工\x00', '名侦探\x00', '贝克街神探\x00', '罗宾汉杰瑞·黑忍\x00', '皇家航海王\x00', '独腿船王\x00', '剑术祖师\x00', '白胡子老头\x00', '亨利一世\x00', '罗宾汉杰瑞·野战部队\x00', '万圣惊魂\x00', '驯鹿兄弟\x00', '名誉博士\x00', '萌系初生代\x00', '圣诞甜心\x00', '小红帽泳衣\x00', '王室骄傲\x00', '超能黑客\x00', '投篮高手\x00', '白袍小将\x00']
+
+### src/catchGame/data/itemgacha_60_AskinBox.lua
+- top: code=1624 consts=476 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'desc\x00', '基德船长\x00', '绿萝卜头\x00', '骑士无双\x00', '外星骇客\x00', '嘻哈男神\x00', '粉红回忆\x00', '大魔王\x00', '侍卫汤姆·骁勇上尉\x00', '侍卫汤姆·野战部队\x00', '侍卫汤姆·黑忍\x00', '海蓝奇缘\x00', '甜蜜的约会\x00', '堕落天使\x00', '小小爱神\x00', '少女心事\x00', '蓝蝶之翼\x00', '大力水管工\x00', '小蜜蜂\x00', '毛毛虫\x00', '校园女神\x00']
+
+### src/catchGame/data/itemgacha_pool_caishi.lua
+- top: code=2342 consts=555 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'desc\x00', '泰菲·圣诞甜心彩饰\x00', '布奇·白胡子老头彩饰\x00', '剑客泰菲·白袍小将彩饰\x00', '雪梨·初恋夏天彩饰\x00', '罗宾汉·粉红回忆彩饰\x00', '恶魔泰菲·魅影者彩饰\x00', '图茨·圣诞恋语彩饰\x00', '杰瑞·圣诞快乐彩饰\x00', '汤姆·圣诞快乐彩饰\x00', '托普斯·驯鹿兄弟彩饰\x00', '汤姆·锦衣行彩饰\x00', '国王杰瑞·郁金香王座彩饰\x00', '剑客杰瑞·侠客行彩饰\x00', '泰菲·梅花侍郎彩饰\x00', '图茨·洛丽塔彩饰\x00', '恶魔泰菲·小丑王彩饰\x00', '杰瑞·快乐学习彩饰\x00', '天使杰瑞·小鸭鸭彩饰\x00', '罗宾汉杰瑞·骁勇上尉彩饰\x00', '航海士杰瑞·加勒比之王\x00']
+
+### src/catchGame/data/king_activity.lua
+- top: code=41 consts=45 protos=0
+- consts: ['id\x00', 'startTime\x00', '2026-8-6 10:00:00\x00', 'endTime\x00', '2026-8-16 23:59:59\x00', 'name\x00', '国王杰瑞的宝库\x00', 'desc1\x00', '1.选择指定数量的物品组成您的心愿奖池，确认后本次活动内无法更改\n\n2.心愿皮肤不会重复获得并平均共享1个固定抽取概率，心愿彩饰不会重复获得并平均共享1个固定抽取概率\n\n3.每次探索有概率随机获得心愿皮肤，若一直没有获得心愿皮肤则第100次必定实现，心愿彩饰的获取与否不会影响心愿皮肤的保底进度\n\n4.概率公示：心愿皮肤1%，心愿彩饰2%，2张皮肤碎片兑换券48%，1张皮肤碎片兑换券49%\x00', 'icon\x00', 'bg_act_kingbox_20201103_new\x00', 'skipID\x00', 'maxDraw\x00', 'bonusRewardID\x00', 'coinID1\x00', 'coinPrice1\x00', 'coinID5\x00', 'coinPrice5\x00', 'goodsID\x00', 'discountInfoID\x00', 'tabID\x00', '1,2\x00', 'gachaConfig\x00', 'kingsGachaConfig1\x00', '2026-3-6 00:00:00\x00']
+
+### src/catchGame/data/ladder_open.lua
+- top: code=101 consts=25 protos=0
+- consts: ['id\x00', 'weekday\x00', 'opentime\x00', '12:00:00\x00', 'endtime\x00', '14:00:00\x00', 'marquee\x00', 'ladder_open\x00', '19:00:00\x00', '23:59:59\x00']
+
+### src/catchGame/data/ladder_open_period.lua
+- top: code=157 consts=32 protos=0
+- consts: ['id\x00', 'weekday\x00', 'minSortLevel\x00', 'maxSortLevel\x00', 'openDate\x00', '2021-05-08 00:00:00\x00', 'endDate\x00', '2021-05-14 23:59:59\x00', 'opentime\x00', '00:00:00\x00', 'endtime\x00', '23:59:59\x00', 'marquee\x00', 'ladder_open_period\x00', '2021-11-05 00:00:00\x00', '2031-11-05 23:59:59\x00']
+
+### src/catchGame/data/ladder_qualifier.lua
+- top: code=51 consts=25 protos=0
+- consts: ['id\x00', 'grade_qualifiers\x00', 'role\x00', 'startTime\x00', 'winRatiomin\x00', 'winRatiomax\x00']
+
+### src/catchGame/data/ladder_qualifier_config.lua
+- top: code=11 consts=12 protos=0
+- consts: ['id\x00', 'unlock_delay\x00', '9d7h0m0s\x00', 'lock_before_open_seconds\x00', 'qualifier_win_num\x00', 'supreme_legend_online_season\x00', 'win_rate_sample_threshold\x00']
+
+### src/catchGame/data/ladder_season.lua
+- top: code=179 consts=116 protos=0
+- consts: ['id\x00', 'starttime\x00', '2019-06-01 00:01:00\x00', 'endtime\x00', '2019-07-19 05:00:00\x00', 'name\x00', '庆典季\x00', 'closeTime\x00', 'tid_ladder_season_name\x00', 'tid_ladder_season_1_name\x00', '2019-07-19 05:00:01\x00', '2019-09-27 05:00:00\x00', 'S1赛季\x00', 'tid_ladder_season_2_name\x00', '2019-09-27 05:00:01\x00', '2020-01-10 05:00:00\x00', 'S2赛季\x00', 'tid_ladder_season_3_name\x00', '2020-01-10 05:00:01\x00', '2020-04-03 05:00:00\x00', 'S3赛季\x00', 'tid_ladder_season_4_name\x00', '2020-04-03 05:00:01\x00', '2020-06-26 05:00:00\x00', 'S4赛季\x00']
+
+### src/catchGame/data/level_gameplay.lua
+- top: code=1527 consts=486 protos=0
+- consts: ['id\x00', 'grade\x00', 'level\x00', 'gameplayIcon\x00', 'ic_cmn_sys_v4_3\x00', 'gameplay\x00', 'shop\x00', 'des\x00', '商城\x00', 'unlockTips\x00', '账号等级到达1开启\x00', 'isShowTip\x00', 'tid_level_gameplay_des\x00', 'TID_level_gameplay_1_des\x00', 'tid_level_gameplay_unlockTips\x00', 'TID_level_gameplay_1_unlockTips\x00', 'post_office\x00', '亲友邮局\x00', 'TID_level_gameplay_2_des\x00', 'TID_level_gameplay_2_unlockTips\x00', 'magicmirror\x00', '魔法魔镜\x00', 'TID_level_gameplay_3_des\x00', 'TID_level_gameplay_3_unlockTips\x00', 'fantasticmirror\x00']
+
+### src/catchGame/data/level_gameplay3.lua
+- top: code=1533 consts=494 protos=0
+- consts: ['id\x00', 'grade\x00', 'level\x00', 'gameplayIcon\x00', 'ic_cmn_sys_v4_3\x00', 'gameplay\x00', 'shop\x00', 'des\x00', '商城\x00', 'unlockTips\x00', '账号等级到达1开启\x00', 'isShowTip\x00', 'tid_level_gameplay_des\x00', 'TID_level_gameplay_1_des\x00', 'tid_level_gameplay_unlockTips\x00', 'TID_level_gameplay_1_unlockTips\x00', 'post_office\x00', '亲友邮局\x00', 'TID_level_gameplay_2_des\x00', 'TID_level_gameplay_2_unlockTips\x00', 'magicmirror\x00', '魔法魔镜\x00', 'TID_level_gameplay_3_des\x00', 'TID_level_gameplay_3_unlockTips\x00', 'fantasticmirror\x00']
+
+### src/catchGame/data/level_gameplay_root.lua
+- top: code=27 consts=17 protos=0
+- consts: ['id\x00', 'gameplayFile\x00', 'level_gameplay\x00', 'createTime\x00', '2021-01-14 10:00:01\x00', 'level_gameplay2\x00', '2023-9-21 10:00:01\x00', 'level_gameplay3\x00', '2029-12-30 00:00:01\x00', 'level_gameplay4\x00', '2029-12-31 00:00:01\x00', 'level_gameplay5\x00']
+
+### src/catchGame/data/liondance.lua
+- top: code=27 consts=41 protos=0
+- consts: ['ID\x00', 'campScoreFilePath\x00', 'liondancecampscore1\x00', 'campRewardFilePath\x00', 'liondancereward\x00', 'settlementItem1Type\x00', 'settlementItem1ID\x00', 'settlementItem1Count\x00', 'settlementItem2Type\x00', 'settlementItem2ID\x00', 'settlementItem2Count\x00', 'startTime\x00', '2024-10-1 0:00:00\x00', 'settlementTime\x00', '2024-10-18 23:59:59\x00', 'endTime\x00', '2024-10-31 10:00:00\x00', 'mailId\x00', 'generalactivity1\x00', 'generalactivity2\x00', 'generalactivity3\x00', 'generalactivity4\x00', 'fashionID\x00', 'oepnTheaterID\x00', 'openComic\x00']
+
+### src/catchGame/data/liondancereward.lua
+- top: code=99 consts=29 protos=0
+- consts: ['ID\x00', 'camp\x00', 'rewardNeedScore\x00', 'rewardItem1Type\x00', 'rewardItem1ID\x00', 'rewardItem1Count\x00']
+
+### src/catchGame/data/luckWheel_exchangeMall.lua
+- top: code=23 consts=31 protos=0
+- consts: ['id\x00', 'sellGoods_config\x00', 'luckWheel_sellGoods_1\x00', 'ifshowGachaGoods\x00', 'gachaGoodsNum\x00', 'gachaTotalNum\x00', 'gachaItemMaxNum\x00', 'gachaRepickDays\x00', 'gachaCost_ItemType\x00', 'gachaCost_ItemID\x00', 'gachaCost_ItemNum\x00', 'timeForNew\x00', 'timeForExpire\x00', 'title\x00', '奖章兑换说明\x00', 'desc\x00', '使用黄金转盘奖章可兑换往期黄金转盘S级皮肤或其他丰厚奖励。往期S级皮肤碎片都是限时上架的，在此期间可以使用转盘奖章直接兑换。皮肤碎片下架后，将进入碎片奖池并在后续以随机碎片礼包的形式重新上架。每隔一段时间随机礼包的奖池会更新。\x00', 'title1\x00', '奖章获取途径\x00', 'desc1\x00', '目前主要通过限时活动获得，请留意活动中心的活动内容\x00', 'giftBoxName\x00', '随机皮肤碎片礼包\x00', 'giftBoxDesc\x00', '购买后可随机获得1个物品，已拥有皮肤的碎片不会重复获得，S级皮肤视SSS品级为已拥有。\x00']
+
+### src/catchGame/data/luckWheel_sellGoods_1.lua
+- top: code=264 consts=97 protos=0
+- consts: ['id\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', 'showTime\x00', '2022-1-1 10:00:00\x00', 'endTime\x00', '2022-12-31 10:00:00\x00', 'needItemType\x00', 'needItemID\x00', 'needItemNum\x00', 'ifGacha\x00', '_desc_\x00', '填充物：黄金转盘游玩券\x00', '填充物：转盘奖章\x00', '2024-1-1 00:00:00\x00', '2033-12-31 23:59:59\x00', 'limitType\x00', 'limitNum\x00', '奖章礼盒（亏亏版，打了85折）\x00', '2023-1-1 10:00:00\x00', '2026-9-27 23:59:59\x00', '银河舰长\x00', '剑道大师\x00', '远航舰长\x00']
+
+### src/catchGame/data/map_deco_total_collection.lua
+- top: code=52 consts=30 protos=0
+- consts: ['id\x00', 'unlockNeedNum\x00', 'rewardItemType\x00', 'rewardItemID\x00', 'rewardItemNum\x00']
+
+### src/catchGame/data/map_decoration_type_collection.lua
+- top: code=47 consts=30 protos=0
+- consts: ['id\x00', 'name\x00', '地图角色\x00', 'rankId\x00', 'isShow\x00', 'unlockNeedItemType\x00', 'unlockNeedItemNum\x00', 'rewardItemType\x00', 'rewardItemID\x00', 'rewardItemNum\x00', '地图装饰\x00', '欢迎特效\x00', '信息底板\x00']
+
+### src/catchGame/data/marquee_template.lua
+- top: code=39 consts=21 protos=0
+- consts: ['id\x00', 'templateID\x00', 'msg\x00', '天梯排位赛将于%s分钟后开放！\x00', 'tid_marqueel_marquee_template_msg\x00', 'TID_marqueel_marquee_template_1_msg\x00', '天梯排位赛将于%s分钟后关闭！\x00', 'TID_marqueel_marquee_template_2_msg\x00', '天梯排位赛已经关闭！\x00', 'TID_marqueel_marquee_template_3_msg\x00', '天梯排位赛已经开放！\x00', 'TID_marqueel_marquee_template_4_msg\x00', 'TID_marqueel_marquee_template_5_msg\x00', '由于%s，我们将于(*H):(*M)进行停服维护，预计维护%s分钟.\x00', 'TID_marqueel_marquee_template_1001_msg\x00']
+
+### src/catchGame/data/masterChip.lua
+- top: code=17 consts=24 protos=0
+- consts: ['id\x00', 'name\x00', '皮肤碎片兑换券\x00', 'desc\x00', '极其珍贵的兑换券，使用后可以兑换心仪的皮肤碎片哦~\x00', 'desc2\x00', '1.近期上架的皮肤暂不提供碎片兑换。\n2.兑换不同品级的皮肤碎片时所需要的兑换券数量不等。\n3.必须至少拥有指定数量的皮肤碎片才可以开启兑换，未拥有皮肤碎片的皮肤无法进行兑换。\x00', 'icon\x00', 'ic_token_s_skin_extra\x00', 'iconBig\x00', 'skin_card_special\x00', 'type\x00', 'quality\x00', 'S\x00', 'exchangeQuality\x00', 'S,A:1,A\x00', 'delayTime\x00', 'needChipNum\x00', '5,2,1\x00', 'minNumRequire\x00', '30,1,1\x00']
+
+### src/catchGame/data/medal_collection.lua
+- top: code=87 consts=40 protos=0
+- consts: ['id\x00', 'name\x00', '收藏新人\x00', 'medalID\x00', 'unlockCP\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', '收藏高手\x00', 'item2Type\x00', 'item2ID\x00', 'item2Num\x00', '收藏达人\x00', '收藏精英\x00', 'item3Type\x00', 'item3ID\x00', 'item3Num\x00', '收藏专家\x00', '收藏大师\x00', '收藏大神\x00']
+
+### src/catchGame/data/mirror_pool_s_skin_1.lua
+- top: code=472 consts=201 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'desc\x00', '泰菲萌系女仆\x00', '侦探杰瑞神探警长\x00', '剑客泰菲暗夜战神\x00', '剑客杰瑞白衣剑少\x00', '泰菲熊宝大冒险\x00', '国王杰瑞帝国征服者\x00', '雪梨星光公主\x00', '莱特宁功夫之神\x00', '汤姆天王巨星\x00', '布奇民间土豪\x00', '牛仔杰瑞西部大英雄\x00', '牛仔汤姆西部大英雄\x00', '恶魔杰瑞深渊之主\x00', '天使泰菲星月传奇\x00', '米特蒸汽机动队\x00', '国王杰瑞黑桃国王\x00', '托普斯摩登时代\x00', '侍卫汤姆精灵王\x00', '天使杰瑞未来之翼\x00', '拿坡里电玩梦想\x00']
+
+### src/catchGame/data/mirror_pool_sp_skin_1.lua
+- top: code=82 consts=31 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'desc\x00', '米雪儿·瑶池仙子\x00', '仙女鼠·遇见龙女\x00', '剑客泰菲·哪吒\x00', '杰瑞·大圣\x00', '汤姆·二郎神\x00', '泰菲·同心筑梦\x00', '镜面世界\x00', '狴犴正气\x00', '狻猊龙威\x00', '布奇·常胜之狮\x00', 'new\x00', '航海士杰瑞·噩梦船长\x00']
+
+### src/catchGame/data/monthcheckin.lua
+- top: code=197 consts=53 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'keyReward\x00', 'checkin_month_skillcard\x00']
+
+### src/catchGame/data/new_game_tip.lua
+- top: code=13 consts=14 protos=0
+- consts: ['id\x00', 'key\x00', 'shop\x00', 'isOn\x00', 'grade\x00', 'desc\x00', '全新商店玩法！\x00', 'startTime\x00', '2021-09-02 06:00:00\x00', 'endTime\x00', '2021-12-02 06:00:00\x00', 'clickedDisappear\x00']
+
+### src/catchGame/data/og_season_reg_year_reward.lua
+- top: code=69 consts=36 protos=0
+- consts: ['id\x00', 'items1Type\x00', 'items1ID\x00', 'items1Num\x00', 'items2Type\x00', 'items2ID\x00', 'items2Num\x00', 'regTime\x00', '2019-06-30 23:59:59\x00', 'regTimeStamp\x00', '2019-12-31 23:59:59\x00', '2020-12-31 23:59:59\x00', '2021-12-31 23:59:59\x00', '2022-12-31 23:59:59\x00', '2026-12-31 23:59:59\x00']
+
+### src/catchGame/data/paopao.lua
+- top: code=19573 consts=2917 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'isCat\x00', 'roleID\x00', 'item1Icon\x00', 'emo_ic_2\x00', 'item1Spine\x00', 'ui_hdbq\x00', 'item1Anmi\x00', 'gy\x00', 'item2Icon\x00', 'item2Spine\x00', 'item2Anmi\x00', 'isGlobal\x00', 'eventId\x00', 'emo_ic_3\x00', 'dz\x00', 'emo_ic_4\x00', 'ok\x00', 'emo_ic_5\x00', 'ye\x00', 'emo_ic_6\x00', 'jy\x00', 'item1Word\x00']
+
+### src/catchGame/data/paopao_category.lua
+- top: code=27 consts=16 protos=0
+- consts: ['id\x00', 'title\x00', '常规模式\x00', 'type\x00', 'order\x00', 'default\x00', 'TID_paopao_category_title\x00', 'TID_paopao_category_1_title\x00', '猫鼠广场\x00', 'TID_paopao_category_2_title\x00', '自定义房间\x00', 'TID_paopao_category_3_title\x00']
+
+### src/catchGame/data/partner.lua
+- top: code=54 consts=46 protos=0
+- consts: ['id\x00', 'name\x00', '金丝雀\x00', 'lock\x00', 'quality\x00', 'B\x00', 'maxLevel\x00', 'maxStage\x00', 'fashionValue\x00', 'portrait\x00', 'partner_v1_cuckoo\x00', 'figure\x00', 'catch_partner_img_cuckoo\x00', 'showGiftbag\x00', 'ic_partner_skin_default_cuckoo_li\x00', 'prefix\x00', 'xiaoniao_\x00', 'defaultSkin\x00', 'companion_xiaoniao\x00', 'spineName\x00', 'loadingArmature\x00', 'companion_xiaoniao_loading\x00', 'moveSound\x00', '啄木鸟\x00', 'A\x00']
+
+### src/catchGame/data/partner_fashion.lua
+- top: code=48 consts=43 protos=0
+- consts: ['id\x00', 'name\x00', '初始装扮\x00', 'type\x00', 'desc\x00', '金丝雀初始装扮\x00', 'quality\x00', 'C\x00', 'fashionValue\x00', 'icon\x00', 'ic_partner_skin_default_cuckoo\x00', 'icon1\x00', 'ic_partner_skin_default_cuckoo_li\x00', 'partnerId\x00', 'skin\x00', 'companion_xiaoniao\x00', 'loadingSpineName\x00', 'companion_xiaoniao_loading\x00', 'loadingSound\x00', 'touchSound\x00', '啄木鸟初始装扮\x00', 'ic_partner_skin_default_woodpecke\x00', 'ic_partner_skin_default_woodpecke_li\x00', 'companion_zhuomuniao\x00', 'companion_zhuomuniao_loading\x00']
+
+### src/catchGame/data/partner_skill_unlock.lua
+- top: code=47 consts=23 protos=0
+- consts: ['id\x00', 'user\x00', 'name\x00', '张望\x00', 'gradeType\x00', '陷阱\x00', 'costCoin1Id\x00', 'costCoin1Num\x00', '强化\x00', '专注\x00', '逃跑\x00', '恢复\x00']
+
+### src/catchGame/data/personal_custom_config.lua
+- top: code=298 consts=190 protos=0
+- consts: ['id\x00', 'type\x00', 'title\x00', '活跃等级\x00', 'icon\x00', 'img_icon_login_days_default\x00', 'desc\x00', '猫和老鼠世界中的活跃体现，当前累计登录游戏%s天。\x00', 'lock_des\x00', '累计登录7天后，解锁奶酪时光徽章。\x00', 'nextlevel_des\x00', '当前累计登录%s天，继续登陆%s天后，解锁下一级活跃等级徽章。\x00', '猫游戏场次\x00', 'img_icon_rank_medal_cat_default\x00', '记录每一场和汤姆追逐小老鼠时光，当前累计猫游戏%s场次。\x00', '记录每一场和汤姆追逐小老鼠的时光。\x00', '当前累计猫游戏%s场次，选择猫方角色继续%s场游戏后，解锁下一级追逐时刻徽章。\x00', '鼠游戏场次\x00', 'img_icon_rank_medal_mouse_default\x00', '记录每一场和杰瑞玩闹的游戏时光，当前累计鼠游戏%s场次。\x00', '记录每一场和杰瑞玩闹的游戏时光。\x00', '当前累计鼠游戏%s场次，选择鼠方角色继续%s场游戏后，解锁下一级玩闹时刻徽章。\x00', '收藏等级\x00', 'ic_common_collection_medal_default\x00', '收藏成就的体现，当前收藏总值%s。\x00']
+
+### src/catchGame/data/personal_fashion_base.lua
+- top: code=21 consts=20 protos=0
+- consts: ['id\x00', 'quality\x00', 'B\x00', 'imgPath\x00', 'img_personal_skin_exhibition_stand_b1\x00', 'icon\x00', 'ic_token_l_136\x00', 'name\x00', '默认\x00', 'des\x00', '汤姆和杰瑞的默认皮肤展示台。\x00', 'collectPoint\x00', 'A\x00', 'img_personal_skin_exhibition_stand_a1\x00', 'ic_token_l_137\x00', '云朵展示柜\x00', '天空之境云朵展示柜，可通过皮肤收藏获取。\x00']
+
+### src/catchGame/data/personal_fashion_layout.lua
+- top: code=21 consts=20 protos=0
+- consts: ['id\x00', 'quality\x00', 'B\x00', 'imgPath\x00', 'img_personal_space_position_1\x00', 'icon\x00', 'ic_token_l_141\x00', 'name\x00', '默认\x00', 'des\x00', '汤姆和杰瑞默认的皮肤摆设方式。\x00', 'collectPoint\x00', 'A\x00', 'img_personal_space_position_2\x00', 'ic_token_l_140\x00', '梯形展示\x00', '特殊皮肤展示，可通过皮肤收藏获取。\x00']
+
+### src/catchGame/data/personal_zone_bg.lua
+- top: code=210 consts=126 protos=0
+- consts: ['id\x00', 'quality\x00', 'B\x00', 'imgPath\x00', 'img_personal_space_bg_b1\x00', 'icon\x00', 'ic_token_l_158\x00', 'name\x00', '默认\x00', 'des\x00', '汤姆和杰瑞充满回忆的的家。\x00', 'collectPoint\x00', 'A\x00', 'img_personal_space_bg_a1\x00', 'ic_token_l_159\x00', '天空之境空间背景\x00', '天空之境空间背景，可通过皮肤收藏获取。\x00', 'S\x00', 'img_personal_space_bg_s1\x00', 'ic_token_l_160\x00', '沉星森林空间背景\x00', '传说中穿越时空的神秘之地，通过活动获取。\x00', 'img_personal_space_bg_b2\x00', 'ic_token_l_185\x00', '机甲汤姆空间背景\x00']
+
+### src/catchGame/data/photoframe.lua
+- top: code=93 consts=68 protos=0
+- consts: ['id\x00', 'name\x00', '紫色经典角色底板\x00', 'type\x00', 'colorName\x00', '紫\x00', 'class1\x00', 'class2\x00', 'colorIcon\x00', 'img_pop_change_map_color1\x00', 'fashionValue\x00', 'isCollection\x00', 'quality\x00', 'B\x00', 'desc\x00', '一样的经典，不一样的颜色。\x00', 'icon\x00', 'img_change_map_card_big_5\x00', 'loadingIcon\x00', 'icon_change_map_card_5\x00', 'TID_photoframe_name\x00', 'TID_photoframe_1001_name\x00', 'TID_photoframe_colorName\x00', 'TID_photoframe_1001_colorName\x00', 'TID_photoframe_desc\x00']
+
+### src/catchGame/data/popular_gift_pool_a3.lua
+- top: code=584 consts=173 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'desc\x00', '虎丘塔\x00', '曲项琵琶\x00', '桂花清露\x00', '最佳得分者\x00', '最佳防守者\x00', '柿柿如意\x00', '恶魔羽翼\x00', '太空娃娃机\x00', '心动一夏\x00', '猛男杠铃\x00', '枫叶书签\x00', '福气盈门\x00', '姜饼小屋\x00', '牡丹王子\x00', '牡丹公主\x00', '神户牛排\x00', '香囊\x00', '龙舟\x00', '西瓜泳圈\x00', '大鲨鱼泳圈\x00']
+
+### src/catchGame/data/popular_gift_pool_s1.lua
+- top: code=367 consts=112 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'desc\x00', '火箭\x00', '舞狮\x00', '小狮子星球\x00', '广寒宫\x00', '冰雪城堡\x00', '小丑不倒翁\x00', '水龙吟\x00', '月光八音盒\x00', '圣诞水晶球\x00', '胖呆呆的打call\x00', '真爱相伴\x00', '金牛之梦\x00', '沙滩古堡\x00', '小飞龙\x00', '魔法树屋\x00', '室女之梦\x00', '图多盖洛·嫦娥\x00', '壶中世界\x00', '出发！奶酪星\x00', '踏秋纸鸢\x00']
+
+### src/catchGame/data/popup_type.lua
+- top: code=157 consts=69 protos=0
+- consts: ['id\x00', 'name\x00', '回流活动\x00', 'rank\x00', 'daily_max_popup\x00', 'max_queue_time\x00', '回流首场比赛\x00', '天梯赛季继承\x00', 'force\x00', 'VIP信息\x00', '拍脸登录活动\x00', '月签到\x00', 'BattlePass海报\x00', '魔术师贺新春活动\x00', '首充海报\x00', '幸运转盘\x00', '汤姆的梦想之国活动\x00', '拍脸海报\x00', '活动中心\x00', '实名认证引导\x00', '新手阶梯付费\x00', '商店玩法\x00', '特技玩法\x00', '拍脸任务/商城\x00', '春节活动引导页(2022年春节)\x00']
+
+### src/catchGame/data/portrait.lua
+- top: code=25053 consts=4611 protos=0
+- consts: ['id\x00', 'rank\x00', 'type\x00', 'imgPath\x00', 'p_a_01\x00', 'icon\x00', 'name\x00', '小鸭子头像\x00', 'quality\x00', 'C\x00', 'des\x00', '默认头像\x00', 'collectPoint\x00', 'isCollection\x00', 'collectType\x00', '回忆经典\x00', 'ai_random_weight\x00', 'TID_portrait_portrait_name\x00', 'TID_portrait_portrait_1_name\x00', 'TID_portrait_portrait_des\x00', 'TID_portrait_portrait_1_des\x00', 'p_a_02\x00', '啄木鸟头像\x00', 'TID_portrait_portrait_2_name\x00', 'TID_portrait_portrait_2_des\x00']
+
+### src/catchGame/data/portrait_collection.lua
+- top: code=1777 consts=960 protos=0
+- consts: ['id\x00', 'rankId\x00', 'isShow\x00', 'name\x00', '魔镜奇缘\x00', 'rewardType\x00', 'rewardID\x00', 'unlockLimit\x00', 'collectLimit\x00', 'itemType\x00', 'itemID1\x00', 'itemID2\x00', 'itemID3\x00', 'itemID4\x00', 'itemID5\x00', 'itemID6\x00', 'itemID7\x00', 'itemID8\x00', 'itemID9\x00', 'itemID10\x00', 'itemID11\x00', 'itemID12\x00', 'itemID13\x00', 'itemID14\x00', 'itemID15\x00']
+
+### src/catchGame/data/portrait_frame_collection.lua
+- top: code=1112 consts=680 protos=0
+- consts: ['id\x00', 'rankId\x00', 'isShow\x00', 'name\x00', '神秘魔镜\x00', 'rewardType\x00', 'rewardID\x00', 'unlockLimit\x00', 'collectLimit\x00', 'itemType\x00', 'itemID1\x00', 'itemID2\x00', 'itemID3\x00', 'itemID4\x00', 'itemID5\x00', 'itemID6\x00', 'itemID7\x00', 'itemID8\x00', 'itemID9\x00', 'itemID10\x00', 'itemID11\x00', 'itemID12\x00', 'itemID13\x00', 'itemID14\x00', 'itemID15\x00']
+
+### src/catchGame/data/portrait_frame_com.lua
+- top: code=22417 consts=4712 protos=0
+- consts: ['id\x00', 'name\x00', '默认\x00', 'type\x00', 'desc\x00', '默认的头像框。\x00', 'quality\x00', 'B\x00', 'collectPoint\x00', 'isCollection\x00', 'collectType\x00', '不计入收藏\x00', 'portrait_bg\x00', 'img_picframe_default_1\x00', 'ai_random_weight\x00', 'TID_portrait_portrait_frame_com_name\x00', 'TID_portrait_portrait_frame_com_1_name\x00', 'TID_portrait_portrait_frame_com_desc\x00', 'TID_portrait_portrait_frame_com_1_desc\x00', 'rankid\x00', '好莱坞明星框\x00', '仿佛好莱坞明星一般光彩照人\x00', 'S\x00', '神秘魔镜\x00', 'img_picframe_a_1\x00']
+
+### src/catchGame/data/poster_popup.lua
+- top: code=1132 consts=414 protos=0
+- consts: ['id\x00', 'startTime\x00', '2026-7-1 00:00:00\x00', 'endTime\x00', '2026-7-14 23:59:59\x00', 'picture\x00', 'recharge_poster_zzzt0\x00', 'description\x00', '卡牌大师的神秘商店\x00', 'text\x00', '试试手气\x00', 'jumpUi\x00', 'param\x00', 'popupOnce\x00', 'popupTotalTimes\x00', '2024-12-26 10:00:00\x00', '2025-1-5 23:59:59\x00', 'recharge_poster_king_20210112\x00', '国王的宝库\x00', '探索宝库\x00', '2025-3-6 10:00:00\x00', '2025-4-2 23:59:59\x00', 'recharge_poster_zt0\x00', '荣耀宝库\x00', '2026-7-2 10:00:00\x00']
+
+### src/catchGame/data/poster_signUp.lua
+- top: code=78 consts=49 protos=0
+- consts: ['id\x00', 'showStartTime\x00', '2025-9-25 10:00:00\x00', 'startTime\x00', 'endTime\x00', '2025-10-8 23:59:59\x00', 'postID\x00', 'chun\x00', 'ifPopup\x00', 'generalactivityID\x00', 'questShowID\x00', '1,3,5,7\x00', '2024-9-25 10:00:00\x00', '2024-10-8 23:59:59\x00', 'qiu\x00', 'original_price\x00', '2024-2-08 10:00:00\x00', '2024-2-18 23:59:59\x00', 'dong\x00', '2026-6-3 10:00:00\x00', '2026-6-14 23:59:59\x00', 'xia\x00', '2026-7-3 5:00:01\x00', '2026-7-15 23:59:59\x00', 'bp\x00']
+
+### src/catchGame/data/present.lua
+- top: code=3100 consts=523 protos=0
+- consts: ['id\x00', 'rankid\x00', 'name\x00', '亲密红玫瑰\x00', 'target\x00', 'type\x00', 'intimacy\x00', 'cpGift\x00', 'desc\x00', '这是一朵娇艳的红玫瑰，赠送给您的好友，可以增加您与TA的亲密度10点。\x00', 'icon\x00', 'ic_prop_rose_1\x00', 'iconShow\x00', 'closeGiftIcon\x00', 'directConsume\x00', 'pileSize\x00', 'quality\x00', 'B\x00', 'showquality\x00', 'multiple\x00', 'numLimit\x00', 'canPresent\x00', 'backType\x00', 'expireTime\x00', 'ActivityRate\x00']
+
+### src/catchGame/data/privilege.lua
+- top: code=198 consts=95 protos=0
+- consts: ['id\x00', 'name\x00', '账号经验获取+10%\x00', 'icon\x00', 'ic_token_s_199\x00', 'icon1\x00', 'ic_token_l_169\x00', 'param1\x00', 'switch\x00', 'desc\x00', '通过对战获取的账号经验提升\x00', '知识点获取+10%\x00', 'name1\x00', '知识点获取+%d%%\x00', 'name2\x00', '知识点获取\x00', 'default\x00', 'delta\x00', 'unit\x00', '%d%%\x00', '通过对战获取的知识点提升，若加成后存在小数，则最终所得知识点数量四舍五入\x00', '往年直售角色畅玩\x00', 'isExclusive\x00', '往年以每年1月1日为节点，节点之前商城直售的角色皆可畅玩体验\x00', '知识卡畅玩\x00']
+
+### src/catchGame/data/privilege_coin_transform.lua
+- top: code=36 consts=22 protos=0
+- consts: ['id\x00', 'systemName\x00', '收藏系统\x00', 'systemID\x00', 'pointNum\x00', 'privilegeCoinNum\x00', 'desc\x00', '<color=0x9f816eff>每提升</color><color=0xde6544ff>1</color><color=0x9f816eff>点收藏值</color>\n<color=0x9f816eff>可获赠</color><color=0xde6544ff>10</color><color=0x9f816eff>点特权积分</color>\x00', '钻石赠礼\x00', '<color=0x9f816eff>每消费</color><color=0xde6544ff>10000</color><color=0x9f816eff>个钻石</color>\n<color=0x9f816eff>可获赠</color><color=0xde6544ff>1000</color><color=0x9f816eff>点特权积分</color>\x00', '每日福利\x00', '<color=0x9f816eff>购买</color><color=0xde6544ff>每日福利</color>\n<color=0x9f816eff>可获得</color><color=0xde6544ff>大量</color><color=0x9f816eff>特权积分</color>\x00', '会员商城\x00', '<color=0xfffdefff>每消费</color><color=0xde6544ff>10</color><color=0xfffdefff>个钻石</color>\n<color=0xfffdefff>可获赠</color><color=0xde6544ff>1</color><color=0xfffdefff>点特权积分</color>\x00', 'limited\x00']
+
+### src/catchGame/data/privilege_service.lua
+- top: code=37 consts=30 protos=0
+- consts: ['id\x00', 'des\x00', '青铜\x00', 'checkInCard\x00', 'itemID\x00', '黄金\x00', 'portraitframeid\x00', 'chatframeid\x00', 'privilege\x00', '4,10,13,2,1,15,14,16\x00', '铂金\x00', '钻石\x00', 'colorfulnameid\x00', '3,5,6,12,11,7,8,9,4,10,13,2,1,15,14,16,17\x00']
+
+### src/catchGame/data/privilegemall.lua
+- top: code=19 consts=28 protos=0
+- consts: ['id\x00', 'gachaPrivilegeLevel\x00', 'gachaCoinID\x00', 'gachaCoinNum\x00', 'statisticID\x00', 'gachaConfig\x00', 'privilegemall_gacha\x00', 'sellSlotConfig\x00', 'privilegemall_sellslot\x00', 'privilegeBonusList\x00', '2,5,6,10,11,13,14,16\x00', 'gachaDayLimit\x00', 'canGetPrivilegeCreditLevel\x00', 'tipTitle\x00', '说明\x00', 'tipDesc\x00', '每提升1点收藏值可额外获赠10点特权积分\x00', 'contentTitle\x00', '会员特权升级\x00', 'contentDesc\x00', '永久获得一项会员特权额外加成\x00']
+
+### src/catchGame/data/privilegemall_gacha.lua
+- top: code=175 consts=64 protos=0
+- consts: ['id\x00', 'name\x00', '时空微粒\x00', 'basicReward\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', 'weight1\x00', 'weight2\x00', '星海之梦\x00', 'bagCheck\x00', 'gachaNum\x00', '对局知识点加成+1%\x00', '魔镜可刷新奖池次数+1\x00', '魔镜概率up+1%\x00', '购买角色价格优惠+1%\x00', '购买彩饰价格优惠+1%\x00', '好友上限+1\x00', '对局银币获取+1%\x00', '周知识点对局获取上限+10\x00', '高级A级皮肤（100%返钻皮肤活动A皮+活动免费投放的A皮）\x00', 'poolName\x00', 'itemgacha_288_AskinBox\x00', 'getNum\x00', '普通A级皮肤（魔镜池子里的A皮+6元特惠A皮+通行证A皮）\x00']
+
+### src/catchGame/data/privilegemall_goodslist.lua
+- top: code=207 consts=80 protos=0
+- consts: ['id\x00', 'poolID\x00', 'privilegemall_pool_s_skin_1\x00', 'bagCheck\x00', 'poolUseChip\x00', 'priceItemType\x00', 'priceItemID\x00', 'priceItemNum\x00', 'originalPriceItemType\x00', 'originalPriceItemID\x00', 'originalPriceItemNum\x00', 'limitType\x00', 'limitNum\x00', 'needPrivilegeLevel\x00', 'desc\x00', '特价通行证皮肤碎片\x00', '原价通行证皮肤碎片\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', '特价通用皮肤碎片\x00', '转盘奖章礼盒\x00', '星星\x00', '邮票*10\x00', '扫货币*600\x00']
+
+### src/catchGame/data/privilegemall_sellslot.lua
+- top: code=63 consts=37 protos=0
+- consts: ['id\x00', 'rank_id\x00', 'goodsInfo\x00', '1,2,3\x00', 'desc\x00', '邮局皮肤碎片，保定皮肤碎片兑换券\x00', '黄金转盘奖章礼盒\x00', '钻石尊享礼盒\x00', '时光胶片随机礼盒\x00', '时光胶片钻石礼包\x00', '扫货币*600\x00', '黄金幸运礼盒\x00', '星澜*10\x00', '100特权积分\x00', '10特权积分\x00']
+
+### src/catchGame/data/rank_title.lua
+- top: code=4186 consts=1422 protos=0
+- consts: ['id\x00', 'type\x00', 'rank_level\x00', 'rank_min\x00', 'rank_max\x00', 'icon\x00', 'img_title_label_nation_1_new\x00', 'icon_min\x00', 'img_title_badge_nation_1_new\x00', 'img_title_label_nation_2_new\x00', 'img_title_badge_nation_2_new\x00', 'img_title_label_nation_3_new\x00', 'img_title_badge_nation_3_new\x00', 'img_title_label_nation_4_new\x00', 'img_title_badge_nation_4_new\x00', 'img_title_label_province_1_new\x00', 'img_title_badge_province_1_new\x00', 'img_title_label_province_2_new\x00', 'img_title_badge_province_2_new\x00', 'img_title_label_province_3_new\x00', 'img_title_badge_province_3_new\x00', 'img_title_label_province_4_new\x00', 'img_title_badge_province_4_new\x00', 'img_title_label_city_1_new\x00', 'img_title_badge_city_1_new\x00']
+
+### src/catchGame/data/ranking_list.lua
+- top: code=598 consts=292 protos=0
+- consts: ['id\x00', 'name\x00', '获胜能力\x00', 'timeDes\x00', '周·排行榜\x00', 'scoreDes\x00', '得分：\x00', 'ruleDes\x00', '<color=0xc34a2eff>【获胜能力排名】</color><color=0x171717ff>：\n1、获胜能力是综合考虑场次和胜率的评分\n2、综合经典和天梯模式的所有场次，通过中级学业考试前的比赛场次不计入排行榜数据\n3、得分相同时先获得此成绩的玩家排在前面\n4、猫榜和鼠榜分开计算\n5、未识别地区用户统一记于【未知地区】子赛区，排行榜规则与正常地区相同\n \n<color=0xc34a2eff>【重置时间】</color><color=0x171717ff>：\n每周一凌晨0点重置排行榜\n \n<color=0xc34a2eff>【称号奖励】</color><color=0x171717ff>：\n排名前100的玩家每周一0点可获得称号奖励，排名越靠前奖励越好，称号到账可能会有数分钟延迟。\x00', 'friendSwitch\x00', 'zoneSwitch\x00', 'switch\x00', 'catMouseSwitch\x00', 'regionSelectSwitch\x00', 'TID_ranking_ranking_list_name\x00', 'TID_ranking_ranking_list_1_name\x00', 'TID_ranking_ranking_list_timeDes\x00', 'TID_ranking_ranking_list_1_timeDes\x00', 'TID_ranking_ranking_list_scoreDes\x00', 'TID_ranking_ranking_list_1_scoreDes\x00', 'TID_ranking_ranking_list_ruleDes\x00', 'TID_ranking_ranking_list_1_ruleDes\x00', '得分能力\x00', '<color=0xc34a2eff>【表现得分排名】</color><color=0x171717ff>：\n1、表现得分是本周个人表现的平均得分\n2、综合统计经典和天梯模式的所有场次，通过中级学业考试前的比赛场次不计入排行榜数据\n3、得分相同时先获得此成绩的玩家排在前面\n4、猫榜和鼠榜分开计算\n5、未识别地区用户统一记于【未知地区】子赛区，排行榜规则与正常地区相同\n \n<color=0xc34a2eff>【重置时间】</color><color=0x171717ff>：\n每周一凌晨0点重置排行榜\n \n<color=0xc34a2eff>【称号奖励】</color><color=0x171717ff>：\n排名前100的玩家每周一0点可获得称号奖励，排名越靠前奖励越好，称号到账可能会有数分钟延迟。\x00', 'TID_ranking_ranking_list_2_name\x00']
+
+### src/catchGame/data/recreaionlobby.lua
+- top: code=73 consts=32 protos=0
+- consts: ['ID\x00', 'date\x00', '2026-02-12\x00', 'gameplay\x00', '4,12,3,5,8,9,10,11,7,13,14,15,16\x00', '2026-02-13\x00', '2026-02-14\x00', '2026-02-15\x00', '2026-02-16\x00', '2026-02-17\x00', '2026-02-18\x00', '2026-02-19\x00', '2026-02-20\x00', '2026-02-21\x00', '2026-02-22\x00', '2026-02-23\x00', '2026-02-24\x00', '2026-02-25\x00']
+
+### src/catchGame/data/recreation_open.lua
+- top: code=38 consts=20 protos=0
+- consts: ['day\x00', 'name\x00', '周一\x00', 'gameplay\x00', '3,4,7,9,12,11,13,22\x00', '周二\x00', '3,4,7,5,8,9,13,22\x00', '周三\x00', '周四\x00', '周五\x00', '4,12,3,5,8,9,10,11,7,13,22\x00', '周六\x00', '周日\x00']
+
+### src/catchGame/data/recreationgame.lua
+- top: code=298 consts=199 protos=0
+- consts: ['id\x00', 'name\x00', '装饰树大作战\x00', 'ad\x00', 'img_recreation_ad_shengdan\x00', 'title\x00', 'img_recreation_ad_title_shengdan\x00', 'openLevel\x00', 'matchPeople\x00', 'ic_match_people_4v4\x00', 'icon\x00', 'ic_room_winter\x00', 'switchID\x00', 'matchType\x00', 'gameType\x00', 'mapName\x00', 'map_christmasFight\x00', 'ruleID\x00', 'rule\x00', '1.双方各有1猫3鼠进行对战。\n\n2.猫可将敌方老鼠抓起并绑在火箭上放飞，以此来阻挠敌方。\n\n3.放飞的老鼠在若干秒之后将回到游戏中。\n\n4.地图中会周期性出现圣诞老人，丢下各式各样的装饰品。\n\n5.双方各有一棵圣诞树，玩家收集装饰品后，可以对己方的圣诞树进行装饰，同时也可以摘下对方圣诞树上的装饰品。\n\n6.圣诞树装饰值先到50的一方获胜。\n\n7.圣诞老人的雪橇礼物装的太多啦，会在不留神的时候弄掉装满装饰礼物的雪橇，“送”给后院的猫和老鼠们！\n\n8.小心烟囱！\x00', 'moduleName\x00', 'christmas_fight\x00', 'isShowInCustomRoom\x00', 'ugcCover\x00', 'ugc_stuff_img_christmas\x00']
+
+### src/catchGame/data/reputation_level.lua
+- top: code=71 consts=41 protos=0
+- consts: ['id\x00', 'exp\x00', 'restoreCap\x00', 'desc\x00', '较差，请努力改善自己的游戏行为！\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', '良好，请继续保持！\x00', 'title\x00', 'item2Type\x00', 'item2ID\x00', 'item2Num\x00', '非常好，请继续保持\x00']
+
+### src/catchGame/data/skill_temporary_free.lua
+- top: code=10 consts=10 protos=0
+- consts: ['id\x00', 'startTime\x00', '2026-07-02 10:00:00\x00', 'startTimeStamp\x00', 'endTime\x00', '2026-09-02 23:59:59\x00', 'endTimeStamp\x00']
+
+### src/catchGame/data/skin_trialActivity.lua
+- top: code=13 consts=15 protos=0
+- consts: ['ID\x00', 'startTime\x00', '2026-6-3 10:00:00\x00', 'endTime\x00', '2026-6-14 23:59:59\x00', 'quality\x00', 'S\x00', 'excludeIDs\x00', '580,579,552,553,606,607,616,600,604,605,651,658,659,660\x00', 'loopDays\x00', 'jumpUI\x00', 'desc\x00', 'S皮限免活动，每2天体验一款免费S皮\x00']
+
+### src/catchGame/data/skintrial_sp_pool_1.lua
+- top: code=80 consts=38 protos=0
+- consts: ['id\x00', 'itemType\x00', 'itemID\x00', 'itemNum\x00', 'desc\x00', '汤姆·二郎神体验卡(12小时)\x00', '杰瑞·大圣体验卡(12小时)\x00', '剑客泰菲·哪吒体验卡（12小时）\x00', '米雪儿·遇见龙女(12小时)\x00', '仙女鼠·瑶池仙子(12小时)\x00', '泰菲·同心筑梦（12小时）\x00', '魔术师杰瑞·镜面世界（12小时）\x00', '托普斯·狴犴正气(12小时)\x00', '蒙金奇·狻猊龙威(12小时)\x00', '布奇·常胜之狮(12小时)\x00', '航海士杰瑞·噩梦船长(12小时)\x00']
+
+### src/catchGame/data/sp_gacha.lua
+- top: code=22 consts=32 protos=0
+- consts: ['id\x00', 'goodsID\x00', 'giftID\x00', 'gachaCost1Type\x00', 'gachaCost1ID\x00', 'gachaCost1Num\x00', 'gachaCost2Type\x00', 'gachaCost2ID\x00', 'gachaCost2Num\x00', 'labels\x00', '40,80\x00', 'labelDescs\x00', '限定奖励,SP皮肤\x00', 'poolShow\x00', 'mirror_pool_sp_skin_1\x00', 'dayShow\x00', 'privilegemallSellSlotIDs\x00', '9,10\x00', 'tipTitle\x00', '说明\x00', 'tipDesc\x00', '每月1日可自选四款SP级皮肤组成奖池，选择完毕后当月不可更改。使用【显影液】冲洗【时光胶片】可获得S级皮肤，S级人气礼物等其中之一，每次抽奖将消耗1张时光胶片和若干显影液。时光胶片可在会员商城中通过时空微粒兑换或礼包活动获得。<color=0xfab95bff>时光胶片每赛季清空，记得要及时使用哦~</color>\x00', 'gachaDesc\x00', '每40抽必得<color=0xde6544ff>限定奖励：SP级皮肤，S级礼物</color>其中之一，若连续79次未获得SP级皮肤，则<color=0xde6544ff>下一次必定获得</color>。\n\n抽奖时会优先获得自选的SP级皮肤，当自选皮肤全部达到3SP后，继续造影则会优先获得剩余未自选的SP级皮肤。已达3SP级的皮肤不会重复获得，若全部皮肤已达3SP则必得<color=0xde6544ff>S级皮肤升级卡</color>！以下为时光造影的平均概率：\n\n    SP级皮肤：1.25%\n    限定S级礼物：1.75%\n    黄金转盘奖章：4%\n    星星与邮票：10%\n    梦想祈愿币：4%\n    通行证徽章：5%\n    扫货币与红钻：14%\n    加速卡与加速器：8.75%\n    皮肤碎片兑换券：5%\n    黄金转盘游玩券：6%\n    地图换肤券：6%\n    天梯保护卡：6%\n    亲密礼物与梦想旅程通票：7%\n    A级人气礼物：6%\n    其他物品：15.25%\x00']
+
+### src/catchGame/data/sp_gacha_config.lua
+- top: code=360 consts=105 protos=0
+- consts: ['id\x00', 'desc\x00', '心愿奖池SP皮\x00', 'key\x00', 'bagCheck\x00', 'poolType\x00', 'poolName\x00', 'mirror_pool_sp_skin_1\x00', 'getNum\x00', 'poolGuardItem1Type\x00', 'poolGuardItem1ID\x00', 'poolGuardItem1Num\x00', 'weight1\x00', 'weight39\x00', 'weight40\x00', 'weight41\x00', 'weight49\x00', 'weight59\x00', 'weight69\x00', 'weight79\x00', 'weight80\x00', '皮肤碎片兑换券\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00']
+
+### src/catchGame/data/spring_2026.lua
+- top: code=91 consts=64 protos=0
+- consts: ['id\x00', 'name\x00', '万象争驰\x00', 'startTime\x00', '2026-02-05 10:00:00\x00', 'startTimeStamp\x00', 'endTime\x00', '2026-03-25 23:59:59\x00', 'endTimeStamp\x00', 'desc\x00', '尘封的古画意外开启，时光流转回到盛唐神都。正逢万象神宫紧锣密鼓筹备新春盛典，中御府女官司制司苑受命于御前献艺，一场震古烁今的马术大秀亟待筹谋。除夕之日，金鼓齐鸣，快来共赴这场跨越千年的御前大秀，一睹大唐盛世的绝代风华！ \x00', 'roadMapID\x00', 'roadMapBranchIDs\x00', 'finalShowIcon\x00', 'ic_token_s_94\x00', 'bubbleGeneralMallID\x00', 'entrances\x00', 'type\x00', '封面\x00', 'imageName\x00', 'btn_2026_spring_main_cover\x00', 'redDotName\x00', 'open\x00', 'bubbleID\x00', 'jumpUI\x00']
+
+### src/catchGame/data/student_bonus.lua
+- top: code=73 consts=52 protos=0
+- consts: ['id\x00', 'score\x00', 'name\x00', '元气萌新\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', 'item2Type\x00', 'item2ID\x00', 'item2Num\x00', 'item3Type\x00', 'item3ID\x00', 'item3Num\x00', 'icon\x00', 'icon_newbie_school_medal_student_01\x00', 'iconMin\x00', 'icon_newbie_school_medal_student_01_li.png\x00', '优秀学员\x00', 'item4Type\x00', 'item4ID\x00', 'item4Num\x00', 'icon_newbie_school_medal_student_02\x00', 'icon_newbie_school_medal_student_02_li.png\x00', '资深学长\x00', 'icon_newbie_school_medal_student_03\x00']
+
+### src/catchGame/data/tutorial_list.lua
+- top: code=519 consts=183 protos=0
+- consts: ['id\x00', 'name\x00', '鼠见习大考\x00', 'tab\x00', 'isTab\x00', 'isExam\x00', 'roleType\x00', 'children\x00', '1|201\x00', 'icon\x00', 'tutor_special_15\x00', '猫见习大考\x00', '1|202\x00', '鼠高级大考\x00', '1|203\x00', 'tutor_special_14\x00', '猫高级大考\x00', '1|204\x00', '鼠特级大考I\x00', '1|205\x00', 'tutor_special_13\x00', '鼠特级大考II\x00', '1|207\x00', '猫特级大考I\x00', '1|206\x00']
+
+### src/catchGame/data/tutorial_menu.lua
+- top: code=9295 consts=671 protos=0
+- consts: ['id\x00', 'name\x00', '友好交流\x00', 'desc\x00', '良好的沟通是成功的一半\x00', 'isTab\x00', 'tab\x00', 'frame\x00', 'icon\x00', 'tutor_test_exchange\x00', 'settingHide\x00', 'role1\x00', 'char1\x00', 'name1\x00', '莱特宁\x00', 'role2\x00', 'char2\x00', 'name2\x00', '小泰菲\x00', 'map\x00', 'guide_6_jingdianzhijia\x00', 'rule\x00', 'item1type\x00', 'item1ID\x00', 'item1Num\x00']
+
+### src/catchGame/data/tutorial_task.lua
+- top: code=75 consts=29 protos=0
+- consts: ['id\x00', 'condition\x00', 'val\x00', 'desc\x00', '扮演老鼠，收集2块经验蛋糕。\x00', '扮演老鼠，推掉2块奶酪。\x00', '扮演老鼠，赢下1场比赛。\x00', '扮演猫，摧毁1只机器鼠。\x00', '扮演猫，放飞3只老鼠。\x00', '扮演猫，赢下1场比赛。\x00', '扮演老鼠，累计对墙缝造成50点伤害。\x00', '扮演老鼠，猫咪手上捉有老鼠时，打晕猫2次。\x00', '扮演老鼠，赢下2场比赛。\x00', '扮演猫，投掷道具击中老鼠6次\x00', '扮演猫，放飞老鼠6次。\x00', '扮演猫，赢下2场比赛。\x00']
+
+### src/catchGame/data/ugc_map.lua
+- top: code=255 consts=71 protos=0
+- consts: ['map1_UGC\x00', 'name\x00', 'desc\x00', '经典之家\x00', 'template\x00', 'jdzj_UGCtemplate\x00', 'user\x00', 'mapId\x00', 'gameType\x00', 'icon\x00', 'ic_cmn_map1\x00', 'gameRule\x00', 'map2_UGC\x00', 'map3_UGC\x00', 'map_chengbao1_UGC\x00', '雪夜古堡\x00', 'chengbao_UGCtemplate\x00', 'ic_cmn_map2\x00', 'map_chengbao2_UGC\x00', 'map_chengbao3_UGC\x00', 'paotu_map1_UGC\x00', 'testCheck\x00', 'paotu_map2_UGC\x00', 'paotu_map3_UGC\x00', 'paotu_map_chengbao1_UGC\x00']
+
+### src/catchGame/data/update_soft_guide.lua
+- top: code=33 consts=26 protos=0
+- consts: ['id\x00', 'version\x00', 'platform\x00', 'ios\x00', 'mailId\x00', 'item1Type\x00', 'item1ID\x00', 'item1Num\x00', 'item2Type\x00', 'item2ID\x00', 'item2Num\x00', 'item3Type\x00', 'item3ID\x00', 'item3Num\x00', 'ad\x00']
+
+### src/catchGame/dataBinding/dataModel/LocalUserData.lua
+- top: code=33 consts=15 protos=6
+- consts: ['class\x00', 'LocalUserData\x00', 'require\x00', 'cjson\x00', 'cc\x00', 'FileUtils\x00', 'getInstance\x00', 'getWritablePath\x00', 'localData\x00', 'ctor\x00', 'loadData\x00', 'saveData\x00', '_getUserData\x00', 'getCurUserData\x00', 'setCurUserData\x00']
+
+### src/catchGame/layerUI/CommonSceneFloatTip.lua
+- top: code=57 consts=27 protos=12
+- consts: ['require\x00', 'catchGame/mvc/ViewBase\x00', 'common/utils\x00', 'catchGame/utils/LayerUtil\x00', 'lib/framework\x00', 'lib/ds\x00', 'class\x00', 'CommonSceneFloatTip\x00', 'RESOURCE_FILENAME\x00', 'res\x00', 'common_scene_float_tip\x00', 'isCatchGame\x00', 'onCreate\x00', 'doUI\x00', 'onExit\x00', 'setData\x00', 'updateData\x00', 'dealContentData\x00', 'getTimestampParam\x00', 'dealTemplateParams\x00', 'play\x00', '_setContent\x00', '_playEffect\x00', 'close\x00']
+
+### src/catchGame/layerUI/CommonToastLayer.lua
+- top: code=48 consts=22 protos=8
+- consts: ['require\x00', 'catchGame/mvc/ViewBase\x00', 'catchGame/utils/Utils\x00', 'common/utils\x00', 'catchGame/GameConst\x00', 'class\x00', 'CommonToastLayer\x00', 'RESOURCE_FILENAME\x00', 'res\x00', 'common_toast\x00', 'isCatchGame\x00', 'showInfoToScene\x00', 'showInfo\x00', 'showInfoList\x00', 'onCreate\x00', 'doUI\x00', 'addInfo\x00', 'updateTipList\x00', 'removePan\x00']
+
+### src/catchGame/layerUI/NetworkWaitingLayer.lua
+- top: code=79 consts=37 protos=21
+- consts: ['require\x00', 'common/utils\x00', 'catchGame/utils/LayerUtil\x00', 'lib/framework\x00', 'lib/downloader\x00', 'catchGame/mvc/ViewBase\x00', 'class\x00', 'NetworkWaitingLayer\x00', 'RESOURCE_FILENAME\x00', 'res\x00', 'network_tip_3\x00', 'isCatchGame\x00', 'https://h18.update.netease.com/pl/ping_test\x00', 'PingTest/ping_test\x00', 'onCreate\x00', 'onCleanup\x00', 'registerWaitMsg\x00', 'unRegisterWaitMsg\x00', 'registerClientEvent\x00', 'doEvent\x00', 'removeEvent\x00', 'doUI\x00', 'onClose\x00', 'initUI\x00', 'finishLaunching\x00']
+
+### src/catchGame/layerUI/Square/SquareLoadingScene.lua
+- top: code=56 consts=25 protos=17
+- consts: ['require\x00', 'common/scene_base\x00', 'catchGame/box2d/RubeSceneReader\x00', 'catchGame/ClientEventManager\x00', 'class\x00', 'SqaureLoadingScene\x00', '__CLASS_NAME__\x00', '__FILE_NAME__\x00', 'ctor\x00', 'onTick\x00', 'doEvent\x00', 'addTodoFunc\x00', '_onLoadFinish\x00', 'initLoadingPros\x00', 'pro_asyLoadTexture\x00', 'pro_asyLoadSpine\x00', 'pro_loadResorece\x00', 'pro_loadScene\x00', 'pro_checkFrameSpeed\x00', 'pro_endLoading\x00', 'OnLoadingEnd\x00', 'enterBattle\x00', 'checkHotfix\x00', 'endHotfix\x00', 'onCleanup\x00']
+
+### src/catchGame/loadingScene/BattleLoadingScene.lua
+- top: code=125 consts=54 protos=40
+- consts: ['require\x00', 'common/scene_base\x00', 'lib/ds\x00', 'catchGame/box2d/RubeSceneReader\x00', 'catchGame/ClientEventManager\x00', 'catchGame/utils/battleDelayLog\x00', 'common/lua_event_manager\x00', 'catchGame/sdk/SdkPlatform\x00', 'catchGame/matchPlugins/MatchPluginRegistry\x00', 'lib/framework\x00', 'class\x00', 'BattleLoadingScene\x00', '__CLASS_NAME__\x00', '__FILE_NAME__\x00', 'ctor\x00', 'endHotfix\x00', 'checkHotfix\x00', 'checkUGCMapFile\x00', 'endCheckUGCMapFile\x00', 'checkTextures\x00', 'initLoadingPros\x00', 'initRoomRealName\x00', 'pro_asyLoadTexture\x00', 'pro_asyLoadSpine\x00', 'pro_loadResorece\x00']
+
+### src/catchGame/matchPlugins/BaseMatchPlugin.lua
+- top: code=38 consts=22 protos=14
+- consts: ['class\x00', 'BaseMatchPlugin\x00', 'Prepare\x00', 'WaitingConfirm\x00', 'PickingRole\x00', 'ctor\x00', 'onCreateStageLayer\x00', 'onRegister\x00', 'getRecruitOpenState\x00', 'onPrepareStartParams\x00', 'validateMatchStart\x00', 'onCustomRoomCreated\x00', 'onCustomRoomStartGame\x00', 'validateCustomRoomParams\x00', 'getCustomRoomPlayers\x00', 'isRankVisible\x00', 'getResultExtraRewards\x00', 'onEntryCheck\x00', 'triggerEntry\x00']
+
+### src/catchGame/matchPlugins/OgMatchPlugin.lua
+- top: code=19 consts=9 protos=5
+- consts: ['require\x00', 'catchGame/matchPlugins/BaseMatchPlugin\x00', 'class\x00', 'OgMatchPlugin\x00', 'ctor\x00', 'onEntryCheck\x00', 'isRankVisible\x00', 'getResultExtraRewards\x00', 'getRecruitOpenState\x00']
+
+### src/catchGame/record/recordplayer.lua
+- top: code=151 consts=70 protos=34
+- consts: ['require\x00', 'cjson\x00', 'class\x00', 'recordplayer\x00', 'pb\x00', 'common/utils\x00', 'cg\x00', 'math\x00', 'add\x00', 'mul\x00', 'sub\x00', 'div\x00', 'sqrtD\x00', 'pow\x00', 'floorD\x00', 'absD\x00', 'neq\x00', 'le\x00', 'me\x00', 'mt\x00', 'lt\x00', 'eq\x00', 'ctor\x00', 'setSpeed\x00', 'reset\x00']
+
+### src/catchGame/sdk/PushService.lua
+- top: code=40 consts=11 protos=1
+- consts: ['require\x00', 'catchGame/sdk/SdkPlatform\x00', 'cc\x00', 'Application\x00', 'getInstance\x00', 'getTargetPlatform\x00', 'PLATFORM_OS_IPHONE\x00', 'PLATFORM_OS_IPAD\x00', 'PLATFORM_OS_ANDROID\x00', 'PLAPLATFORM_OS_OHOS\x00', 'init\x00']
+
+### src/catchGame/systems/ExchangeSystem.lua
+- top: code=50 consts=19 protos=7
+- consts: ['tostring\x00', 'cg\x00', 'require\x00', 'catchGame/systems/BaseSystem\x00', 'catchGame/ClientEventManager\x00', 'catchGame/utils/Utils\x00', 'common/utils\x00', 'lib/scheduler\x00', 'cjson\x00', 'class\x00', 'ExchangeSystem\x00', 'ctor\x00', 'init\x00', 'reset\x00', 'registEvent\x00', 'exchangeGift\x00', 'onExchangeGift\x00', 'onExchangeGiftError\x00']
+
+### src/catchGame/systems/FriendSystemComponent.lua
+- top: code=490 consts=151 protos=60
+- consts: ['require\x00', 'catchGame/ClientEventManager\x00', 'lib/scheduler\x00', 'common/utils\x00', 'cjson\x00', 'class\x00', 'PlayerSource\x00', 'teacher\x00', 'student\x00', 'friend\x00', 'classmate\x00', 'recent\x00', 'nearby\x00', 'recommend\x00', 'none\x00', 'couple\x00', 'buddy\x00', 'confidante\x00', 'sidekick\x00', 'mutualPraise\x00', 'praise\x00', 'praised\x00', 'mutualFollow\x00', 'follow\x00', 'fans\x00']
+
+### src/catchGame/systems/Logs/SquareTryOnLog.lua
+- top: code=20 consts=9 protos=3
+- consts: ['require\x00', 'catchGame/systems/Logs/logBase\x00', 'class\x00', 'SquareTryOnLog\x00', 'cg\x00', 'DataHelper\x00', 'doEvent\x00', '_onTryOnStart\x00', '_onTryOnEnd\x00']
+
+### src/catchGame/systems/Logs/fpsLog.lua
+- top: code=23 consts=11 protos=6
+- consts: ['require\x00', 'catchGame/systems/Logs/logBase\x00', 'class\x00', 'fpsLog\x00', 'onCreate\x00', 'update\x00', 'addLatencyDealy\x00', 'record\x00', 'clearRecord\x00', 'calcAvg\x00']
+
+### src/catchGame/utils/HttpHelper.lua
+- top: code=15 consts=7 protos=3
+- consts: ['require\x00', 'cocos/json\x00', 'encode\x00', 'decode\x00', 'newHttpRequest\x00', 'cg\x00', 'HttpHelper\x00']

@@ -1,0 +1,88 @@
+// 文件: 002_src__catchGame__data__ip_movie_nodeKeyframe_Ruyu.lua.luac
+// 顶层原型: code=83 consts=43 protos=0
+
+// [0] NEWTABLE A=0 B=0 C=0
+R1 = {
+    [?] = 'id',
+    [?] = 'bignodeImage',
+    [?] = 'shareImage',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'interactiveID',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'hasLockedPop',
+    [?] = 'locktips',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'bignodeImage',
+    [?] = 'shareImage',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'bignodeImage',
+    [?] = 'shareImage',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'hasLockedPop',
+    [?] = 'lockimg',
+    [?] = 'bignodeImage',
+    [?] = 'shareImage',
+    [?] = 'biglockimg',
+    [?] = 'locktips',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'interactiveID',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'hasLockedPop',
+    [?] = 'locktips',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'bignodeImage',
+    [?] = 'shareImage',
+  } (NEWTABLE)
+// [81] RETURN A=0 B=2 C=0
+// [82] RETURN A=0 B=1 C=0
+
+// opcode 分布: {5: 2, 30: 21, 36: 60}

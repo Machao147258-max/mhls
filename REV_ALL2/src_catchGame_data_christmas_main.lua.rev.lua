@@ -1,0 +1,38 @@
+-- [[ src/catchGame/data/christmas_main.lua ]]  src=src/catchGame/data/christmas_main.lua size=32768
+-- top: code=37 consts=57 protos=0
+
+local t_1 = {}  -- NEWTABLE arr=1 hash=1
+local t_2 = {}  -- NEWTABLE arr=1 hash=25
+t_2[1] = 'id'
+t_2['2024-04-04 10:00:00'] = 'startTime'
+t_2['2024-04-21 23:59:59'] = 'endTime'
+t_2[6] = 'playerLevelLimit'
+t_2[130] = 'bell_limit'
+t_2[100] = 'level_1_range'
+t_2[1] = 'level_1_count'
+t_2[20011296] = 'level_1_box'
+t_2[200] = 'level_2_range'
+t_2[2] = 'level_2_count'
+t_2[20011297] = 'level_2_box'
+t_2[250] = 'level_3_range'
+t_2[3] = 'level_3_count'
+t_2[20011298] = 'level_3_box'
+t_2[300] = 'level_4_range'
+t_2[4] = 'level_4_count'
+t_2[20011299] = 'level_4_box'
+t_2[350] = 'level_5_range'
+t_2[5] = 'level_5_count'
+t_2[20011300] = 'level_5_box'
+t_2[5] = 'will_limit'
+t_2[22] = 'will_type_1'
+t_2[52] = 'will_id_1'
+t_2[500] = 'will_weight_1'
+t_2[22] = 'will_type_2'
+t_2[51] = 'will_id_2'
+t_2[250] = 'will_weight_2'
+t_2[22] = 'will_type_3'
+t_2[50] = 'will_id_3'
+t_2[250] = 'will_weight_3'
+t_2[47] = 'ornament_startid'
+t_2[52] = 'ornament_endid'
+t_1['id'] = 1

@@ -1,0 +1,7 @@
+[*] tb_tom_probe attach ok
+[+] 模块数: 350
+  libunisec_x86_64.so  base=0x71d556647000  size=1.2MB
+[+] r--: 3541 段, 5024.8MB
+[+] rw-: 1946 段, 4285.4MB
+[+] r-x: 358 段, 453.7MB
+[*] done

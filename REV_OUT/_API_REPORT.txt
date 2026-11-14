@@ -1,0 +1,79 @@
+=== 000_src__catchGame__configReader__GiftPackConfig.lua
+  requires(0):
+=== 001_src__catchGame__data__battlepass_ui_config.lua
+  requires(0):
+=== 002_src__catchGame__data__ip_movie_nodeKeyframe_Ruyu.lua
+  requires(0):
+  字符串值/字段(40):
+    id, bignodeImage, shareImage, id, id, id, id, interactiveID, id, id, hasLockedPop, locktips, id, bignodeImage, shareImage, id, id, bignodeImage, shareImage, id, id, id, hasLockedPop, lockimg, bignodeImage, shareImage, biglockimg, locktips, id, id, id, id, interactiveID, id, id, hasLockedPop, locktips, id, bignodeImage, shareImage
+=== 003_src__catchGame__data__role.lua
+  requires(0):
+=== 004_src__catchGame__data__skipui.lua
+  requires(0):
+  字符串值/字段(369):
+    id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes, id, saledes, TID_skipui_skipui_saledes
+=== 005_src__catchGame__module__ModuleManager.lua
+  requires(6):
+    - cjson
+    - common/utils
+    - catchGame/module/Module
+    - lib/framework
+    - lib/downloader
+    - catchGame/sdk/SdkPlatform
+  class: ['ModuleManager']
+  字符串值/字段(11):
+    ctor, init, initFashionModule, getFileList, parseFileList, getModuleConfig, parseModuleConfig, saveModuleConfig, getReadyModuleFiles, getReadyModuleNames, canDownload
+=== 006_src__catchGame__systems__CollectionSystem.lua
+  requires(9):
+    - catchGame/systems/BaseSystem
+    - catchGame/ClientEventManager
+    - catchGame/utils/Utils
+    - common/utils
+    - lib/scheduler
+    - catchGame/GameConst
+    - lib/ds/ShallowDataClone
+    - catchGame/configReader/ReaderFactory
+    - catchGame/layerUI/Collection/CollectionUtils
+  class: ['CollectionSystem']
+  字符串值/字段(6):
+    type, type, type, type, type, type
+=== 007_src__catchGame__systems__LadderSystem.lua
+  requires(2):
+    - catchGame/systems/BaseSystem
+    - catchGame/ClientEventManager
+  class: ['LadderSystem']
+  字符串值/字段(48):
+    ctor, init, _initLevelingState, reset, registEvent, onLadderSeasonSettle, setLadderSeasonSettle, getLadderSeasonSettle, onLadderRoleInfo, getMyLadderInfo, setMyLadderInfo, getSeasonID, getQualifierInitDone, getSeasonTime, getSeasonTimeById, getPeriodInfo, getOpenTime, isSeasonOpen, isLadderOpen, getDynamicWinRate, isWinRateMet, isWinRateForced, isWinRateStatBegin, isSupremeLegend, isSupremeLegendLevel, getSupremeLegendGradeId, getSupremeLegendOnlineSeason, isDiamondVOrAbove, isDiamondI, _isDiamondIOrSupreme, isInExtendedWinRateRange, isPointMax, _updateQualifierProgressFromLadderInfo, getQualifierProgress, getQualifierBtnState, isQualifierOpenTime, requestEnterQualifier, onQualifierJoinRsp, checkQualifierForceEnter, isInLevelingPeriod, isInLockBeforeOpen, isInLockBeforeOpenForRole, _updateLevelingPhase, onQualifierInitSettle, requestQualifierInitSettle, _hasShownLevelingResultThisSeason, _markLevelingResultShownThisSeason, needSho
+=== 008_src__catchGame__systems__MusicJourneySystem.lua
+  requires(8):
+    - catchGame/systems/BaseSystem
+    - catchGame/ClientEventManager
+    - catchGame/utils/Utils
+    - common/utils
+    - lib/scheduler
+    - catchGame/utils/CommonCoinSkip
+    - cjson
+    - catchGame/layerUI/Activity/ActivGeneralQuestCfgLayerUtils
+  class: ['MusicJourneySystem']
+  字符串值/字段(14):
+    ctor, init, reset, registEvent, reqMusicJourneyExchangeInfo, reqMusicJourneyComposite, _onRespMusicJourneyExchangeInfo, _onRespMusicJourneyComposite, _onNetMsgError, getJourneyConfig, getMusicJourneyTimeStamp, getMusicJourneyTimeLeft, checkRedDot, checkCompo
+=== 009_src__catchGame__systems__PingSystem.lua
+  requires(0):
+=== 010_src__catchGame__systems__Rank__IndividualRank.lua
+  requires(0):
+=== 011_src__catchGame__systems__ResultSystem.lua
+  requires(7):
+    - catchGame/systems/BaseSystem
+    - catchGame/ClientEventManager
+    - catchGame/utils/Utils
+    - common/utils
+    - lib/framework
+    - catchGame/GameConst
+    - catchGame/matchPlugins/MatchPluginRegistry
+  class: ['ResultSystem']
+  字符串值/字段(25):
+    ctor, setEtGameResult, getEtGameResult, reset, resetStandBy, _setActors, resetData, initResult, getBuffIDsByID, getGamePlayerInfo, initActorData, initRacingActorData, initStandByData, initScoreData, setMissionState, getMissionState, setAward, getAward, setSettlement, getSettlement, setClanSettlement, getClanSettlement, setClanGameInfo, _setClanMemberName, getClanGa
+=== 012_src__catchGame__utils__functions.lua
+  requires(0):
+=== 013_src__common__utils.lua
+  requires(0):

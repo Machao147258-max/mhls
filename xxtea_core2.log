@@ -1,0 +1,5 @@
+hooked xxtea_core_8526a8
+hook fail xxtea_core_83a1a0: Error: unable to intercept function at 0x40002163a1a0; please file a bug
+hook fail xxtea_core_8404d0: Error: unable to intercept function at 0x4000216404d0; please file a bug
+hook fail xxtea_core_81c000: Error: unable to intercept function at 0x40002161c000; please file a bug
+TOTAL HOOKED 1

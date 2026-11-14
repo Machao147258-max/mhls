@@ -1,0 +1,55 @@
+-- [[ src/catchGame/data/partner.lua ]]  src=src/catchGame/data/partner.lua size=32768
+-- top: code=54 consts=46 protos=0
+
+local t_1 = {}  -- NEWTABLE arr=1 hash=1
+local t_2 = {}  -- NEWTABLE arr=1 hash=16
+t_2[1] = 'id'
+t_2['金丝雀'] = 'name'
+t_2[0] = 'lock'
+t_2['B'] = 'quality'
+t_2[20] = 'maxLevel'
+t_2[2] = 'maxStage'
+t_2[20] = 'fashionValue'
+t_2['partner_v1_cuckoo'] = 'portrait'
+t_2['catch_partner_img_cuckoo'] = 'figure'
+t_2['ic_partner_skin_default_cuckoo_li'] = 'showGiftbag'
+t_2['xiaoniao_'] = 'prefix'
+t_2['companion_xiaoniao'] = 'defaultSkin'
+t_2['companion_xiaoniao'] = 'spineName'
+t_2['companion_xiaoniao_loading'] = 'loadingArmature'
+t_2[11128] = 'moveSound'
+t_1['id'] = 1
+local t_3 = {}  -- NEWTABLE arr=1 hash=16
+t_3[2] = 'id'
+t_3['啄木鸟'] = 'name'
+t_3[1] = 'lock'
+t_3['A'] = 'quality'
+t_3[30] = 'maxLevel'
+t_3[3] = 'maxStage'
+t_3[50] = 'fashionValue'
+t_3['partner_v1_woodpecker'] = 'portrait'
+t_3['catch_partner_img_woodpecker'] = 'figure'
+t_3['ic_partner_skin_default_woodpecke_li'] = 'showGiftbag'
+t_3['zhuomuniao_'] = 'prefix'
+t_3['companion_zhuomuniao'] = 'defaultSkin'
+t_3['companion_zhuomuniao'] = 'spineName'
+t_3['companion_zhuomuniao_loading'] = 'loadingArmature'
+t_3[11128] = 'moveSound'
+t_1['id'] = 2
+local t_4 = {}  -- NEWTABLE arr=1 hash=16
+t_4[3] = 'id'
+t_4['小金鱼'] = 'name'
+t_4[1] = 'lock'
+t_4['A'] = 'quality'
+t_4[30] = 'maxLevel'
+t_4[3] = 'maxStage'
+t_4[50] = 'fashionValue'
+t_4['partner_v1_goldfish'] = 'portrait'
+t_4['catch_partner_img_goldfish'] = 'figure'
+t_4['ic_partner_skin_default_goldfish_li'] = 'showGiftbag'
+t_4['jinyu_'] = 'prefix'
+t_4['companion_jinyu'] = 'defaultSkin'
+t_4['companion_jinyu'] = 'spineName'
+t_4['companion_jinyu_loading'] = 'loadingArmature'
+t_4[11128] = 'moveSound'
+t_1['id'] = 3

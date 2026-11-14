@@ -1,0 +1,84 @@
+0x609030: cmp     w3, #2
+0x609034: b.eq    #0x609074
+0x609038: cmp     w3, #3
+0x60903c: b.eq    #0x609058
+0x609040: mov     w0, #1
+0x609044: cbz     w3, #0x60904c
+0x609048: ret     
+0x60904c: cmp     w2, wzr
+0x609050: cset    w0, eq
+0x609054: ret     
+0x609058: tbz     w2, #8, #0x609084
+0x60905c: ldr     w0, [x0]
+0x609060: and     w2, w2, #0xfffffeff
+0x609064: cmp     w2, w0
+0x609068: cset    w0, ge
+0x60906c: eor     w0, w0, #1
+0x609070: ret     
+0x609074: ldrb    w0, [x1]
+0x609078: cmp     w2, w0
+0x60907c: cset    w0, lt
+0x609080: ret     
+0x609084: ldrb    w0, [x1]
+0x609088: cmp     w2, w0
+0x60908c: cset    w0, ge
+0x609090: eor     w0, w0, #1
+0x609094: b       #0x609070
+0x609098: sub     sp, sp, #0xb0
+0x60909c: stp     d8, d9, [sp, #0x58]
+0x6090a0: str     d14, [sp, #0x88]
+0x6090a4: stp     d10, d11, [sp, #0x68]
+0x6090a8: stp     x21, x22, [sp, #0x10]
+0x6090ac: stp     d12, d13, [sp, #0x78]
+0x6090b0: mov     x22, x0
+0x6090b4: stp     x19, x20, [sp]
+0x6090b8: stp     x23, x24, [sp, #0x20]
+0x6090bc: stp     x25, x26, [sp, #0x30]
+0x6090c0: stp     x27, x28, [sp, #0x40]
+0x6090c4: str     x30, [sp, #0x50]
+0x6090c8: mov     w0, #0
+0x6090cc: ldrb    w11, [x22, #0x73]
+0x6090d0: ldr     w3, [x22, #0x50]
+0x6090d4: str     w3, [sp, #0x94]
+0x6090d8: cmp     w11, #0xfa
+0x6090dc: mov     w5, w3
+0x6090e0: b.hi    #0x60915c
+0x6090e4: ldrb    w26, [x22, #0x72]
+0x6090e8: ldrb    w4, [x22, #0x71]
+0x6090ec: and     w3, w26, #1
+0x6090f0: add     w3, w4, w3
+0x6090f4: cmp     w3, w11
+0x6090f8: b.gt    #0x60915c
+0x6090fc: mov     w3, #5
+0x609100: and     w3, w26, w3
+0x609104: cmp     w3, #4
+0x609108: b.eq    #0x60915c
+0x60910c: ldrb    w3, [x22, #0x70]
+0x609110: mov     w4, w3
+0x609114: fmov    s12, w3
+0x609118: ldr     w3, [x22, #0x48]
+0x60911c: cmp     w3, w4
+0x609120: b.gt    #0x60915c
+0x609124: ldr     w3, [x22, #0x54]
+0x609128: cmp     w5, w3
+0x60912c: b.eq    #0x609134
+0x609130: cbnz    w3, #0x60915c
+0x609134: ldr     w0, [sp, #0x94]
+0x609138: cmp     w0, wzr
+0x60913c: b.le    #0x6091b8
+0x609140: ldr     x27, [x22, #0x18]
+0x609144: add     x0, x27, w0, sxtw #2
+0x609148: ldur    w3, [x0, #-4]
+0x60914c: mov     w0, #0
+0x609150: and     w3, w3, #0x3f
+0x609154: cmp     w3, #5
+0x609158: b.eq    #0x6091c0
+0x60915c: ldp     x19, x20, [sp]
+0x609160: ldp     d8, d9, [sp, #0x58]
+0x609164: ldp     x21, x22, [sp, #0x10]
+0x609168: ldp     d10, d11, [sp, #0x68]
+0x60916c: ldp     x23, x24, [sp, #0x20]
+0x609170: ldp     d12, d13, [sp, #0x78]
+0x609174: ldp     x25, x26, [sp, #0x30]
+0x609178: ldp     x27, x28, [sp, #0x40]
+0x60917c: ldr     x30, [sp, #0x50]

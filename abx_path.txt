@@ -1,0 +1,101 @@
+0x609378: ubfx    x0, x6, #4, #2
+0x60937c: lsr     w22, w4, #0xe
+0x609380: cmp     w0, #3
+0x609384: mov     w28, #0
+0x609388: b.ne    #0x609270
+0x60938c: fmov    x0, d11
+0x609390: ldr     w0, [x0, #0x4c]
+0x609394: cmp     w22, w0
+0x609398: b.lt    #0x609270
+0x60939c: mov     w0, w28
+0x6093a0: b       #0x60915c
+0x6093a4: fmov    w0, s13
+0x6093a8: cmp     w0, #2
+0x6093ac: b.ne    #0x6091b8
+0x6093b0: sub     w0, w22, #1
+0x6093b4: cbz     w22, #0x60918c
+0x6093b8: add     w7, w7, w0
+0x6093bc: cmp     w7, w11
+0x6093c0: b.gt    #0x6091b8
+0x6093c4: add     w25, w25, #1
+0x6093c8: b       #0x60933c
+0x6093cc: add     w7, w7, #1
+0x6093d0: cmp     w7, w11
+0x6093d4: b.ge    #0x6091b8
+0x6093d8: cmp     w21, w7
+0x6093dc: b.ne    #0x6093c4
+0x6093e0: mov     w26, w25
+0x6093e4: add     w25, w25, #1
+0x6093e8: b       #0x60933c
+0x6093ec: cmp     w21, w22
+0x6093f0: b.gt    #0x6093c4
+0x6093f4: cmp     w7, w21
+0x6093f8: b.le    #0x6093e0
+0x6093fc: add     w25, w25, #1
+0x609400: b       #0x60933c
+0x609404: cmp     w28, #1
+0x609408: b.ne    #0x6093c4
+0x60940c: ldr     w1, [sp, #0x94]
+0x609410: add     w0, w25, #2
+0x609414: cmp     w1, w0
+0x609418: b.le    #0x6091b8
+0x60941c: add     x20, x20, #1
+0x609420: ldr     w0, [x27, x20, lsl #2]
+0x609424: and     w1, w0, #0x3f
+0x609428: cmp     w1, #0x12
+0x60942c: b.ne    #0x6093c4
+0x609430: ubfx    x10, x0, #0xe, #9
+0x609434: cbnz    w10, #0x6093c4
+0x609438: mov     w0, w10
+0x60943c: b       #0x60915c
+0x609440: sub     w8, w22, #1
+0x609444: cmp     w8, wzr
+0x609448: b.le    #0x6093c4
+0x60944c: add     w8, w7, w8
+0x609450: cmp     w8, w11
+0x609454: b.gt    #0x6091b8
+0x609458: add     w25, w25, #1
+0x60945c: b       #0x60933c
+----
+0x609548: fmov    w0, s12
+0x60954c: cmp     w22, w0
+0x609550: b.ge    #0x6091b8
+0x609554: add     w25, w25, #1
+0x609558: b       #0x60933c
+0x60955c: cmp     w22, wzr
+0x609560: b.le    #0x609570
+0x609564: add     w7, w7, w22
+0x609568: cmp     w7, w11
+0x60956c: b.ge    #0x6091b8
+0x609570: cbnz    w28, #0x6093c4
+0x609574: fmov    w1, s14
+0x609578: add     w0, w25, #1
+0x60957c: cmp     w1, w0
+0x609580: b.le    #0x60939c
+0x609584: add     w25, w25, #2
+0x609588: b       #0x60933c
+0x60958c: cmp     w22, w28
+0x609590: b.ge    #0x6091b8
+0x609594: add     w25, w25, #1
+0x609598: b       #0x60933c
+0x60959c: cbz     w28, #0x60939c
+0x6095a0: add     w4, w7, #2
+0x6095a4: add     w4, w4, w28
+0x6095a8: cmp     w4, w11
+0x6095ac: b.ge    #0x6091b8
+0x6095b0: add     w7, w7, #1
+0x6095b4: cmp     w21, w7
+0x6095b8: b.gt    #0x6093e0
+0x6095bc: add     w25, w25, #1
+0x6095c0: b       #0x60933c
+0x6095c4: ldr     w1, [sp, #0x94]
+0x6095c8: add     w0, w25, #2
+0x6095cc: cmp     w1, w0
+0x6095d0: b.le    #0x6091b8
+0x6095d4: add     x0, x20, #1
+0x6095d8: ldr     w0, [x27, x0, lsl #2]
+0x6095dc: and     w0, w0, #0x3f
+0x6095e0: cmp     w0, #0x15
+0x6095e4: b.eq    #0x609280
+0x6095e8: mov     w0, #0
+0x6095ec: b       #0x60915c

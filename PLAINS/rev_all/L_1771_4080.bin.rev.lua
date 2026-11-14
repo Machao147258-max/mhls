@@ -1,0 +1,86 @@
+
+===== fn#0 '@src/catchGame/systems/MiaoMiaoSystem.lua' (78 instr, depth 0) =====
+local g1 = <G 'require'>
+local c2 = 'catchGame/systems/BaseSystem'
+g1 = g1(c2)
+c2 = <G 'require'>
+local c3 = 'catchGame/ClientEventManager'
+c2 = c2(c3)
+c3 = <G 'require'>
+local c4 = 'catchGame/utils/Utils'
+c3 = c3(c4)
+c4 = <G 'require'>
+local c5 = 'common/utils'
+c4 = c4(c5)
+c5 = <G 'class'>
+local c6 = 'MiaoMiaoSystem'
+local v7 = g1
+c5 = c5(c6, v7)
+c6 = <imm0>
+g1 = g1
+c5['ctor'] = c6
+c6 = <imm1>
+g1 = g1
+c5['init'] = c6
+c6 = <imm2>
+g1 = g1
+c5['reset'] = c6
+c6 = <imm3>
+c5['checkMiaoMiaoInitialCanRecieved'] = c6
+c6 = <imm4>
+c5['checkMiaoMiaoOpenedCan'] = c6
+c6 = <imm5>
+c5['checkMiaoMiaoNewPlayer'] = c6
+c6 = <imm6>
+g1 = c4
+c5['getMiaoMiaoPromoteMsg'] = c6
+c6 = <imm7>
+c5['checkMiaoMiaoCanRedDot'] = c6
+c6 = <imm8>
+c5['setMiaoMiaoPromoteHistory'] = c6
+c6 = <imm9>
+c5['getMiaoMiaoCanWinOpenNum'] = c6
+c6 = <imm10>
+c5['getMiaoMiaoCanRefreshTimeByData'] = c6
+c6 = <imm11>
+c5['getMiaoMiaoCanNearestRefreshTime'] = c6
+c6 = <imm12>
+c5['getMiaoMiaoTotalLockedCanCount'] = c6
+c6 = <imm13>
+c5['registEvent'] = c6
+c6 = <imm14>
+c5['reqMiaoMiaoCanOpenAll'] = c6
+c6 = <imm15>
+c5['onMiaoMiaoCanOpenAll'] = c6
+c6 = <imm16>
+c5['onRspMiaoMiaoOpenCanErr'] = c6
+c6 = <imm17>
+c5['reqMiaoMiaoGetInfo'] = c6
+c6 = <imm18>
+c5['onMiaoMiaoSystemGetInfo'] = c6
+c6 = <imm19>
+c5['getMiaoMiaoSystemLockCanNum'] = c6
+c6 = <imm20>
+c5['getMiaoMiaoSystemActivityInfo'] = c6
+c6 = <imm21>
+c5['reqMiaoMiaoOpenCan'] = c6
+c6 = <imm22>
+c5['onMiaoMiaoOpenCan'] = c6
+c6 = <imm23>
+c5['getMiaoMiaoOpenCanInfo'] = c6
+c6 = <imm24>
+c5['reqMiaoMiaoUpdateOpenCanStage'] = c6
+c6 = <imm25>
+c5['onMiaoMiaoUpdateOpenCanStage'] = c6
+c6 = <imm26>
+c5['reqMiaoMiaoRecvInitCans'] = c6
+c6 = <imm27>
+c5['onMiaoMiaoRecvInitCans'] = c6
+return c5
+return g1
+
+===== fn#0 '' (5 instr, depth 1) =====
+local t1 = R1['ctor']
+local v2 = R0
+t1 = t1(v2)
+return R0

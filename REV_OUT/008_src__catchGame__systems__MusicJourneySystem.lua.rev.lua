@@ -1,0 +1,42 @@
+// 文件: 008_src__catchGame__systems__MusicJourneySystem.lua.luac
+// 顶层原型: code=100 consts=42 protos=0
+
+local BaseSystem_1 = require('catchGame/systems/BaseSystem')
+local ClientEventManager_2 = require('catchGame/ClientEventManager')
+local Utils_3 = require('catchGame/utils/Utils')
+local utils_4 = require('common/utils')
+local scheduler_5 = require('lib/scheduler')
+local CommonCoinSkip_6 = require('catchGame/utils/CommonCoinSkip')
+local cjson_7 = require('cjson')
+local ActivGeneralQuestCfgLayerUtils_8 = require('catchGame/layerUI/Activity/ActivGeneralQuestCfgLayerUtils')
+local Cls_9 = class('MusicJourneySystem')
+Cls_9['MusicJourneySystem'] = 'ctor'
+Cls_9['MusicJourneySystem'] = 'init'
+Cls_9['MusicJourneySystem'] = 'reset'
+Cls_9['MusicJourneySystem'] = 'registEvent'
+Cls_9['MusicJourneySystem'] = 'reqMusicJourneyExchangeInfo'
+Cls_9['MusicJourneySystem'] = 'reqMusicJourneyComposite'
+Cls_9['MusicJourneySystem'] = '_onRespMusicJourneyExchangeInfo'
+Cls_9['MusicJourneySystem'] = '_onRespMusicJourneyComposite'
+Cls_9['MusicJourneySystem'] = '_onNetMsgError'
+Cls_9['MusicJourneySystem'] = 'getJourneyConfig'
+Cls_9['MusicJourneySystem'] = 'getMusicJourneyTimeStamp'
+Cls_9['MusicJourneySystem'] = 'getMusicJourneyTimeLeft'
+Cls_9['MusicJourneySystem'] = 'checkRedDot'
+Cls_9['MusicJourneySystem'] = 'checkCompo'
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil
+Cls_9['MusicJourneySystem'] = nil

@@ -1,0 +1,769 @@
+// 文件: 004_src__catchGame__data__skipui.lua.luac
+// 顶层原型: code=764 consts=372 protos=0
+
+// [0] NEWTABLE A=0 B=0 C=0
+R1 = {
+    ['新春登录活动获取'] = 'id',
+    ['分享常驻海报具体图'] = 'saledes',
+    ['dragonPalace'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['龙宫探秘活动获取'] = 'id',
+    ['TID_skipui_skipui_dragonPalace_saledes'] = 'saledes',
+    ['teamLobby'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['组队大厅界面'] = 'id',
+    ['TID_skipui_skipui_teamLobby_saledes'] = 'saledes',
+    ['NewbieActivity'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['迎新手册'] = 'id',
+    ['TID_skipui_skipui_NewbieActivity_saledes'] = 'saledes',
+    ['param：pay=首充；magic=愿望契约'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['diamondCost'] = 'id',
+    ['钻石赠礼系统'] = 'saledes',
+    ['TID_skipui_skipui_diamondCost_saledes'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['avg'] = 'id',
+    ['霜月活跃活动跳转'] = 'saledes',
+    ['TID_skipui_skipui_avg_saledes'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['pointShop'] = 'id',
+    ['积分商店'] = 'saledes',
+    ['TID_skipui_skipui_pointShop_saledes'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['medalShop'] = 'id',
+    ['黄金转盘-奖章兑换商城'] = 'saledes',
+    ['TID_skipui_skipui_medalShop_saledes'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['firework'] = 'id',
+    ['生日烟火会'] = 'saledes',
+    ['TID_skipui_skipui_firework_saledes'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['activityGuide'] = 'id',
+    ['前往获取'] = 'saledes',
+    ['TID_skipui_skipui_activityGuide_saledes'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['param填activity_guide_detail的id，跳转引导页'] = 'id',
+    [104] = 'saledes',
+    ['双猫变身玩法'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_104_saledes'] = 'id',
+    ['collectionFashion'] = 'saledes',
+    ['皮肤收藏界面'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_collectionFashion_saledes'] = 'id',
+    ['MorphCard'] = 'saledes',
+    ['星元伙伴图鉴'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_MorphCard_saledes'] = 'id',
+    ['param：1是商店2是图鉴3是召唤卡池'] = 'saledes',
+    ['MorphCardDetail'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['星元伙伴图鉴-好感度系统'] = 'id',
+    ['TID_skipui_skipui_MorphCardDetail_saledes'] = 'saledes',
+    ['giftSpace'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['个人空间-人气小屋'] = 'id',
+    ['TID_skipui_skipui_giftSpace_saledes'] = 'saledes',
+    ['overviewSpace'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['个人空间-信息模块界面'] = 'id',
+    ['TID_skipui_skipui_overviewSpace_saledes'] = 'saledes',
+    ['robotMouseFashion'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['装扮-机器鼠装扮界面'] = 'id',
+    ['TID_skipui_skipui_robotMouseFashion_saledes'] = 'saledes',
+    ['rocketFashion'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['装扮-火箭装扮界面'] = 'id',
+    ['TID_skipui_skipui_rocketFashion_saledes'] = 'saledes',
+    ['collectionMedal'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['收藏系统-收藏徽章界面'] = 'id',
+    ['TID_skipui_skipui_collectionMedal_saledes'] = 'saledes',
+    ['RepairStage'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['修复舞台跳转'] = 'id',
+    ['TID_skipui_skipui_RepairStage_saledes'] = 'saledes',
+    ['ColoringGame'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['填色玩法跳转'] = 'id',
+    ['TID_skipui_skipui_ColoringGame_saledes'] = 'saledes',
+    ['square'] = 'TID_skipui_skipui_saledes',
+    ['TID_skipui_skipui_square_saledes'] = 'desc',
+  } (NEWTABLE)
+R1 = {
+    ['spGacha'] = 'id',
+    ['时光造影'] = 'saledes',
+    ['TID_skipui_skipui_spGacha_saledes'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['membershipMall'] = 'id',
+    ['TID_skipui_skipui_NewbieActivity_saledes'] = 'saledes',
+    ['会员商城'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_membershipMall_saledes'] = 'id',
+    ['crowdFund'] = 'saledes',
+    ['梦想祈愿'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_crowdFund_saledes'] = 'id',
+    ['championship'] = 'saledes',
+    ['锦标赛'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_championship_saledes'] = 'id',
+    ['accompany'] = 'saledes',
+    ['IP陪伴系统'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_accompany_saledes'] = 'id',
+    ['liondance'] = 'saledes',
+    ['醒狮活动'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_liondance_saledes'] = 'id',
+    ['popGeneral'] = 'saledes',
+    ['星海探秘'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_popGeneral_saledes'] = 'id',
+    [106] = 'saledes',
+    ['打卡模板'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_106_saledes'] = 'id',
+    ['parkourAchievement'] = 'saledes',
+    ['成就领取乐园币'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_parkourAchievement_saledes'] = 'id',
+    ['parkourHomePage'] = 'saledes',
+    ['女巫糖果屋'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_parkourHomePage_saledes'] = 'id',
+    ['popGeneral2'] = 'saledes',
+    ['超能管理局'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_popGeneral2_saledes'] = 'id',
+    ['spring2026'] = 'saledes',
+    ['2026年春节'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_spring2026_saledes'] = 'id',
+    ['miaoMiaoCanInfo'] = 'saledes',
+    ['妙妙罐头详情页'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_miaoMiaoCanInfo_saledes'] = 'id',
+    ['masterPath'] = 'saledes',
+    ['宗师之路'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_masterPath_saledes'] = 'id',
+    ['collectionHallBg'] = 'saledes',
+    ['收藏手账获取'] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['TID_skipui_skipui_collectionHallBg_saledes'] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+    [?] = 'desc',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+    [?] = 'desc',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+    [?] = 'desc',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+    [?] = 'desc',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+    [?] = 'desc',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+    [?] = 'desc',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+    [?] = 'desc',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+    [?] = 'desc',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    [?] = 'id',
+    [?] = 'saledes',
+    [?] = 'TID_skipui_skipui_saledes',
+  } (NEWTABLE)
+R1 = {
+    ['saledes'] = 'id',
+  } (NEWTABLE)
+// [418] LOADK A=2 B=0 C=256
+// [419] SETTABLEK A=1 B=258 C=2
+// [420] LOADK A=2 B=0 C=257
+// [421] SETTABLEK A=1 B=260 C=2
+// [422] SETTABLEK A=0 B=511 C=1
+// [423] LOADK A=1 B=0 C=258
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [427] LOADK A=3 B=0 C=259
+// [428] SETTABLEK A=2 B=258 C=3
+// [429] LOADK A=3 B=0 C=260
+// [430] SETTABLEK A=2 B=260 C=3
+// [431] SETTABLEK A=0 B=1 C=2
+// [432] LOADK A=1 B=0 C=261
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [436] LOADK A=3 B=0 C=262
+// [437] SETTABLEK A=2 B=258 C=3
+// [438] LOADK A=3 B=0 C=263
+// [439] SETTABLEK A=2 B=260 C=3
+// [440] SETTABLEK A=0 B=1 C=2
+// [441] LOADK A=1 B=0 C=264
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [445] LOADK A=3 B=0 C=265
+// [446] SETTABLEK A=2 B=258 C=3
+// [447] LOADK A=3 B=0 C=266
+// [448] SETTABLEK A=2 B=260 C=3
+// [449] SETTABLEK A=0 B=1 C=2
+// [450] LOADK A=1 B=0 C=267
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [454] LOADK A=3 B=0 C=268
+// [455] SETTABLEK A=2 B=258 C=3
+// [456] LOADK A=3 B=0 C=269
+// [457] SETTABLEK A=2 B=260 C=3
+// [458] LOADK A=3 B=0 C=270
+// [459] SETTABLEK A=2 B=325 C=3
+// [460] SETTABLEK A=0 B=1 C=2
+// [461] LOADK A=1 B=0 C=271
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [465] LOADK A=3 B=0 C=272
+// [466] SETTABLEK A=2 B=258 C=3
+// [467] LOADK A=3 B=0 C=273
+// [468] SETTABLEK A=2 B=260 C=3
+// [469] SETTABLEK A=0 B=1 C=2
+// [470] LOADK A=1 B=0 C=274
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [474] LOADK A=3 B=0 C=275
+// [475] SETTABLEK A=2 B=258 C=3
+// [476] LOADK A=3 B=0 C=276
+// [477] SETTABLEK A=2 B=260 C=3
+// [478] SETTABLEK A=0 B=1 C=2
+// [479] LOADK A=1 B=0 C=277
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [483] LOADK A=3 B=0 C=278
+// [484] SETTABLEK A=2 B=258 C=3
+// [485] LOADK A=3 B=0 C=279
+// [486] SETTABLEK A=2 B=260 C=3
+// [487] SETTABLEK A=0 B=1 C=2
+// [488] LOADK A=1 B=0 C=280
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [492] LOADK A=3 B=0 C=281
+// [493] SETTABLEK A=2 B=258 C=3
+// [494] LOADK A=3 B=0 C=282
+// [495] SETTABLEK A=2 B=260 C=3
+// [496] SETTABLEK A=0 B=1 C=2
+// [497] LOADK A=1 B=0 C=283
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [501] LOADK A=3 B=0 C=284
+// [502] SETTABLEK A=2 B=258 C=3
+// [503] LOADK A=3 B=0 C=285
+// [504] SETTABLEK A=2 B=260 C=3
+// [505] SETTABLEK A=0 B=1 C=2
+// [506] LOADK A=1 B=0 C=286
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [510] LOADK A=3 B=0 C=287
+// [511] SETTABLEK A=2 B=258 C=3
+// [512] LOADK A=3 B=0 C=288
+// [513] SETTABLEK A=2 B=260 C=3
+// [514] LOADK A=3 B=0 C=289
+// [515] SETTABLEK A=2 B=325 C=3
+// [516] SETTABLEK A=0 B=1 C=2
+// [517] LOADK A=1 B=0 C=290
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [521] LOADK A=3 B=0 C=291
+// [522] SETTABLEK A=2 B=258 C=3
+// [523] LOADK A=3 B=0 C=292
+// [524] SETTABLEK A=2 B=260 C=3
+// [525] SETTABLEK A=0 B=1 C=2
+// [526] LOADK A=1 B=0 C=293
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [530] LOADK A=3 B=0 C=294
+// [531] SETTABLEK A=2 B=258 C=3
+// [532] LOADK A=3 B=0 C=295
+// [533] SETTABLEK A=2 B=260 C=3
+// [534] SETTABLEK A=0 B=1 C=2
+// [535] LOADK A=1 B=0 C=296
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [539] LOADK A=3 B=0 C=297
+// [540] SETTABLEK A=2 B=258 C=3
+// [541] LOADK A=3 B=0 C=298
+// [542] SETTABLEK A=2 B=260 C=3
+// [543] LOADK A=3 B=0 C=299
+// [544] SETTABLEK A=2 B=325 C=3
+// [545] SETTABLEK A=0 B=1 C=2
+// [546] LOADK A=1 B=0 C=300
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [550] LOADK A=3 B=0 C=301
+// [551] SETTABLEK A=2 B=258 C=3
+// [552] LOADK A=3 B=0 C=302
+// [553] SETTABLEK A=2 B=260 C=3
+// [554] SETTABLEK A=0 B=1 C=2
+// [555] LOADK A=1 B=0 C=303
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [559] LOADK A=3 B=0 C=304
+// [560] SETTABLEK A=2 B=258 C=3
+// [561] LOADK A=3 B=0 C=305
+// [562] SETTABLEK A=2 B=260 C=3
+// [563] SETTABLEK A=0 B=1 C=2
+// [564] LOADK A=1 B=0 C=306
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [568] LOADK A=3 B=0 C=307
+// [569] SETTABLEK A=2 B=258 C=3
+// [570] LOADK A=3 B=0 C=308
+// [571] SETTABLEK A=2 B=260 C=3
+// [572] SETTABLEK A=0 B=1 C=2
+// [573] LOADK A=1 B=0 C=309
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [577] LOADK A=3 B=0 C=310
+// [578] SETTABLEK A=2 B=258 C=3
+// [579] LOADK A=3 B=0 C=311
+// [580] SETTABLEK A=2 B=260 C=3
+// [581] SETTABLEK A=0 B=1 C=2
+// [582] LOADK A=1 B=0 C=312
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [586] LOADK A=3 B=0 C=313
+// [587] SETTABLEK A=2 B=258 C=3
+// [588] LOADK A=3 B=0 C=314
+// [589] SETTABLEK A=2 B=260 C=3
+// [590] SETTABLEK A=0 B=1 C=2
+// [591] LOADK A=1 B=0 C=315
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [595] LOADK A=3 B=0 C=316
+// [596] SETTABLEK A=2 B=258 C=3
+// [597] LOADK A=3 B=0 C=317
+// [598] SETTABLEK A=2 B=260 C=3
+// [599] SETTABLEK A=0 B=1 C=2
+// [600] LOADK A=1 B=0 C=318
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [604] LOADK A=3 B=0 C=319
+// [605] SETTABLEK A=2 B=258 C=3
+// [606] LOADK A=3 B=0 C=320
+// [607] SETTABLEK A=2 B=260 C=3
+// [608] SETTABLEK A=0 B=1 C=2
+// [609] LOADK A=1 B=0 C=321
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [613] LOADK A=3 B=0 C=322
+// [614] SETTABLEK A=2 B=258 C=3
+// [615] LOADK A=3 B=0 C=323
+// [616] SETTABLEK A=2 B=260 C=3
+// [617] SETTABLEK A=0 B=1 C=2
+// [618] LOADK A=1 B=0 C=324
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [622] LOADK A=3 B=0 C=325
+// [623] SETTABLEK A=2 B=258 C=3
+// [624] LOADK A=3 B=0 C=326
+// [625] SETTABLEK A=2 B=260 C=3
+// [626] SETTABLEK A=0 B=1 C=2
+// [627] LOADK A=1 B=0 C=327
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [631] LOADK A=3 B=0 C=328
+// [632] SETTABLEK A=2 B=258 C=3
+// [633] LOADK A=3 B=0 C=329
+// [634] SETTABLEK A=2 B=260 C=3
+// [635] SETTABLEK A=0 B=1 C=2
+// [636] LOADK A=1 B=0 C=330
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [640] LOADK A=3 B=0 C=331
+// [641] SETTABLEK A=2 B=258 C=3
+// [642] LOADK A=3 B=0 C=332
+// [643] SETTABLEK A=2 B=260 C=3
+// [644] SETTABLEK A=0 B=1 C=2
+// [645] LOADK A=1 B=0 C=333
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [649] LOADK A=3 B=0 C=334
+// [650] SETTABLEK A=2 B=258 C=3
+// [651] LOADK A=3 B=0 C=335
+// [652] SETTABLEK A=2 B=260 C=3
+// [653] SETTABLEK A=0 B=1 C=2
+// [654] LOADK A=1 B=0 C=336
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [658] LOADK A=3 B=0 C=337
+// [659] SETTABLEK A=2 B=258 C=3
+// [660] LOADK A=3 B=0 C=338
+// [661] SETTABLEK A=2 B=260 C=3
+// [662] SETTABLEK A=0 B=1 C=2
+// [663] LOADK A=1 B=0 C=339
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [667] LOADK A=3 B=0 C=340
+// [668] SETTABLEK A=2 B=258 C=3
+// [669] LOADK A=3 B=0 C=341
+// [670] SETTABLEK A=2 B=260 C=3
+// [671] SETTABLEK A=0 B=1 C=2
+// [672] LOADK A=1 B=0 C=342
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [676] LOADK A=3 B=0 C=343
+// [677] SETTABLEK A=2 B=258 C=3
+// [678] LOADK A=3 B=0 C=344
+// [679] SETTABLEK A=2 B=260 C=3
+// [680] SETTABLEK A=0 B=1 C=2
+// [681] LOADK A=1 B=0 C=345
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [685] LOADK A=3 B=0 C=346
+// [686] SETTABLEK A=2 B=258 C=3
+// [687] LOADK A=3 B=0 C=347
+// [688] SETTABLEK A=2 B=260 C=3
+// [689] SETTABLEK A=0 B=1 C=2
+// [690] LOADK A=1 B=0 C=348
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [694] LOADK A=3 B=0 C=349
+// [695] SETTABLEK A=2 B=258 C=3
+// [696] LOADK A=3 B=0 C=350
+// [697] SETTABLEK A=2 B=260 C=3
+// [698] SETTABLEK A=0 B=1 C=2
+// [699] LOADK A=1 B=0 C=351
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [703] LOADK A=3 B=0 C=352
+// [704] SETTABLEK A=2 B=258 C=3
+// [705] LOADK A=3 B=0 C=353
+// [706] SETTABLEK A=2 B=260 C=3
+// [707] SETTABLEK A=0 B=1 C=2
+// [708] LOADK A=1 B=0 C=354
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [712] LOADK A=3 B=0 C=355
+// [713] SETTABLEK A=2 B=258 C=3
+// [714] LOADK A=3 B=0 C=356
+// [715] SETTABLEK A=2 B=260 C=3
+// [716] SETTABLEK A=0 B=1 C=2
+// [717] LOADK A=1 B=0 C=357
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [721] LOADK A=3 B=0 C=358
+// [722] SETTABLEK A=2 B=258 C=3
+// [723] LOADK A=3 B=0 C=359
+// [724] SETTABLEK A=2 B=260 C=3
+// [725] SETTABLEK A=0 B=1 C=2
+// [726] LOADK A=1 B=0 C=360
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [730] LOADK A=3 B=0 C=361
+// [731] SETTABLEK A=2 B=258 C=3
+// [732] LOADK A=3 B=0 C=362
+// [733] SETTABLEK A=2 B=260 C=3
+// [734] SETTABLEK A=0 B=1 C=2
+// [735] LOADK A=1 B=0 C=363
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [739] LOADK A=3 B=0 C=364
+// [740] SETTABLEK A=2 B=258 C=3
+// [741] LOADK A=3 B=0 C=365
+// [742] SETTABLEK A=2 B=260 C=3
+// [743] SETTABLEK A=0 B=1 C=2
+// [744] LOADK A=1 B=0 C=366
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [748] LOADK A=3 B=0 C=367
+// [749] SETTABLEK A=2 B=258 C=3
+// [750] LOADK A=3 B=0 C=368
+// [751] SETTABLEK A=2 B=260 C=3
+// [752] SETTABLEK A=0 B=1 C=2
+// [753] LOADK A=1 B=0 C=369
+R2 = {
+    ['商城礼盒获取'] = 'id',
+  } (NEWTABLE)
+// [757] LOADK A=3 B=0 C=370
+// [758] SETTABLEK A=2 B=258 C=3
+// [759] LOADK A=3 B=0 C=371
+// [760] SETTABLEK A=2 B=260 C=3
+// [761] SETTABLEK A=0 B=1 C=2
+// [762] RETURN A=0 B=2 C=0
+// [763] RETURN A=0 B=1 C=0
+
+// opcode 分布: {5: 2, 20: 154, 30: 120, 36: 488}

@@ -1,0 +1,2601 @@
+chunk=F_4_38626.bin  size=38626
+===== proto#0  src=/Users/jenkins/workspace/h18/publish/src/catchGame/loadingScene/BattleLoadingScene.lua  lines=0-0  nparams=0 nups=0 maxstack=12 =====
+  upvalues: []
+  constants: [('str', 'require'), ('str', 'common/scene_base'), ('str', 'lib/ds'), ('str', 'catchGame/box2d/RubeSceneReader'), ('str', 'catchGame/ClientEventManager'), ('str', 'catchGame/utils/battleDelayLog'), ('str', 'common/lua_event_manager'), ('str', 'catchGame/sdk/SdkPlatform'), ('str', 'catchGame/matchPlugins/MatchPluginRegistry'), ('str', 'lib/framework'), ('str', 'class'), ('str', 'BattleLoadingScene'), ('str', '__CLASS_NAME__'), ('str', '__FILE_NAME__'), ('str', 'ctor'), ('str', 'endHotfix'), ('str', 'checkHotfix'), ('str', 'checkUGCMapFile'), ('str', 'endCheckUGCMapFile'), ('str', 'checkTextures'), ('str', 'initLoadingPros'), ('str', 'initRoomRealName'), ('str', 'pro_asyLoadTexture'), ('str', 'pro_asyLoadSpine'), ('str', 'pro_loadResorece'), ('str', '_checkLoadingAnimFadein'), ('str', 'pro_waitAnimFadein'), ('str', 'pro_loadScene'), ('str', 'pro_resLoadEnd'), ('str', 'pro_endLoading'), ('str', 'pro_showWatingOther'), ('str', 'pro_checkFrameSpeed'), ('str', 'onTick'), ('str', 'doEvent'), ('str', 'onCleanup'), ('str', 'addTodoFunc'), ('str', 'on_reconnect_rsp'), ('str', 'on_load_begin'), ('str', 'on_load_over'), ('str', 'on_get_frame_list'), ('str', 'on_settlement'), ('str', 'on_watcher_game_finish'), ('str', 'on_end_of_game_player'), ('str', 'OnLoadingEnd'), ('str', 'enterBattle'), ('str', 'on_room_cancel'), ('str', 'setLoading'), ('str', 'isLoading'), ('str', 'pause'), ('str', 'resume'), ('str', 'WatchLoadingCloseSound'), ('str', 'WatchLoadingResumeSound'), ('str', 'on_game_show_fashion'), ('str', 'showShowTime')]
+      0  SETLIST        A=0   B=0    C=0    Bx=0      sBx=-131071
+      1  LEN            A=1   B=0    C=1    Bx=1      sBx=-131070
+      2  GETUPVAL       A=0   B=2    C=2    Bx=1026   sBx=-130045
+      3  SETLIST        A=1   B=0    C=0    Bx=0      sBx=-131071
+      4  LEN            A=2   B=0    C=2    Bx=2      sBx=-131069
+      5  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+      6  SETLIST        A=2   B=0    C=0    Bx=0      sBx=-131071
+      7  LEN            A=3   B=0    C=3    Bx=3      sBx=-131068
+      8  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+      9  SETLIST        A=3   B=0    C=0    Bx=0      sBx=-131071
+     10  LEN            A=4   B=0    C=4    Bx=4      sBx=-131067
+     11  GETUPVAL       A=3   B=2    C=2    Bx=1026   sBx=-130045
+     12  SETLIST        A=4   B=0    C=0    Bx=0      sBx=-131071
+     13  LEN            A=5   B=0    C=5    Bx=5      sBx=-131066
+     14  GETUPVAL       A=4   B=2    C=2    Bx=1026   sBx=-130045
+     15  SETLIST        A=5   B=0    C=0    Bx=0      sBx=-131071
+     16  LEN            A=6   B=0    C=6    Bx=6      sBx=-131065
+     17  GETUPVAL       A=5   B=2    C=2    Bx=1026   sBx=-130045
+     18  SETLIST        A=6   B=0    C=0    Bx=0      sBx=-131071
+     19  LEN            A=7   B=0    C=7    Bx=7      sBx=-131064
+     20  GETUPVAL       A=6   B=2    C=2    Bx=1026   sBx=-130045
+     21  SETLIST        A=7   B=0    C=0    Bx=0      sBx=-131071
+     22  LEN            A=8   B=0    C=8    Bx=8      sBx=-131063
+     23  GETUPVAL       A=7   B=2    C=2    Bx=1026   sBx=-130045
+     24  SETLIST        A=8   B=0    C=0    Bx=0      sBx=-131071
+     25  LEN            A=9   B=0    C=9    Bx=9      sBx=-131062
+     26  GETUPVAL       A=8   B=2    C=2    Bx=1026   sBx=-130045
+     27  SETLIST        A=9   B=0    C=10   Bx=10     sBx=-131061
+     28  LEN            A=10  B=0    C=11   Bx=11     sBx=-131060
+     29  SETGLOBAL      A=11  B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'require')
+     30  GETUPVAL       A=9   B=3    C=2    Bx=1538   sBx=-129533
+     31  CLOSURE        A=9   B=268  C=267  Bx=137483 sBx=6412  
+     32  CLOSURE        A=9   B=269  C=267  Bx=137995 sBx=6924  
+     33  NEWTABLE       A=10  B=0    C=0    Bx=0      sBx=-131071
+     34  SETGLOBAL      A=0   B=4    C=0    Bx=2048   sBx=-129023 K2048=?
+     35  SETGLOBAL      A=0   B=6    C=0    Bx=3072   sBx=-127999 K3072=?
+     36  SETGLOBAL      A=0   B=7    C=0    Bx=3584   sBx=-127487 K3584=?
+     37  CLOSURE        A=9   B=270  C=10   Bx=138250 sBx=7179  
+     38  NEWTABLE       A=10  B=0    C=1    Bx=1      sBx=-131070
+     39  CLOSURE        A=9   B=271  C=10   Bx=138762 sBx=7691  
+     40  NEWTABLE       A=10  B=0    C=2    Bx=2      sBx=-131069
+     41  CLOSURE        A=9   B=272  C=10   Bx=139274 sBx=8203  
+     42  NEWTABLE       A=10  B=0    C=3    Bx=3      sBx=-131068
+     43  CLOSURE        A=9   B=273  C=10   Bx=139786 sBx=8715  
+     44  NEWTABLE       A=10  B=0    C=4    Bx=4      sBx=-131067
+     45  CLOSURE        A=9   B=274  C=10   Bx=140298 sBx=9227  
+     46  NEWTABLE       A=10  B=0    C=5    Bx=5      sBx=-131066
+     47  SETGLOBAL      A=0   B=8    C=0    Bx=4096   sBx=-126975 K4096=?
+     48  CLOSURE        A=9   B=275  C=10   Bx=140810 sBx=9739  
+     49  NEWTABLE       A=10  B=0    C=6    Bx=6      sBx=-131065
+     50  SETGLOBAL      A=0   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     51  CLOSURE        A=9   B=276  C=10   Bx=141322 sBx=10251 
+     52  NEWTABLE       A=10  B=0    C=7    Bx=7      sBx=-131064
+     53  CLOSURE        A=9   B=277  C=10   Bx=141834 sBx=10763 
+     54  NEWTABLE       A=10  B=0    C=8    Bx=8      sBx=-131063
+     55  CLOSURE        A=9   B=278  C=10   Bx=142346 sBx=11275 
+     56  NEWTABLE       A=10  B=0    C=9    Bx=9      sBx=-131062
+     57  CLOSURE        A=9   B=279  C=10   Bx=142858 sBx=11787 
+     58  NEWTABLE       A=10  B=0    C=10   Bx=10     sBx=-131061
+     59  SETGLOBAL      A=0   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     60  CLOSURE        A=9   B=280  C=10   Bx=143370 sBx=12299 
+     61  NEWTABLE       A=10  B=0    C=11   Bx=11     sBx=-131060
+     62  CLOSURE        A=9   B=281  C=10   Bx=143882 sBx=12811 
+     63  NEWTABLE       A=10  B=0    C=12   Bx=12     sBx=-131059
+     64  CLOSURE        A=9   B=282  C=10   Bx=144394 sBx=13323 
+     65  NEWTABLE       A=10  B=0    C=13   Bx=13     sBx=-131058
+     66  CLOSURE        A=9   B=283  C=10   Bx=144906 sBx=13835 
+     67  NEWTABLE       A=10  B=0    C=14   Bx=14     sBx=-131057
+     68  CLOSURE        A=9   B=284  C=10   Bx=145418 sBx=14347 
+     69  NEWTABLE       A=10  B=0    C=15   Bx=15     sBx=-131056
+     70  CLOSURE        A=9   B=285  C=10   Bx=145930 sBx=14859 
+     71  NEWTABLE       A=10  B=0    C=16   Bx=16     sBx=-131055
+     72  CLOSURE        A=9   B=286  C=10   Bx=146442 sBx=15371 
+     73  NEWTABLE       A=10  B=0    C=17   Bx=17     sBx=-131054
+     74  CLOSURE        A=9   B=287  C=10   Bx=146954 sBx=15883 
+     75  NEWTABLE       A=10  B=0    C=18   Bx=18     sBx=-131053
+     76  CLOSURE        A=9   B=288  C=10   Bx=147466 sBx=16395 
+     77  NEWTABLE       A=10  B=0    C=19   Bx=19     sBx=-131052
+     78  SETGLOBAL      A=0   B=3    C=0    Bx=1536   sBx=-129535 K1536=?
+     79  CLOSURE        A=9   B=289  C=10   Bx=147978 sBx=16907 
+     80  NEWTABLE       A=10  B=0    C=20   Bx=20     sBx=-131051
+     81  SETGLOBAL      A=0   B=3    C=0    Bx=1536   sBx=-129535 K1536=?
+     82  CLOSURE        A=9   B=290  C=10   Bx=148490 sBx=17419 
+     83  NEWTABLE       A=10  B=0    C=21   Bx=21     sBx=-131050
+     84  CLOSURE        A=9   B=291  C=10   Bx=149002 sBx=17931 
+     85  NEWTABLE       A=10  B=0    C=22   Bx=22     sBx=-131049
+     86  CLOSURE        A=9   B=292  C=10   Bx=149514 sBx=18443 
+     87  NEWTABLE       A=10  B=0    C=23   Bx=23     sBx=-131048
+     88  CLOSURE        A=9   B=293  C=10   Bx=150026 sBx=18955 
+     89  NEWTABLE       A=10  B=0    C=24   Bx=24     sBx=-131047
+     90  CLOSURE        A=9   B=294  C=10   Bx=150538 sBx=19467 
+     91  NEWTABLE       A=10  B=0    C=25   Bx=25     sBx=-131046
+     92  CLOSURE        A=9   B=295  C=10   Bx=151050 sBx=19979 
+     93  NEWTABLE       A=10  B=0    C=26   Bx=26     sBx=-131045
+     94  CLOSURE        A=9   B=296  C=10   Bx=151562 sBx=20491 
+     95  NEWTABLE       A=10  B=0    C=27   Bx=27     sBx=-131044
+     96  CLOSURE        A=9   B=297  C=10   Bx=152074 sBx=21003 
+     97  NEWTABLE       A=10  B=0    C=28   Bx=28     sBx=-131043
+     98  CLOSURE        A=9   B=298  C=10   Bx=152586 sBx=21515 
+     99  NEWTABLE       A=10  B=0    C=29   Bx=29     sBx=-131042
+    100  CLOSURE        A=9   B=299  C=10   Bx=153098 sBx=22027 
+    101  NEWTABLE       A=10  B=0    C=30   Bx=30     sBx=-131041
+    102  CLOSURE        A=9   B=300  C=10   Bx=153610 sBx=22539 
+    103  NEWTABLE       A=10  B=0    C=31   Bx=31     sBx=-131040
+    104  CLOSURE        A=9   B=301  C=10   Bx=154122 sBx=23051 
+    105  NEWTABLE       A=10  B=0    C=32   Bx=32     sBx=-131039
+    106  CLOSURE        A=9   B=302  C=10   Bx=154634 sBx=23563 
+    107  NEWTABLE       A=10  B=0    C=33   Bx=33     sBx=-131038
+    108  CLOSURE        A=9   B=303  C=10   Bx=155146 sBx=24075 
+    109  NEWTABLE       A=10  B=0    C=34   Bx=34     sBx=-131037
+    110  CLOSURE        A=9   B=304  C=10   Bx=155658 sBx=24587 
+    111  NEWTABLE       A=10  B=0    C=35   Bx=35     sBx=-131036
+    112  CLOSURE        A=9   B=305  C=10   Bx=156170 sBx=25099 
+    113  NEWTABLE       A=10  B=0    C=36   Bx=36     sBx=-131035
+    114  SETGLOBAL      A=0   B=5    C=0    Bx=2560   sBx=-128511 K2560=?
+    115  CLOSURE        A=9   B=306  C=10   Bx=156682 sBx=25611 
+    116  NEWTABLE       A=10  B=0    C=37   Bx=37     sBx=-131034
+    117  SETGLOBAL      A=0   B=5    C=0    Bx=2560   sBx=-128511 K2560=?
+    118  CLOSURE        A=9   B=307  C=10   Bx=157194 sBx=26123 
+    119  NEWTABLE       A=10  B=0    C=38   Bx=38     sBx=-131033
+    120  CLOSURE        A=9   B=308  C=10   Bx=157706 sBx=26635 
+    121  NEWTABLE       A=10  B=0    C=39   Bx=39     sBx=-131032
+    122  CLOSURE        A=9   B=309  C=10   Bx=158218 sBx=27147 
+    123  GETGLOBAL      A=9   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+    124  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#0 : kid#0 ---
+===== proto#0  src=  lines=18-116  nparams=6 nups=3 maxstack=18 =====
+  upvalues: ['delayLog', 'SdkPlatform', 'MatchPluginRegistry']
+  constants: [('str', 'super'), ('str', 'ctor'), ('str', 'autoRemoveRes'), ('bool', 0), ('str', 'resolutionShowAll'), ('bool', 1), ('str', 'game_dict'), ('str', 'map_name'), ('str', 'cg'), ('str', 'systems'), ('str', 'gmSystem'), ('str', 'startSingleRecord'), ('str', 'setMapName'), ('str', 'tutorial_id'), ('str', 'res_config'), ('str', 'args'), ('str', 'gradeType'), ('str', 'NetGameEnum'), ('str', 'E_GRADE_TYPE'), ('str', 'E_GRADE_TYPE_BASE'), ('str', 'Utils'), ('str', 'Globals'), ('str', 'lastSceneAutoRemoveRes'), ('str', 'removeUnusedSpriteFrames'), ('str', '_todoFuncs'), ('str', '_isEnterBattle'), ('str', 'isReconnect'), ('str', 'reconnect'), ('str', '_isReconnectAtBeg'), ('str', '_startTime'), ('str', 'os'), ('str', 'time'), ('str', 'watchInfo'), ('str', 'isWatching'), ('str', 'isSpectator'), ('str', 'require'), ('str', 'catchGame/BattleScene'), ('str', '_scene'), ('str', 'new'), ('str', 'mapLockedInfo'), ('str', 'forceMusic'), ('str', 'pauseMusic'), ('str', 'gameTutorialIDs'), ('str', 'retain'), ('str', 'Player'), ('str', 'isCompletedTutorialById'), ('str', 'TutorialMenuConfig'), ('str', 'getDataById'), ('str', 'specLoading'), ('str', 'Game'), ('str', 'createLayer'), ('str', 'TutorialLoadingLayer'), ('str', 'BattleLoading/LoadingTutorLayer2'), ('str', '_physicalMemory'), ('str', 'getMemory'), ('str', 'battleSystem'), ('str', 'getGameType'), ('str', 'getInstance'), ('str', 'getPluginByGameType'), ('str', 'config'), ('str', 'display'), ('str', 'loadingLayer'), ('str', 'isSpecial'), ('num', 1024.0), ('str', 'E_GAME_TYPE'), ('str', 'E_GAME_TYPE_NORMAL'), ('str', 'E_GAME_TYPE_HUMAN_MACHINE'), ('str', 'E_GAME_TYPE_LADDER'), ('str', 'BattleLoading/Loading1v4Layer'), ('str', 'E_GAME_TYPE_5V5_CHEESE'), ('str', 'BattleLoading/Loading5v5Layer'), ('str', 'E_GAME_TYPE_2V6'), ('str', 'BattleLoading/Loading2v6Layer'), ('str', 'LoadingLayer'), ('str', 'setOnUpdate'), ('str', 'addChild'), ('str', '_loadingUI'), ('str', 'ClientEventManager'), ('str', 'fire'), ('str', 'ON_LOADING_UI_CREATE'), ('str', 'mgr'), ('str', 'launcher/LoadingManager'), ('str', 'setUserData'), ('str', 'owner'), ('str', 'doEvent'), ('str', 'movie'), ('str', 'movieCallback'), ('str', 'tutorial/TutorialMovieLayer'), ('str', 'endCallback'), ('str', 'pause'), ('str', '_retryCount'), ('num', 20.0), ('str', 'checkHotfix'), ('str', 'logTrace'), ('str', 'start loading======================')]
+      0  POW            A=6   B=0    C=256  Bx=256    sBx=-130815
+      1  POW            A=6   B=6    C=257  Bx=3329   sBx=-127742
+      2  SETGLOBAL      A=7   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'super')
+      3  RETURN         A=8   B=0    C=2    Bx=2      sBx=-131069
+      4  CLOSURE        A=8   B=258  C=259  Bx=132355 sBx=1284  
+      5  CLOSURE        A=8   B=260  C=261  Bx=133381 sBx=2310  
+      6  GETUPVAL       A=6   B=3    C=1    Bx=1537   sBx=-129534
+      7  MUL            A=5   B=0    C=1    Bx=1      sBx=-131070
+      8  CONCAT         A=0   B=256  C=1    Bx=131073 sBx=2     
+      9  RETURN         A=6   B=0    C=0    Bx=0      sBx=-131071
+     10  SETGLOBAL      A=5   B=6    C=0    Bx=3072   sBx=-127999 K3072=?
+     11  CLOSURE        A=0   B=262  C=1    Bx=134145 sBx=3074  
+     12  CLOSURE        A=0   B=263  C=2    Bx=134658 sBx=3587  
+     13  SETLIST        A=6   B=0    C=8    Bx=8      sBx=-131063
+     14  POW            A=6   B=6    C=265  Bx=3337   sBx=-127734
+     15  POW            A=6   B=6    C=266  Bx=3338   sBx=-127733
+     16  TFORLOOP       A=6   B=6    C=267  Bx=3339   sBx=-127732
+     17  SETGLOBAL      A=8   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     18  GETUPVAL       A=6   B=3    C=1    Bx=1537   sBx=-129534
+     19  SETTABLE       A=6   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'super')
+     20  POW            A=6   B=6    C=268  Bx=3340   sBx=-127731
+     21  SETGLOBAL      A=7   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     22  GETUPVAL       A=6   B=2    C=1    Bx=1025   sBx=-130046
+     23  CLOSURE        A=0   B=269  C=3    Bx=137731 sBx=6660  
+     24  CLOSURE        A=0   B=270  C=4    Bx=138244 sBx=7173  
+     25  CLOSURE        A=0   B=271  C=5    Bx=138757 sBx=7686  
+     26  POW            A=6   B=0    C=271  Bx=271    sBx=-130800
+     27  POW            A=7   B=0    C=271  Bx=271    sBx=-130800
+     28  POW            A=7   B=7    C=272  Bx=3856   sBx=-127215
+     29  MUL            A=7   B=0    C=1    Bx=1      sBx=-131070
+     30  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+     31  SETLIST        A=7   B=0    C=17   Bx=17     sBx=-131054
+     32  POW            A=7   B=7    C=274  Bx=3858   sBx=-127213
+     33  POW            A=7   B=7    C=275  Bx=3859   sBx=-127212
+     34  CLOSURE        A=6   B=272  C=7    Bx=139271 sBx=8200  
+     35  SETLIST        A=6   B=0    C=8    Bx=8      sBx=-131063
+     36  MUL            A=6   B=0    C=0    Bx=0      sBx=-131071
+     37  CONCAT         A=0   B=256  C=11   Bx=131083 sBx=12    
+     38  SETLIST        A=6   B=0    C=8    Bx=8      sBx=-131063
+     39  POW            A=6   B=6    C=276  Bx=3348   sBx=-127723
+     40  MUL            A=6   B=0    C=0    Bx=0      sBx=-131071
+     41  CONCAT         A=0   B=256  C=7    Bx=131079 sBx=8     
+     42  SETLIST        A=6   B=0    C=21   Bx=21     sBx=-131050
+     43  POW            A=6   B=6    C=278  Bx=3350   sBx=-127721
+     44  MUL            A=6   B=0    C=0    Bx=0      sBx=-131071
+     45  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     46  SETLIST        A=6   B=0    C=8    Bx=8      sBx=-131063
+     47  POW            A=6   B=6    C=276  Bx=3348   sBx=-127723
+     48  POW            A=6   B=6    C=279  Bx=3351   sBx=-127720
+     49  GETUPVAL       A=6   B=1    C=1    Bx=513    sBx=-130558
+     50  RETURN         A=6   B=0    C=0    Bx=0      sBx=-131071
+     51  CLOSURE        A=0   B=280  C=6    Bx=143366 sBx=12295 
+     52  CLOSURE        A=0   B=281  C=259  Bx=144131 sBx=13060 
+     53  POW            A=6   B=1    C=283  Bx=795    sBx=-130276
+     54  MUL            A=6   B=0    C=1    Bx=1      sBx=-131070
+     55  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     56  CALL           A=6   B=0    C=0    Bx=0      sBx=-131071
+     57  CLOSURE        A=0   B=282  C=6    Bx=144390 sBx=13319 
+     58  POW            A=6   B=1    C=283  Bx=795    sBx=-130276
+     59  CLOSURE        A=0   B=284  C=6    Bx=145414 sBx=14343 
+     60  SETLIST        A=6   B=0    C=30   Bx=30     sBx=-131041
+     61  POW            A=6   B=6    C=287  Bx=3359   sBx=-127712
+     62  GETUPVAL       A=6   B=1    C=2    Bx=514    sBx=-130557
+     63  CLOSURE        A=0   B=285  C=6    Bx=145926 sBx=14855 
+     64  POW            A=6   B=1    C=288  Bx=800    sBx=-130271
+     65  MUL            A=6   B=0    C=0    Bx=0      sBx=-131071
+     66  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     67  CLOSURE        A=0   B=289  C=261  Bx=148229 sBx=17158 
+     68  POW            A=6   B=1    C=288  Bx=800    sBx=-130271
+     69  POW            A=6   B=6    C=290  Bx=3362   sBx=-127709
+     70  CLOSURE        A=0   B=290  C=6    Bx=148486 sBx=17415 
+     71  SETLIST        A=6   B=0    C=35   Bx=35     sBx=-131036
+     72  LEN            A=7   B=0    C=36   Bx=36     sBx=-131035
+     73  GETUPVAL       A=6   B=2    C=2    Bx=1026   sBx=-130045
+     74  POW            A=7   B=6    C=294  Bx=3366   sBx=-127705
+     75  POW            A=8   B=0    C=262  Bx=262    sBx=-130809
+     76  POW            A=9   B=0    C=263  Bx=263    sBx=-130808
+     77  POW            A=10  B=0    C=269  Bx=269    sBx=-130802
+     78  POW            A=11  B=0    C=270  Bx=270    sBx=-130801
+     79  POW            A=12  B=0    C=271  Bx=271    sBx=-130800
+     80  POW            A=12  B=12   C=295  Bx=6439   sBx=-124632
+     81  POW            A=13  B=0    C=271  Bx=271    sBx=-130800
+     82  POW            A=13  B=13   C=272  Bx=6928   sBx=-124143
+     83  POW            A=14  B=0    C=271  Bx=271    sBx=-130800
+     84  POW            A=14  B=14   C=296  Bx=7464   sBx=-123607
+     85  POW            A=15  B=0    C=271  Bx=271    sBx=-130800
+     86  POW            A=15  B=15   C=297  Bx=7977   sBx=-123094
+     87  POW            A=16  B=0    C=271  Bx=271    sBx=-130800
+     88  POW            A=16  B=16   C=298  Bx=8490   sBx=-122581
+     89  POW            A=17  B=0    C=271  Bx=271    sBx=-130800
+     90  GETUPVAL       A=7   B=11   C=2    Bx=5634   sBx=-125437
+     91  CLOSURE        A=0   B=293  C=7    Bx=150023 sBx=18952 
+     92  POW            A=7   B=0    C=293  Bx=293    sBx=-130778
+     93  TFORLOOP       A=7   B=7    C=299  Bx=3883   sBx=-127188
+     94  GETUPVAL       A=7   B=2    C=1    Bx=1025   sBx=-130046
+     95  CALL           A=7   B=0    C=0    Bx=0      sBx=-131071
+     96  POW            A=8   B=0    C=269  Bx=269    sBx=-130802
+     97  MUL            A=8   B=0    C=0    Bx=0      sBx=-131071
+     98  CONCAT         A=0   B=256  C=17   Bx=131089 sBx=18    
+     99  SETLIST        A=8   B=0    C=8    Bx=8      sBx=-131063
+    100  POW            A=8   B=8    C=300  Bx=4396   sBx=-126675
+    101  TFORLOOP       A=8   B=8    C=301  Bx=4397   sBx=-126674
+    102  POW            A=10  B=0    C=269  Bx=269    sBx=-130802
+    103  GETUPVAL       A=8   B=3    C=2    Bx=1538   sBx=-129533
+    104  MUL            A=8   B=0    C=1    Bx=1      sBx=-131070
+    105  CONCAT         A=0   B=256  C=10   Bx=131082 sBx=11    
+    106  SETLIST        A=8   B=0    C=8    Bx=8      sBx=-131063
+    107  POW            A=8   B=8    C=302  Bx=4398   sBx=-126673
+    108  TFORLOOP       A=8   B=8    C=303  Bx=4399   sBx=-126672
+    109  POW            A=10  B=0    C=269  Bx=269    sBx=-130802
+    110  GETUPVAL       A=8   B=3    C=2    Bx=1538   sBx=-129533
+    111  MUL            A=8   B=0    C=0    Bx=0      sBx=-131071
+    112  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+    113  POW            A=9   B=8    C=304  Bx=4400   sBx=-126671
+    114  MUL            A=9   B=0    C=0    Bx=0      sBx=-131071
+    115  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+    116  CALL           A=7   B=1    C=0    Bx=512    sBx=-130559
+    117  FORLOOP        A=8   B=8    C=0    Bx=4096   sBx=-126975
+    118  MUL            A=7   B=0    C=0    Bx=0      sBx=-131071
+    119  CONCAT         A=0   B=256  C=6    Bx=131078 sBx=7     
+    120  SETLIST        A=9   B=0    C=8    Bx=8      sBx=-131063
+    121  POW            A=9   B=9    C=305  Bx=4913   sBx=-126158
+    122  TFORLOOP       A=9   B=9    C=306  Bx=4914   sBx=-126157
+    123  LEN            A=11  B=0    C=51   Bx=51     sBx=-131020
+    124  GETUPVAL       A=9   B=3    C=2    Bx=1538   sBx=-129533
+    125  SETGLOBAL      A=8   B=9    C=0    Bx=4608   sBx=-126463 K4608=?
+    126  CONCAT         A=0   B=256  C=142  Bx=131214 sBx=143   
+    127  POW            A=9   B=0    C=269  Bx=269    sBx=-130802
+    128  MUL            A=9   B=0    C=0    Bx=0      sBx=-131071
+    129  CONCAT         A=0   B=256  C=6    Bx=131078 sBx=7     
+    130  SETLIST        A=9   B=0    C=8    Bx=8      sBx=-131063
+    131  POW            A=9   B=9    C=305  Bx=4913   sBx=-126158
+    132  TFORLOOP       A=9   B=9    C=306  Bx=4914   sBx=-126157
+    133  LEN            A=11  B=0    C=52   Bx=52     sBx=-131019
+    134  GETUPVAL       A=9   B=3    C=2    Bx=1538   sBx=-129533
+    135  SETGLOBAL      A=8   B=9    C=0    Bx=4608   sBx=-126463 K4608=?
+    136  CONCAT         A=0   B=256  C=132  Bx=131204 sBx=133   
+    137  SETTABLE       A=9   B=1    C=0    Bx=512    sBx=-130559 K0c=('str', 'super')
+    138  TFORLOOP       A=9   B=9    C=310  Bx=4918   sBx=-126153
+    139  GETUPVAL       A=9   B=2    C=2    Bx=1026   sBx=-130045
+    140  CLOSURE        A=0   B=309  C=9    Bx=158217 sBx=27146 
+    141  SETLIST        A=9   B=0    C=8    Bx=8      sBx=-131063
+    142  POW            A=9   B=9    C=265  Bx=4873   sBx=-126198
+    143  POW            A=9   B=9    C=311  Bx=4919   sBx=-126152
+    144  TFORLOOP       A=9   B=9    C=312  Bx=4920   sBx=-126151
+    145  GETUPVAL       A=9   B=2    C=2    Bx=1026   sBx=-130045
+    146  SETTABLE       A=10  B=2    C=0    Bx=1024   sBx=-130047 K0c=('str', 'super')
+    147  TFORLOOP       A=10  B=10   C=313  Bx=5433   sBx=-125638
+    148  GETUPVAL       A=10  B=2    C=2    Bx=1026   sBx=-130045
+    149  TFORLOOP       A=10  B=10   C=314  Bx=5434   sBx=-125637
+    150  SETGLOBAL      A=12  B=9    C=0    Bx=4608   sBx=-126463 K4608=?
+    151  GETUPVAL       A=10  B=3    C=2    Bx=1538   sBx=-129533
+    152  MUL            A=10  B=0    C=0    Bx=0      sBx=-131071
+    153  CONCAT         A=0   B=256  C=25   Bx=131097 sBx=26    
+    154  POW            A=11  B=10   C=315  Bx=5435   sBx=-125636
+    155  POW            A=11  B=11   C=316  Bx=5948   sBx=-125123
+    156  MUL            A=11  B=0    C=0    Bx=0      sBx=-131071
+    157  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+    158  POW            A=11  B=10   C=315  Bx=5435   sBx=-125636
+    159  POW            A=11  B=11   C=316  Bx=5948   sBx=-125123
+    160  POW            A=11  B=11   C=317  Bx=5949   sBx=-125122
+    161  MUL            A=11  B=0    C=0    Bx=0      sBx=-131071
+    162  CONCAT         A=0   B=256  C=16   Bx=131088 sBx=17    
+    163  SETLIST        A=12  B=0    C=8    Bx=8      sBx=-131063
+    164  POW            A=12  B=12   C=305  Bx=6449   sBx=-124622
+    165  TFORLOOP       A=12  B=12   C=306  Bx=6450   sBx=-124621
+    166  SETGLOBAL      A=14  B=11   C=0    Bx=5632   sBx=-125439 K5632=?
+    167  RETURN         A=15  B=0    C=3    Bx=3      sBx=-131068
+    168  POW            A=16  B=0    C=282  Bx=282    sBx=-130789
+    169  CLOSURE        A=15  B=282  C=16   Bx=144400 sBx=13329 
+    170  POW            A=16  B=0    C=289  Bx=289    sBx=-130782
+    171  CLOSURE        A=15  B=289  C=16   Bx=147984 sBx=16913 
+    172  POW            A=16  B=0    C=309  Bx=309    sBx=-130762
+    173  LOADK          A=1   B=16   C=319  Bx=8511   sBx=-122560 K8511=?
+    174  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+    175  CALL           A=16  B=0    C=1    Bx=1      sBx=-131070
+    176  CALL           A=16  B=1    C=0    Bx=512    sBx=-130559
+    177  CLOSURE        A=15  B=318  C=16   Bx=162832 sBx=31761 
+    178  GETUPVAL       A=12  B=4    C=2    Bx=2050   sBx=-129021
+    179  SETGLOBAL      A=8   B=12   C=0    Bx=6144   sBx=-124927 K6144=?
+    180  MUL            A=8   B=0    C=1    Bx=1      sBx=-131070
+    181  CONCAT         A=0   B=256  C=87   Bx=131159 sBx=88    
+    182  SETLIST        A=11  B=0    C=17   Bx=17     sBx=-131054
+    183  POW            A=11  B=11   C=320  Bx=5952   sBx=-125119
+    184  POW            A=11  B=11   C=321  Bx=5953   sBx=-125118
+    185  JMP            A=1   B=9    C=11   Bx=4619   sBx=-126452
+    186  CONCAT         A=0   B=256  C=9    Bx=131081 sBx=10    
+    187  SETLIST        A=11  B=0    C=17   Bx=17     sBx=-131054
+    188  POW            A=11  B=11   C=320  Bx=5952   sBx=-125119
+    189  POW            A=11  B=11   C=322  Bx=5954   sBx=-125117
+    190  JMP            A=1   B=9    C=11   Bx=4619   sBx=-126452
+    191  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+    192  SETLIST        A=11  B=0    C=17   Bx=17     sBx=-131054
+    193  POW            A=11  B=11   C=320  Bx=5952   sBx=-125119
+    194  POW            A=11  B=11   C=323  Bx=5955   sBx=-125116
+    195  JMP            A=0   B=9    C=11   Bx=4619   sBx=-126452
+    196  CONCAT         A=0   B=256  C=17   Bx=131089 sBx=18    
+    197  SETLIST        A=11  B=0    C=8    Bx=8      sBx=-131063
+    198  POW            A=11  B=11   C=305  Bx=5937   sBx=-125134
+    199  TFORLOOP       A=11  B=11   C=306  Bx=5938   sBx=-125133
+    200  LEN            A=13  B=0    C=68   Bx=68     sBx=-131003
+    201  RETURN         A=14  B=0    C=3    Bx=3      sBx=-131068
+    202  POW            A=15  B=0    C=282  Bx=282    sBx=-130789
+    203  CLOSURE        A=14  B=282  C=15   Bx=144399 sBx=13328 
+    204  POW            A=15  B=0    C=289  Bx=289    sBx=-130782
+    205  CLOSURE        A=14  B=289  C=15   Bx=147983 sBx=16912 
+    206  POW            A=15  B=0    C=309  Bx=309    sBx=-130762
+    207  LOADK          A=1   B=15   C=319  Bx=7999   sBx=-123072 K7999=?
+    208  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+    209  CALL           A=15  B=0    C=1    Bx=1      sBx=-131070
+    210  CALL           A=15  B=1    C=0    Bx=512    sBx=-130559
+    211  CLOSURE        A=14  B=318  C=15   Bx=162831 sBx=31760 
+    212  GETUPVAL       A=11  B=4    C=2    Bx=2050   sBx=-129021
+    213  SETGLOBAL      A=8   B=11   C=0    Bx=5632   sBx=-125439 K5632=?
+    214  CONCAT         A=0   B=256  C=54   Bx=131126 sBx=55    
+    215  SETLIST        A=11  B=0    C=17   Bx=17     sBx=-131054
+    216  POW            A=11  B=11   C=320  Bx=5952   sBx=-125119
+    217  POW            A=11  B=11   C=325  Bx=5957   sBx=-125114
+    218  JMP            A=0   B=9    C=11   Bx=4619   sBx=-126452
+    219  CONCAT         A=0   B=256  C=17   Bx=131089 sBx=18    
+    220  SETLIST        A=11  B=0    C=8    Bx=8      sBx=-131063
+    221  POW            A=11  B=11   C=305  Bx=5937   sBx=-125134
+    222  TFORLOOP       A=11  B=11   C=306  Bx=5938   sBx=-125133
+    223  LEN            A=13  B=0    C=70   Bx=70     sBx=-131001
+    224  RETURN         A=14  B=0    C=3    Bx=3      sBx=-131068
+    225  POW            A=15  B=0    C=282  Bx=282    sBx=-130789
+    226  CLOSURE        A=14  B=282  C=15   Bx=144399 sBx=13328 
+    227  POW            A=15  B=0    C=289  Bx=289    sBx=-130782
+    228  CLOSURE        A=14  B=289  C=15   Bx=147983 sBx=16912 
+    229  POW            A=15  B=0    C=309  Bx=309    sBx=-130762
+    230  LOADK          A=1   B=15   C=319  Bx=7999   sBx=-123072 K7999=?
+    231  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+    232  CALL           A=15  B=0    C=1    Bx=1      sBx=-131070
+    233  CALL           A=15  B=1    C=0    Bx=512    sBx=-130559
+    234  CLOSURE        A=14  B=318  C=15   Bx=162831 sBx=31760 
+    235  GETUPVAL       A=11  B=4    C=2    Bx=2050   sBx=-129021
+    236  SETGLOBAL      A=8   B=11   C=0    Bx=5632   sBx=-125439 K5632=?
+    237  CONCAT         A=0   B=256  C=31   Bx=131103 sBx=32    
+    238  SETLIST        A=11  B=0    C=17   Bx=17     sBx=-131054
+    239  POW            A=11  B=11   C=320  Bx=5952   sBx=-125119
+    240  POW            A=11  B=11   C=327  Bx=5959   sBx=-125112
+    241  JMP            A=0   B=9    C=11   Bx=4619   sBx=-126452
+    242  CONCAT         A=0   B=256  C=17   Bx=131089 sBx=18    
+    243  SETLIST        A=11  B=0    C=8    Bx=8      sBx=-131063
+    244  POW            A=11  B=11   C=305  Bx=5937   sBx=-125134
+    245  TFORLOOP       A=11  B=11   C=306  Bx=5938   sBx=-125133
+    246  LEN            A=13  B=0    C=72   Bx=72     sBx=-130999
+    247  RETURN         A=14  B=0    C=3    Bx=3      sBx=-131068
+    248  POW            A=15  B=0    C=282  Bx=282    sBx=-130789
+    249  CLOSURE        A=14  B=282  C=15   Bx=144399 sBx=13328 
+    250  POW            A=15  B=0    C=289  Bx=289    sBx=-130782
+    251  CLOSURE        A=14  B=289  C=15   Bx=147983 sBx=16912 
+    252  POW            A=15  B=0    C=309  Bx=309    sBx=-130762
+    253  LOADK          A=1   B=15   C=319  Bx=7999   sBx=-123072 K7999=?
+    254  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+    255  CALL           A=15  B=0    C=1    Bx=1      sBx=-131070
+    256  CALL           A=15  B=1    C=0    Bx=512    sBx=-130559
+    257  CLOSURE        A=14  B=318  C=15   Bx=162831 sBx=31760 
+    258  GETUPVAL       A=11  B=4    C=2    Bx=2050   sBx=-129021
+    259  SETGLOBAL      A=8   B=11   C=0    Bx=5632   sBx=-125439 K5632=?
+    260  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+    261  SETLIST        A=11  B=0    C=8    Bx=8      sBx=-131063
+    262  POW            A=11  B=11   C=305  Bx=5937   sBx=-125134
+    263  TFORLOOP       A=11  B=11   C=306  Bx=5938   sBx=-125133
+    264  LEN            A=13  B=0    C=73   Bx=73     sBx=-130998
+    265  RETURN         A=14  B=0    C=1    Bx=1      sBx=-131070
+    266  POW            A=15  B=0    C=289  Bx=289    sBx=-130782
+    267  CLOSURE        A=14  B=289  C=15   Bx=147983 sBx=16912 
+    268  GETUPVAL       A=11  B=4    C=2    Bx=2050   sBx=-129021
+    269  SETGLOBAL      A=8   B=11   C=0    Bx=5632   sBx=-125439 K5632=?
+    270  TFORLOOP       A=9   B=8    C=330  Bx=4426   sBx=-126645
+    271  NEWTABLE       A=11  B=0    C=0    Bx=0      sBx=-131071
+    272  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'super')
+    273  GETUPVAL       A=9   B=3    C=1    Bx=1537   sBx=-129534
+    274  TFORLOOP       A=9   B=0    C=331  Bx=331    sBx=-130740
+    275  SETGLOBAL      A=11  B=8    C=0    Bx=4096   sBx=-126975 K4096=?
+    276  GETUPVAL       A=9   B=3    C=1    Bx=1537   sBx=-129534
+    277  CLOSURE        A=0   B=332  C=8    Bx=169992 sBx=38921 
+    278  SETLIST        A=9   B=0    C=8    Bx=8      sBx=-131063
+    279  POW            A=9   B=9    C=333  Bx=4941   sBx=-126130
+    280  POW            A=9   B=9    C=334  Bx=4942   sBx=-126129
+    281  SETLIST        A=10  B=0    C=8    Bx=8      sBx=-131063
+    282  POW            A=10  B=10   C=333  Bx=5453   sBx=-125618
+    283  POW            A=10  B=10   C=335  Bx=5455   sBx=-125616
+    284  POW            A=11  B=0    C=332  Bx=332    sBx=-130739
+    285  GETUPVAL       A=9   B=3    C=1    Bx=1537   sBx=-129534
+    286  SETLIST        A=9   B=0    C=35   Bx=35     sBx=-131036
+    287  LEN            A=10  B=0    C=81   Bx=81     sBx=-130990
+    288  GETUPVAL       A=9   B=2    C=2    Bx=1026   sBx=-130045
+    289  POW            A=9   B=9    C=294  Bx=4902   sBx=-126169
+    290  GETUPVAL       A=9   B=1    C=2    Bx=514    sBx=-130557
+    291  CLOSURE        A=0   B=336  C=9    Bx=172041 sBx=40970 
+    292  POW            A=9   B=0    C=336  Bx=336    sBx=-130735
+    293  TFORLOOP       A=9   B=9    C=338  Bx=4946   sBx=-126125
+    294  LEN            A=11  B=0    C=83   Bx=83     sBx=-130988
+    295  SETGLOBAL      A=12  B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'super')
+    296  GETUPVAL       A=9   B=4    C=1    Bx=2049   sBx=-129022
+    297  TFORLOOP       A=9   B=0    C=340  Bx=340    sBx=-130731
+    298  GETUPVAL       A=9   B=2    C=1    Bx=1025   sBx=-130046
+    299  POW            A=9   B=5    C=341  Bx=2901   sBx=-128170
+    300  MUL            A=9   B=0    C=0    Bx=0      sBx=-131071
+    301  CONCAT         A=0   B=256  C=20   Bx=131092 sBx=21    
+    302  POW            A=9   B=5    C=342  Bx=2902   sBx=-128169
+    303  MUL            A=9   B=0    C=1    Bx=1      sBx=-131070
+    304  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+    305  NEWTABLE       A=9   B=0    C=1    Bx=1      sBx=-131070
+    306  TFORLOOP       A=10  B=0    C=331  Bx=331    sBx=-130740
+    307  SETLIST        A=12  B=0    C=8    Bx=8      sBx=-131063
+    308  POW            A=12  B=12   C=305  Bx=6449   sBx=-124622
+    309  TFORLOOP       A=12  B=12   C=306  Bx=6450   sBx=-124621
+    310  LEN            A=14  B=0    C=87   Bx=87     sBx=-130984
+    311  RETURN         A=15  B=0    C=2    Bx=2      sBx=-131069
+    312  POW            A=16  B=5    C=341  Bx=2901   sBx=-128170
+    313  CLOSURE        A=15  B=341  C=16   Bx=174608 sBx=43537 
+    314  NEWTABLE       A=16  B=0    C=2    Bx=2      sBx=-131069
+    315  SETGLOBAL      A=0   B=9    C=0    Bx=4608   sBx=-126463 K4608=?
+    316  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'super')
+    317  CLOSURE        A=15  B=344  C=16   Bx=176144 sBx=45073 
+    318  GETUPVAL       A=12  B=4    C=0    Bx=2048   sBx=-129023
+    319  GETUPVAL       A=10  B=0    C=1    Bx=1      sBx=-131070
+    320  TFORLOOP       A=10  B=0    C=345  Bx=345    sBx=-130726
+    321  GETUPVAL       A=10  B=2    C=1    Bx=1025   sBx=-130046
+    322  SUB            A=9   B=0    C=0    Bx=0      sBx=-131071
+    323  CLOSURE        A=0   B=346  C=347  Bx=177499 sBx=46428 
+    324  TFORLOOP       A=9   B=0    C=348  Bx=348    sBx=-130723
+    325  GETUPVAL       A=9   B=2    C=1    Bx=1025   sBx=-130046
+    326  SETLIST        A=9   B=0    C=93   Bx=93     sBx=-130978
+    327  LEN            A=10  B=0    C=94   Bx=94     sBx=-130977
+    328  GETUPVAL       A=9   B=2    C=1    Bx=1025   sBx=-130046
+    329  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#0 : kid#0 ---
+===== proto#0  src=  lines=86-86  nparams=0 nups=1 maxstack=2 =====
+  upvalues: ['self']
+  constants: [('str', 'onTick')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'onTick')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  GETUPVAL       A=0   B=2    C=1    Bx=1025   sBx=-130046
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#1 : kid#1 ---
+===== proto#1  src=  lines=100-100  nparams=0 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: []
+      0  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#2 : kid#2 ---
+===== proto#2  src=  lines=104-107  nparams=0 nups=2 maxstack=2 =====
+  upvalues: ['cb', 'self']
+  constants: [('str', 'resume')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'resume')
+      1  GETUPVAL       A=0   B=1    C=1    Bx=513    sBx=-130558
+      2  SETTABLE       A=0   B=1    C=0    Bx=512    sBx=-130559 K0c=('str', 'resume')
+      3  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      4  GETUPVAL       A=0   B=2    C=1    Bx=1025   sBx=-130046
+      5  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#4 : kid#1 ---
+===== proto#4  src=  lines=118-142  nparams=1 nups=0 maxstack=8 =====
+  upvalues: []
+  constants: [('str', '_isHotfixing'), ('bool', 0), ('str', 'cg'), ('str', 'systems'), ('str', 'battleSystem'), ('str', 'useUGCMap'), ('str', 'checkUGCMapFinish'), ('str', 'checkUGCMapFile'), ('str', 'performWithDelay'), ('num', 30.0), ('str', 'initLoadingPros'), ('str', 'game_dict'), ('str', 'map_name'), ('str', 'tutorial_id'), ('str', 'res_config'), ('str', 'args'), ('str', 'setLoading'), ('str', 'isReconnect'), ('str', 'isSingle'), ('str', 'matchinfo'), ('str', 'mgr'), ('str', 'start'), ('str', 'ipairs'), ('str', '_todoFuncs')]
+      0  CLOSURE        A=0   B=256  C=257  Bx=131329 sBx=258   
+      1  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+      2  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+      3  POW            A=1   B=1    C=260  Bx=772    sBx=-130299
+      4  TFORLOOP       A=1   B=1    C=261  Bx=773    sBx=-130298
+      5  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+      6  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      7  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+      8  CLOSURE        A=0   B=262  C=257  Bx=134401 sBx=3330  
+      9  TFORLOOP       A=1   B=0    C=263  Bx=263    sBx=-130808
+     10  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+     11  TFORLOOP       A=1   B=0    C=264  Bx=264    sBx=-130807
+     12  NEWTABLE       A=3   B=0    C=0    Bx=0      sBx=-131071
+     13  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_isHotfixing')
+     14  LEN            A=4   B=0    C=9    Bx=9      sBx=-131062
+     15  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     16  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     17  TFORLOOP       A=1   B=0    C=266  Bx=266    sBx=-130805
+     18  POW            A=3   B=0    C=267  Bx=267    sBx=-130804
+     19  POW            A=4   B=0    C=268  Bx=268    sBx=-130803
+     20  POW            A=5   B=0    C=269  Bx=269    sBx=-130802
+     21  POW            A=6   B=0    C=270  Bx=270    sBx=-130801
+     22  POW            A=7   B=0    C=271  Bx=271    sBx=-130800
+     23  GETUPVAL       A=1   B=7    C=1    Bx=3585   sBx=-127486
+     24  TFORLOOP       A=1   B=0    C=272  Bx=272    sBx=-130799
+     25  POW            A=3   B=0    C=273  Bx=273    sBx=-130798
+     26  MUL            A=3   B=0    C=1    Bx=1      sBx=-131070
+     27  CONCAT         A=0   B=256  C=10   Bx=131082 sBx=11    
+     28  SETLIST        A=3   B=0    C=2    Bx=2      sBx=-131069
+     29  POW            A=3   B=3    C=259  Bx=1795   sBx=-129276
+     30  POW            A=3   B=3    C=260  Bx=1796   sBx=-129275
+     31  TFORLOOP       A=3   B=3    C=274  Bx=1810   sBx=-129261
+     32  GETUPVAL       A=3   B=2    C=2    Bx=1026   sBx=-130045
+     33  MUL            A=3   B=0    C=1    Bx=1      sBx=-131070
+     34  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     35  SETLIST        A=3   B=0    C=2    Bx=2      sBx=-131069
+     36  POW            A=3   B=3    C=259  Bx=1795   sBx=-129276
+     37  POW            A=3   B=3    C=260  Bx=1796   sBx=-129275
+     38  POW            A=3   B=3    C=275  Bx=1811   sBx=-129260
+     39  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+     40  POW            A=1   B=0    C=276  Bx=276    sBx=-130795
+     41  TFORLOOP       A=1   B=1    C=277  Bx=789    sBx=-130282
+     42  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+     43  SETLIST        A=1   B=0    C=22   Bx=22     sBx=-131049
+     44  POW            A=2   B=0    C=279  Bx=279    sBx=-130792
+     45  GETUPVAL       A=1   B=2    C=4    Bx=1028   sBx=-130043
+     46  CONCAT         A=0   B=256  C=1    Bx=131073 sBx=2     
+     47  SETGLOBAL      A=6   B=5    C=0    Bx=2560   sBx=-128511 K2560=?
+     48  GETUPVAL       A=6   B=1    C=1    Bx=513    sBx=-130558
+     49  EQ             A=1   B=0    C=2    Bx=2      sBx=-131069
+     50  CONCAT         A=0   B=255  C=507  Bx=131067 sBx=-4    
+     51  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#4 : kid#0 ---
+===== proto#4  src=  lines=126-130  nparams=0 nups=1 maxstack=4 =====
+  upvalues: ['self']
+  constants: [('str', 'checkUGCMapFinish'), ('str', 'cg'), ('str', 'Utils'), ('str', 'showToast'), ('str', 'StringConfig'), ('str', 'getString'), ('str', 'BattleLoadingUGCMapDownloadFailTip')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'checkUGCMapFinish')
+      1  POW            A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  MUL            A=0   B=0    C=1    Bx=1      sBx=-131070
+      3  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+      4  SETLIST        A=0   B=0    C=1    Bx=1      sBx=-131070
+      5  POW            A=0   B=0    C=258  Bx=258    sBx=-130813
+      6  POW            A=0   B=0    C=259  Bx=259    sBx=-130812
+      7  SETLIST        A=1   B=0    C=1    Bx=1      sBx=-131070
+      8  POW            A=1   B=1    C=260  Bx=772    sBx=-130299
+      9  TFORLOOP       A=1   B=1    C=261  Bx=773    sBx=-130298
+     10  LEN            A=3   B=0    C=6    Bx=6      sBx=-131065
+     11  GETUPVAL       A=1   B=3    C=0    Bx=1536   sBx=-129535
+     12  GETUPVAL       A=0   B=0    C=1    Bx=1      sBx=-131070
+     13  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#6 : kid#2 ---
+===== proto#6  src=  lines=145-171  nparams=1 nups=0 maxstack=10 =====
+  upvalues: []
+  constants: [('str', 'TJNetMgr'), ('str', 'isConnected'), ('str', '_retryCount'), ('num', 1.0), ('str', 'cg'), ('str', 'systems'), ('str', 'battleHotfixSystem'), ('str', 'battleSystem'), ('str', 'getMatchHotfixVersion'), ('num', 0.0), ('str', 'isNeedHotfix'), ('str', '_isHotfixing'), ('bool', 1), ('str', 'elk'), ('str', 'upload'), ('str', 'operation'), ('str', 'forceHotfixToVersion'), ('str', 'extra'), ('str', 'string'), ('str', 'format'), ('str', 'verison=%s;retrycount=%s'), ('str', 'outForceUpdate'), ('str', 'endHotfix'), ('str', 'forceHotfixFailed'), ('str', 'version=')]
+      0  SETLIST        A=1   B=0    C=0    Bx=0      sBx=-131071
+      1  TFORLOOP       A=1   B=1    C=257  Bx=769    sBx=-130302
+      2  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+      3  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      4  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+      5  POW            A=1   B=0    C=258  Bx=258    sBx=-130813
+      6  LT             A=1   B=1    C=259  Bx=771    sBx=-130300
+      7  CLOSURE        A=0   B=258  C=1    Bx=132097 sBx=1026  
+      8  SETLIST        A=1   B=0    C=4    Bx=4      sBx=-131067
+      9  POW            A=1   B=1    C=261  Bx=773    sBx=-130298
+     10  POW            A=1   B=1    C=262  Bx=774    sBx=-130297
+     11  SETLIST        A=2   B=0    C=4    Bx=4      sBx=-131067
+     12  POW            A=2   B=2    C=261  Bx=1285   sBx=-129786
+     13  POW            A=2   B=2    C=263  Bx=1287   sBx=-129784
+     14  TFORLOOP       A=2   B=2    C=264  Bx=1288   sBx=-129783
+     15  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+     16  POW            A=3   B=0    C=258  Bx=258    sBx=-130813
+     17  MOVE           A=0   B=265  C=3    Bx=135683 sBx=4612  
+     18  CONCAT         A=0   B=256  C=24   Bx=131096 sBx=25    
+     19  TFORLOOP       A=3   B=1    C=266  Bx=778    sBx=-130293
+     20  SETGLOBAL      A=5   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     21  GETUPVAL       A=3   B=3    C=2    Bx=1538   sBx=-129533
+     22  MUL            A=3   B=0    C=0    Bx=0      sBx=-131071
+     23  CONCAT         A=0   B=256  C=19   Bx=131091 sBx=20    
+     24  CLOSURE        A=0   B=267  C=268  Bx=136972 sBx=5901  
+     25  SETLIST        A=3   B=0    C=4    Bx=4      sBx=-131067
+     26  POW            A=3   B=3    C=269  Bx=1805   sBx=-129266
+     27  TFORLOOP       A=3   B=3    C=270  Bx=1806   sBx=-129265
+     28  RETURN         A=5   B=0    C=2    Bx=2      sBx=-131069
+     29  CLOSURE        A=5   B=271  C=272  Bx=139024 sBx=7953  
+     30  SETLIST        A=6   B=0    C=18   Bx=18     sBx=-131053
+     31  POW            A=6   B=6    C=275  Bx=3347   sBx=-127724
+     32  LEN            A=7   B=0    C=20   Bx=20     sBx=-131051
+     33  SETGLOBAL      A=8   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     34  POW            A=9   B=0    C=258  Bx=258    sBx=-130813
+     35  GETUPVAL       A=6   B=4    C=2    Bx=2050   sBx=-129021
+     36  CLOSURE        A=5   B=273  C=6    Bx=139782 sBx=8711  
+     37  GETUPVAL       A=3   B=3    C=1    Bx=1537   sBx=-129534
+     38  TFORLOOP       A=3   B=1    C=272  Bx=784    sBx=-130287
+     39  SETGLOBAL      A=5   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     40  NEWTABLE       A=6   B=0    C=0    Bx=0      sBx=-131071
+     41  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'TJNetMgr')
+     42  GETUPVAL       A=3   B=4    C=1    Bx=2049   sBx=-129022
+     43  CONCAT         A=0   B=256  C=16   Bx=131088 sBx=17    
+     44  TFORLOOP       A=3   B=1    C=277  Bx=789    sBx=-130282
+     45  GETUPVAL       A=3   B=2    C=1    Bx=1025   sBx=-130046
+     46  TFORLOOP       A=3   B=0    C=278  Bx=278    sBx=-130793
+     47  GETUPVAL       A=3   B=2    C=1    Bx=1025   sBx=-130046
+     48  POW            A=3   B=0    C=258  Bx=258    sBx=-130813
+     49  LOADK          A=0   B=3    C=265  Bx=1801   sBx=-129270 K1801=?
+     50  CONCAT         A=0   B=256  C=9    Bx=131081 sBx=10    
+     51  SETLIST        A=3   B=0    C=4    Bx=4      sBx=-131067
+     52  POW            A=3   B=3    C=269  Bx=1805   sBx=-129266
+     53  TFORLOOP       A=3   B=3    C=270  Bx=1806   sBx=-129265
+     54  RETURN         A=5   B=0    C=2    Bx=2      sBx=-131069
+     55  CLOSURE        A=5   B=271  C=279  Bx=139031 sBx=7960  
+     56  LEN            A=6   B=0    C=24   Bx=24     sBx=-131047
+     57  SETGLOBAL      A=7   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     58  MOD            A=6   B=6    C=7    Bx=3079   sBx=-127992
+     59  CLOSURE        A=5   B=273  C=6    Bx=139782 sBx=8711  
+     60  GETUPVAL       A=3   B=3    C=1    Bx=1537   sBx=-129534
+     61  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#6 : kid#0 ---
+===== proto#6  src=  lines=154-162  nparams=1 nups=1 maxstack=5 =====
+  upvalues: ['self']
+  constants: [('str', 'endHotfix'), ('str', 'performWithDelay'), ('num', 0.5)]
+      0  MUL            A=0   B=0    C=0    Bx=0      sBx=-131071
+      1  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+      2  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'endHotfix')
+      3  TFORLOOP       A=1   B=1    C=256  Bx=768    sBx=-130303
+      4  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+      5  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+      6  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'endHotfix')
+      7  TFORLOOP       A=1   B=1    C=257  Bx=769    sBx=-130302
+      8  NEWTABLE       A=3   B=0    C=0    Bx=0      sBx=-131071
+      9  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'endHotfix')
+     10  LEN            A=4   B=0    C=2    Bx=2      sBx=-131069
+     11  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     12  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#6 : kid#0 ---
+===== proto#6  src=  lines=158-160  nparams=0 nups=1 maxstack=2 =====
+  upvalues: ['self']
+  constants: [('str', 'checkHotfix')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'checkHotfix')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  GETUPVAL       A=0   B=2    C=1    Bx=1025   sBx=-130046
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#9 : kid#3 ---
+===== proto#9  src=  lines=173-183  nparams=1 nups=0 maxstack=6 =====
+  upvalues: []
+  constants: [('str', 'cg'), ('str', 'systems'), ('str', 'battleSystem'), ('str', 'getUGCMapUrl'), ('str', 'ugcSystem'), ('str', 'checkUGCMapValidByMapUrl'), ('str', 'endCheckUGCMapFile'), ('str', 'performWithDelay'), ('num', 0.5)]
+      0  SETLIST        A=1   B=0    C=0    Bx=0      sBx=-131071
+      1  POW            A=1   B=1    C=257  Bx=769    sBx=-130302
+      2  POW            A=1   B=1    C=258  Bx=770    sBx=-130301
+      3  TFORLOOP       A=1   B=1    C=259  Bx=771    sBx=-130300
+      4  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+      5  SETLIST        A=2   B=0    C=0    Bx=0      sBx=-131071
+      6  POW            A=2   B=2    C=257  Bx=1281   sBx=-129790
+      7  POW            A=2   B=2    C=260  Bx=1284   sBx=-129787
+      8  TFORLOOP       A=2   B=2    C=261  Bx=1285   sBx=-129786
+      9  SETGLOBAL      A=4   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     10  CALL           A=5   B=0    C=0    Bx=0      sBx=-131071
+     11  GETUPVAL       A=2   B=4    C=2    Bx=2050   sBx=-129021
+     12  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+     13  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+     14  TFORLOOP       A=2   B=0    C=262  Bx=262    sBx=-130809
+     15  GETUPVAL       A=2   B=2    C=1    Bx=1025   sBx=-130046
+     16  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+     17  TFORLOOP       A=2   B=0    C=263  Bx=263    sBx=-130808
+     18  NEWTABLE       A=4   B=0    C=0    Bx=0      sBx=-131071
+     19  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'cg')
+     20  LEN            A=5   B=0    C=8    Bx=8      sBx=-131063
+     21  GETUPVAL       A=2   B=4    C=1    Bx=2049   sBx=-129022
+     22  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#9 : kid#0 ---
+===== proto#9  src=  lines=179-181  nparams=0 nups=1 maxstack=2 =====
+  upvalues: ['self']
+  constants: [('str', 'checkUGCMapFile')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'checkUGCMapFile')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  GETUPVAL       A=0   B=2    C=1    Bx=1025   sBx=-130046
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#11 : kid#4 ---
+===== proto#11  src=  lines=185-196  nparams=1 nups=0 maxstack=8 =====
+  upvalues: []
+  constants: [('str', 'checkUGCMapFinish'), ('bool', 1), ('str', 'initLoadingPros'), ('str', 'game_dict'), ('str', 'map_name'), ('str', 'tutorial_id'), ('str', 'res_config'), ('str', 'args'), ('str', 'setLoading'), ('str', 'isReconnect'), ('str', 'cg'), ('str', 'systems'), ('str', 'battleSystem'), ('str', 'isSingle'), ('str', 'matchinfo'), ('str', 'mgr'), ('str', 'start'), ('str', 'ipairs'), ('str', '_todoFuncs')]
+      0  CLOSURE        A=0   B=256  C=257  Bx=131329 sBx=258   
+      1  TFORLOOP       A=1   B=0    C=258  Bx=258    sBx=-130813
+      2  POW            A=3   B=0    C=259  Bx=259    sBx=-130812
+      3  POW            A=4   B=0    C=260  Bx=260    sBx=-130811
+      4  POW            A=5   B=0    C=261  Bx=261    sBx=-130810
+      5  POW            A=6   B=0    C=262  Bx=262    sBx=-130809
+      6  POW            A=7   B=0    C=263  Bx=263    sBx=-130808
+      7  GETUPVAL       A=1   B=7    C=1    Bx=3585   sBx=-127486
+      8  TFORLOOP       A=1   B=0    C=264  Bx=264    sBx=-130807
+      9  POW            A=3   B=0    C=265  Bx=265    sBx=-130806
+     10  MUL            A=3   B=0    C=1    Bx=1      sBx=-131070
+     11  CONCAT         A=0   B=256  C=10   Bx=131082 sBx=11    
+     12  SETLIST        A=3   B=0    C=10   Bx=10     sBx=-131061
+     13  POW            A=3   B=3    C=267  Bx=1803   sBx=-129268
+     14  POW            A=3   B=3    C=268  Bx=1804   sBx=-129267
+     15  TFORLOOP       A=3   B=3    C=269  Bx=1805   sBx=-129266
+     16  GETUPVAL       A=3   B=2    C=2    Bx=1026   sBx=-130045
+     17  MUL            A=3   B=0    C=1    Bx=1      sBx=-131070
+     18  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     19  SETLIST        A=3   B=0    C=10   Bx=10     sBx=-131061
+     20  POW            A=3   B=3    C=267  Bx=1803   sBx=-129268
+     21  POW            A=3   B=3    C=268  Bx=1804   sBx=-129267
+     22  POW            A=3   B=3    C=270  Bx=1806   sBx=-129265
+     23  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+     24  POW            A=1   B=0    C=271  Bx=271    sBx=-130800
+     25  TFORLOOP       A=1   B=1    C=272  Bx=784    sBx=-130287
+     26  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+     27  SETLIST        A=1   B=0    C=17   Bx=17     sBx=-131054
+     28  POW            A=2   B=0    C=274  Bx=274    sBx=-130797
+     29  GETUPVAL       A=1   B=2    C=4    Bx=1028   sBx=-130043
+     30  CONCAT         A=0   B=256  C=1    Bx=131073 sBx=2     
+     31  SETGLOBAL      A=6   B=5    C=0    Bx=2560   sBx=-128511 K2560=?
+     32  GETUPVAL       A=6   B=1    C=1    Bx=513    sBx=-130558
+     33  EQ             A=1   B=0    C=2    Bx=2      sBx=-131069
+     34  CONCAT         A=0   B=255  C=507  Bx=131067 sBx=-4    
+     35  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#12 : kid#5 ---
+===== proto#12  src=  lines=198-214  nparams=2 nups=1 maxstack=14 =====
+  upvalues: ['fw']
+  constants: [('str', 'GAMEPARAM'), ('str', 'checkPreloadSpine'), ('str', 'userext'), ('str', 'OPEN_MODULE'), ('num', 1.0), ('str', 'cc'), ('str', 'Director'), ('str', 'getInstance'), ('str', 'getPerformanceLevel'), ('str', 'cg'), ('str', 'PerformanceLevel'), ('str', 'Low'), ('str', 'device'), ('str', 'platform'), ('str', '/'), ('str', 'FileUtils'), ('str', 'pairs'), ('str', 'string'), ('str', 'gsub'), ('str', 'res/'), ('str', 'res_high_new/'), ('str', 'common/'), ('str', '%.%w+'), ('str', '.astc'), ('str', 'isFileExist'), ('str', 'logToast'), ('str', 'missed texture = %s'), ('str', 'elk'), ('str', 'upload'), ('str', 'operation'), ('str', 'spineMissedTexture'), ('str', 'extra')]
+      0  SETLIST        A=2   B=0    C=0    Bx=0      sBx=-131071
+      1  POW            A=2   B=2    C=257  Bx=1281   sBx=-129790
+      2  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+      3  CONCAT         A=0   B=256  C=65   Bx=131137 sBx=66    
+      4  SETLIST        A=2   B=0    C=2    Bx=2      sBx=-131069
+      5  POW            A=2   B=2    C=259  Bx=1283   sBx=-129788
+      6  JMP            A=0   B=2    C=260  Bx=1284   sBx=-129787
+      7  CONCAT         A=0   B=256  C=61   Bx=131133 sBx=62    
+      8  SETLIST        A=2   B=0    C=5    Bx=5      sBx=-131066
+      9  POW            A=2   B=2    C=262  Bx=1286   sBx=-129785
+     10  TFORLOOP       A=2   B=2    C=263  Bx=1287   sBx=-129784
+     11  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+     12  TFORLOOP       A=2   B=2    C=264  Bx=1288   sBx=-129783
+     13  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+     14  SETLIST        A=3   B=0    C=9    Bx=9      sBx=-131062
+     15  POW            A=3   B=3    C=266  Bx=1802   sBx=-129269
+     16  POW            A=3   B=3    C=267  Bx=1803   sBx=-129268
+     17  JMP            A=1   B=2    C=3    Bx=1027   sBx=-130044
+     18  CONCAT         A=0   B=256  C=50   Bx=131122 sBx=51    
+     19  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'GAMEPARAM')
+     20  POW            A=2   B=2    C=268  Bx=1292   sBx=-129779
+     21  POW            A=2   B=2    C=269  Bx=1293   sBx=-129778
+     22  LEN            A=3   B=0    C=14   Bx=14     sBx=-131057
+     23  MOD            A=2   B=2    C=3    Bx=1027   sBx=-130044
+     24  SETLIST        A=3   B=0    C=5    Bx=5      sBx=-131066
+     25  POW            A=3   B=3    C=271  Bx=1807   sBx=-129264
+     26  TFORLOOP       A=3   B=3    C=263  Bx=1799   sBx=-129272
+     27  GETUPVAL       A=3   B=2    C=2    Bx=1026   sBx=-130045
+     28  SETLIST        A=4   B=0    C=16   Bx=16     sBx=-131055
+     29  SETGLOBAL      A=5   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     30  GETUPVAL       A=4   B=2    C=4    Bx=1028   sBx=-130043
+     31  CONCAT         A=0   B=256  C=35   Bx=131107 sBx=36    
+     32  SETLIST        A=9   B=0    C=17   Bx=17     sBx=-131054
+     33  POW            A=9   B=9    C=274  Bx=4882   sBx=-126189
+     34  SETGLOBAL      A=10  B=7    C=0    Bx=3584   sBx=-127487 K3584=?
+     35  LEN            A=11  B=0    C=19   Bx=19     sBx=-131052
+     36  LEN            A=12  B=0    C=20   Bx=20     sBx=-131051
+     37  GETUPVAL       A=9   B=4    C=2    Bx=2050   sBx=-129021
+     38  SETLIST        A=10  B=0    C=17   Bx=17     sBx=-131054
+     39  POW            A=10  B=10   C=274  Bx=5394   sBx=-125677
+     40  SETGLOBAL      A=11  B=9    C=0    Bx=4608   sBx=-126463 K4608=?
+     41  SETGLOBAL      A=12  B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     42  LEN            A=13  B=0    C=21   Bx=21     sBx=-131050
+     43  GETUPVAL       A=10  B=4    C=2    Bx=2050   sBx=-129021
+     44  SETGLOBAL      A=9   B=10   C=0    Bx=5120   sBx=-125951 K5120=?
+     45  SETLIST        A=10  B=0    C=17   Bx=17     sBx=-131054
+     46  POW            A=10  B=10   C=274  Bx=5394   sBx=-125677
+     47  SETGLOBAL      A=11  B=9    C=0    Bx=4608   sBx=-126463 K4608=?
+     48  LEN            A=12  B=0    C=22   Bx=22     sBx=-131049
+     49  LEN            A=13  B=0    C=23   Bx=23     sBx=-131048
+     50  GETUPVAL       A=10  B=4    C=2    Bx=2050   sBx=-129021
+     51  SETGLOBAL      A=9   B=10   C=0    Bx=5120   sBx=-125951 K5120=?
+     52  TFORLOOP       A=10  B=3    C=280  Bx=1816   sBx=-129255
+     53  SETGLOBAL      A=12  B=9    C=0    Bx=4608   sBx=-126463 K4608=?
+     54  GETUPVAL       A=10  B=3    C=2    Bx=1538   sBx=-129533
+     55  MUL            A=10  B=0    C=1    Bx=1      sBx=-131070
+     56  CONCAT         A=0   B=256  C=10   Bx=131082 sBx=11    
+     57  SETLIST        A=10  B=0    C=25   Bx=25     sBx=-131046
+     58  LEN            A=11  B=0    C=26   Bx=26     sBx=-131045
+     59  SETGLOBAL      A=12  B=9    C=0    Bx=4608   sBx=-126463 K4608=?
+     60  GETUPVAL       A=10  B=3    C=1    Bx=1537   sBx=-129534
+     61  SETLIST        A=10  B=0    C=9    Bx=9      sBx=-131062
+     62  POW            A=10  B=10   C=283  Bx=5403   sBx=-125668
+     63  TFORLOOP       A=10  B=10   C=284  Bx=5404   sBx=-125667
+     64  RETURN         A=12  B=0    C=2    Bx=2      sBx=-131069
+     65  CLOSURE        A=12  B=285  C=286  Bx=146206 sBx=15135 
+     66  CLOSURE        A=12  B=287  C=9    Bx=146953 sBx=15882 
+     67  GETUPVAL       A=10  B=3    C=1    Bx=1537   sBx=-129534
+     68  EQ             A=4   B=0    C=2    Bx=2      sBx=-131069
+     69  CONCAT         A=0   B=255  C=473  Bx=131033 sBx=-38   
+     70  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#13 : kid#6 ---
+===== proto#13  src=  lines=217-345  nparams=6 nups=1 maxstack=31 =====
+  upvalues: ['SceneReader']
+  constants: [('str', 'mapRoomDic'), ('str', 'map'), ('str', ''), ('str', 'mapReadyName'), ('str', 'mapItemSetName'), ('str', 'items'), ('str', 'mapSkillSetName'), ('str', 'items_skill'), ('str', 'ruleID'), ('num', 14000.0), ('str', 'items_championship'), ('str', 'mapLockedInfo'), ('str', 'gradeType'), ('str', 'logTrace'), ('str', 'this map is '), ('str', 'clearCache'), ('str', 'ugcTest'), ('str', 'setUGCTest'), ('str', 'getRandomRoomDict'), ('str', 'cg'), ('str', 'MapGradeConfig'), ('str', 'getConfigByGrade'), ('str', 'initRoomRealName'), ('str', 'rooms'), ('str', 'combineMap'), ('str', 'isUGCMap'), ('str', 'getResourceFile'), ('str', 'UGCMapConfig'), ('str', 'getTemplate'), ('str', '_createRubeData'), ('str', 'ipairs'), ('str', 'playerInfos'), ('str', 'role'), ('str', 'NetGameEnum'), ('str', 'E_PLAYER_ROLE_TYPE'), ('str', 'E_PLAYER_ROLE_TYPE_BYSTANDER'), ('str', 'charID'), ('str', 'RoleConfig'), ('str', 'getDataById'), ('str', 'slotSkill'), ('str', 'SkillConfig'), ('str', 'getRoomBySkill'), ('str', 'table'), ('str', 'exist'), ('str', 'insert'), ('str', 'weapon'), ('str', 'templateBodys'), ('str', '_template'), ('str', 'prop'), ('str', 'classData'), ('str', 'tonumber'), ('str', 'skillId'), ('str', 'setCurrentRoomDict'), ('num', 9000.0), ('str', 'clone'), ('num', 1.0), ('str', 'getResourceAllTextures'), ('str', 'getCurrentRoomDict'), ('str', 'getResourceAllSpine'), ('str', 'combine'), ('str', 'keys'), ('str', 'textures'), ('str', 'checkTextures'), ('str', 'pro_asyLoadTexture'), ('num', 10.0), ('str', 'getResourceListRoomDict'), ('str', 'pro_loadResorece'), ('num', 5.0), ('str', 'pro_waitAnimFadein'), ('str', 'pro_asyLoadSpine'), ('str', '_scene'), ('str', 'getAsyLoadData'), ('str', 'pro_loadScene'), ('num', 70.0), ('str', 'pro_resLoadEnd'), ('str', 'isWatching'), ('str', 'WatchLoadingCloseSound'), ('str', 'pro_checkFrameSpeed'), ('str', 'isReconnect'), ('str', 'systems'), ('str', 'battleSystem'), ('str', 'isSingle'), ('str', 'pro_endLoading'), ('str', 'pro_showWatingOther')]
+      0  POW            A=6   B=5    C=256  Bx=2816   sBx=-128255
+      1  LOADBOOL       A=7   B=2    C=1    Bx=1025   sBx=-130046
+      2  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+      3  LEN            A=7   B=0    C=1    Bx=1      sBx=-131070
+      4  JMP            A=0   B=7    C=258  Bx=3842   sBx=-127229
+      5  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+      6  LEN            A=7   B=0    C=1    Bx=1      sBx=-131070
+      7  POW            A=8   B=5    C=259  Bx=2819   sBx=-128252
+      8  POW            A=9   B=5    C=260  Bx=2820   sBx=-128251
+      9  MUL            A=9   B=0    C=1    Bx=1      sBx=-131070
+     10  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     11  LEN            A=9   B=0    C=5    Bx=5      sBx=-131066
+     12  POW            A=10  B=5    C=262  Bx=2822   sBx=-128249
+     13  MUL            A=10  B=0    C=1    Bx=1      sBx=-131070
+     14  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     15  LEN            A=10  B=0    C=7    Bx=7      sBx=-131064
+     16  POW            A=11  B=1    C=264  Bx=776    sBx=-130295
+     17  JMP            A=0   B=11   C=265  Bx=5897   sBx=-125174
+     18  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     19  LEN            A=9   B=0    C=10   Bx=10     sBx=-131061
+     20  POW            A=11  B=5    C=267  Bx=2827   sBx=-128244
+     21  POW            A=12  B=5    C=268  Bx=2828   sBx=-128243
+     22  SETLIST        A=13  B=0    C=13   Bx=13     sBx=-131058
+     23  LEN            A=14  B=0    C=14   Bx=14     sBx=-131057
+     24  SETGLOBAL      A=15  B=7    C=0    Bx=3584   sBx=-127487 K3584=?
+     25  MOD            A=14  B=14   C=15   Bx=7183   sBx=-123888
+     26  GETUPVAL       A=13  B=2    C=1    Bx=1025   sBx=-130046
+     27  SETTABLE       A=13  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+     28  POW            A=13  B=13   C=271  Bx=6927   sBx=-124144
+     29  GETUPVAL       A=13  B=1    C=1    Bx=513    sBx=-130558
+     30  POW            A=13  B=5    C=272  Bx=2832   sBx=-128239
+     31  MUL            A=13  B=0    C=0    Bx=0      sBx=-131071
+     32  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+     33  SETTABLE       A=13  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+     34  POW            A=13  B=13   C=273  Bx=6929   sBx=-124142
+     35  GETUPVAL       A=13  B=1    C=1    Bx=513    sBx=-130558
+     36  SETTABLE       A=13  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+     37  POW            A=13  B=13   C=274  Bx=6930   sBx=-124141
+     38  SETGLOBAL      A=14  B=7    C=0    Bx=3584   sBx=-127487 K3584=?
+     39  SETGLOBAL      A=15  B=11   C=0    Bx=5632   sBx=-125439 K5632=?
+     40  SETGLOBAL      A=16  B=6    C=0    Bx=3072   sBx=-127999 K3072=?
+     41  SETLIST        A=17  B=0    C=19   Bx=19     sBx=-131052
+     42  POW            A=17  B=17   C=276  Bx=8980   sBx=-122091
+     43  TFORLOOP       A=17  B=17   C=277  Bx=8981   sBx=-122090
+     44  SETGLOBAL      A=19  B=12   C=0    Bx=6144   sBx=-124927 K6144=?
+     45  GETUPVAL       A=17  B=3    C=0    Bx=1536   sBx=-129535
+     46  GETUPVAL       A=13  B=0    C=2    Bx=2      sBx=-131069
+     47  TFORLOOP       A=14  B=0    C=278  Bx=278    sBx=-130793
+     48  POW            A=16  B=13   C=279  Bx=6935   sBx=-124136
+     49  GETUPVAL       A=14  B=3    C=1    Bx=1537   sBx=-129534
+     50  MUL            A=8   B=0    C=0    Bx=0      sBx=-131071
+     51  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+     52  SETTABLE       A=14  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+     53  POW            A=14  B=14   C=274  Bx=7442   sBx=-123629
+     54  SETGLOBAL      A=15  B=8    C=0    Bx=4096   sBx=-126975 K4096=?
+     55  GETUPVAL       A=14  B=2    C=2    Bx=1026   sBx=-130045
+     56  SETTABLE       A=15  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+     57  POW            A=15  B=15   C=280  Bx=7960   sBx=-123111
+     58  SETGLOBAL      A=16  B=13   C=0    Bx=6656   sBx=-124415 K6656=?
+     59  SETGLOBAL      A=17  B=14   C=0    Bx=7168   sBx=-123903 K7168=?
+     60  GETUPVAL       A=15  B=3    C=1    Bx=1537   sBx=-129534
+     61  MUL            A=9   B=0    C=0    Bx=0      sBx=-131071
+     62  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+     63  SETTABLE       A=14  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+     64  POW            A=14  B=14   C=274  Bx=7442   sBx=-123629
+     65  SETGLOBAL      A=15  B=9    C=0    Bx=4608   sBx=-126463 K4608=?
+     66  GETUPVAL       A=14  B=2    C=2    Bx=1026   sBx=-130045
+     67  SETTABLE       A=15  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+     68  POW            A=15  B=15   C=280  Bx=7960   sBx=-123111
+     69  SETGLOBAL      A=16  B=13   C=0    Bx=6656   sBx=-124415 K6656=?
+     70  SETGLOBAL      A=17  B=14   C=0    Bx=7168   sBx=-123903 K7168=?
+     71  GETUPVAL       A=15  B=3    C=1    Bx=1537   sBx=-129534
+     72  MUL            A=10  B=0    C=0    Bx=0      sBx=-131071
+     73  CONCAT         A=0   B=256  C=10   Bx=131082 sBx=11    
+     74  JMP            A=1   B=10   C=258  Bx=5378   sBx=-125693
+     75  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+     76  SETTABLE       A=14  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+     77  POW            A=14  B=14   C=274  Bx=7442   sBx=-123629
+     78  SETGLOBAL      A=15  B=10   C=0    Bx=5120   sBx=-125951 K5120=?
+     79  GETUPVAL       A=14  B=2    C=2    Bx=1026   sBx=-130045
+     80  SETTABLE       A=15  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+     81  POW            A=15  B=15   C=280  Bx=7960   sBx=-123111
+     82  SETGLOBAL      A=16  B=13   C=0    Bx=6656   sBx=-124415 K6656=?
+     83  SETGLOBAL      A=17  B=14   C=0    Bx=7168   sBx=-123903 K7168=?
+     84  GETUPVAL       A=15  B=3    C=1    Bx=1537   sBx=-129534
+     85  SETTABLE       A=14  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+     86  POW            A=14  B=14   C=281  Bx=7449   sBx=-123622
+     87  SETGLOBAL      A=15  B=7    C=0    Bx=3584   sBx=-127487 K3584=?
+     88  GETUPVAL       A=14  B=2    C=2    Bx=1026   sBx=-130045
+     89  MUL            A=14  B=0    C=0    Bx=0      sBx=-131071
+     90  CONCAT         A=0   B=256  C=19   Bx=131091 sBx=20    
+     91  SETTABLE       A=14  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+     92  POW            A=14  B=14   C=282  Bx=7450   sBx=-123621
+     93  SETGLOBAL      A=15  B=7    C=0    Bx=3584   sBx=-127487 K3584=?
+     94  GETUPVAL       A=14  B=2    C=2    Bx=1026   sBx=-130045
+     95  SETLIST        A=15  B=0    C=19   Bx=19     sBx=-131052
+     96  POW            A=15  B=15   C=283  Bx=7963   sBx=-123108
+     97  TFORLOOP       A=15  B=15   C=284  Bx=7964   sBx=-123107
+     98  SETGLOBAL      A=17  B=14   C=0    Bx=7168   sBx=-123903 K7168=?
+     99  GETUPVAL       A=15  B=3    C=2    Bx=1538   sBx=-129533
+    100  MUL            A=15  B=0    C=0    Bx=0      sBx=-131071
+    101  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+    102  SETTABLE       A=16  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    103  POW            A=16  B=16   C=274  Bx=8466   sBx=-122605
+    104  SETGLOBAL      A=17  B=15   C=0    Bx=7680   sBx=-123391 K7680=?
+    105  GETUPVAL       A=16  B=2    C=2    Bx=1026   sBx=-130045
+    106  SETTABLE       A=17  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    107  POW            A=17  B=17   C=280  Bx=8984   sBx=-122087
+    108  SETGLOBAL      A=18  B=13   C=0    Bx=6656   sBx=-124415 K6656=?
+    109  SETGLOBAL      A=19  B=16   C=0    Bx=8192   sBx=-122879 K8192=?
+    110  GETUPVAL       A=17  B=3    C=1    Bx=1537   sBx=-129534
+    111  RETURN         A=14  B=0    C=0    Bx=0      sBx=-131071
+    112  SETTABLE       A=15  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    113  POW            A=15  B=15   C=285  Bx=7965   sBx=-123106
+    114  LEN            A=16  B=0    C=7    Bx=7      sBx=-131064
+    115  GETUPVAL       A=15  B=2    C=2    Bx=1026   sBx=-130045
+    116  SETLIST        A=16  B=0    C=30   Bx=30     sBx=-131041
+    117  POW            A=17  B=1    C=287  Bx=799    sBx=-130272
+    118  GETUPVAL       A=16  B=2    C=4    Bx=1028   sBx=-130043
+    119  CONCAT         A=0   B=256  C=78   Bx=131150 sBx=79    
+    120  POW            A=21  B=20   C=288  Bx=10528  sBx=-120543
+    121  SETLIST        A=22  B=0    C=33   Bx=33     sBx=-131038
+    122  POW            A=22  B=22   C=290  Bx=11554  sBx=-119517
+    123  POW            A=22  B=22   C=291  Bx=11555  sBx=-119516
+    124  JMP            A=1   B=21   C=22   Bx=10774  sBx=-120297
+    125  CONCAT         A=0   B=256  C=72   Bx=131144 sBx=73    
+    126  POW            A=21  B=20   C=292  Bx=10532  sBx=-120539
+    127  MUL            A=21  B=0    C=0    Bx=0      sBx=-131071
+    128  CONCAT         A=0   B=256  C=69   Bx=131141 sBx=70    
+    129  SETLIST        A=22  B=0    C=19   Bx=19     sBx=-131052
+    130  POW            A=22  B=22   C=293  Bx=11557  sBx=-119514
+    131  TFORLOOP       A=22  B=22   C=294  Bx=11558  sBx=-119513
+    132  SETGLOBAL      A=24  B=21   C=0    Bx=10752  sBx=-120319 K10752=?
+    133  GETUPVAL       A=22  B=3    C=2    Bx=1538   sBx=-129533
+    134  POW            A=23  B=22   C=295  Bx=11559  sBx=-119512
+    135  MUL            A=23  B=0    C=0    Bx=0      sBx=-131071
+    136  CONCAT         A=0   B=256  C=18   Bx=131090 sBx=19    
+    137  SETLIST        A=24  B=0    C=19   Bx=19     sBx=-131052
+    138  POW            A=24  B=24   C=296  Bx=12584  sBx=-118487
+    139  TFORLOOP       A=24  B=24   C=297  Bx=12585  sBx=-118486
+    140  SETGLOBAL      A=26  B=23   C=0    Bx=11776  sBx=-119295 K11776=?
+    141  GETUPVAL       A=24  B=3    C=2    Bx=1538   sBx=-129533
+    142  MUL            A=24  B=0    C=0    Bx=0      sBx=-131071
+    143  CONCAT         A=0   B=256  C=11   Bx=131083 sBx=12    
+    144  SETLIST        A=25  B=0    C=42   Bx=42     sBx=-131029
+    145  POW            A=25  B=25   C=299  Bx=13099  sBx=-117972
+    146  SETGLOBAL      A=26  B=14   C=0    Bx=7168   sBx=-123903 K7168=?
+    147  SETGLOBAL      A=27  B=24   C=0    Bx=12288  sBx=-118783 K12288=?
+    148  GETUPVAL       A=25  B=3    C=2    Bx=1538   sBx=-129533
+    149  MUL            A=25  B=0    C=1    Bx=1      sBx=-131070
+    150  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+    151  SETLIST        A=25  B=0    C=42   Bx=42     sBx=-131029
+    152  POW            A=25  B=25   C=300  Bx=13100  sBx=-117971
+    153  SETGLOBAL      A=26  B=14   C=0    Bx=7168   sBx=-123903 K7168=?
+    154  SETGLOBAL      A=27  B=24   C=0    Bx=12288  sBx=-118783 K12288=?
+    155  GETUPVAL       A=25  B=3    C=1    Bx=1537   sBx=-129534
+    156  POW            A=24  B=20   C=301  Bx=10541  sBx=-120530
+    157  MUL            A=24  B=0    C=0    Bx=0      sBx=-131071
+    158  CONCAT         A=0   B=256  C=39   Bx=131111 sBx=40    
+    159  POW            A=25  B=15   C=302  Bx=7982   sBx=-123089
+    160  SETGLOBAL      A=26  B=24   C=0    Bx=12288  sBx=-118783 K12288=?
+    161  LEN            A=27  B=0    C=47   Bx=47     sBx=-131024
+    162  MOD            A=26  B=26   C=27   Bx=13339  sBx=-117732
+    163  POW            A=25  B=25   C=26   Bx=12826  sBx=-118245
+    164  MUL            A=25  B=0    C=0    Bx=0      sBx=-131071
+    165  CONCAT         A=0   B=256  C=32   Bx=131104 sBx=33    
+    166  POW            A=26  B=25   C=304  Bx=13104  sBx=-117967
+    167  MUL            A=26  B=0    C=0    Bx=0      sBx=-131071
+    168  CONCAT         A=0   B=256  C=29   Bx=131101 sBx=30    
+    169  POW            A=26  B=25   C=304  Bx=13104  sBx=-117967
+    170  POW            A=26  B=26   C=305  Bx=13617  sBx=-117454
+    171  MUL            A=26  B=0    C=0    Bx=0      sBx=-131071
+    172  CONCAT         A=0   B=256  C=25   Bx=131097 sBx=26    
+    173  SETLIST        A=26  B=0    C=50   Bx=50     sBx=-131021
+    174  POW            A=27  B=25   C=304  Bx=13104  sBx=-117967
+    175  POW            A=27  B=27   C=305  Bx=14129  sBx=-116942
+    176  POW            A=27  B=27   C=307  Bx=14131  sBx=-116940
+    177  GETUPVAL       A=26  B=2    C=2    Bx=1026   sBx=-130045
+    178  MUL            A=26  B=0    C=0    Bx=0      sBx=-131071
+    179  CONCAT         A=0   B=256  C=18   Bx=131090 sBx=19    
+    180  SETLIST        A=27  B=0    C=19   Bx=19     sBx=-131052
+    181  POW            A=27  B=27   C=296  Bx=14120  sBx=-116951
+    182  TFORLOOP       A=27  B=27   C=297  Bx=14121  sBx=-116950
+    183  SETGLOBAL      A=29  B=26   C=0    Bx=13312  sBx=-117759 K13312=?
+    184  GETUPVAL       A=27  B=3    C=2    Bx=1538   sBx=-129533
+    185  MUL            A=27  B=0    C=0    Bx=0      sBx=-131071
+    186  CONCAT         A=0   B=256  C=11   Bx=131083 sBx=12    
+    187  SETLIST        A=28  B=0    C=42   Bx=42     sBx=-131029
+    188  POW            A=28  B=28   C=299  Bx=14635  sBx=-116436
+    189  SETGLOBAL      A=29  B=14   C=0    Bx=7168   sBx=-123903 K7168=?
+    190  SETGLOBAL      A=30  B=27   C=0    Bx=13824  sBx=-117247 K13824=?
+    191  GETUPVAL       A=28  B=3    C=2    Bx=1538   sBx=-129533
+    192  MUL            A=28  B=0    C=1    Bx=1      sBx=-131070
+    193  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+    194  SETLIST        A=28  B=0    C=42   Bx=42     sBx=-131029
+    195  POW            A=28  B=28   C=300  Bx=14636  sBx=-116435
+    196  SETGLOBAL      A=29  B=14   C=0    Bx=7168   sBx=-123903 K7168=?
+    197  SETGLOBAL      A=30  B=27   C=0    Bx=13824  sBx=-117247 K13824=?
+    198  GETUPVAL       A=28  B=3    C=1    Bx=1537   sBx=-129534
+    199  EQ             A=16  B=0    C=2    Bx=2      sBx=-131069
+    200  CONCAT         A=0   B=255  C=430  Bx=130990 sBx=-81   
+    201  SETLIST        A=16  B=0    C=30   Bx=30     sBx=-131041
+    202  SETGLOBAL      A=17  B=14   C=0    Bx=7168   sBx=-123903 K7168=?
+    203  GETUPVAL       A=16  B=2    C=4    Bx=1028   sBx=-130043
+    204  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+    205  SETTABLE       A=21  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    206  POW            A=21  B=21   C=274  Bx=11026  sBx=-120045
+    207  SETGLOBAL      A=22  B=20   C=0    Bx=10240  sBx=-120831 K10240=?
+    208  GETUPVAL       A=21  B=2    C=2    Bx=1026   sBx=-130045
+    209  SETTABLE       A=22  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    210  POW            A=22  B=22   C=280  Bx=11544  sBx=-119527
+    211  SETGLOBAL      A=23  B=13   C=0    Bx=6656   sBx=-124415 K6656=?
+    212  SETGLOBAL      A=24  B=21   C=0    Bx=10752  sBx=-120319 K10752=?
+    213  GETUPVAL       A=22  B=3    C=1    Bx=1537   sBx=-129534
+    214  EQ             A=16  B=0    C=2    Bx=2      sBx=-131069
+    215  CONCAT         A=0   B=255  C=500  Bx=131060 sBx=-11   
+    216  SETTABLE       A=16  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    217  POW            A=16  B=16   C=308  Bx=8500   sBx=-122571
+    218  SETGLOBAL      A=17  B=13   C=0    Bx=6656   sBx=-124415 K6656=?
+    219  GETUPVAL       A=16  B=2    C=1    Bx=1025   sBx=-130046
+    220  POW            A=16  B=1    C=287  Bx=799    sBx=-130272
+    221  POW            A=17  B=1    C=264  Bx=776    sBx=-130295
+    222  JMP            A=0   B=17   C=309  Bx=9013   sBx=-122058
+    223  CONCAT         A=0   B=256  C=9    Bx=131081 sBx=10    
+    224  SETLIST        A=17  B=0    C=54   Bx=54     sBx=-131017
+    225  SETGLOBAL      A=18  B=16   C=0    Bx=8192   sBx=-122879 K8192=?
+    226  GETUPVAL       A=17  B=2    C=2    Bx=1026   sBx=-130045
+    227  SETGLOBAL      A=16  B=17   C=0    Bx=8704   sBx=-122367 K8704=?
+    228  SETLIST        A=17  B=0    C=42   Bx=42     sBx=-131029
+    229  POW            A=17  B=17   C=300  Bx=9004   sBx=-122067
+    230  SETGLOBAL      A=18  B=16   C=0    Bx=8192   sBx=-122879 K8192=?
+    231  RETURN         A=19  B=0    C=1    Bx=1      sBx=-131070
+    232  CLOSURE        A=19  B=292  C=311  Bx=149815 sBx=18744 
+    233  GETUPVAL       A=17  B=3    C=1    Bx=1537   sBx=-129534
+    234  SETTABLE       A=17  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    235  POW            A=17  B=17   C=312  Bx=9016   sBx=-122055
+    236  SETTABLE       A=18  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    237  POW            A=18  B=18   C=313  Bx=9529   sBx=-121542
+    238  GETUPVAL       A=18  B=1    C=0    Bx=512    sBx=-130559
+    239  GETUPVAL       A=17  B=0    C=2    Bx=2      sBx=-131069
+    240  SETTABLE       A=18  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    241  POW            A=18  B=18   C=314  Bx=9530   sBx=-121541
+    242  SETGLOBAL      A=19  B=16   C=0    Bx=8192   sBx=-122879 K8192=?
+    243  SETTABLE       A=20  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    244  POW            A=20  B=20   C=313  Bx=10553  sBx=-120518
+    245  GETUPVAL       A=20  B=1    C=2    Bx=514    sBx=-130557
+    246  SETGLOBAL      A=21  B=1    C=0    Bx=512    sBx=-130559 K512=?
+    247  GETUPVAL       A=18  B=4    C=2    Bx=2050   sBx=-129021
+    248  SETLIST        A=19  B=0    C=42   Bx=42     sBx=-131029
+    249  POW            A=19  B=19   C=315  Bx=10043  sBx=-121028
+    250  SETGLOBAL      A=20  B=17   C=0    Bx=8704   sBx=-122367 K8704=?
+    251  SETLIST        A=21  B=0    C=42   Bx=42     sBx=-131029
+    252  POW            A=21  B=21   C=316  Bx=11068  sBx=-120003
+    253  POW            A=22  B=18   C=317  Bx=9533   sBx=-121538
+    254  GETUPVAL       A=21  B=2    C=0    Bx=1024   sBx=-130047
+    255  GETUPVAL       A=19  B=0    C=1    Bx=1      sBx=-131070
+    256  TFORLOOP       A=19  B=0    C=318  Bx=318    sBx=-130753
+    257  POW            A=21  B=18   C=317  Bx=9533   sBx=-121538
+    258  GETUPVAL       A=19  B=3    C=1    Bx=1537   sBx=-129534
+    259  TFORLOOP       A=19  B=0    C=319  Bx=319    sBx=-130752
+    260  LEN            A=21  B=0    C=64   Bx=64     sBx=-131007
+    261  SETGLOBAL      A=22  B=17   C=0    Bx=8704   sBx=-122367 K8704=?
+    262  GETUPVAL       A=19  B=4    C=1    Bx=2049   sBx=-129022
+    263  SETTABLE       A=19  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    264  POW            A=19  B=19   C=321  Bx=10049  sBx=-121022
+    265  SETTABLE       A=20  B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mapRoomDic')
+    266  POW            A=20  B=20   C=313  Bx=10553  sBx=-120518
+    267  GETUPVAL       A=20  B=1    C=0    Bx=512    sBx=-130559
+    268  GETUPVAL       A=19  B=0    C=2    Bx=2      sBx=-131069
+    269  TFORLOOP       A=20  B=0    C=322  Bx=322    sBx=-130749
+    270  LEN            A=22  B=0    C=67   Bx=67     sBx=-131004
+    271  SETGLOBAL      A=23  B=19   C=0    Bx=9728   sBx=-121343 K9728=?
+    272  GETUPVAL       A=20  B=4    C=1    Bx=2049   sBx=-129022
+    273  TFORLOOP       A=20  B=0    C=324  Bx=324    sBx=-130747
+    274  LEN            A=22  B=0    C=55   Bx=55     sBx=-131016
+    275  GETUPVAL       A=20  B=3    C=1    Bx=1537   sBx=-129534
+    276  TFORLOOP       A=20  B=0    C=325  Bx=325    sBx=-130746
+    277  LEN            A=22  B=0    C=64   Bx=64     sBx=-131007
+    278  SETGLOBAL      A=23  B=18   C=0    Bx=9216   sBx=-121855 K9216=?
+    279  GETUPVAL       A=20  B=4    C=1    Bx=2049   sBx=-129022
+    280  POW            A=20  B=0    C=326  Bx=326    sBx=-130745
+    281  TFORLOOP       A=20  B=20   C=327  Bx=10567  sBx=-120504
+    282  GETUPVAL       A=20  B=2    C=2    Bx=1026   sBx=-130045
+    283  SETGLOBAL      A=19  B=20   C=0    Bx=10240  sBx=-120831 K10240=?
+    284  TFORLOOP       A=20  B=0    C=328  Bx=328    sBx=-130743
+    285  LEN            A=22  B=0    C=73   Bx=73     sBx=-130998
+    286  SETGLOBAL      A=23  B=19   C=0    Bx=9728   sBx=-121343 K9728=?
+    287  GETUPVAL       A=20  B=4    C=1    Bx=2049   sBx=-129022
+    288  TFORLOOP       A=20  B=0    C=330  Bx=330    sBx=-130741
+    289  GETUPVAL       A=20  B=2    C=1    Bx=1025   sBx=-130046
+    290  POW            A=20  B=0    C=331  Bx=331    sBx=-130740
+    291  MUL            A=20  B=0    C=0    Bx=0      sBx=-131071
+    292  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+    293  TFORLOOP       A=20  B=0    C=332  Bx=332    sBx=-130739
+    294  GETUPVAL       A=20  B=2    C=1    Bx=1025   sBx=-130046
+    295  TFORLOOP       A=20  B=0    C=333  Bx=333    sBx=-130738
+    296  LEN            A=22  B=0    C=64   Bx=64     sBx=-131007
+    297  GETUPVAL       A=20  B=3    C=1    Bx=1537   sBx=-129534
+    298  CONCAT         A=0   B=256  C=18   Bx=131090 sBx=19    
+    299  POW            A=20  B=0    C=334  Bx=334    sBx=-130737
+    300  MUL            A=20  B=0    C=0    Bx=0      sBx=-131071
+    301  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+    302  TFORLOOP       A=20  B=0    C=333  Bx=333    sBx=-130738
+    303  LEN            A=22  B=0    C=64   Bx=64     sBx=-131007
+    304  GETUPVAL       A=20  B=3    C=1    Bx=1537   sBx=-129534
+    305  CONCAT         A=0   B=256  C=11   Bx=131083 sBx=12    
+    306  SETLIST        A=20  B=0    C=19   Bx=19     sBx=-131052
+    307  POW            A=20  B=20   C=335  Bx=10575  sBx=-120496
+    308  POW            A=20  B=20   C=336  Bx=10576  sBx=-120495
+    309  TFORLOOP       A=20  B=20   C=337  Bx=10577  sBx=-120494
+    310  GETUPVAL       A=20  B=2    C=2    Bx=1026   sBx=-130045
+    311  MUL            A=20  B=0    C=0    Bx=0      sBx=-131071
+    312  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+    313  TFORLOOP       A=20  B=0    C=338  Bx=338    sBx=-130733
+    314  GETUPVAL       A=20  B=2    C=1    Bx=1025   sBx=-130046
+    315  CONCAT         A=0   B=256  C=1    Bx=131073 sBx=2     
+    316  TFORLOOP       A=20  B=0    C=339  Bx=339    sBx=-130732
+    317  GETUPVAL       A=20  B=2    C=1    Bx=1025   sBx=-130046
+    318  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#14 : kid#7 ---
+===== proto#14  src=  lines=347-356  nparams=2 nups=0 maxstack=9 =====
+  upvalues: []
+  constants: [('str', 'cg'), ('str', 'roomRealNames'), ('str', 'pairs'), ('str', 'file')]
+      0  SETLIST        A=2   B=0    C=0    Bx=0      sBx=-131071
+      1  RETURN         A=3   B=0    C=0    Bx=0      sBx=-131071
+      2  CLOSURE        A=2   B=257  C=3    Bx=131587 sBx=516   
+      3  MUL            A=1   B=0    C=1    Bx=1      sBx=-131070
+      4  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+      5  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      6  SETLIST        A=2   B=0    C=2    Bx=2      sBx=-131069
+      7  SETGLOBAL      A=3   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      8  GETUPVAL       A=2   B=2    C=4    Bx=1028   sBx=-130043
+      9  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     10  SETLIST        A=7   B=0    C=0    Bx=0      sBx=-131071
+     11  POW            A=7   B=7    C=257  Bx=3841   sBx=-127230
+     12  POW            A=8   B=6    C=259  Bx=3331   sBx=-127740
+     13  CLOSURE        A=7   B=5    C=8    Bx=2568   sBx=-128503
+     14  EQ             A=2   B=0    C=2    Bx=2      sBx=-131069
+     15  CONCAT         A=0   B=255  C=505  Bx=131065 sBx=-6    
+     16  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#15 : kid#8 ---
+===== proto#15  src=  lines=359-374  nparams=3 nups=0 maxstack=7 =====
+  upvalues: []
+  constants: [('str', 'mgr'), ('str', 'addProcess'), ('str', 'setData'), ('str', 'onStart')]
+      0  POW            A=3   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=3   B=3    C=257  Bx=1793   sBx=-129278
+      2  SETGLOBAL      A=5   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      3  GETUPVAL       A=3   B=3    C=2    Bx=1538   sBx=-129533
+      4  TFORLOOP       A=4   B=3    C=258  Bx=1794   sBx=-129277
+      5  SETGLOBAL      A=6   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      6  GETUPVAL       A=4   B=3    C=1    Bx=1537   sBx=-129534
+      7  NEWTABLE       A=4   B=0    C=0    Bx=0      sBx=-131071
+      8  CLOSURE        A=3   B=259  C=4    Bx=132612 sBx=1541  
+      9  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#15 : kid#0 ---
+===== proto#15  src=  lines=362-373  nparams=2 nups=0 maxstack=7 =====
+  upvalues: []
+  constants: [('str', '_G'), ('str', 'LoadingCollect'), ('str', 'AddCollection'), ('str', 'EnterGame'), ('str', 'PrevAsyncLoadTexture'), ('str', 'cc'), ('str', 'Director'), ('str', 'getInstance'), ('str', 'getTextureCache'), ('str', 'multiAddImagesAsync'), ('str', 'battleLoadingTexture'), ('str', 'getData')]
+      0  SETLIST        A=2   B=0    C=0    Bx=0      sBx=-131071
+      1  POW            A=2   B=2    C=257  Bx=1281   sBx=-129790
+      2  TFORLOOP       A=2   B=2    C=258  Bx=1282   sBx=-129789
+      3  LEN            A=4   B=0    C=3    Bx=3      sBx=-131068
+      4  LEN            A=5   B=0    C=4    Bx=4      sBx=-131067
+      5  GETUPVAL       A=2   B=4    C=1    Bx=2049   sBx=-129022
+      6  SETLIST        A=2   B=0    C=5    Bx=5      sBx=-131066
+      7  POW            A=2   B=2    C=262  Bx=1286   sBx=-129785
+      8  TFORLOOP       A=2   B=2    C=263  Bx=1287   sBx=-129784
+      9  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+     10  TFORLOOP       A=2   B=2    C=264  Bx=1288   sBx=-129783
+     11  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+     12  TFORLOOP       A=2   B=2    C=265  Bx=1289   sBx=-129782
+     13  LEN            A=4   B=0    C=10   Bx=10     sBx=-131061
+     14  TFORLOOP       A=5   B=0    C=267  Bx=267    sBx=-130804
+     15  GETUPVAL       A=5   B=2    C=2    Bx=1026   sBx=-130045
+     16  NEWTABLE       A=6   B=0    C=0    Bx=0      sBx=-131071
+     17  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_G')
+     18  GETUPVAL       A=2   B=5    C=1    Bx=2561   sBx=-128510
+     19  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#15 : kid#0 ---
+===== proto#15  src=  lines=364-372  nparams=2 nups=1 maxstack=6 =====
+  upvalues: ['self']
+  constants: [('str', 'setFinish'), ('str', '_G'), ('str', 'LoadingCollect'), ('str', 'AddCollection'), ('str', 'EnterGame'), ('str', 'AsyncLoadTexture'), ('str', 'setFinishRate')]
+      0  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      1  CONCAT         A=0   B=256  C=9    Bx=131081 sBx=10    
+      2  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'setFinish')
+      3  TFORLOOP       A=2   B=2    C=256  Bx=1280   sBx=-129791
+      4  GETUPVAL       A=2   B=2    C=1    Bx=1025   sBx=-130046
+      5  SETLIST        A=2   B=0    C=1    Bx=1      sBx=-131070
+      6  POW            A=2   B=2    C=258  Bx=1282   sBx=-129789
+      7  TFORLOOP       A=2   B=2    C=259  Bx=1283   sBx=-129788
+      8  LEN            A=4   B=0    C=4    Bx=4      sBx=-131067
+      9  LEN            A=5   B=0    C=5    Bx=5      sBx=-131066
+     10  GETUPVAL       A=2   B=4    C=1    Bx=2049   sBx=-129022
+     11  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     12  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'setFinish')
+     13  TFORLOOP       A=2   B=2    C=262  Bx=1286   sBx=-129785
+     14  SETGLOBAL      A=4   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'setFinish')
+     15  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     16  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#18 : kid#9 ---
+===== proto#18  src=  lines=376-404  nparams=3 nups=0 maxstack=7 =====
+  upvalues: []
+  constants: [('str', 'mgr'), ('str', 'addProcess'), ('str', 'setData'), ('str', 'onStart')]
+      0  POW            A=3   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=3   B=3    C=257  Bx=1793   sBx=-129278
+      2  SETGLOBAL      A=5   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      3  GETUPVAL       A=3   B=3    C=2    Bx=1538   sBx=-129533
+      4  TFORLOOP       A=4   B=3    C=258  Bx=1794   sBx=-129277
+      5  SETGLOBAL      A=6   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      6  GETUPVAL       A=4   B=3    C=1    Bx=1537   sBx=-129534
+      7  NEWTABLE       A=4   B=0    C=0    Bx=0      sBx=-131071
+      8  CLOSURE        A=3   B=259  C=4    Bx=132612 sBx=1541  
+      9  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#18 : kid#0 ---
+===== proto#18  src=  lines=379-403  nparams=2 nups=0 maxstack=12 =====
+  upvalues: []
+  constants: [('str', 'getData'), ('str', 'animIncludes'), ('str', 'sp'), ('str', 'SpineCache'), ('str', 'multiAddAnimationAsyncIncludeAnims'), ('str', 'getInstance'), ('str', 'battleLoadingSpine'), ('str', 'table'), ('str', 'keys'), ('str', 'skeleton'), ('str', 'values'), ('str', 'skin'), ('str', 'secondSkin'), ('str', 'multiAddAnimationAsync')]
+      0  TFORLOOP       A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+      2  POW            A=3   B=2    C=257  Bx=1281   sBx=-129790
+      3  MUL            A=3   B=0    C=0    Bx=0      sBx=-131071
+      4  CONCAT         A=0   B=256  C=25   Bx=131097 sBx=26    
+      5  SETLIST        A=3   B=0    C=2    Bx=2      sBx=-131069
+      6  POW            A=3   B=3    C=259  Bx=1795   sBx=-129276
+      7  POW            A=3   B=3    C=260  Bx=1796   sBx=-129275
+      8  MUL            A=3   B=0    C=0    Bx=0      sBx=-131071
+      9  CONCAT         A=0   B=256  C=20   Bx=131092 sBx=21    
+     10  SETLIST        A=3   B=0    C=2    Bx=2      sBx=-131069
+     11  POW            A=3   B=3    C=259  Bx=1795   sBx=-129276
+     12  TFORLOOP       A=3   B=3    C=261  Bx=1797   sBx=-129274
+     13  GETUPVAL       A=3   B=2    C=2    Bx=1026   sBx=-130045
+     14  TFORLOOP       A=3   B=3    C=260  Bx=1796   sBx=-129275
+     15  LEN            A=5   B=0    C=6    Bx=6      sBx=-131065
+     16  SETLIST        A=6   B=0    C=7    Bx=7      sBx=-131064
+     17  POW            A=6   B=6    C=264  Bx=3336   sBx=-127735
+     18  POW            A=7   B=2    C=265  Bx=1289   sBx=-129782
+     19  GETUPVAL       A=6   B=2    C=2    Bx=1026   sBx=-130045
+     20  SETLIST        A=7   B=0    C=7    Bx=7      sBx=-131064
+     21  POW            A=7   B=7    C=266  Bx=3850   sBx=-127221
+     22  POW            A=8   B=2    C=265  Bx=1289   sBx=-129782
+     23  GETUPVAL       A=7   B=2    C=2    Bx=1026   sBx=-130045
+     24  POW            A=8   B=2    C=267  Bx=1291   sBx=-129780
+     25  POW            A=9   B=2    C=268  Bx=1292   sBx=-129779
+     26  POW            A=10  B=2    C=257  Bx=1281   sBx=-129790
+     27  NEWTABLE       A=11  B=0    C=0    Bx=0      sBx=-131071
+     28  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'getData')
+     29  GETUPVAL       A=3   B=9    C=1    Bx=4609   sBx=-126462
+     30  CONCAT         A=0   B=256  C=18   Bx=131090 sBx=19    
+     31  SETLIST        A=3   B=0    C=2    Bx=2      sBx=-131069
+     32  POW            A=3   B=3    C=259  Bx=1795   sBx=-129276
+     33  TFORLOOP       A=3   B=3    C=261  Bx=1797   sBx=-129274
+     34  GETUPVAL       A=3   B=2    C=2    Bx=1026   sBx=-130045
+     35  TFORLOOP       A=3   B=3    C=269  Bx=1805   sBx=-129266
+     36  LEN            A=5   B=0    C=6    Bx=6      sBx=-131065
+     37  SETLIST        A=6   B=0    C=7    Bx=7      sBx=-131064
+     38  POW            A=6   B=6    C=264  Bx=3336   sBx=-127735
+     39  POW            A=7   B=2    C=265  Bx=1289   sBx=-129782
+     40  GETUPVAL       A=6   B=2    C=2    Bx=1026   sBx=-130045
+     41  SETLIST        A=7   B=0    C=7    Bx=7      sBx=-131064
+     42  POW            A=7   B=7    C=266  Bx=3850   sBx=-127221
+     43  POW            A=8   B=2    C=265  Bx=1289   sBx=-129782
+     44  GETUPVAL       A=7   B=2    C=2    Bx=1026   sBx=-130045
+     45  POW            A=8   B=2    C=267  Bx=1291   sBx=-129780
+     46  POW            A=9   B=2    C=268  Bx=1292   sBx=-129779
+     47  NEWTABLE       A=10  B=0    C=1    Bx=1      sBx=-131070
+     48  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'getData')
+     49  GETUPVAL       A=3   B=8    C=1    Bx=4097   sBx=-126974
+     50  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#18 : kid#0 ---
+===== proto#18  src=  lines=383-391  nparams=2 nups=1 maxstack=6 =====
+  upvalues: ['self']
+  constants: [('str', 'setFinish'), ('str', '_G'), ('str', 'LoadingCollect'), ('str', 'AddCollection'), ('str', 'EnterGame'), ('str', 'AsyncLoadSpine'), ('str', 'setFinishRate')]
+      0  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      1  CONCAT         A=0   B=256  C=9    Bx=131081 sBx=10    
+      2  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'setFinish')
+      3  TFORLOOP       A=2   B=2    C=256  Bx=1280   sBx=-129791
+      4  GETUPVAL       A=2   B=2    C=1    Bx=1025   sBx=-130046
+      5  SETLIST        A=2   B=0    C=1    Bx=1      sBx=-131070
+      6  POW            A=2   B=2    C=258  Bx=1282   sBx=-129789
+      7  TFORLOOP       A=2   B=2    C=259  Bx=1283   sBx=-129788
+      8  LEN            A=4   B=0    C=4    Bx=4      sBx=-131067
+      9  LEN            A=5   B=0    C=5    Bx=5      sBx=-131066
+     10  GETUPVAL       A=2   B=4    C=1    Bx=2049   sBx=-129022
+     11  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     12  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'setFinish')
+     13  TFORLOOP       A=2   B=2    C=262  Bx=1286   sBx=-129785
+     14  SETGLOBAL      A=4   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'setFinish')
+     15  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     16  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#19 : kid#1 ---
+===== proto#19  src=  lines=393-401  nparams=2 nups=1 maxstack=6 =====
+  upvalues: ['self']
+  constants: [('str', 'setFinish'), ('str', '_G'), ('str', 'LoadingCollect'), ('str', 'AddCollection'), ('str', 'EnterGame'), ('str', 'AsyncLoadSpine'), ('str', 'setFinishRate')]
+      0  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      1  CONCAT         A=0   B=256  C=9    Bx=131081 sBx=10    
+      2  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'setFinish')
+      3  TFORLOOP       A=2   B=2    C=256  Bx=1280   sBx=-129791
+      4  GETUPVAL       A=2   B=2    C=1    Bx=1025   sBx=-130046
+      5  SETLIST        A=2   B=0    C=1    Bx=1      sBx=-131070
+      6  POW            A=2   B=2    C=258  Bx=1282   sBx=-129789
+      7  TFORLOOP       A=2   B=2    C=259  Bx=1283   sBx=-129788
+      8  LEN            A=4   B=0    C=4    Bx=4      sBx=-131067
+      9  LEN            A=5   B=0    C=5    Bx=5      sBx=-131066
+     10  GETUPVAL       A=2   B=4    C=1    Bx=2049   sBx=-129022
+     11  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     12  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'setFinish')
+     13  TFORLOOP       A=2   B=2    C=262  Bx=1286   sBx=-129785
+     14  SETGLOBAL      A=4   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'setFinish')
+     15  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     16  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#22 : kid#10 ---
+===== proto#22  src=  lines=406-426  nparams=3 nups=1 maxstack=8 =====
+  upvalues: ['SceneReader']
+  constants: [('str', 'mgr'), ('str', 'addProcess'), ('str', 'setData'), ('str', 'list'), ('str', 'total'), ('str', 'onTick')]
+      0  POW            A=3   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=3   B=3    C=257  Bx=1793   sBx=-129278
+      2  SETGLOBAL      A=5   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      3  GETUPVAL       A=3   B=3    C=2    Bx=1538   sBx=-129533
+      4  TFORLOOP       A=4   B=3    C=258  Bx=1794   sBx=-129277
+      5  RETURN         A=6   B=0    C=2    Bx=2      sBx=-131069
+      6  CLOSURE        A=6   B=259  C=2    Bx=132610 sBx=1539  
+      7  TAILCALL       A=7   B=2    C=0    Bx=1024   sBx=-130047
+      8  CLOSURE        A=6   B=260  C=7    Bx=133127 sBx=2056  
+      9  GETUPVAL       A=4   B=3    C=1    Bx=1537   sBx=-129534
+     10  NEWTABLE       A=4   B=0    C=0    Bx=0      sBx=-131071
+     11  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'mgr')
+     12  CLOSURE        A=3   B=261  C=4    Bx=133636 sBx=2565  
+     13  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#22 : kid#0 ---
+===== proto#22  src=  lines=412-425  nparams=2 nups=1 maxstack=9 =====
+  upvalues: ['SceneReader']
+  constants: [('str', 'getData'), ('str', 'list'), ('num', 0.0), ('str', 'setFinish'), ('str', '_G'), ('str', 'LoadingCollect'), ('str', 'AddCollection'), ('str', 'EnterGame'), ('str', 'LoadResource'), ('str', 'table'), ('str', 'remove'), ('num', 1.0), ('str', 'loadResource'), ('str', 'total'), ('str', 'setFinishRate')]
+      0  TFORLOOP       A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+      2  POW            A=3   B=2    C=257  Bx=1281   sBx=-129790
+      3  TAILCALL       A=4   B=3    C=0    Bx=1536   sBx=-129535
+      4  JMP            A=0   B=4    C=258  Bx=2306   sBx=-128765
+      5  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+      6  TFORLOOP       A=4   B=0    C=259  Bx=259    sBx=-130812
+      7  GETUPVAL       A=4   B=2    C=1    Bx=1025   sBx=-130046
+      8  SETLIST        A=4   B=0    C=4    Bx=4      sBx=-131067
+      9  POW            A=4   B=4    C=261  Bx=2309   sBx=-128762
+     10  TFORLOOP       A=4   B=4    C=262  Bx=2310   sBx=-128761
+     11  LEN            A=6   B=0    C=7    Bx=7      sBx=-131064
+     12  LEN            A=7   B=0    C=8    Bx=8      sBx=-131063
+     13  GETUPVAL       A=4   B=4    C=1    Bx=2049   sBx=-129022
+     14  CONCAT         A=0   B=256  C=19   Bx=131091 sBx=20    
+     15  SETLIST        A=4   B=0    C=9    Bx=9      sBx=-131062
+     16  POW            A=4   B=4    C=266  Bx=2314   sBx=-128757
+     17  SETGLOBAL      A=5   B=3    C=0    Bx=1536   sBx=-129535 K1536=?
+     18  LEN            A=6   B=0    C=11   Bx=11     sBx=-131060
+     19  GETUPVAL       A=4   B=3    C=2    Bx=1538   sBx=-129533
+     20  SETTABLE       A=5   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'getData')
+     21  POW            A=5   B=5    C=268  Bx=2828   sBx=-128243
+     22  SETGLOBAL      A=6   B=4    C=0    Bx=2048   sBx=-129023 K2048=?
+     23  GETUPVAL       A=5   B=2    C=1    Bx=1025   sBx=-130046
+     24  POW            A=5   B=2    C=269  Bx=1293   sBx=-129778
+     25  TFORLOOP       A=6   B=0    C=270  Bx=270    sBx=-130801
+     26  JMP            A=0   B=5    C=258  Bx=2818   sBx=-128253
+     27  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+     28  LEN            A=8   B=0    C=2    Bx=2      sBx=-131069
+     29  MUL            A=8   B=0    C=1    Bx=1      sBx=-131070
+     30  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+     31  TAILCALL       A=8   B=3    C=0    Bx=1536   sBx=-129535
+     32  LT             A=8   B=5    C=8    Bx=2568   sBx=-128503
+     33  CLOSE          A=8   B=8    C=5    Bx=4101   sBx=-126970
+     34  GETUPVAL       A=6   B=3    C=1    Bx=1537   sBx=-129534
+     35  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#24 : kid#11 ---
+===== proto#24  src=  lines=428-434  nparams=1 nups=0 maxstack=3 =====
+  upvalues: []
+  constants: [('str', '_loadingUI'), ('str', 'isFadeinFinish')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  POW            A=1   B=1    C=257  Bx=769    sBx=-130302
+      2  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      3  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+      4  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      5  TFORLOOP       A=1   B=1    C=257  Bx=769    sBx=-130302
+      6  LOADNIL        A=1   B=2    C=0    Bx=1024   sBx=-130047
+      7  GETGLOBAL      A=1   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_loadingUI')
+      8  CONCAT         A=0   B=256  C=1    Bx=131073 sBx=2     
+      9  CALL           A=1   B=1    C=0    Bx=512    sBx=-130559
+     10  GETGLOBAL      A=1   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     11  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#25 : kid#12 ---
+===== proto#25  src=  lines=436-444  nparams=2 nups=0 maxstack=5 =====
+  upvalues: []
+  constants: [('str', 'mgr'), ('str', 'addProcess'), ('str', 'onTick')]
+      0  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=2   B=2    C=257  Bx=1281   sBx=-129790
+      2  SETGLOBAL      A=4   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      3  GETUPVAL       A=2   B=3    C=2    Bx=1538   sBx=-129533
+      4  NEWTABLE       A=3   B=0    C=0    Bx=0      sBx=-131071
+      5  CLOSURE        A=2   B=258  C=3    Bx=132099 sBx=1028  
+      6  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#25 : kid#0 ---
+===== proto#25  src=  lines=438-443  nparams=2 nups=0 maxstack=5 =====
+  upvalues: []
+  constants: [('str', 'getUserData'), ('str', 'owner'), ('str', '_checkLoadingAnimFadein'), ('str', 'setFinish')]
+      0  TFORLOOP       A=2   B=1    C=256  Bx=768    sBx=-130303
+      1  LEN            A=4   B=0    C=1    Bx=1      sBx=-131070
+      2  GETUPVAL       A=2   B=3    C=2    Bx=1538   sBx=-129533
+      3  TFORLOOP       A=3   B=2    C=258  Bx=1282   sBx=-129789
+      4  GETUPVAL       A=3   B=2    C=2    Bx=1026   sBx=-130045
+      5  MUL            A=3   B=0    C=0    Bx=0      sBx=-131071
+      6  CONCAT         A=0   B=256  C=1    Bx=131073 sBx=2     
+      7  TFORLOOP       A=3   B=0    C=259  Bx=259    sBx=-130812
+      8  GETUPVAL       A=3   B=2    C=1    Bx=1025   sBx=-130046
+      9  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#27 : kid#13 ---
+===== proto#27  src=  lines=446-472  nparams=3 nups=0 maxstack=8 =====
+  upvalues: []
+  constants: [('str', 'mgr'), ('str', 'addProcess'), ('str', 'setData'), ('str', 'list'), ('str', 'total'), ('str', 'onTick')]
+      0  POW            A=3   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=3   B=3    C=257  Bx=1793   sBx=-129278
+      2  SETGLOBAL      A=5   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      3  GETUPVAL       A=3   B=3    C=2    Bx=1538   sBx=-129533
+      4  TFORLOOP       A=4   B=3    C=258  Bx=1794   sBx=-129277
+      5  RETURN         A=6   B=0    C=2    Bx=2      sBx=-131069
+      6  CLOSURE        A=6   B=259  C=2    Bx=132610 sBx=1539  
+      7  TAILCALL       A=7   B=2    C=0    Bx=1024   sBx=-130047
+      8  CLOSURE        A=6   B=260  C=7    Bx=133127 sBx=2056  
+      9  GETUPVAL       A=4   B=3    C=1    Bx=1537   sBx=-129534
+     10  NEWTABLE       A=4   B=0    C=0    Bx=0      sBx=-131071
+     11  CLOSURE        A=3   B=261  C=4    Bx=133636 sBx=2565  
+     12  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#27 : kid#0 ---
+===== proto#27  src=  lines=453-471  nparams=2 nups=0 maxstack=11 =====
+  upvalues: []
+  constants: [('str', 'getUserData'), ('str', 'owner'), ('str', 'getData'), ('str', 'list'), ('num', 0.0), ('str', 'setFinish'), ('str', '_G'), ('str', 'LoadingCollect'), ('str', 'AddCollection'), ('str', 'EnterGame'), ('str', 'LoadScene'), ('str', 'table'), ('str', 'remove'), ('num', 1.0), ('str', '_scene'), ('str', 'asyLoading'), ('str', 'setFinishRate'), ('num', 100.0), ('str', 'total')]
+      0  TFORLOOP       A=2   B=1    C=256  Bx=768    sBx=-130303
+      1  LEN            A=4   B=0    C=1    Bx=1      sBx=-131070
+      2  GETUPVAL       A=2   B=3    C=2    Bx=1538   sBx=-129533
+      3  TFORLOOP       A=3   B=0    C=258  Bx=258    sBx=-130813
+      4  GETUPVAL       A=3   B=2    C=2    Bx=1026   sBx=-130045
+      5  POW            A=4   B=3    C=259  Bx=1795   sBx=-129276
+      6  TAILCALL       A=5   B=4    C=0    Bx=2048   sBx=-129023
+      7  JMP            A=0   B=5    C=260  Bx=2820   sBx=-128251
+      8  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+      9  TFORLOOP       A=5   B=0    C=261  Bx=261    sBx=-130810
+     10  GETUPVAL       A=5   B=2    C=1    Bx=1025   sBx=-130046
+     11  SETLIST        A=5   B=0    C=6    Bx=6      sBx=-131065
+     12  POW            A=5   B=5    C=263  Bx=2823   sBx=-128248
+     13  TFORLOOP       A=5   B=5    C=264  Bx=2824   sBx=-128247
+     14  LEN            A=7   B=0    C=9    Bx=9      sBx=-131062
+     15  LEN            A=8   B=0    C=10   Bx=10     sBx=-131061
+     16  GETUPVAL       A=5   B=4    C=1    Bx=2049   sBx=-129022
+     17  CONCAT         A=0   B=256  C=25   Bx=131097 sBx=26    
+     18  SETLIST        A=5   B=0    C=11   Bx=11     sBx=-131060
+     19  POW            A=5   B=5    C=268  Bx=2828   sBx=-128243
+     20  SETGLOBAL      A=6   B=4    C=0    Bx=2048   sBx=-129023 K2048=?
+     21  LEN            A=7   B=0    C=13   Bx=13     sBx=-131058
+     22  GETUPVAL       A=5   B=3    C=2    Bx=1538   sBx=-129533
+     23  POW            A=6   B=2    C=270  Bx=1294   sBx=-129777
+     24  TFORLOOP       A=6   B=6    C=271  Bx=3343   sBx=-127728
+     25  SETGLOBAL      A=8   B=5    C=0    Bx=2560   sBx=-128511 K2560=?
+     26  GETUPVAL       A=6   B=3    C=2    Bx=1538   sBx=-129533
+     27  MUL            A=6   B=0    C=0    Bx=0      sBx=-131071
+     28  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     29  TFORLOOP       A=7   B=0    C=272  Bx=272    sBx=-130799
+     30  CLOSE          A=9   B=6    C=273  Bx=3345   sBx=-127726
+     31  GETUPVAL       A=7   B=3    C=1    Bx=1537   sBx=-129534
+     32  CONCAT         A=0   B=256  C=10   Bx=131082 sBx=11    
+     33  POW            A=7   B=3    C=274  Bx=1810   sBx=-129261
+     34  TFORLOOP       A=8   B=0    C=272  Bx=272    sBx=-130799
+     35  JMP            A=0   B=7    C=260  Bx=3844   sBx=-127227
+     36  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+     37  LEN            A=10  B=0    C=4    Bx=4      sBx=-131067
+     38  MUL            A=10  B=0    C=1    Bx=1      sBx=-131070
+     39  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+     40  TAILCALL       A=10  B=4    C=0    Bx=2048   sBx=-129023
+     41  LT             A=10  B=7    C=10   Bx=3594   sBx=-127477
+     42  CLOSE          A=10  B=10   C=7    Bx=5127   sBx=-125944
+     43  GETUPVAL       A=8   B=3    C=1    Bx=1537   sBx=-129534
+     44  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#29 : kid#14 ---
+===== proto#29  src=  lines=474-486  nparams=1 nups=0 maxstack=3 =====
+  upvalues: []
+  constants: [('str', 'mgr'), ('str', 'addProcess'), ('str', 'onStart')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=1   B=1    C=257  Bx=769    sBx=-130302
+      2  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+      3  NEWTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071
+      4  CLOSURE        A=1   B=258  C=2    Bx=132098 sBx=1027  
+      5  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#29 : kid#0 ---
+===== proto#29  src=  lines=476-485  nparams=2 nups=0 maxstack=5 =====
+  upvalues: []
+  constants: [('str', 'getUserData'), ('str', 'owner'), ('str', '_resEndTime'), ('str', 'os'), ('str', 'time'), ('str', 'cg'), ('str', 'systems'), ('str', 'battleSystem'), ('str', 'isAIGame'), ('str', 'aiGameStart'), ('str', 'isRecordGame'), ('str', 'recordGameStart'), ('str', 'setFinish')]
+      0  TFORLOOP       A=2   B=1    C=256  Bx=768    sBx=-130303
+      1  LEN            A=4   B=0    C=1    Bx=1      sBx=-131070
+      2  GETUPVAL       A=2   B=3    C=2    Bx=1538   sBx=-129533
+      3  SETLIST        A=3   B=0    C=3    Bx=3      sBx=-131068
+      4  POW            A=3   B=3    C=260  Bx=1796   sBx=-129275
+      5  GETUPVAL       A=3   B=1    C=2    Bx=514    sBx=-130557
+      6  CLOSURE        A=2   B=258  C=3    Bx=132099 sBx=1028  
+      7  SETLIST        A=3   B=0    C=5    Bx=5      sBx=-131066
+      8  POW            A=3   B=3    C=262  Bx=1798   sBx=-129273
+      9  POW            A=3   B=3    C=263  Bx=1799   sBx=-129272
+     10  TFORLOOP       A=3   B=3    C=264  Bx=1800   sBx=-129271
+     11  GETUPVAL       A=3   B=2    C=2    Bx=1026   sBx=-130045
+     12  MUL            A=3   B=0    C=0    Bx=0      sBx=-131071
+     13  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+     14  SETLIST        A=3   B=0    C=5    Bx=5      sBx=-131066
+     15  POW            A=3   B=3    C=262  Bx=1798   sBx=-129273
+     16  POW            A=3   B=3    C=263  Bx=1799   sBx=-129272
+     17  TFORLOOP       A=3   B=3    C=265  Bx=1801   sBx=-129270
+     18  GETUPVAL       A=3   B=2    C=1    Bx=1025   sBx=-130046
+     19  CONCAT         A=0   B=256  C=11   Bx=131083 sBx=12    
+     20  SETLIST        A=3   B=0    C=5    Bx=5      sBx=-131066
+     21  POW            A=3   B=3    C=262  Bx=1798   sBx=-129273
+     22  POW            A=3   B=3    C=263  Bx=1799   sBx=-129272
+     23  TFORLOOP       A=3   B=3    C=266  Bx=1802   sBx=-129269
+     24  GETUPVAL       A=3   B=2    C=2    Bx=1026   sBx=-130045
+     25  MUL            A=3   B=0    C=0    Bx=0      sBx=-131071
+     26  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+     27  SETLIST        A=3   B=0    C=5    Bx=5      sBx=-131066
+     28  POW            A=3   B=3    C=262  Bx=1798   sBx=-129273
+     29  POW            A=3   B=3    C=263  Bx=1799   sBx=-129272
+     30  TFORLOOP       A=3   B=3    C=267  Bx=1803   sBx=-129268
+     31  GETUPVAL       A=3   B=2    C=1    Bx=1025   sBx=-130046
+     32  TFORLOOP       A=3   B=0    C=268  Bx=268    sBx=-130803
+     33  GETUPVAL       A=3   B=2    C=1    Bx=1025   sBx=-130046
+     34  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#31 : kid#15 ---
+===== proto#31  src=  lines=488-500  nparams=1 nups=0 maxstack=5 =====
+  upvalues: []
+  constants: [('str', 'mgr'), ('str', 'getUserData'), ('str', 'hasAddEndLoading'), ('str', 'setUserData'), ('str', 'addProcess'), ('str', 'onStart')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=1   B=1    C=257  Bx=769    sBx=-130302
+      2  LEN            A=3   B=0    C=2    Bx=2      sBx=-131069
+      3  GETUPVAL       A=1   B=3    C=2    Bx=1538   sBx=-129533
+      4  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      5  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+      6  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      7  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      8  TFORLOOP       A=1   B=1    C=259  Bx=771    sBx=-130300
+      9  LEN            A=3   B=0    C=2    Bx=2      sBx=-131069
+     10  CALL           A=4   B=1    C=0    Bx=512    sBx=-130559
+     11  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     12  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+     13  TFORLOOP       A=1   B=1    C=260  Bx=772    sBx=-130299
+     14  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     15  NEWTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071
+     16  CLOSURE        A=1   B=261  C=2    Bx=133634 sBx=2563  
+     17  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#31 : kid#0 ---
+===== proto#31  src=  lines=495-499  nparams=2 nups=0 maxstack=5 =====
+  upvalues: []
+  constants: [('str', 'getUserData'), ('str', 'owner'), ('str', 'OnLoadingEnd'), ('str', 'setFinish')]
+      0  TFORLOOP       A=2   B=1    C=256  Bx=768    sBx=-130303
+      1  LEN            A=4   B=0    C=1    Bx=1      sBx=-131070
+      2  GETUPVAL       A=2   B=3    C=2    Bx=1538   sBx=-129533
+      3  TFORLOOP       A=3   B=2    C=258  Bx=1282   sBx=-129789
+      4  GETUPVAL       A=3   B=2    C=1    Bx=1025   sBx=-130046
+      5  TFORLOOP       A=3   B=0    C=259  Bx=259    sBx=-130812
+      6  GETUPVAL       A=3   B=2    C=1    Bx=1025   sBx=-130046
+      7  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#33 : kid#16 ---
+===== proto#33  src=  lines=502-509  nparams=1 nups=0 maxstack=3 =====
+  upvalues: []
+  constants: [('str', 'mgr'), ('str', 'addProcess'), ('str', 'onStart')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=1   B=1    C=257  Bx=769    sBx=-130302
+      2  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+      3  NEWTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071
+      4  CLOSURE        A=1   B=258  C=2    Bx=132098 sBx=1027  
+      5  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#33 : kid#0 ---
+===== proto#33  src=  lines=504-508  nparams=2 nups=0 maxstack=6 =====
+  upvalues: []
+  constants: [('str', 'getUserData'), ('str', 'owner'), ('str', '_loadingUI'), ('str', 'waitingAni'), ('str', 'isReconnect'), ('str', 'setFinish')]
+      0  TFORLOOP       A=2   B=1    C=256  Bx=768    sBx=-130303
+      1  LEN            A=4   B=0    C=1    Bx=1      sBx=-131070
+      2  GETUPVAL       A=2   B=3    C=2    Bx=1538   sBx=-129533
+      3  POW            A=3   B=2    C=258  Bx=1282   sBx=-129789
+      4  TFORLOOP       A=3   B=3    C=259  Bx=1795   sBx=-129276
+      5  POW            A=5   B=2    C=260  Bx=1284   sBx=-129787
+      6  SELF           A=5   B=5    C=0    Bx=2560   sBx=-128511 K0c=('str', 'getUserData')
+      7  GETUPVAL       A=3   B=3    C=1    Bx=1537   sBx=-129534
+      8  TFORLOOP       A=3   B=0    C=261  Bx=261    sBx=-130810
+      9  GETUPVAL       A=3   B=2    C=1    Bx=1025   sBx=-130046
+     10  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#35 : kid#17 ---
+===== proto#35  src=  lines=511-538  nparams=2 nups=0 maxstack=6 =====
+  upvalues: []
+  constants: [('str', 'mgr'), ('str', 'getUserData'), ('str', 'hasAddcheckFrame'), ('str', 'setUserData'), ('str', 'addProcess'), ('str', 'onTick')]
+      0  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=2   B=2    C=257  Bx=1281   sBx=-129790
+      2  LEN            A=4   B=0    C=2    Bx=2      sBx=-131069
+      3  GETUPVAL       A=2   B=3    C=2    Bx=1538   sBx=-129533
+      4  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+      5  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+      6  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      7  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+      8  TFORLOOP       A=2   B=2    C=259  Bx=1283   sBx=-129788
+      9  LEN            A=4   B=0    C=2    Bx=2      sBx=-131069
+     10  CALL           A=5   B=1    C=0    Bx=512    sBx=-130559
+     11  GETUPVAL       A=2   B=4    C=1    Bx=2049   sBx=-129022
+     12  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+     13  TFORLOOP       A=2   B=2    C=260  Bx=1284   sBx=-129787
+     14  SETGLOBAL      A=4   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     15  GETUPVAL       A=2   B=3    C=2    Bx=1538   sBx=-129533
+     16  NEWTABLE       A=3   B=0    C=0    Bx=0      sBx=-131071
+     17  CLOSURE        A=2   B=261  C=3    Bx=133635 sBx=2564  
+     18  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#35 : kid#0 ---
+===== proto#35  src=  lines=518-537  nparams=2 nups=0 maxstack=9 =====
+  upvalues: []
+  constants: [('str', 'getUserData'), ('str', 'hasAddEndLoading'), ('str', 'setFinish'), ('str', 'cg'), ('str', 'frameManager'), ('str', 'owner'), ('str', 'getCurFrameId'), ('str', 'isSpeeding'), ('num', 1.0), ('str', 'systems'), ('str', 'battleSystem'), ('str', 'getCurFrameID'), ('num', 0.0), ('str', 'setFinishRate'), ('str', 'OnLoadingEnd')]
+      0  TFORLOOP       A=2   B=1    C=256  Bx=768    sBx=-130303
+      1  LEN            A=4   B=0    C=1    Bx=1      sBx=-131070
+      2  GETUPVAL       A=2   B=3    C=2    Bx=1538   sBx=-129533
+      3  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+      4  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+      5  TFORLOOP       A=2   B=0    C=258  Bx=258    sBx=-130813
+      6  GETUPVAL       A=2   B=2    C=1    Bx=1025   sBx=-130046
+      7  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      8  SETLIST        A=2   B=0    C=3    Bx=3      sBx=-131068
+      9  POW            A=2   B=2    C=260  Bx=1284   sBx=-129787
+     10  MUL            A=2   B=0    C=1    Bx=1      sBx=-131070
+     11  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     12  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     13  TFORLOOP       A=2   B=1    C=256  Bx=768    sBx=-130303
+     14  LEN            A=4   B=0    C=5    Bx=5      sBx=-131066
+     15  GETUPVAL       A=2   B=3    C=2    Bx=1538   sBx=-129533
+     16  SETLIST        A=3   B=0    C=3    Bx=3      sBx=-131068
+     17  POW            A=3   B=3    C=260  Bx=1796   sBx=-129275
+     18  TFORLOOP       A=3   B=3    C=262  Bx=1798   sBx=-129273
+     19  GETUPVAL       A=3   B=2    C=2    Bx=1026   sBx=-130045
+     20  SETLIST        A=4   B=0    C=3    Bx=3      sBx=-131068
+     21  POW            A=4   B=4    C=260  Bx=2308   sBx=-128763
+     22  TFORLOOP       A=4   B=4    C=263  Bx=2311   sBx=-128760
+     23  GETUPVAL       A=4   B=2    C=2    Bx=1026   sBx=-130045
+     24  MUL            A=4   B=0    C=1    Bx=1      sBx=-131070
+     25  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     26  MOVE           A=1   B=3    C=264  Bx=1800   sBx=-129271
+     27  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     28  CALL           A=4   B=0    C=1    Bx=1      sBx=-131070
+     29  CALL           A=4   B=1    C=0    Bx=512    sBx=-130559
+     30  MUL            A=4   B=0    C=0    Bx=0      sBx=-131071
+     31  CONCAT         A=0   B=256  C=16   Bx=131088 sBx=17    
+     32  SETLIST        A=5   B=0    C=3    Bx=3      sBx=-131068
+     33  POW            A=5   B=5    C=265  Bx=2825   sBx=-128246
+     34  POW            A=5   B=5    C=266  Bx=2826   sBx=-128245
+     35  TFORLOOP       A=5   B=5    C=267  Bx=2827   sBx=-128244
+     36  GETUPVAL       A=5   B=2    C=2    Bx=1026   sBx=-130045
+     37  MUL            A=5   B=0    C=1    Bx=1      sBx=-131070
+     38  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     39  LEN            A=5   B=0    C=12   Bx=12     sBx=-131059
+     40  TFORLOOP       A=6   B=0    C=269  Bx=269    sBx=-130802
+     41  JMP            A=0   B=5    C=268  Bx=2828   sBx=-128243
+     42  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+     43  LEN            A=8   B=0    C=12   Bx=12     sBx=-131059
+     44  MUL            A=8   B=0    C=1    Bx=1      sBx=-131070
+     45  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     46  CLOSE          A=8   B=3    C=5    Bx=1541   sBx=-129530
+     47  GETUPVAL       A=6   B=3    C=1    Bx=1537   sBx=-129534
+     48  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     49  TFORLOOP       A=5   B=2    C=270  Bx=1294   sBx=-129777
+     50  GETUPVAL       A=5   B=2    C=1    Bx=1025   sBx=-130046
+     51  TFORLOOP       A=5   B=0    C=258  Bx=258    sBx=-130813
+     52  GETUPVAL       A=5   B=2    C=1    Bx=1025   sBx=-130046
+     53  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#37 : kid#18 ---
+===== proto#37  src=  lines=541-547  nparams=1 nups=0 maxstack=5 =====
+  upvalues: []
+  constants: [('str', 'isLoading'), ('str', '_isHotfixing'), ('str', 'mgr'), ('str', 'tick'), ('str', '_loadingUI'), ('str', 'setPercent'), ('str', 'getPercent')]
+      0  TFORLOOP       A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+      2  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      3  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+      4  POW            A=1   B=0    C=257  Bx=257    sBx=-130814
+      5  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      6  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+      7  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      8  POW            A=1   B=0    C=258  Bx=258    sBx=-130813
+      9  TFORLOOP       A=1   B=1    C=259  Bx=771    sBx=-130300
+     10  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+     11  POW            A=1   B=0    C=260  Bx=260    sBx=-130811
+     12  TFORLOOP       A=1   B=1    C=261  Bx=773    sBx=-130298
+     13  POW            A=3   B=0    C=258  Bx=258    sBx=-130813
+     14  TFORLOOP       A=3   B=3    C=262  Bx=1798   sBx=-129273
+     15  GETUPVAL       A=3   B=2    C=0    Bx=1024   sBx=-130047
+     16  GETUPVAL       A=1   B=0    C=1    Bx=1      sBx=-131070
+     17  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#38 : kid#19 ---
+===== proto#38  src=  lines=549-564  nparams=1 nups=1 maxstack=7 =====
+  upvalues: ['ClientEventManager']
+  constants: [('str', 'cg'), ('str', 'systems'), ('str', 'battleSystem'), ('str', 'getGameType'), ('str', 'NetGameEnum'), ('str', 'E_GAME_TYPE'), ('str', 'E_GAME_TYPE_2V6'), ('str', 'addChild'), ('str', 'Game'), ('str', 'createLayer'), ('str', 'common/TurnLayer'), ('str', 'direction'), ('num', 4.0), ('str', 'register'), ('str', 'ON_LOAD_OVER'), ('str', 'on_load_over'), ('str', 'ON_GET_FRAME_LIST'), ('str', 'on_get_frame_list'), ('str', 'ON_ROOM_CANCEL'), ('str', 'on_room_cancel'), ('str', 'ON_SETTLEMENT'), ('str', 'on_settlement'), ('str', 'isSpectator'), ('str', 'ON_WATCHER_GAME_FINISH'), ('str', 'on_watcher_game_finish'), ('str', 'ON_END_OF_GAME_PLAYER'), ('str', 'on_end_of_game_player'), ('str', 'ON_RECONNECT_RSP'), ('str', 'on_reconnect_rsp'), ('str', 'ON_LOAD_BEGIN'), ('str', 'on_load_begin'), ('str', 'ON_GAME_SHOW_FASHION'), ('str', 'on_game_show_fashion')]
+      0  SETLIST        A=1   B=0    C=0    Bx=0      sBx=-131071
+      1  POW            A=1   B=1    C=257  Bx=769    sBx=-130302
+      2  POW            A=1   B=1    C=258  Bx=770    sBx=-130301
+      3  TFORLOOP       A=1   B=1    C=259  Bx=771    sBx=-130300
+      4  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+      5  SETLIST        A=2   B=0    C=4    Bx=4      sBx=-131067
+      6  POW            A=2   B=2    C=261  Bx=1285   sBx=-129786
+      7  POW            A=2   B=2    C=262  Bx=1286   sBx=-129785
+      8  JMP            A=1   B=1    C=2    Bx=514    sBx=-130557
+      9  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+     10  TFORLOOP       A=1   B=0    C=263  Bx=263    sBx=-130808
+     11  SETLIST        A=3   B=0    C=0    Bx=0      sBx=-131071
+     12  POW            A=3   B=3    C=264  Bx=1800   sBx=-129271
+     13  TFORLOOP       A=3   B=3    C=265  Bx=1801   sBx=-129270
+     14  LEN            A=5   B=0    C=10   Bx=10     sBx=-131061
+     15  RETURN         A=6   B=0    C=1    Bx=1      sBx=-131070
+     16  CLOSURE        A=6   B=267  C=268  Bx=136972 sBx=5901  
+     17  GETUPVAL       A=3   B=4    C=0    Bx=2048   sBx=-129023
+     18  GETUPVAL       A=1   B=0    C=1    Bx=1      sBx=-131070
+     19  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     20  POW            A=1   B=1    C=269  Bx=781    sBx=-130290
+     21  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     22  POW            A=2   B=2    C=270  Bx=1294   sBx=-129777
+     23  SETGLOBAL      A=3   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'cg')
+     24  POW            A=4   B=0    C=271  Bx=271    sBx=-130800
+     25  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     26  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     27  POW            A=1   B=1    C=269  Bx=781    sBx=-130290
+     28  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     29  POW            A=2   B=2    C=272  Bx=1296   sBx=-129775
+     30  SETGLOBAL      A=3   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'cg')
+     31  POW            A=4   B=0    C=273  Bx=273    sBx=-130798
+     32  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     33  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     34  POW            A=1   B=1    C=269  Bx=781    sBx=-130290
+     35  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     36  POW            A=2   B=2    C=274  Bx=1298   sBx=-129773
+     37  SETGLOBAL      A=3   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'cg')
+     38  POW            A=4   B=0    C=275  Bx=275    sBx=-130796
+     39  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     40  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     41  POW            A=1   B=1    C=269  Bx=781    sBx=-130290
+     42  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     43  POW            A=2   B=2    C=276  Bx=1300   sBx=-129771
+     44  SETGLOBAL      A=3   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'cg')
+     45  POW            A=4   B=0    C=277  Bx=277    sBx=-130794
+     46  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     47  POW            A=1   B=0    C=278  Bx=278    sBx=-130793
+     48  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+     49  CONCAT         A=0   B=256  C=13   Bx=131085 sBx=14    
+     50  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     51  POW            A=1   B=1    C=269  Bx=781    sBx=-130290
+     52  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     53  POW            A=2   B=2    C=279  Bx=1303   sBx=-129768
+     54  SETGLOBAL      A=3   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'cg')
+     55  POW            A=4   B=0    C=280  Bx=280    sBx=-130791
+     56  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     57  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     58  POW            A=1   B=1    C=269  Bx=781    sBx=-130290
+     59  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     60  POW            A=2   B=2    C=281  Bx=1305   sBx=-129766
+     61  SETGLOBAL      A=3   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'cg')
+     62  POW            A=4   B=0    C=282  Bx=282    sBx=-130789
+     63  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     64  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     65  POW            A=1   B=1    C=269  Bx=781    sBx=-130290
+     66  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     67  POW            A=2   B=2    C=283  Bx=1307   sBx=-129764
+     68  SETGLOBAL      A=3   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'cg')
+     69  POW            A=4   B=0    C=284  Bx=284    sBx=-130787
+     70  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     71  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     72  POW            A=1   B=1    C=269  Bx=781    sBx=-130290
+     73  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     74  POW            A=2   B=2    C=285  Bx=1309   sBx=-129762
+     75  SETGLOBAL      A=3   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'cg')
+     76  POW            A=4   B=0    C=286  Bx=286    sBx=-130785
+     77  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     78  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     79  POW            A=1   B=1    C=269  Bx=781    sBx=-130290
+     80  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'cg')
+     81  POW            A=2   B=2    C=287  Bx=1311   sBx=-129760
+     82  SETGLOBAL      A=3   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'cg')
+     83  POW            A=4   B=0    C=288  Bx=288    sBx=-130783
+     84  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     85  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#39 : kid#20 ---
+===== proto#39  src=  lines=566-577  nparams=1 nups=1 maxstack=4 =====
+  upvalues: ['ClientEventManager']
+  constants: [('str', 'WatchLoadingResumeSound'), ('str', 'deregisterByTarget'), ('str', 'cc'), ('str', 'Director'), ('str', 'getInstance'), ('str', 'getTextureCache'), ('str', 'unbindMultiAddImage'), ('str', 'battleLoadingTexture'), ('str', 'sp'), ('str', 'SpineCache'), ('str', 'unbindMultiAddAnimation'), ('str', 'battleLoadingSpine'), ('str', '_scene'), ('str', 'release'), ('nil', None), ('str', 'cg'), ('str', 'systems'), ('str', 'battleHotfixSystem'), ('str', 'setHotfixCallback'), ('str', 'logTrace'), ('str', 'end loading======================')]
+      0  TFORLOOP       A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+      2  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'WatchLoadingResumeSound')
+      3  POW            A=1   B=1    C=257  Bx=769    sBx=-130302
+      4  SETGLOBAL      A=2   B=0    C=0    Bx=0      sBx=-131071 K0=('str', 'WatchLoadingResumeSound')
+      5  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+      6  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+      7  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+      8  TFORLOOP       A=1   B=1    C=260  Bx=772    sBx=-130299
+      9  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     10  TFORLOOP       A=1   B=1    C=261  Bx=773    sBx=-130298
+     11  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     12  TFORLOOP       A=1   B=1    C=262  Bx=774    sBx=-130297
+     13  LEN            A=3   B=0    C=7    Bx=7      sBx=-131064
+     14  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+     15  SETLIST        A=1   B=0    C=8    Bx=8      sBx=-131063
+     16  POW            A=1   B=1    C=265  Bx=777    sBx=-130294
+     17  TFORLOOP       A=1   B=1    C=260  Bx=772    sBx=-130299
+     18  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     19  TFORLOOP       A=1   B=1    C=266  Bx=778    sBx=-130293
+     20  LEN            A=3   B=0    C=11   Bx=11     sBx=-131060
+     21  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+     22  POW            A=1   B=0    C=268  Bx=268    sBx=-130803
+     23  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+     24  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     25  POW            A=1   B=0    C=268  Bx=268    sBx=-130803
+     26  TFORLOOP       A=1   B=1    C=269  Bx=781    sBx=-130290
+     27  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+     28  CLOSURE        A=0   B=268  C=270  Bx=137486 sBx=6415  
+     29  SETLIST        A=1   B=0    C=15   Bx=15     sBx=-131056
+     30  POW            A=1   B=1    C=272  Bx=784    sBx=-130287
+     31  POW            A=1   B=1    C=273  Bx=785    sBx=-130286
+     32  TFORLOOP       A=1   B=1    C=274  Bx=786    sBx=-130285
+     33  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+     34  SETLIST        A=1   B=0    C=19   Bx=19     sBx=-131052
+     35  LEN            A=2   B=0    C=20   Bx=20     sBx=-131051
+     36  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+     37  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#40 : kid#21 ---
+===== proto#40  src=  lines=579-581  nparams=2 nups=0 maxstack=5 =====
+  upvalues: []
+  constants: [('str', 'table'), ('str', 'insert'), ('str', '_todoFuncs')]
+      0  SETLIST        A=2   B=0    C=0    Bx=0      sBx=-131071
+      1  POW            A=2   B=2    C=257  Bx=1281   sBx=-129790
+      2  POW            A=3   B=0    C=258  Bx=258    sBx=-130813
+      3  SETGLOBAL      A=4   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      4  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+      5  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#41 : kid#22 ---
+===== proto#41  src=  lines=583-596  nparams=2 nups=0 maxstack=5 =====
+  upvalues: []
+  constants: [('str', '_isHotfixing'), ('str', 'addTodoFunc'), ('str', 'reconnect'), ('str', 'isReconnect'), ('bool', 1), ('str', 'pro_checkFrameSpeed'), ('num', 30.0), ('str', 'setLoading')]
+      0  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+      2  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+      3  TFORLOOP       A=2   B=0    C=257  Bx=257    sBx=-130814
+      4  NEWTABLE       A=4   B=0    C=0    Bx=0      sBx=-131071
+      5  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_isHotfixing')
+      6  SETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      7  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+      8  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      9  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+     10  CONCAT         A=0   B=256  C=9    Bx=131081 sBx=10    
+     11  POW            A=2   B=1    C=258  Bx=770    sBx=-130301
+     12  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+     13  CONCAT         A=0   B=256  C=6    Bx=131078 sBx=7     
+     14  CLOSURE        A=0   B=259  C=260  Bx=132868 sBx=1797  
+     15  TFORLOOP       A=2   B=0    C=261  Bx=261    sBx=-130810
+     16  LEN            A=4   B=0    C=6    Bx=6      sBx=-131065
+     17  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     18  TFORLOOP       A=2   B=0    C=263  Bx=263    sBx=-130808
+     19  CALL           A=4   B=1    C=0    Bx=512    sBx=-130559
+     20  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     21  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#41 : kid#0 ---
+===== proto#41  src=  lines=585-587  nparams=0 nups=2 maxstack=3 =====
+  upvalues: ['self', 'matchinfo']
+  constants: [('str', 'on_reconnect_rsp')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'on_reconnect_rsp')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  SETTABLE       A=2   B=1    C=0    Bx=512    sBx=-130559 K0c=('str', 'on_reconnect_rsp')
+      3  GETUPVAL       A=0   B=3    C=1    Bx=1537   sBx=-129534
+      4  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#43 : kid#23 ---
+===== proto#43  src=  lines=598-607  nparams=1 nups=0 maxstack=4 =====
+  upvalues: []
+  constants: [('str', '_isHotfixing'), ('str', 'addTodoFunc'), ('str', 'setLoading')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      2  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+      3  TFORLOOP       A=1   B=0    C=257  Bx=257    sBx=-130814
+      4  NEWTABLE       A=3   B=0    C=0    Bx=0      sBx=-131071
+      5  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_isHotfixing')
+      6  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+      7  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      8  TFORLOOP       A=1   B=0    C=258  Bx=258    sBx=-130813
+      9  CALL           A=3   B=1    C=0    Bx=512    sBx=-130559
+     10  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+     11  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#43 : kid#0 ---
+===== proto#43  src=  lines=600-602  nparams=0 nups=1 maxstack=2 =====
+  upvalues: ['self']
+  constants: [('str', 'on_load_begin')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'on_load_begin')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  GETUPVAL       A=0   B=2    C=1    Bx=1025   sBx=-130046
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#45 : kid#24 ---
+===== proto#45  src=  lines=609-622  nparams=1 nups=0 maxstack=4 =====
+  upvalues: []
+  constants: [('str', '_isHotfixing'), ('str', 'addTodoFunc'), ('str', 'pro_endLoading'), ('str', 'cg'), ('str', 'frameManager'), ('str', 'start')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      2  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+      3  TFORLOOP       A=1   B=0    C=257  Bx=257    sBx=-130814
+      4  NEWTABLE       A=3   B=0    C=0    Bx=0      sBx=-131071
+      5  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_isHotfixing')
+      6  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+      7  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      8  TFORLOOP       A=1   B=0    C=258  Bx=258    sBx=-130813
+      9  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+     10  SETLIST        A=1   B=0    C=3    Bx=3      sBx=-131068
+     11  POW            A=1   B=1    C=260  Bx=772    sBx=-130299
+     12  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+     13  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     14  SETLIST        A=1   B=0    C=3    Bx=3      sBx=-131068
+     15  POW            A=1   B=1    C=260  Bx=772    sBx=-130299
+     16  TFORLOOP       A=1   B=1    C=261  Bx=773    sBx=-130298
+     17  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+     18  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#45 : kid#0 ---
+===== proto#45  src=  lines=611-613  nparams=0 nups=1 maxstack=2 =====
+  upvalues: ['self']
+  constants: [('str', 'on_load_over')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'on_load_over')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  GETUPVAL       A=0   B=2    C=1    Bx=1025   sBx=-130046
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#47 : kid#25 ---
+===== proto#47  src=  lines=624-639  nparams=2 nups=0 maxstack=5 =====
+  upvalues: []
+  constants: [('str', '_isHotfixing'), ('str', 'addTodoFunc'), ('str', 'isReconnect'), ('bool', 1), ('str', '_loadingUI'), ('str', 'waitingAni'), ('str', 'pro_checkFrameSpeed'), ('num', 30.0), ('str', 'cg'), ('str', 'frameManager'), ('str', 'start')]
+      0  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+      2  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+      3  TFORLOOP       A=2   B=0    C=257  Bx=257    sBx=-130814
+      4  NEWTABLE       A=4   B=0    C=0    Bx=0      sBx=-131071
+      5  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_isHotfixing')
+      6  SETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      7  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+      8  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      9  CLOSURE        A=0   B=258  C=259  Bx=132355 sBx=1284  
+     10  POW            A=2   B=0    C=260  Bx=260    sBx=-130811
+     11  TFORLOOP       A=2   B=2    C=261  Bx=1285   sBx=-129786
+     12  CALL           A=4   B=0    C=0    Bx=0      sBx=-131071
+     13  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     14  TFORLOOP       A=2   B=0    C=262  Bx=262    sBx=-130809
+     15  LEN            A=4   B=0    C=7    Bx=7      sBx=-131064
+     16  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     17  SETLIST        A=2   B=0    C=8    Bx=8      sBx=-131063
+     18  POW            A=2   B=2    C=265  Bx=1289   sBx=-129782
+     19  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+     20  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     21  SETLIST        A=2   B=0    C=8    Bx=8      sBx=-131063
+     22  POW            A=2   B=2    C=265  Bx=1289   sBx=-129782
+     23  TFORLOOP       A=2   B=2    C=266  Bx=1290   sBx=-129781
+     24  GETUPVAL       A=2   B=2    C=1    Bx=1025   sBx=-130046
+     25  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#47 : kid#0 ---
+===== proto#47  src=  lines=626-628  nparams=0 nups=2 maxstack=3 =====
+  upvalues: ['self', 'data']
+  constants: [('str', 'on_get_frame_list')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'on_get_frame_list')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  SETTABLE       A=2   B=1    C=0    Bx=512    sBx=-130559 K0c=('str', 'on_get_frame_list')
+      3  GETUPVAL       A=0   B=3    C=1    Bx=1537   sBx=-129534
+      4  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#49 : kid#26 ---
+===== proto#49  src=  lines=641-653  nparams=2 nups=0 maxstack=6 =====
+  upvalues: []
+  constants: [('str', '_isHotfixing'), ('str', 'addTodoFunc'), ('str', '_loadingUI'), ('str', 'setUpdateEnable'), ('str', 'performWithDelay'), ('num', 0.0)]
+      0  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+      2  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+      3  TFORLOOP       A=2   B=0    C=257  Bx=257    sBx=-130814
+      4  NEWTABLE       A=4   B=0    C=0    Bx=0      sBx=-131071
+      5  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_isHotfixing')
+      6  SETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      7  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+      8  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      9  POW            A=2   B=0    C=258  Bx=258    sBx=-130813
+     10  TFORLOOP       A=2   B=2    C=259  Bx=1283   sBx=-129788
+     11  CALL           A=4   B=0    C=0    Bx=0      sBx=-131071
+     12  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     13  TFORLOOP       A=2   B=0    C=260  Bx=260    sBx=-130811
+     14  NEWTABLE       A=4   B=0    C=1    Bx=1      sBx=-131070
+     15  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_isHotfixing')
+     16  LEN            A=5   B=0    C=5    Bx=5      sBx=-131066
+     17  GETUPVAL       A=2   B=4    C=1    Bx=2049   sBx=-129022
+     18  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#49 : kid#0 ---
+===== proto#49  src=  lines=643-645  nparams=0 nups=2 maxstack=3 =====
+  upvalues: ['self', 'data']
+  constants: [('str', 'on_settlement')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'on_settlement')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  SETTABLE       A=2   B=1    C=0    Bx=512    sBx=-130559 K0c=('str', 'on_settlement')
+      3  GETUPVAL       A=0   B=3    C=1    Bx=1537   sBx=-129534
+      4  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#50 : kid#1 ---
+===== proto#50  src=  lines=650-652  nparams=0 nups=1 maxstack=2 =====
+  upvalues: ['self']
+  constants: [('str', 'on_room_cancel')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'on_room_cancel')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  GETUPVAL       A=0   B=2    C=1    Bx=1025   sBx=-130046
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#52 : kid#27 ---
+===== proto#52  src=  lines=655-666  nparams=2 nups=0 maxstack=8 =====
+  upvalues: []
+  constants: [('str', '_isHotfixing'), ('str', 'addTodoFunc'), ('str', 'game_dict'), ('str', 'matchinfo'), ('str', 'layerInfo'), ('str', 'cg'), ('str', 'systems'), ('str', 'innerLiveSystem'), ('str', 'reqQuitWhenLoading')]
+      0  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+      2  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+      3  TFORLOOP       A=2   B=0    C=257  Bx=257    sBx=-130814
+      4  NEWTABLE       A=4   B=0    C=0    Bx=0      sBx=-131071
+      5  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_isHotfixing')
+      6  SETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      7  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+      8  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      9  POW            A=2   B=0    C=258  Bx=258    sBx=-130813
+     10  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+     11  CONCAT         A=0   B=256  C=6    Bx=131078 sBx=7     
+     12  POW            A=2   B=0    C=258  Bx=258    sBx=-130813
+     13  POW            A=2   B=2    C=259  Bx=1283   sBx=-129788
+     14  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+     15  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+     16  POW            A=2   B=0    C=258  Bx=258    sBx=-130813
+     17  POW            A=2   B=2    C=259  Bx=1283   sBx=-129788
+     18  POW            A=2   B=2    C=260  Bx=1284   sBx=-129787
+     19  NEWTABLE       A=3   B=0    C=1    Bx=1      sBx=-131070
+     20  SETLIST        A=4   B=0    C=5    Bx=5      sBx=-131066
+     21  POW            A=4   B=4    C=262  Bx=2310   sBx=-128761
+     22  POW            A=4   B=4    C=263  Bx=2311   sBx=-128760
+     23  TFORLOOP       A=4   B=4    C=264  Bx=2312   sBx=-128759
+     24  SETGLOBAL      A=6   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     25  SETGLOBAL      A=7   B=3    C=0    Bx=1536   sBx=-129535 K1536=?
+     26  GETUPVAL       A=4   B=4    C=1    Bx=2049   sBx=-129022
+     27  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#52 : kid#0 ---
+===== proto#52  src=  lines=657-659  nparams=0 nups=2 maxstack=3 =====
+  upvalues: ['self', 'data']
+  constants: [('str', 'on_watcher_game_finish')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'on_watcher_game_finish')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  SETTABLE       A=2   B=1    C=0    Bx=512    sBx=-130559 K0c=('str', 'on_watcher_game_finish')
+      3  GETUPVAL       A=0   B=3    C=1    Bx=1537   sBx=-129534
+      4  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#53 : kid#1 ---
+===== proto#53  src=  lines=664-664  nparams=0 nups=0 maxstack=4 =====
+  upvalues: []
+  constants: [('str', 'cg'), ('str', 'Utils'), ('str', 'showToast'), ('str', 'StringConfig'), ('str', 'getString'), ('str', 'LiveIsOver')]
+      0  SETLIST        A=0   B=0    C=0    Bx=0      sBx=-131071
+      1  POW            A=0   B=0    C=257  Bx=257    sBx=-130814
+      2  POW            A=0   B=0    C=258  Bx=258    sBx=-130813
+      3  SETLIST        A=1   B=0    C=0    Bx=0      sBx=-131071
+      4  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+      5  TFORLOOP       A=1   B=1    C=260  Bx=772    sBx=-130299
+      6  LEN            A=3   B=0    C=5    Bx=5      sBx=-131066
+      7  GETUPVAL       A=1   B=3    C=0    Bx=1536   sBx=-129535
+      8  GETUPVAL       A=0   B=0    C=1    Bx=1      sBx=-131070
+      9  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#55 : kid#28 ---
+===== proto#55  src=  lines=668-683  nparams=2 nups=0 maxstack=8 =====
+  upvalues: []
+  constants: [('str', '_isHotfixing'), ('str', 'addTodoFunc'), ('str', 'cg'), ('str', 'elk'), ('str', 'upload'), ('str', 'operation'), ('str', 'InnerliveLoadingOverTime'), ('str', 'status'), ('str', 'tostring'), ('str', 'TJNetMgr'), ('str', 'getGameServerStatus'), ('str', 'game_dict'), ('str', 'matchinfo'), ('str', 'layerInfo'), ('str', 'systems'), ('str', 'innerLiveSystem'), ('str', 'reqQuitWhenLoading')]
+      0  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+      2  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+      3  TFORLOOP       A=2   B=0    C=257  Bx=257    sBx=-130814
+      4  NEWTABLE       A=4   B=0    C=0    Bx=0      sBx=-131071
+      5  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_isHotfixing')
+      6  SETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      7  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+      8  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      9  SETLIST        A=2   B=0    C=2    Bx=2      sBx=-131069
+     10  POW            A=2   B=2    C=259  Bx=1283   sBx=-129788
+     11  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+     12  CONCAT         A=0   B=256  C=11   Bx=131083 sBx=12    
+     13  SETLIST        A=2   B=0    C=2    Bx=2      sBx=-131069
+     14  POW            A=2   B=2    C=259  Bx=1283   sBx=-129788
+     15  TFORLOOP       A=2   B=2    C=260  Bx=1284   sBx=-129787
+     16  RETURN         A=4   B=0    C=2    Bx=2      sBx=-131069
+     17  CLOSURE        A=4   B=261  C=262  Bx=133894 sBx=2823  
+     18  SETLIST        A=5   B=0    C=8    Bx=8      sBx=-131063
+     19  SETLIST        A=6   B=0    C=9    Bx=9      sBx=-131062
+     20  TFORLOOP       A=6   B=6    C=266  Bx=3338   sBx=-127733
+     21  GETUPVAL       A=6   B=2    C=0    Bx=1024   sBx=-130047
+     22  GETUPVAL       A=5   B=0    C=2    Bx=2      sBx=-131069
+     23  CLOSURE        A=4   B=263  C=5    Bx=134661 sBx=3590  
+     24  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     25  POW            A=2   B=0    C=267  Bx=267    sBx=-130804
+     26  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+     27  CONCAT         A=0   B=256  C=6    Bx=131078 sBx=7     
+     28  POW            A=2   B=0    C=267  Bx=267    sBx=-130804
+     29  POW            A=2   B=2    C=268  Bx=1292   sBx=-129779
+     30  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+     31  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+     32  POW            A=2   B=0    C=267  Bx=267    sBx=-130804
+     33  POW            A=2   B=2    C=268  Bx=1292   sBx=-129779
+     34  POW            A=2   B=2    C=269  Bx=1293   sBx=-129778
+     35  NEWTABLE       A=3   B=0    C=1    Bx=1      sBx=-131070
+     36  SETLIST        A=4   B=0    C=2    Bx=2      sBx=-131069
+     37  POW            A=4   B=4    C=270  Bx=2318   sBx=-128753
+     38  POW            A=4   B=4    C=271  Bx=2319   sBx=-128752
+     39  TFORLOOP       A=4   B=4    C=272  Bx=2320   sBx=-128751
+     40  SETGLOBAL      A=6   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+     41  SETGLOBAL      A=7   B=3    C=0    Bx=1536   sBx=-129535 K1536=?
+     42  GETUPVAL       A=4   B=4    C=1    Bx=2049   sBx=-129022
+     43  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#55 : kid#0 ---
+===== proto#55  src=  lines=670-672  nparams=0 nups=2 maxstack=3 =====
+  upvalues: ['self', 'data']
+  constants: [('str', 'on_end_of_game_player')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'on_end_of_game_player')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  SETTABLE       A=2   B=1    C=0    Bx=512    sBx=-130559 K0c=('str', 'on_end_of_game_player')
+      3  GETUPVAL       A=0   B=3    C=1    Bx=1537   sBx=-129534
+      4  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#56 : kid#1 ---
+===== proto#56  src=  lines=681-681  nparams=0 nups=0 maxstack=4 =====
+  upvalues: []
+  constants: [('str', 'cg'), ('str', 'Utils'), ('str', 'showToast'), ('str', 'StringConfig'), ('str', 'getString'), ('str', 'InnerliveStreamerNetErr')]
+      0  SETLIST        A=0   B=0    C=0    Bx=0      sBx=-131071
+      1  POW            A=0   B=0    C=257  Bx=257    sBx=-130814
+      2  POW            A=0   B=0    C=258  Bx=258    sBx=-130813
+      3  SETLIST        A=1   B=0    C=0    Bx=0      sBx=-131071
+      4  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+      5  TFORLOOP       A=1   B=1    C=260  Bx=772    sBx=-130299
+      6  LEN            A=3   B=0    C=5    Bx=5      sBx=-131066
+      7  GETUPVAL       A=1   B=3    C=0    Bx=1536   sBx=-129535
+      8  GETUPVAL       A=0   B=0    C=1    Bx=1      sBx=-131070
+      9  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#58 : kid#29 ---
+===== proto#58  src=  lines=685-705  nparams=1 nups=0 maxstack=8 =====
+  upvalues: []
+  constants: [('str', '_loadingUI'), ('str', 'setUpdateEnable'), ('str', 'WatchLoadingResumeSound'), ('str', '_showtimeUI'), ('str', 'playInAni'), ('str', 'addChild'), ('str', 'cg'), ('str', 'Game'), ('str', 'createLayer'), ('str', 'common/TurnLayer'), ('str', 'direction'), ('num', 3.0), ('str', 'callback')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=1   B=1    C=257  Bx=769    sBx=-130302
+      2  CALL           A=3   B=0    C=0    Bx=0      sBx=-131071
+      3  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+      4  TFORLOOP       A=1   B=0    C=258  Bx=258    sBx=-130813
+      5  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+      6  POW            A=1   B=0    C=259  Bx=259    sBx=-130812
+      7  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      8  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+      9  POW            A=1   B=0    C=259  Bx=259    sBx=-130812
+     10  TFORLOOP       A=1   B=1    C=260  Bx=772    sBx=-130299
+     11  NEWTABLE       A=3   B=0    C=0    Bx=0      sBx=-131071
+     12  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_loadingUI')
+     13  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+     14  CONCAT         A=0   B=256  C=11   Bx=131083 sBx=12    
+     15  TFORLOOP       A=1   B=0    C=261  Bx=261    sBx=-130810
+     16  SETLIST        A=3   B=0    C=6    Bx=6      sBx=-131065
+     17  POW            A=3   B=3    C=263  Bx=1799   sBx=-129272
+     18  TFORLOOP       A=3   B=3    C=264  Bx=1800   sBx=-129271
+     19  LEN            A=5   B=0    C=9    Bx=9      sBx=-131062
+     20  RETURN         A=6   B=0    C=2    Bx=2      sBx=-131069
+     21  CLOSURE        A=6   B=266  C=267  Bx=136459 sBx=5388  
+     22  NEWTABLE       A=7   B=0    C=1    Bx=1      sBx=-131070
+     23  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_loadingUI')
+     24  CLOSURE        A=6   B=268  C=7    Bx=137223 sBx=6152  
+     25  GETUPVAL       A=3   B=4    C=0    Bx=2048   sBx=-129023
+     26  GETUPVAL       A=1   B=0    C=1    Bx=1      sBx=-131070
+     27  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#58 : kid#0 ---
+===== proto#58  src=  lines=693-695  nparams=0 nups=1 maxstack=2 =====
+  upvalues: ['self']
+  constants: [('str', 'enterBattle')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'enterBattle')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  GETUPVAL       A=0   B=2    C=1    Bx=1025   sBx=-130046
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#59 : kid#1 ---
+===== proto#59  src=  lines=701-703  nparams=0 nups=1 maxstack=2 =====
+  upvalues: ['self']
+  constants: [('str', 'enterBattle')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'enterBattle')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  GETUPVAL       A=0   B=2    C=1    Bx=1025   sBx=-130046
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#61 : kid#30 ---
+===== proto#61  src=  lines=707-742  nparams=1 nups=0 maxstack=7 =====
+  upvalues: []
+  constants: [('str', '_isEnterBattle'), ('bool', 1), ('str', 'cg'), ('str', 'systems'), ('str', 'battleSystem'), ('str', 'isSingle'), ('str', 'isRecordGame'), ('str', 'os'), ('str', 'time'), ('str', '_resEndTime'), ('str', 'logSystem'), ('str', 'gameLoadTime'), ('str', '_isReconnectAtBeg'), ('str', '_startTime'), ('str', 'isWatching'), ('str', 'MainManager'), ('str', 'isTutorial'), ('str', 'isStandBy'), ('str', 'refereeSystem'), ('str', 'isReferee'), ('str', 'barrageSystem'), ('str', 'turnOn'), ('str', 'ClientEventManager'), ('str', 'fire'), ('str', 'ON_INNER_LIVE_STAY_WATCH'), ('str', 'getGamePlayHandle'), ('str', 'isDisabledQuitPop'), ('str', 'ActorManager'), ('str', 'getActorByUid'), ('str', 'Player'), ('str', 'uid'), ('str', 'isRunAway'), ('str', 'isRealDead'), ('str', 'SpectatorManager'), ('str', '__cname'), ('str', 'LiveSpectatorManager'), ('str', 'convertFrameNumToTime'), ('str', 'frameManager'), ('str', 'getCurFrameId'), ('str', 'innerLiveSystem'), ('str', 'createLiveLogs'), ('str', 'Game'), ('str', 'runScene'), ('str', '_scene'), ('str', 'ON_ENTER_BATTLE_SCENE')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      2  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      4  CLOSURE        A=0   B=256  C=257  Bx=131329 sBx=258   
+      5  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+      6  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+      7  POW            A=1   B=1    C=260  Bx=772    sBx=-130299
+      8  TFORLOOP       A=1   B=1    C=261  Bx=773    sBx=-130298
+      9  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     10  MUL            A=1   B=0    C=1    Bx=1      sBx=-131070
+     11  CONCAT         A=0   B=256  C=25   Bx=131097 sBx=26    
+     12  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     13  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+     14  POW            A=1   B=1    C=260  Bx=772    sBx=-130299
+     15  TFORLOOP       A=1   B=1    C=262  Bx=774    sBx=-130297
+     16  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     17  MUL            A=1   B=0    C=1    Bx=1      sBx=-131070
+     18  CONCAT         A=0   B=256  C=18   Bx=131090 sBx=19    
+     19  SETLIST        A=1   B=0    C=7    Bx=7      sBx=-131064
+     20  POW            A=1   B=1    C=264  Bx=776    sBx=-130295
+     21  GETUPVAL       A=1   B=1    C=2    Bx=514    sBx=-130557
+     22  POW            A=2   B=0    C=265  Bx=265    sBx=-130806
+     23  MUL            A=2   B=0    C=1    Bx=1      sBx=-131070
+     24  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     25  SETGLOBAL      A=2   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     26  CLOSURE        A=0   B=265  C=2    Bx=135682 sBx=4611  
+     27  SETLIST        A=2   B=0    C=2    Bx=2      sBx=-131069
+     28  POW            A=2   B=2    C=259  Bx=1283   sBx=-129788
+     29  POW            A=2   B=2    C=266  Bx=1290   sBx=-129781
+     30  TFORLOOP       A=2   B=2    C=267  Bx=1291   sBx=-129780
+     31  POW            A=4   B=0    C=268  Bx=268    sBx=-130803
+     32  POW            A=5   B=0    C=265  Bx=265    sBx=-130806
+     33  POW            A=6   B=0    C=269  Bx=269    sBx=-130802
+     34  LT             A=5   B=5    C=6    Bx=2566   sBx=-128505
+     35  POW            A=6   B=0    C=269  Bx=269    sBx=-130802
+     36  LT             A=6   B=1    C=6    Bx=518    sBx=-130553
+     37  GETUPVAL       A=2   B=5    C=1    Bx=2561   sBx=-128510
+     38  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     39  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+     40  POW            A=1   B=1    C=260  Bx=772    sBx=-130299
+     41  TFORLOOP       A=1   B=1    C=270  Bx=782    sBx=-130289
+     42  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     43  MUL            A=1   B=0    C=1    Bx=1      sBx=-131070
+     44  CONCAT         A=0   B=256  C=73   Bx=131145 sBx=74    
+     45  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     46  POW            A=1   B=1    C=271  Bx=783    sBx=-130288
+     47  TFORLOOP       A=1   B=1    C=272  Bx=784    sBx=-130287
+     48  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     49  MUL            A=1   B=0    C=1    Bx=1      sBx=-131070
+     50  CONCAT         A=0   B=256  C=67   Bx=131139 sBx=68    
+     51  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     52  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+     53  POW            A=1   B=1    C=260  Bx=772    sBx=-130299
+     54  TFORLOOP       A=1   B=1    C=273  Bx=785    sBx=-130286
+     55  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     56  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+     57  CONCAT         A=0   B=256  C=20   Bx=131092 sBx=21    
+     58  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     59  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+     60  POW            A=1   B=1    C=274  Bx=786    sBx=-130285
+     61  TFORLOOP       A=1   B=1    C=275  Bx=787    sBx=-130284
+     62  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     63  MUL            A=1   B=0    C=1    Bx=1      sBx=-131070
+     64  CONCAT         A=0   B=256  C=84   Bx=131156 sBx=85    
+     65  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     66  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+     67  POW            A=1   B=1    C=276  Bx=788    sBx=-130283
+     68  TFORLOOP       A=1   B=1    C=277  Bx=789    sBx=-130282
+     69  CALL           A=3   B=1    C=0    Bx=512    sBx=-130559
+     70  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+     71  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     72  POW            A=1   B=1    C=278  Bx=790    sBx=-130281
+     73  POW            A=1   B=1    C=279  Bx=791    sBx=-130280
+     74  SETLIST        A=2   B=0    C=2    Bx=2      sBx=-131069
+     75  POW            A=2   B=2    C=278  Bx=1302   sBx=-129769
+     76  POW            A=2   B=2    C=280  Bx=1304   sBx=-129767
+     77  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+     78  CONCAT         A=0   B=256  C=70   Bx=131142 sBx=71    
+     79  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     80  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+     81  POW            A=1   B=1    C=260  Bx=772    sBx=-130299
+     82  TFORLOOP       A=1   B=1    C=281  Bx=793    sBx=-130278
+     83  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     84  POW            A=1   B=1    C=282  Bx=794    sBx=-130277
+     85  GETUPVAL       A=1   B=1    C=2    Bx=514    sBx=-130557
+     86  MUL            A=1   B=0    C=1    Bx=1      sBx=-131070
+     87  CONCAT         A=0   B=256  C=61   Bx=131133 sBx=62    
+     88  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     89  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+     90  POW            A=1   B=1    C=276  Bx=788    sBx=-130283
+     91  TFORLOOP       A=1   B=1    C=277  Bx=789    sBx=-130282
+     92  CALL           A=3   B=1    C=0    Bx=512    sBx=-130559
+     93  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+     94  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     95  POW            A=1   B=1    C=283  Bx=795    sBx=-130276
+     96  TFORLOOP       A=1   B=1    C=284  Bx=796    sBx=-130275
+     97  SETLIST        A=3   B=0    C=2    Bx=2      sBx=-131069
+     98  POW            A=3   B=3    C=285  Bx=1821   sBx=-129250
+     99  POW            A=3   B=3    C=286  Bx=1822   sBx=-129249
+    100  GETUPVAL       A=1   B=3    C=2    Bx=1538   sBx=-129533
+    101  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+    102  CONCAT         A=0   B=256  C=46   Bx=131118 sBx=47    
+    103  TFORLOOP       A=2   B=1    C=287  Bx=799    sBx=-130272
+    104  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+    105  MUL            A=2   B=0    C=1    Bx=1      sBx=-131070
+    106  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+    107  TFORLOOP       A=2   B=1    C=288  Bx=800    sBx=-130271
+    108  GETUPVAL       A=2   B=2    C=2    Bx=1026   sBx=-130045
+    109  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+    110  CONCAT         A=0   B=256  C=38   Bx=131110 sBx=39    
+    111  SETLIST        A=2   B=0    C=2    Bx=2      sBx=-131069
+    112  POW            A=2   B=2    C=278  Bx=1302   sBx=-129769
+    113  POW            A=2   B=2    C=279  Bx=1303   sBx=-129768
+    114  SETLIST        A=3   B=0    C=2    Bx=2      sBx=-131069
+    115  POW            A=3   B=3    C=278  Bx=1814   sBx=-129257
+    116  POW            A=3   B=3    C=280  Bx=1816   sBx=-129255
+    117  GETUPVAL       A=2   B=2    C=1    Bx=1025   sBx=-130046
+    118  CONCAT         A=0   B=256  C=30   Bx=131102 sBx=31    
+    119  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+    120  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+    121  POW            A=1   B=1    C=260  Bx=772    sBx=-130299
+    122  TFORLOOP       A=1   B=1    C=270  Bx=782    sBx=-130289
+    123  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+    124  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+    125  CONCAT         A=0   B=256  C=23   Bx=131095 sBx=24    
+    126  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+    127  POW            A=1   B=1    C=289  Bx=801    sBx=-130270
+    128  POW            A=1   B=1    C=290  Bx=802    sBx=-130269
+    129  JMP            A=0   B=1    C=291  Bx=803    sBx=-130268
+    130  CONCAT         A=0   B=256  C=18   Bx=131090 sBx=19    
+    131  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+    132  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+    133  POW            A=1   B=1    C=276  Bx=788    sBx=-130283
+    134  TFORLOOP       A=1   B=1    C=277  Bx=789    sBx=-130282
+    135  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+    136  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+    137  POW            A=1   B=1    C=271  Bx=783    sBx=-130288
+    138  TFORLOOP       A=1   B=1    C=292  Bx=804    sBx=-130267
+    139  SETLIST        A=3   B=0    C=2    Bx=2      sBx=-131069
+    140  POW            A=3   B=3    C=293  Bx=1829   sBx=-129242
+    141  TFORLOOP       A=3   B=3    C=294  Bx=1830   sBx=-129241
+    142  GETUPVAL       A=3   B=2    C=0    Bx=1024   sBx=-130047
+    143  GETUPVAL       A=1   B=0    C=2    Bx=2      sBx=-131069
+    144  SETLIST        A=2   B=0    C=2    Bx=2      sBx=-131069
+    145  POW            A=2   B=2    C=259  Bx=1283   sBx=-129788
+    146  POW            A=2   B=2    C=295  Bx=1319   sBx=-129752
+    147  TFORLOOP       A=2   B=2    C=296  Bx=1320   sBx=-129751
+    148  SETGLOBAL      A=4   B=1    C=0    Bx=512    sBx=-130559 K512=?
+    149  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+    150  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+    151  POW            A=1   B=1    C=297  Bx=809    sBx=-130262
+    152  TFORLOOP       A=1   B=1    C=298  Bx=810    sBx=-130261
+    153  POW            A=3   B=0    C=299  Bx=299    sBx=-130772
+    154  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+    155  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+    156  POW            A=1   B=1    C=278  Bx=790    sBx=-130281
+    157  POW            A=1   B=1    C=279  Bx=791    sBx=-130280
+    158  SETLIST        A=2   B=0    C=2    Bx=2      sBx=-131069
+    159  POW            A=2   B=2    C=278  Bx=1302   sBx=-129769
+    160  POW            A=2   B=2    C=300  Bx=1324   sBx=-129747
+    161  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+    162  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#62 : kid#31 ---
+===== proto#62  src=  lines=745-758  nparams=1 nups=0 maxstack=4 =====
+  upvalues: []
+  constants: [('str', '_isHotfixing'), ('str', 'addTodoFunc'), ('str', 'cg'), ('str', 'frameManager'), ('str', 'stop'), ('str', 'TJNetMgr'), ('str', 'sendMsg'), ('str', 'NetMsg'), ('str', 'CS_CMD_FINISH_SETTLEMENT'), ('str', 'Game'), ('str', 'enterScene'), ('str', 'GameConst'), ('str', 'SCENE_NAME'), ('str', 'Home')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      2  CONCAT         A=0   B=256  C=4    Bx=131076 sBx=5     
+      3  TFORLOOP       A=1   B=0    C=257  Bx=257    sBx=-130814
+      4  NEWTABLE       A=3   B=0    C=0    Bx=0      sBx=-131071
+      5  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_isHotfixing')
+      6  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+      7  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      8  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+      9  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+     10  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+     11  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+     12  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     13  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+     14  TFORLOOP       A=1   B=1    C=260  Bx=772    sBx=-130299
+     15  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+     16  SETLIST        A=1   B=0    C=5    Bx=5      sBx=-131066
+     17  TFORLOOP       A=1   B=1    C=262  Bx=774    sBx=-130297
+     18  SETLIST        A=3   B=0    C=7    Bx=7      sBx=-131064
+     19  POW            A=3   B=3    C=264  Bx=1800   sBx=-129271
+     20  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+     21  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+     22  POW            A=1   B=1    C=265  Bx=777    sBx=-130294
+     23  TFORLOOP       A=1   B=1    C=266  Bx=778    sBx=-130293
+     24  SETLIST        A=3   B=0    C=2    Bx=2      sBx=-131069
+     25  POW            A=3   B=3    C=267  Bx=1803   sBx=-129268
+     26  POW            A=3   B=3    C=268  Bx=1804   sBx=-129267
+     27  POW            A=3   B=3    C=269  Bx=1805   sBx=-129266
+     28  GETUPVAL       A=1   B=3    C=1    Bx=1537   sBx=-129534
+     29  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#62 : kid#0 ---
+===== proto#62  src=  lines=747-749  nparams=0 nups=1 maxstack=2 =====
+  upvalues: ['self']
+  constants: [('str', 'on_room_cancel')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'on_room_cancel')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  GETUPVAL       A=0   B=2    C=1    Bx=1025   sBx=-130046
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#64 : kid#32 ---
+===== proto#64  src=  lines=760-762  nparams=2 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: [('str', '_isLoading')]
+      0  CLOSURE        A=0   B=256  C=1    Bx=131073 sBx=2     
+      1  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#65 : kid#33 ---
+===== proto#65  src=  lines=764-766  nparams=1 nups=0 maxstack=2 =====
+  upvalues: []
+  constants: [('str', '_isLoading')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  GETGLOBAL      A=1   B=2    C=0    Bx=1024   sBx=-130047 K1024=?
+      2  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#66 : kid#34 ---
+===== proto#66  src=  lines=768-770  nparams=1 nups=0 maxstack=3 =====
+  upvalues: []
+  constants: [('str', 'mgr'), ('str', 'pause')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=1   B=1    C=257  Bx=769    sBx=-130302
+      2  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#67 : kid#35 ---
+===== proto#67  src=  lines=772-774  nparams=1 nups=0 maxstack=3 =====
+  upvalues: []
+  constants: [('str', 'mgr'), ('str', 'resume')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  TFORLOOP       A=1   B=1    C=257  Bx=769    sBx=-130302
+      2  GETUPVAL       A=1   B=2    C=1    Bx=1025   sBx=-130046
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#68 : kid#36 ---
+===== proto#68  src=  lines=776-780  nparams=1 nups=1 maxstack=5 =====
+  upvalues: ['LuaEventManager']
+  constants: [('str', 'isWatching'), ('str', 'closeSoundVolume'), ('str', 'Globals'), ('str', 'SystemSetting'), ('str', 'getSoundVolume'), ('str', 'fireEvent'), ('str', 'LuaEventNameConfig'), ('str', 'ON_CHANGE_SOUND_VOLUME'), ('num', 0.0)]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=1   B=0    C=1    Bx=1      sBx=-131070
+      2  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      4  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+      5  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+      6  TFORLOOP       A=1   B=1    C=260  Bx=772    sBx=-130299
+      7  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+      8  CLOSURE        A=0   B=257  C=1    Bx=131585 sBx=514   
+      9  SETTABLE       A=1   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'isWatching')
+     10  TFORLOOP       A=1   B=1    C=261  Bx=773    sBx=-130298
+     11  SETLIST        A=3   B=0    C=6    Bx=6      sBx=-131065
+     12  POW            A=3   B=3    C=263  Bx=1799   sBx=-129272
+     13  LEN            A=4   B=0    C=8    Bx=8      sBx=-131063
+     14  GETUPVAL       A=1   B=4    C=1    Bx=2049   sBx=-129022
+     15  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#69 : kid#37 ---
+===== proto#69  src=  lines=782-786  nparams=1 nups=1 maxstack=6 =====
+  upvalues: ['LuaEventManager']
+  constants: [('str', 'isWatching'), ('str', 'closeSoundVolume'), ('str', 'Globals'), ('str', 'SystemSetting'), ('str', 'getSoundVolume'), ('str', 'fireEvent'), ('str', 'LuaEventNameConfig'), ('str', 'ON_CHANGE_SOUND_VOLUME')]
+      0  POW            A=1   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=1   B=0    C=1    Bx=1      sBx=-131070
+      2  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+      3  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      4  POW            A=1   B=0    C=257  Bx=257    sBx=-130814
+      5  MUL            A=1   B=0    C=1    Bx=1      sBx=-131070
+      6  CONCAT         A=0   B=256  C=3    Bx=131075 sBx=4     
+      7  SETLIST        A=1   B=0    C=2    Bx=2      sBx=-131069
+      8  POW            A=1   B=1    C=259  Bx=771    sBx=-130300
+      9  TFORLOOP       A=1   B=1    C=260  Bx=772    sBx=-130299
+     10  GETUPVAL       A=1   B=2    C=2    Bx=1026   sBx=-130045
+     11  SETTABLE       A=2   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'isWatching')
+     12  TFORLOOP       A=2   B=2    C=261  Bx=1285   sBx=-129786
+     13  SETLIST        A=4   B=0    C=6    Bx=6      sBx=-131065
+     14  POW            A=4   B=4    C=263  Bx=2311   sBx=-128760
+     15  SETGLOBAL      A=5   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     16  GETUPVAL       A=2   B=4    C=1    Bx=2049   sBx=-129022
+     17  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#70 : kid#38 ---
+===== proto#70  src=  lines=788-797  nparams=2 nups=0 maxstack=5 =====
+  upvalues: []
+  constants: [('str', '_isHotfixing'), ('str', 'addTodoFunc'), ('str', 'showShowTime')]
+      0  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+      2  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+      3  TFORLOOP       A=2   B=0    C=257  Bx=257    sBx=-130814
+      4  NEWTABLE       A=4   B=0    C=0    Bx=0      sBx=-131071
+      5  SETGLOBAL      A=0   B=0    C=0    Bx=0      sBx=-131071 K0=('str', '_isHotfixing')
+      6  SETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      7  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+      8  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+      9  TFORLOOP       A=2   B=0    C=258  Bx=258    sBx=-130813
+     10  SETGLOBAL      A=4   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     11  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     12  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#70 : kid#0 ---
+===== proto#70  src=  lines=790-792  nparams=0 nups=2 maxstack=3 =====
+  upvalues: ['self', 'tab']
+  constants: [('str', 'showShowTime')]
+      0  SETTABLE       A=0   B=0    C=0    Bx=0      sBx=-131071 K0c=('str', 'showShowTime')
+      1  TFORLOOP       A=0   B=0    C=256  Bx=256    sBx=-130815
+      2  SETTABLE       A=2   B=1    C=0    Bx=512    sBx=-130559 K0c=('str', 'showShowTime')
+      3  GETUPVAL       A=0   B=3    C=1    Bx=1537   sBx=-129534
+      4  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+
+  --- child of proto#72 : kid#39 ---
+===== proto#72  src=  lines=799-812  nparams=2 nups=0 maxstack=6 =====
+  upvalues: []
+  constants: [('str', '_physicalMemory'), ('str', 'UID'), ('str', 'showTime'), ('num', 1024.0), ('str', '_loadingUI'), ('str', 'startSpecialProcess'), ('str', '_showtimeUI'), ('str', 'cg'), ('str', 'Game'), ('str', 'createLayer'), ('str', 'BattleLoading/LoadingShowtime'), ('str', 'setVisible'), ('str', 'addChild'), ('str', 'playOutAni')]
+      0  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+      1  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+      2  CONCAT         A=0   B=256  C=7    Bx=131079 sBx=8     
+      3  MUL            A=1   B=0    C=0    Bx=0      sBx=-131071
+      4  CONCAT         A=0   B=256  C=5    Bx=131077 sBx=6     
+      5  POW            A=2   B=1    C=257  Bx=769    sBx=-130302
+      6  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+      7  CONCAT         A=0   B=256  C=2    Bx=131074 sBx=3     
+      8  POW            A=2   B=1    C=258  Bx=770    sBx=-130301
+      9  MUL            A=2   B=0    C=1    Bx=1      sBx=-131070
+     10  CONCAT         A=0   B=256  C=0    Bx=131072 sBx=1     
+     11  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     12  POW            A=2   B=0    C=256  Bx=256    sBx=-130815
+     13  LOADK          A=0   B=2    C=259  Bx=1283   sBx=-129788 K1283=?
+     14  CONCAT         A=0   B=256  C=8    Bx=131080 sBx=9     
+     15  POW            A=2   B=0    C=260  Bx=260    sBx=-130811
+     16  POW            A=2   B=2    C=261  Bx=1285   sBx=-129786
+     17  MUL            A=2   B=0    C=0    Bx=0      sBx=-131071
+     18  CONCAT         A=0   B=256  C=21   Bx=131093 sBx=22    
+     19  POW            A=2   B=0    C=260  Bx=260    sBx=-130811
+     20  TFORLOOP       A=2   B=2    C=261  Bx=1285   sBx=-129786
+     21  POW            A=4   B=1    C=258  Bx=770    sBx=-130301
+     22  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     23  CONCAT         A=0   B=256  C=16   Bx=131088 sBx=17    
+     24  SETLIST        A=2   B=0    C=7    Bx=7      sBx=-131064
+     25  POW            A=2   B=2    C=264  Bx=1288   sBx=-129783
+     26  TFORLOOP       A=2   B=2    C=265  Bx=1289   sBx=-129782
+     27  LEN            A=4   B=0    C=10   Bx=10     sBx=-131061
+     28  SETGLOBAL      A=5   B=1    C=0    Bx=512    sBx=-130559 K512=?
+     29  GETUPVAL       A=2   B=4    C=2    Bx=2050   sBx=-129021
+     30  CLOSURE        A=0   B=262  C=2    Bx=134146 sBx=3075  
+     31  POW            A=2   B=0    C=262  Bx=262    sBx=-130809
+     32  TFORLOOP       A=2   B=2    C=267  Bx=1291   sBx=-129780
+     33  CALL           A=4   B=0    C=0    Bx=0      sBx=-131071
+     34  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     35  TFORLOOP       A=2   B=0    C=268  Bx=268    sBx=-130803
+     36  POW            A=4   B=0    C=262  Bx=262    sBx=-130809
+     37  GETUPVAL       A=2   B=3    C=1    Bx=1537   sBx=-129534
+     38  POW            A=2   B=0    C=262  Bx=262    sBx=-130809
+     39  TFORLOOP       A=2   B=2    C=269  Bx=1293   sBx=-129778
+     40  GETUPVAL       A=2   B=2    C=1    Bx=1025   sBx=-130046
+     41  GETGLOBAL      A=0   B=1    C=0    Bx=512    sBx=-130559 K512=?

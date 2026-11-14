@@ -1,0 +1,80 @@
+0x3dab00: ret      
+0x3dab04: bl       #0x602094
+0x3dab08: mov      x2, x0
+0x3dab0c: b        #0x3daac0
+0x3dab10: sub      sp, sp, #0x20
+0x3dab14: str      x30, [sp]
+0x3dab18: cbz      x0, #0x3dab3c
+0x3dab1c: fmov     d0, xzr
+0x3dab20: mov      w1, #1
+0x3dab24: bl       #0x57def8
+0x3dab28: str      q0, [sp, #0x10]
+0x3dab2c: bl       #0x401b7c
+0x3dab30: ldr      q0, [sp, #0x10]
+0x3dab34: fcvtzs   w1, d0
+0x3dab38: bl       #0x4008a8
+0x3dab3c: mov      w0, #0
+0x3dab40: ldr      x30, [sp]
+0x3dab44: add      sp, sp, #0x20
+0x3dab48: ret      
+0x3dab4c: sub      sp, sp, #0x20
+0x3dab50: str      x30, [sp]
+0x3dab54: cbz      x0, #0x3dab78
+0x3dab58: fmov     d0, xzr
+0x3dab5c: mov      w1, #1
+0x3dab60: bl       #0x57def8
+0x3dab64: str      q0, [sp, #0x10]
+0x3dab68: bl       #0x401b7c
+0x3dab6c: ldr      q0, [sp, #0x10]
+0x3dab70: fcvtzs   w1, d0
+0x3dab74: bl       #0x4008a0
+0x3dab78: mov      w0, #0
+0x3dab7c: ldr      x30, [sp]
+0x3dab80: add      sp, sp, #0x20
+0x3dab84: ret      
+0x3dab88: sub      sp, sp, #0x60
+0x3dab8c: str      d8, [sp, #0x28]
+0x3dab90: stp      x19, x20, [sp]
+0x3dab94: adrp     x20, #0xff6000
+0x3dab98: str      x30, [sp, #0x20]
+0x3dab9c: stp      x21, x22, [sp, #0x10]
+0x3daba0: mov      x19, x0
+0x3daba4: ldr      x1, [x20, #0xc50]
+0x3daba8: ldr      x1, [x1]
+0x3dabac: str      x1, [sp, #0x58]
+0x3dabb0: cbz      x0, #0x3daca0
+0x3dabb4: mov      w1, #1
+0x3dabb8: bl       #0x601ae0
+0x3dabbc: cmp      w0, #2
+0x3dabc0: mov      w1, #1
+0x3dabc4: mov      x0, x19
+0x3dabc8: b.eq     #0x3dac94
+0x3dabcc: mov      x2, #0
+0x3dabd0: bl       #0x601ee0
+0x3dabd4: mov      x22, x0
+0x3dabd8: fmov     d0, xzr
+0x3dabdc: mov      w1, #2
+0x3dabe0: mov      x0, x19
+0x3dabe4: bl       #0x57def8
+0x3dabe8: fmov     d8, d0
+0x3dabec: mov      w1, #3
+0x3dabf0: fmov     d0, xzr
+0x3dabf4: mov      x0, x19
+0x3dabf8: bl       #0x57def8
+0x3dabfc: fcvtzs   w4, d0
+0x3dac00: sxtw     x0, w4
+0x3dac04: str      x4, [sp, #0x40]
+0x3dac08: bl       #0xc1d8cc
+0x3dac0c: mov      x21, x0
+0x3dac10: add      x5, sp, #0x60
+0x3dac14: str      wzr, [x5, #-0xc]!
+0x3dac18: str      x5, [sp, #0x38]
+0x3dac1c: str      x5, [sp, #0x48]
+0x3dac20: bl       #0x401b7c
+0x3dac24: fcvtzs   w2, d8
+0x3dac28: ldr      x4, [sp, #0x40]
+0x3dac2c: ldr      x5, [sp, #0x38]
+0x3dac30: mov      x3, x21
+0x3dac34: mov      x1, x22
+0x3dac38: bl       #0x400704
+0x3dac3c: sxtw     x2, w0

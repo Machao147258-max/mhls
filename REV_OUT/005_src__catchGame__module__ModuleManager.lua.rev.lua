@@ -1,0 +1,87 @@
+// 文件: 005_src__catchGame__module__ModuleManager.lua.luac
+// 顶层原型: code=245 consts=100 protos=0
+
+local cjson_1 = require('cjson')
+local utils_2 = require('common/utils')
+local Module_3 = require('catchGame/module/Module')
+local framework_4 = require('lib/framework')
+local downloader_5 = require('lib/downloader')
+local SdkPlatform_6 = require('catchGame/sdk/SdkPlatform')
+<R265>:'catchGame/sdk/SdkPlatform'(<R7>)
+<R266>:'catchGame/sdk/SdkPlatform'(<R7>)
+<R276>:'GAMEPARAM'(<R14>)
+<R276>:'is_gsf_patch'(1)
+local Cls_7 = class('ModuleManager')
+Cls_7['CAN_USE_ASTC'] = 'ctor'
+Cls_7['CAN_USE_ASTC'] = 'init'
+Cls_7['CAN_USE_ASTC'] = 'initFashionModule'
+Cls_7['CAN_USE_ASTC'] = 'getFileList'
+Cls_7['CAN_USE_ASTC'] = 'parseFileList'
+Cls_7['CAN_USE_ASTC'] = 'getModuleConfig'
+Cls_7['CAN_USE_ASTC'] = 'parseModuleConfig'
+Cls_7['CAN_USE_ASTC'] = 'saveModuleConfig'
+Cls_7['CAN_USE_ASTC'] = 'getReadyModuleFiles'
+Cls_7['CAN_USE_ASTC'] = 'getReadyModuleNames'
+Cls_7['CAN_USE_ASTC'] = 'canDownload'
+Cls_7['CAN_USE_ASTC'] = ''
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil
+Cls_7['CAN_USE_ASTC'] = nil

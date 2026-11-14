@@ -1,0 +1,40 @@
+-- [[ src/catchGame/record/recordplayer.lua ]]  src=src/catchGame/record/recordplayer.lua size=19833
+-- top: code=151 consts=70 protos=34
+
+local cjson_1 = require('cjson')
+local Cls_2 = class('recordplayer')
+local pb_3 = require('pb')
+local utils_4 = require('common/utils')
+Cls_2[14] = 'ctor'
+Cls_2[14] = 'setSpeed'
+Cls_2[14] = 'reset'
+Cls_2[14] = 'setForcePlay'
+Cls_2[14] = 'load'
+Cls_2[14] = 'loadJsonDataAndPlay'
+Cls_2[14] = 'playGameData'
+Cls_2[14] = 'saveToJson'
+Cls_2[14] = 'play'
+Cls_2[14] = 'init'
+Cls_2[14] = 'start'
+Cls_2[14] = 'stop'
+Cls_2[14] = 'pause'
+Cls_2[14] = 'resume'
+Cls_2[14] = 'isRunning'
+Cls_2[14] = 'isStepMode'
+Cls_2[14] = 'enterStepMode'
+Cls_2[14] = 'exitStepMode'
+Cls_2[14] = 'stepNextFrame'
+Cls_2[14] = 'setBreakpoint'
+Cls_2[14] = 'getBreakpoint'
+Cls_2[14] = 'clearBreakpoint'
+Cls_2[14] = 'fixFrame'
+Cls_2[14] = 'update'
+Cls_2[14] = 'getCurFrameID'
+Cls_2[14] = 'decodeAndAddFrame'
+Cls_2[14] = 'onOneCommand'
+Cls_2[14] = 'loadBatch'
+Cls_2[14] = 'isInRecordBatch'
+Cls_2[14] = 'beginRecordBatch'
+Cls_2[14] = 'endRecordBatch'
+Cls_2[14] = 'enterNextRecord'
+Cls_2[14] = 'decodeBatchContent'

@@ -1,0 +1,4 @@
+ERR ;: [Errno 2] No such file or directory: ';'
+ERR python: [Errno 2] No such file or directory: 'python'
+ERR -c: [Errno 2] No such file or directory: '-c'
+ERR print('ok'): [Errno 2] No such file or directory: "print('ok')"

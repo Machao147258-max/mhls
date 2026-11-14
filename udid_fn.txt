@@ -1,0 +1,80 @@
+=== fn#2 src=b'' sc=58 k=21 ===
+  k[0] = b'ios'
+  k[1] = b'userext'
+  k[2] = b'Crypto'
+  k[3] = b'MD5'
+  k[4] = b'ioscacheudid'
+  k[5] = b'cc'
+  k[6] = b'FileUtils'
+  k[7] = b'getInstance'
+  k[8] = b'getWritablePath'
+  k[9] = b'getStringFromFile'
+  k[10] = b''
+  k[11] = b'tostring'
+  k[12] = b'X1V5fzTo'
+  k[13] = b'encryptString'
+  k[14] = b'string'
+  k[15] = b'len'
+  k[16] = b'io'
+  k[17] = b'open'
+  k[18] = b'wb'
+  k[19] = b'write'
+  k[20] = b'close'
+[  0] 00000009 CALLSETUP A=  0 B=  0 C=  0
+[  1] 00400056 EQ        A=  1 B=256 C=  0
+[  2] 80000015 JMP       A=  0 sBx=     1
+[  3] 00800005 RETURN    A=  0 B=  0 C=  1
+[  4] 00004022 GETGLOBAL A=  0 Bx=    1 Bx=k[1]=b'userext'
+[  5] 00408011 GETTABLE  A=  0 B=258 C=  0 B=k[2]=b'Crypto'
+[  6] 0040c021 SELF      A=  0 B=259 C=  0 B=k[3]=b'MD5'
+[  7] 00010094 LOADK     A=  2 Bx=    4
+[  8] 000000dc LOADNIL?  A=  3 B=  0 C=  0
+[  9] 02008004 CALL      A=  0 B=  2 C=  4
+[ 10] 00014062 GETGLOBAL A=  1 Bx=    5 Bx=k[5]=b'cc'
+[ 11] 00c18051 GETTABLE  A=  1 B=262 C=  1 B=k[6]=b'FileUtils'
+[ 12] 00c1c061 SELF      A=  1 B=263 C=  1 B=k[7]=b'getInstance'
+[ 13] 01008044 CALL      A=  1 B=  2 C=  2
+[ 14] 00c20061 SELF      A=  1 B=264 C=  1 B=k[8]=b'getWritablePath'
+[ 15] 01008044 CALL      A=  1 B=  2 C=  2
+[ 16] 00000087 MOVE      A=  2 B=  0 C=  0
+[ 17] 00808050 LEN?      A=  1 B=  2 C=  1
+[ 18] 000140a2 GETGLOBAL A=  2 Bx=    5 Bx=k[5]=b'cc'
+[ 19] 01418091 GETTABLE  A=  2 B=262 C=  2 B=k[6]=b'FileUtils'
+[ 20] 0141c0a1 SELF      A=  2 B=263 C=  2 B=k[7]=b'getInstance'
+[ 21] 01008084 CALL      A=  2 B=  2 C=  2
+[ 22] 014240a1 SELF      A=  2 B=265 C=  2 B=k[9]=b'getStringFromFile'
+[ 23] 00800107 MOVE      A=  4 B=  0 C=  1
+[ 24] 01808084 CALL      A=  2 B=  2 C=  3
+[ 25] 01428016 EQ        A=  0 B=266 C=  2
+[ 26] 80070015 JMP       A=  0 sBx=    29
+[ 27] 0002c0e2 GETGLOBAL A=  3 Bx=   11 Bx=k[11]=b'tostring'
+[ 28] 00800109 CALLSETUP A=  4 B=  0 C=  1
+[ 29] 010080c4 CALL      A=  3 B=  2 C=  2
+[ 30] 01800087 MOVE      A=  2 B=  0 C=  3
+[ 31] 000300d4 LOADK     A=  3 Bx=   12
+[ 32] 00004122 GETGLOBAL A=  4 Bx=    1 Bx=k[1]=b'userext'
+[ 33] 02408111 GETTABLE  A=  4 B=258 C=  4 B=k[2]=b'Crypto'
+[ 34] 02434121 SELF      A=  4 B=269 C=  4 B=k[13]=b'encryptString'
+[ 35] 01000187 MOVE      A=  6 B=  0 C=  2
+[ 36] 000381e2 GETGLOBAL A=  7 Bx=   14 Bx=k[14]=b'string'
+[ 37] 03c3c1d1 GETTABLE  A=  7 B=271 C=  7 B=k[15]=b'len'
+[ 38] 01000207 MOVE      A=  8 B=  0 C=  2
+[ 39] 010001c4 CALL      A=  7 B=  0 C=  2
+[ 40] 00008104 CALL      A=  4 B=  2 C=  0
+[ 41] 00040162 GETGLOBAL A=  5 Bx=   16 Bx=k[16]=b'io'
+[ 42] 02c44151 GETTABLE  A=  5 B=273 C=  5 B=k[17]=b'open'
+[ 43] 00800187 MOVE      A=  6 B=  0 C=  1
+[ 44] 000481d4 LOADK     A=  7 Bx=   18
+[ 45] 01808144 CALL      A=  5 B=  2 C=  3
+[ 46] 0000014e TEST      A=  5 B=  0 C=  0
+[ 47] 80020015 JMP       A=  0 sBx=     9
+[ 48] 02c4c1a1 SELF      A=  6 B=275 C=  5 B=k[19]=b'write'
+[ 49] 01800207 MOVE      A=  8 B=  0 C=  3
+[ 50] 02000247 MOVE      A=  9 B=  0 C=  4
+[ 51] 04024210 LEN?      A=  8 B=  9 C=  8
+[ 52] 01804184 CALL      A=  6 B=  1 C=  3
+[ 53] 02c501a1 SELF      A=  6 B=276 C=  5 B=k[20]=b'close'
+[ 54] 01004184 CALL      A=  6 B=  1 C=  2
+[ 55] 80000015 JMP       A=  0 sBx=     1
+[ 56] 0080008f TAILCALL? A=  2 B=  0 C=  1
+[ 57] 00800005 RETURN    A=  0 B=  0 C=  1
